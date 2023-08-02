@@ -83,3 +83,17 @@ Home As screen:
             Width: =4
             ZIndex: =6
 
+    "'barra lateral genérico_1' As 'barra lateral genérico'":
+        ZIndex: =2
+
+    Label1 As label:
+        Color: =ColorValue(vTitFontColor)  
+        FontWeight: =vTitFontWeightS
+        Height: =66
+        PaddingLeft: =15
+        Size: =vTitFonSize
+        Text: ="[Fábrica de Horas] Cadastro Fábrica"
+        Width: =1286
+        X: =80
+        ZIndex: =3
+

@@ -1,29 +1,45 @@
 {
-  "ComponentIndexes": {},
+  "ComponentIndexes": {
+    "barra lateral genérico": 1,
+    "barra lateral genérico_1": 1
+  },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "barra lateral genérico": 13,
+    "barra lateral genérico_1": 17,
     "Gallery1": 5,
     "galleryTemplate1": 6,
     "Home": 4,
     "Host": 3,
     "Image1": 8,
+    "Image3": 16,
+    "Label1": 18,
     "NextArrow1": 9,
     "Rectangle1": 7,
+    "Rectangle2": 14,
     "Separator1": 12,
     "Subtitle1": 11,
     "Title1": 10
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/01/2023 21:38:15",
+  "HeaderLastSavedDateTimeUTC": "08/02/2023 13:54:31",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
-  "OrderComponentMetadata": {},
-  "OrderComponentTemplate": {},
+  "LocalResourceFileNames": {
+    "MicrosoftTeams-image (1)": "3a2ac193-8e7b-40d9-9f05-b93628a81f88.png"
+  },
+  "LocalResourceRootPaths": {
+    "MicrosoftTeams-image (1)": "https://docserverpwaprodsbr.blob.core.windows.net/2037e52d-972b-4247-ae37-96d7dc725a24-1/resource/d18f3052-0212-41ba-bf24-f745074ea058.png?sv=2018-03-28&sr=b&sig=cTMuAe7j0667OP7FDUTM8S2hNZY0NbMFn7YP88z%2F7lU%3D&spr=https&se=2023-08-03T13%3A41%3A23Z&sp=r"
+  },
+  "OrderComponentMetadata": {
+    "ae2a7fcca3fb432b9ee4b0f0cff06471": 0
+  },
+  "OrderComponentTemplate": {
+    "ae2a7fcca3fb432b9ee4b0f0cff06471": 0
+  },
   "OrderDataSource": {
     "CustomGallerySample": 0
   },
@@ -31,21 +47,26 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "gallery": 0,
-    "icon": 3,
-    "image": 2,
-    "label": 4,
-    "rectangle": 1
+    "gallery": 3,
+    "icon": 4,
+    "image": 1,
+    "label": 2,
+    "rectangle": 0
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "barra lateral genérico": {},
+    "barra lateral genérico_1": {},
     "Gallery1": {},
     "galleryTemplate1": {},
     "Home": {},
     "Host": {},
     "Image1": {},
+    "Image3": {},
+    "Label1": {},
     "NextArrow1": {},
     "Rectangle1": {},
+    "Rectangle2": {},
     "Separator1": {},
     "Subtitle1": {},
     "Title1": {}
@@ -54,25 +75,32 @@
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "Gallery1": 0,
-    "galleryTemplate1": 1,
+    "barra lateral genérico": 0,
+    "barra lateral genérico_1": 0,
+    "Gallery1": 2,
+    "galleryTemplate1": 3,
     "Home": 0,
     "Host": 0,
-    "Image1": 3,
-    "NextArrow1": 4,
-    "Rectangle1": 2,
-    "Separator1": 7,
-    "Subtitle1": 6,
-    "Title1": 5
+    "Image1": 5,
+    "Image3": 11,
+    "Label1": 1,
+    "NextArrow1": 6,
+    "Rectangle1": 4,
+    "Rectangle2": 10,
+    "Separator1": 9,
+    "Subtitle1": 8,
+    "Title1": 7
   },
   "ResourcesJsonIndices": {
+    "Image-MicrosoftTeams-image (1)": 1,
     "Image-SampleImage": 0
   },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1135396,
+    "AnalysisLoadTime": 0.0963388,
     "ControlCount": {
+      "ae2a7fcca3fb432b9ee4b0f0cff06471": 1,
       "gallery": 1,
       "galleryTemplate": 1,
       "icon": 1,
@@ -81,7 +109,7 @@
       "rectangle": 2,
       "screen": 1
     },
-    "DeserializationLoadTime": 0.3094946
+    "DeserializationLoadTime": 0.4802455
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
