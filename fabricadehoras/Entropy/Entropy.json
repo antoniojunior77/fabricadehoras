@@ -6,25 +6,25 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "barra lateral genérico": 13,
-    "barra lateral genérico_1": 17,
-    "Gallery1": 5,
-    "galleryTemplate1": 6,
-    "Home": 4,
+    "barra lateral genérico": 4,
+    "barra lateral genérico_1": 8,
+    "Gallery1": 10,
+    "galleryTemplate1": 11,
+    "Home": 7,
     "Host": 3,
-    "Image1": 8,
-    "Image3": 16,
-    "Label1": 18,
-    "NextArrow1": 9,
-    "Rectangle1": 7,
-    "Rectangle2": 14,
-    "Separator1": 12,
-    "Subtitle1": 11,
-    "Title1": 10
+    "Image1": 13,
+    "Image3": 6,
+    "Label1": 9,
+    "NextArrow1": 14,
+    "Rectangle1": 12,
+    "Rectangle2": 5,
+    "Separator1": 17,
+    "Subtitle1": 16,
+    "Title1": 15
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/02/2023 13:54:31",
+  "HeaderLastSavedDateTimeUTC": "08/02/2023 19:39:02",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -32,7 +32,7 @@
     "MicrosoftTeams-image (1)": "3a2ac193-8e7b-40d9-9f05-b93628a81f88.png"
   },
   "LocalResourceRootPaths": {
-    "MicrosoftTeams-image (1)": "https://docserverpwaprodsbr.blob.core.windows.net/2037e52d-972b-4247-ae37-96d7dc725a24-1/resource/d18f3052-0212-41ba-bf24-f745074ea058.png?sv=2018-03-28&sr=b&sig=cTMuAe7j0667OP7FDUTM8S2hNZY0NbMFn7YP88z%2F7lU%3D&spr=https&se=2023-08-03T13%3A41%3A23Z&sp=r"
+    "MicrosoftTeams-image (1)": "https://docserverpwaprodsbr.blob.core.windows.net/71ee56d0-96d6-4539-9015-b8426f28d396-1/resource/Assets0Images03a2ac193-8e7b-40d9-9f05-b93628a81f88.png?sv=2018-03-28&sr=b&sig=ZGFWWfwGJUXwcydfo2r9axtdqTDN6D006ykZoTJv1cY%3D&spr=https&se=2023-08-03T19%3A49%3A32Z&sp=r"
   },
   "OrderComponentMetadata": {
     "ae2a7fcca3fb432b9ee4b0f0cff06471": 0
@@ -98,18 +98,18 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0963388,
+    "AnalysisLoadTime": 0.1640142,
     "ControlCount": {
-      "ae2a7fcca3fb432b9ee4b0f0cff06471": 1,
+      "ae2a7fcca3fb432b9ee4b0f0cff06471": 2,
       "gallery": 1,
       "galleryTemplate": 1,
       "icon": 1,
-      "image": 1,
-      "label": 2,
-      "rectangle": 2,
+      "image": 2,
+      "label": 3,
+      "rectangle": 3,
       "screen": 1
     },
-    "DeserializationLoadTime": 0.4802455
+    "DeserializationLoadTime": 1.4629416
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

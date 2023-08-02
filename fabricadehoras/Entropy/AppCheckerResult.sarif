@@ -296,17 +296,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.vTitFontWeightB"
+                  "fullyQualifiedName": "App.vTitFontFamily"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.vTitFontWeightB",
+                  "fullyQualifiedName": "App.vTitFontFamily",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "vTitFontWeightB",
+                "member": "vTitFontFamily",
                 "module": "App",
                 "type": "App"
               }
@@ -326,17 +326,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.vTitFontFamily"
+                  "fullyQualifiedName": "App.vTitFontWeightB"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.vTitFontFamily",
+                  "fullyQualifiedName": "App.vTitFontWeightB",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "vTitFontFamily",
+                "member": "vTitFontWeightB",
                 "module": "App",
                 "type": "App"
               }
