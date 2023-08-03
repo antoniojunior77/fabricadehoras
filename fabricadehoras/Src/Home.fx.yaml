@@ -332,6 +332,17 @@ Home As screen:
             Y: =244
             ZIndex: =26
 
+    TextInput1 As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        Default: =""
+        Height: =72
+        HintText: ="Descrição TI"
+        Mode: =TextMode.MultiLine
+        Width: =301
+        X: =252
+        Y: =349
+        ZIndex: =33
+
     Group3_4 As group:
         Height: =5
         Width: =5
@@ -354,22 +365,13 @@ Home As screen:
             Y: =381
             ZIndex: =29
 
-        Icon1_7 As icon.Search:
-            Color: =RGBA(128, 128, 128, 1)
-            Height: =22
-            Icon: =Icon.Search
-            Width: =17
-            X: =98
-            Y: =389
-            ZIndex: =30
-
         Label2_7 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
-            Height: =31
+            Height: =29
             Size: =12
             Text: ="ID Fábrica"
-            Width: =196
+            Width: =147
             X: =91
             Y: =349
             ZIndex: =31
@@ -386,37 +388,27 @@ Home As screen:
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
             Font: =Font.Lato
-            Height: =41
+            Height: =39
             InputTextPlaceholder: ="2023"
             Items: =ComboBoxSample
-            PaddingLeft: =35
             SearchItems: =Search(ComboBoxSample,ComboBox1_8.SearchText,"Value1")
-            Width: =117
-            X: =585
-            Y: =380
+            Width: =84
+            X: =567
+            Y: =382
             ZIndex: =34
-
-        Icon1_8 As icon.Search:
-            Color: =RGBA(128, 128, 128, 1)
-            Height: =22
-            Icon: =Icon.Search
-            Width: =17
-            X: =592
-            Y: =390
-            ZIndex: =35
 
         Label2_9 As label:
             Align: =Align.Center
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
-            Height: =45
+            Height: =47
             Size: =12
             Text: |-
                 ="Ano 
                 Consumo"
-            Width: =117
-            X: =585
-            Y: =337
+            Width: =84
+            X: =567
+            Y: =335
             ZIndex: =36
 
     Group3_6 As group:
@@ -431,23 +423,14 @@ Home As screen:
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
             Font: =Font.Lato
+            Height: =41
             InputTextPlaceholder: ="JAN"
             Items: =ComboBoxSample
-            PaddingLeft: =35
             SearchItems: =Search(ComboBoxSample,ComboBox1_9.SearchText,"Value1")
-            Width: =107
-            X: =710
-            Y: =381
+            Width: =72
+            X: =660
+            Y: =380
             ZIndex: =37
-
-        Icon1_9 As icon.Search:
-            Color: =RGBA(128, 128, 128, 1)
-            Height: =22
-            Icon: =Icon.Search
-            Width: =17
-            X: =717
-            Y: =390
-            ZIndex: =38
 
         Label2_10 As label:
             Align: =Align.Center
@@ -458,35 +441,10 @@ Home As screen:
             Text: |-
                 ="Mês
                 Consumo"
-            Width: =107
-            X: =710
-            Y: =337
+            Width: =90
+            X: =651
+            Y: =338
             ZIndex: =39
-
-    Group7 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =40
-
-        Label2_8 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =31
-            Size: =12
-            Text: ="Descrição TI"
-            Width: =196
-            X: =252
-            Y: =350
-            ZIndex: =32
-
-        TextInput1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            X: =252
-            Y: =381
-            ZIndex: =33
 
     Group8 As group:
         Height: =5
@@ -506,16 +464,17 @@ Home As screen:
                 ="Qtde
                 Horas"
             Width: =109
-            X: =817
+            X: =735
             Y: =335
             ZIndex: =42
 
         TextInput1_1 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Height: =39
             Width: =94
-            X: =826
-            Y: =381
+            X: =744
+            Y: =382
             ZIndex: =43
 
     Group8_1 As group:
@@ -534,7 +493,7 @@ Home As screen:
             Size: =12
             Text: ="Baseline Produto"
             Width: =109
-            X: =917
+            X: =838
             Y: =336
             ZIndex: =44
 
@@ -542,7 +501,7 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Width: =94
-            X: =926
+            X: =847
             Y: =381
             ZIndex: =45
 
@@ -564,18 +523,9 @@ Home As screen:
             PaddingLeft: =35
             SearchItems: =Search(ComboBoxSample,ComboBox1_10.SearchText,"Value1")
             Width: =117
-            X: =1031
-            Y: =380
+            X: =949
+            Y: =378
             ZIndex: =46
-
-        Icon1_10 As icon.Search:
-            Color: =RGBA(128, 128, 128, 1)
-            Height: =22
-            Icon: =Icon.Search
-            Width: =17
-            X: =1038
-            Y: =390
-            ZIndex: =47
 
         Label2_13 As label:
             Align: =Align.Center
@@ -587,8 +537,8 @@ Home As screen:
                 ="Modelo
                 Tarifação"
             Width: =117
-            X: =1031
-            Y: =337
+            X: =949
+            Y: =335
             ZIndex: =48
 
     Image1 As image:
@@ -614,7 +564,7 @@ Home As screen:
             Size: =12
             Text: ="Valor do Período"
             Width: =197
-            X: =1148
+            X: =1074
             Y: =337
             ZIndex: =49
 
@@ -625,7 +575,17 @@ Home As screen:
             Height: =36
             HintText: ="R$"
             Width: =188
-            X: =1157
+            X: =1083
             Y: =382
             ZIndex: =50
+
+    Button3 As button:
+        Fill: =RGBA(255, 0, 0, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =39
+        Text: ="+"
+        Width: =59
+        X: =1286
+        Y: =378
+        ZIndex: =52
 
