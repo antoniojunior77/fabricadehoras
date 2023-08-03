@@ -1,164 +1,616 @@
 Home As screen:
-
-    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        DelayItemLoading: =true
-        Height: =375
-        Items: =CustomGallerySample
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =104
-        X: =616
-        Y: =336
-        ZIndex: =1
-
-        Image1 As image:
-            Height: =72
-            OnSelect: =Select(Parent)
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: =72
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
-
-        Title1 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.SampleHeading
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 173
-            X: =103
-            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
-            ZIndex: =2
-
-        Subtitle1 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.SampleText
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =Title1.Y + Title1.Height
-            ZIndex: =3
-
-        NextArrow1 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Color: =RGBA(166, 166, 166, 1)
-            Height: =50
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            Tooltip: ="Exibir detalhes do item"
-            Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
-
-        Separator1 As rectangle:
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =5
-
-        Rectangle1 As rectangle:
-            Height: =Parent.TemplateHeight - Separator1.Height
-            OnSelect: =Select(Parent)
-            Visible: =ThisItem.IsSelected
-            Width: =4
-            ZIndex: =6
+    BackgroundImage: ='MicrosoftTeams-image'
+    LoadingSpinnerColor: =RGBA(56, 96, 178, 1.5)
 
     "'barra lateral genérico_1' As 'barra lateral genérico'":
-        ZIndex: =2
 
     Label1 As label:
         Color: =ColorValue(vTitFontColor)  
-        FontWeight: =vTitFontWeightS
+        Font: =vTitFontFamily
+        FontWeight: =vTitFontWeightB
         Height: =66
         PaddingLeft: =15
         Size: =vTitFonSize
         Text: ="[Fábrica de Horas] Cadastro Fábrica"
         Width: =1286
         X: =80
-        ZIndex: =3
+        ZIndex: =2
 
-    Button2 As button:
-        Text: ="Botão"
-        X: =359
-        Y: =472
+    barra_navegacao_1 As barra_navegacao:
+        X: =80
+        Y: =64
         ZIndex: =4
 
-    "'Botão 2' As group":
+    Rectangle4 As rectangle:
+        Fill: =RGBA(248, 248, 248, 1)
+        Height: =170
+        Width: =1286
+        X: =80
+        Y: =155
+        ZIndex: =5
+
+    Group4 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =7
+        ZIndex: =23
 
-        barraBottom2 As rectangle:
-            Fill: =RGBA(255, 0, 0, 1)
-            Height: =4
-            X: =322
-            Y: =143
-            ZIndex: =5
-
-        btnTab2 As button:
-            BorderThickness: =0
-            Color: =RGBA(255, 0, 0, 1)
-            Fill: =RGBA(0, 0, 0, 0)
+        ComboBox1_1 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
             Font: =Font.Lato
-            HoverColor: =RGBA(255, 0, 0, 1)
-            HoverFill: =
-            PressedColor: =ColorFade(Self.Color, -20%)
-            PressedFill: =
-            Size: =18
-            Text: ="Tab 1"
-            X: =312
-            Y: =90
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_1.SearchText,"Value1")
+            Width: =270
+            X: =401
+            Y: =192
+            ZIndex: =8
+
+        Icon1_1 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =18
+            X: =408
+            Y: =201
+            ZIndex: =9
+
+        Label2_1 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =12
+            Text: ="Head"
+            Width: =271
+            X: =400
+            Y: =161
+            ZIndex: =15
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        ComboBox1 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
+            Width: =270
+            X: =93
+            Y: =192
             ZIndex: =6
 
-    "'Botão 1' As group":
+        Icon1 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =18
+            X: =100
+            Y: =201
+            ZIndex: =7
+
+        Label2 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =12
+            Text: ="Área"
+            Width: =270
+            X: =93
+            Y: =161
+            ZIndex: =14
+
+    Group5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        ComboBox1_2 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_2.SearchText,"Value1")
+            Width: =270
+            X: =757
+            Y: =197
+            ZIndex: =10
+
+        Icon1_2 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =18
+            X: =764
+            Y: =206
+            ZIndex: =11
+
+        Label2_2 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =12
+            Text: ="Gerência"
+            Width: =271
+            X: =756
+            Y: =166
+            ZIndex: =16
+
+    Group6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        ComboBox1_3 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_3.SearchText,"Value1")
+            Width: =270
+            X: =1075
+            Y: =195
+            ZIndex: =12
+
+        Icon1_3 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =18
+            X: =1082
+            Y: =204
+            ZIndex: =13
+
+        Label2_3 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =12
+            Text: ="Gestor"
+            Width: =271
+            X: =1074
+            Y: =164
+            ZIndex: =17
+
+    Group3_1 As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
-        ZIndex: =9
+        ZIndex: =26
 
-        barraBottom1 As rectangle:
-            Fill: =RGBA(255, 0, 0, 1)
-            Height: =4
-            X: =116
-            Y: =143
-            ZIndex: =7
-
-        btnTab1 As button:
-            BorderThickness: =0
-            Color: =RGBA(255, 0, 0, 1)
-            Fill: =RGBA(0, 0, 0, 0)
+        ComboBox1_4 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
             Font: =Font.Lato
-            HoverColor: =RGBA(255, 0, 0, 1)
-            HoverFill: =
-            PressedColor: =ColorFade(Self.Color, -20%)
-            PressedFill: =
-            Size: =18
-            Text: ="Tab 1"
-            X: =106
-            Y: =90
-            ZIndex: =8
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_4.SearchText,"Value1")
+            Width: =270
+            X: =93
+            Y: =272
+            ZIndex: =18
+
+        Icon1_4 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =18
+            X: =100
+            Y: =281
+            ZIndex: =19
+
+        Label2_4 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =12
+            Text: ="Sequencial"
+            Width: =270
+            X: =93
+            Y: =241
+            ZIndex: =20
+
+    Rectangle4_1 As rectangle:
+        Fill: =RGBA(219, 219, 219, 1)
+        Height: =2
+        Width: =1286
+        X: =80
+        Y: =332
+        ZIndex: =27
+
+    Rectangle4_2 As rectangle:
+        Fill: =RGBA(248, 248, 248, 1)
+        Height: =98
+        Width: =1286
+        X: =80
+        Y: =336
+        ZIndex: =28
+
+    Group3_2 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =29
+
+        ComboBox1_5 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_5.SearchText,"Value1")
+            Width: =638
+            X: =400
+            Y: =272
+            ZIndex: =21
+
+        Icon1_5 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =18
+            X: =407
+            Y: =281
+            ZIndex: =22
+
+        Label2_5 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =12
+            Text: ="Descrição (Projeto Consolidado / Tag)"
+            Width: =568
+            X: =400
+            Y: =241
+            ZIndex: =23
+
+    Group3_3 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =32
+
+        ComboBox1_6 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_6.SearchText,"Value1")
+            Width: =270
+            X: =1075
+            Y: =275
+            ZIndex: =24
+
+        Icon1_6 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =18
+            X: =1082
+            Y: =284
+            ZIndex: =25
+
+        Label2_6 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =12
+            Text: ="Fornecedor"
+            Width: =270
+            X: =1075
+            Y: =244
+            ZIndex: =26
+
+    Group3_4 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =36
+
+        ComboBox1_7 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            Height: =39
+            InputTextPlaceholder: =""
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_7.SearchText,"Value1")
+            Width: =147
+            X: =91
+            Y: =381
+            ZIndex: =29
+
+        Icon1_7 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =17
+            X: =98
+            Y: =389
+            ZIndex: =30
+
+        Label2_7 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =12
+            Text: ="ID Fábrica"
+            Width: =196
+            X: =91
+            Y: =349
+            ZIndex: =31
+
+    Group3_5 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =37
+
+        ComboBox1_8 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            Height: =41
+            InputTextPlaceholder: ="2023"
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_8.SearchText,"Value1")
+            Width: =117
+            X: =585
+            Y: =380
+            ZIndex: =34
+
+        Icon1_8 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =17
+            X: =592
+            Y: =390
+            ZIndex: =35
+
+        Label2_9 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =45
+            Size: =12
+            Text: |-
+                ="Ano 
+                Consumo"
+            Width: =117
+            X: =585
+            Y: =337
+            ZIndex: =36
+
+    Group3_6 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =40
+
+        ComboBox1_9 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            InputTextPlaceholder: ="JAN"
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_9.SearchText,"Value1")
+            Width: =107
+            X: =710
+            Y: =381
+            ZIndex: =37
+
+        Icon1_9 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =17
+            X: =717
+            Y: =390
+            ZIndex: =38
+
+        Label2_10 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =43
+            Size: =12
+            Text: |-
+                ="Mês
+                Consumo"
+            Width: =107
+            X: =710
+            Y: =337
+            ZIndex: =39
+
+    Group7 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =40
+
+        Label2_8 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =12
+            Text: ="Descrição TI"
+            Width: =196
+            X: =252
+            Y: =350
+            ZIndex: =32
+
+        TextInput1 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            X: =252
+            Y: =381
+            ZIndex: =33
+
+    Group8 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =44
+
+        Label2_11 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =45
+            PaddingLeft: =0
+            Size: =12
+            Text: |-
+                ="Qtde
+                Horas"
+            Width: =109
+            X: =817
+            Y: =335
+            ZIndex: =42
+
+        TextInput1_1 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Width: =94
+            X: =826
+            Y: =381
+            ZIndex: =43
+
+    Group8_1 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =46
+
+        Label2_12 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =46
+            PaddingLeft: =0
+            Size: =12
+            Text: ="Baseline Produto"
+            Width: =109
+            X: =917
+            Y: =336
+            ZIndex: =44
+
+        TextInput1_2 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Width: =94
+            X: =926
+            Y: =381
+            ZIndex: =45
+
+    Group3_7 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =49
+
+        ComboBox1_10 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            Height: =41
+            InputTextPlaceholder: =""
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            SearchItems: =Search(ComboBoxSample,ComboBox1_10.SearchText,"Value1")
+            Width: =117
+            X: =1031
+            Y: =380
+            ZIndex: =46
+
+        Icon1_10 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =17
+            X: =1038
+            Y: =390
+            ZIndex: =47
+
+        Label2_13 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =45
+            Size: =12
+            Text: |-
+                ="Modelo
+                Tarifação"
+            Width: =117
+            X: =1031
+            Y: =337
+            ZIndex: =48
+
+    Group8_2 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =51
+
+        Label2_14 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingLeft: =0
+            Size: =12
+            Text: ="Valor do Período"
+            Width: =197
+            X: =1148
+            Y: =337
+            ZIndex: =49
+
+        TextInput1_3 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Font: =Font.Lato
+            Height: =36
+            HintText: ="R$"
+            Width: =188
+            X: =1157
+            Y: =382
+            ZIndex: =50
 
