@@ -58,7 +58,7 @@
         "Name": "Rectangle2",
         "Parent": "barra lateral genérico",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 10,
+        "PublishOrderIndex": 17,
         "Rules": [
           {
             "Category": "Design",
@@ -221,7 +221,7 @@
         "Name": "Image3",
         "Parent": "barra lateral genérico",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 11,
+        "PublishOrderIndex": 18,
         "Rules": [
           {
             "Category": "Data",
@@ -437,7 +437,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638266016730743215",
+    "LastModifiedTimestamp": "638266652227531387",
     "Name": "barra lateral genérico",
     "Rules": [
       {
@@ -496,7 +496,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638266016730743215",
+  "LastModifiedTimestamp": "638266652227531387",
   "Name": "ae2a7fcca3fb432b9ee4b0f0cff06471",
   "OverridableProperties": {},
   "Version": "638265788640440179"
