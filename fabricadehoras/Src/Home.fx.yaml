@@ -1,6 +1,8 @@
 Home As screen:
     BackgroundImage: ='MicrosoftTeams-image'
     LoadingSpinnerColor: =RGBA(56, 96, 178, 1.5)
+    OnVisible: |-
+        =UpdateContext({varShowIdFab:0})
 
     "'barra lateral genérico_1' As 'barra lateral genérico'":
 
@@ -83,9 +85,10 @@ Home As screen:
             Height: =20
             Icon: =Icon.ChevronDown
             OnSelect: |-
-                =If(varShowIdFab= ThisItem.id_fabrica, 
-                    UpdateContext({varShowIdFab:0}),
-                    UpdateContext({varShowIdFab:ThisItem.id_fabrica})
+                =If(
+                    varShowIdFab = ThisItem.id_fabrica,
+                    UpdateContext({varShowIdFab: 0}),
+                    UpdateContext({varShowIdFab: ThisItem.id_fabrica})
                 )
             Width: =20
             X: =13
