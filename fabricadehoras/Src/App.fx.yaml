@@ -8,6 +8,54 @@ App As appinfo:
         Set(vTitFontWeightN,"Normal");
         Set(vTitFontWeightS,"Semibold");
         Set(vTabMenu,"Tab1");
+        
+        Clear(clc_tabela1);
+        ClearCollect(clc_tabela1,
+        {
+            id_fabrica:"FO001",
+            descricao:"TESTE 1",
+            ano_consumo:"2023",
+            mes_inicio: "JAN",
+            qtd_meses: 12,
+            total_baseline:"12.000",
+            valor_contratao:"1.000.000,00",
+            valor_unitario:"r$ 83,33"
+        
+        },
+        {
+            id_fabrica:"FO002",
+            descricao:"TESTE 2",
+            ano_consumo:"2023",
+            mes_inicio: "JAN",
+            qtd_meses: 12,
+            total_baseline:"12.000",
+            valor_contratao:"1.000.000,00",
+            valor_unitario:"r$ 83,33"
+        
+        },
+        {
+            id_fabrica:"FO003",
+            descricao:"TESTE 3",
+            ano_consumo:"2023",
+            mes_inicio: "JAN",
+            qtd_meses: 12,
+            total_baseline:"12.000",
+            valor_contratao:"1.000.000,00",
+            valor_unitario:"r$ 83,33"
+        
+        },
+        {
+            id_fabrica:"FO004",
+            descricao:"TESTE 4",
+            ano_consumo:"2023",
+            mes_inicio: "JAN",
+            qtd_meses: 12,
+            total_baseline:"12.000",
+            valor_contratao:"1.000.000,00",
+            valor_unitario:"R$ 83,33"
+        
+        }
+        )
     StartScreen: |
         =
 
