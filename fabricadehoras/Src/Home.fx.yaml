@@ -4,6 +4,70 @@ Home As screen:
 
     "'barra lateral genérico_1' As 'barra lateral genérico'":
 
+    Gallery2 As gallery.variableTemplateHeightGallery:
+        DelayItemLoading: =true
+        Height: =302
+        Items: =clc_tabela1
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =4
+        TemplateSize: =280
+        Width: =1237
+        X: =91
+        Y: =445
+        ZIndex: =1
+
+        Label3 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.id_fabrica
+            Y: =6
+            ZIndex: =1
+
+        Label3_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.descricao
+            X: =150
+            Y: =6
+            ZIndex: =2
+
+        Label3_2 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ano_consumo
+            X: =300
+            Y: =6
+            ZIndex: =3
+
+        Label3_3 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.mes_inicio
+            X: =450
+            Y: =6
+            ZIndex: =4
+
+        Label3_4 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.qtd_meses
+            X: =600
+            ZIndex: =5
+
+        Label3_5 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.total_baseline
+            X: =750
+            ZIndex: =6
+
+        Label3_6 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.valor_contratao
+            X: =900
+            ZIndex: =7
+
+        Label3_7 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.valor_unitario
+            X: =1050
+            ZIndex: =8
+
     Label1 As label:
         Color: =ColorValue(vTitFontColor)  
         Font: =vTitFontFamily
