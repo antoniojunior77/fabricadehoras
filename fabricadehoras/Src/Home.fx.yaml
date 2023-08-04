@@ -1,8 +1,7 @@
 Home As screen:
     BackgroundImage: ='MicrosoftTeams-image'
     LoadingSpinnerColor: =RGBA(56, 96, 178, 1.5)
-    OnVisible: |-
-        =UpdateContext({varShowIdFab:0})
+    OnVisible: =
 
     "'barra lateral genérico_1' As 'barra lateral genérico'":
 
@@ -13,7 +12,7 @@ Home As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
-        TemplateSize: =280
+        TemplateSize: =122
         Width: =1237
         X: =91
         Y: =445
@@ -82,18 +81,29 @@ Home As screen:
             ZIndex: =8
 
         Icon2 As icon.ChevronDown:
-            Height: =20
-            Icon: =Icon.ChevronDown
+            Height: =15
+            Icon: |-
+                =//Icon.ChevronDown
+                If(varShowIdFab=0,Icon.ChevronDown,Icon.ChevronRight)
             OnSelect: |-
-                =If(
-                    varShowIdFab = ThisItem.id_fabrica,
-                    UpdateContext({varShowIdFab: 0}),
-                    UpdateContext({varShowIdFab: ThisItem.id_fabrica})
+                =If(varShowIdFab= ThisItem.id, 
+                    Set(varShowIdFab,0),
+                    Set(varShowIdFab,ThisItem.id)
                 )
-            Width: =20
+            Width: =15
             X: =13
             Y: =10
             ZIndex: =16
+
+        Icon3 As icon.Trash:
+            Height: =15
+            Icon: =Icon.Trash
+            OnSelect: =Select(Parent)
+            Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+            Width: =15
+            X: =58
+            Y: =65
+            ZIndex: =17
 
         Group1 As group:
             Height: =5
@@ -107,7 +117,7 @@ Home As screen:
                 Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.descricao
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id_fabrica,true)
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                 Width: =406
                 X: =130
                 Y: =53
@@ -118,7 +128,7 @@ Home As screen:
                 Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.ano_consumo
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id_fabrica,true)
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                 Width: =67
                 X: =536
                 Y: =53
@@ -129,7 +139,7 @@ Home As screen:
                 Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.mes_inicio
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id_fabrica,true)
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                 Width: =62
                 X: =616
                 Y: =53
@@ -140,7 +150,7 @@ Home As screen:
                 Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.qtd_meses
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id_fabrica,true)
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                 Width: =72
                 X: =678
                 Y: =53
@@ -151,7 +161,7 @@ Home As screen:
                 Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.total_baseline
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id_fabrica,true)
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                 X: =750
                 Y: =53
                 ZIndex: =13
@@ -161,7 +171,7 @@ Home As screen:
                 Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.valor_contratao
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id_fabrica,true)
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                 Width: =175
                 X: =900
                 Y: =53
@@ -172,10 +182,20 @@ Home As screen:
                 Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.valor_unitario
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id_fabrica,true)
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                 X: =1075
                 Y: =53
                 ZIndex: =15
+
+        Image4 As image:
+            Height: =15
+            Image: =compose
+            OnSelect: =Select(Parent)
+            Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+            Width: =15
+            X: =78
+            Y: =65
+            ZIndex: =18
 
     Label1 As label:
         Color: =ColorValue(vTitFontColor)  
