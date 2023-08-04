@@ -58,7 +58,7 @@
         "Name": "Rectangle2",
         "Parent": "barra lateral genérico",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 79,
+        "PublishOrderIndex": 155,
         "Rules": [
           {
             "Category": "Design",
@@ -221,7 +221,7 @@
         "Name": "Image3",
         "Parent": "barra lateral genérico",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 80,
+        "PublishOrderIndex": 156,
         "Rules": [
           {
             "Category": "Data",
