@@ -3,8 +3,6 @@ Home As screen:
     LoadingSpinnerColor: =RGBA(56, 96, 178, 1.5)
     OnVisible: =
 
-    "'barra lateral genérico_1' As 'barra lateral genérico'":
-
     Gallery2 As gallery.variableTemplateHeightGallery:
         DelayItemLoading: =true
         Height: =302
@@ -13,71 +11,97 @@ Home As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
         TemplateSize: =122
-        Width: =1237
-        X: =91
+        Width: =1738.68
+        X: =127.91
         Y: =445
         ZIndex: =1
 
         Label3 As label:
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: =ThisItem.id_fabrica
-            Width: =90
-            X: =40
+            Width: =126.5
+            X: =56.22
             ZIndex: =1
 
         Label3_1 As label:
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: =ThisItem.descricao
-            Width: =406
-            X: =130
+            Width: =570.66
+            X: =182.72
             ZIndex: =2
 
         Label3_2 As label:
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: =ThisItem.ano_consumo
-            Width: =67
-            X: =536
+            Width: =94.17
+            X: =753.38
             ZIndex: =3
 
         Label3_3 As label:
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: =ThisItem.mes_inicio
-            Width: =62
-            X: =616
+            Width: =87.14
+            X: =865.83
             ZIndex: =4
 
         Label3_4 As label:
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: =ThisItem.qtd_meses
-            Width: =72
-            X: =678
+            Width: =101.2
+            X: =952.97
             ZIndex: =5
 
         Label3_5 As label:
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: =ThisItem.total_baseline
-            X: =750
+            Width: =210.83
+            X: =1054.17
             ZIndex: =6
 
         Label3_6 As label:
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: =ThisItem.valor_contratao
-            Width: =175
-            X: =900
+            Width: =245.97
+            X: =1265.01
             ZIndex: =7
 
         Label3_7 As label:
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: =ThisItem.valor_unitario
-            X: =1075
+            Width: =210.83
+            X: =1510.98
             ZIndex: =8
 
         Icon2 As icon.ChevronDown:
@@ -90,8 +114,8 @@ Home As screen:
                     Set(varShowIdFab,0),
                     Set(varShowIdFab,ThisItem.id)
                 )
-            Width: =15
-            X: =13
+            Width: =21.08
+            X: =18.27
             Y: =10
             ZIndex: =16
 
@@ -100,8 +124,8 @@ Home As screen:
             Icon: =Icon.Trash
             OnSelect: =Select(Parent)
             Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-            Width: =15
-            X: =58
+            Width: =21.08
+            X: =81.52
             Y: =65
             ZIndex: =17
 
@@ -116,10 +140,13 @@ Home As screen:
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
                 Text: =ThisItem.descricao
                 Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =406
-                X: =130
+                Width: =570.66
+                X: =182.72
                 Y: =53
                 ZIndex: =9
 
@@ -127,10 +154,13 @@ Home As screen:
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
                 Text: =ThisItem.ano_consumo
                 Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =67
-                X: =536
+                Width: =94.17
+                X: =753.38
                 Y: =53
                 ZIndex: =10
 
@@ -138,10 +168,13 @@ Home As screen:
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
                 Text: =ThisItem.mes_inicio
                 Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =62
-                X: =616
+                Width: =87.14
+                X: =865.83
                 Y: =53
                 ZIndex: =11
 
@@ -149,10 +182,13 @@ Home As screen:
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
                 Text: =ThisItem.qtd_meses
                 Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =72
-                X: =678
+                Width: =101.2
+                X: =952.97
                 Y: =53
                 ZIndex: =12
 
@@ -160,9 +196,13 @@ Home As screen:
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
                 Text: =ThisItem.total_baseline
                 Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                X: =750
+                Width: =210.83
+                X: =1054.17
                 Y: =53
                 ZIndex: =13
 
@@ -170,10 +210,13 @@ Home As screen:
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
                 Text: =ThisItem.valor_contratao
                 Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =175
-                X: =900
+                Width: =245.97
+                X: =1265.01
                 Y: =53
                 ZIndex: =14
 
@@ -181,9 +224,13 @@ Home As screen:
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
                 Text: =ThisItem.valor_unitario
                 Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                X: =1075
+                Width: =210.83
+                X: =1510.98
                 Y: =53
                 ZIndex: =15
 
@@ -193,8 +240,8 @@ Home As screen:
             OnSelect: |-
                 =UpdateContext({vShowEdicao:true})
             Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-            Width: =15
-            X: =78
+            Width: =21.08
+            X: =109.63
             Y: =65
             ZIndex: =18
 
@@ -204,22 +251,25 @@ Home As screen:
         FontWeight: =vTitFontWeightB
         Height: =66
         PaddingLeft: =15
-        Size: =vTitFonSize
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =42.17
         Text: ="[Fábrica de Horas] Cadastro Fábrica"
-        Width: =1286
-        X: =80
+        Width: =1807.55
+        X: =112.45
         ZIndex: =2
 
     barra_navegacao_1 As barra_navegacao:
-        X: =80
+        Width: =899.56
+        X: =112.45
         Y: =64
         ZIndex: =4
 
     Rectangle4 As rectangle:
         Fill: =RGBA(248, 248, 248, 1)
         Height: =170
-        Width: =1286
-        X: =80
+        Width: =1807.55
+        X: =112.45
         Y: =155
         ZIndex: =5
 
@@ -238,9 +288,12 @@ Home As screen:
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_1.SearchText,"Value1")
-            Width: =301
-            X: =401
+            Size: =18.27
+            Width: =423.07
+            X: =563.63
             Y: =192
             ZIndex: =8
 
@@ -248,8 +301,8 @@ Home As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
-            Width: =18
-            X: =408
+            Width: =25.3
+            X: =573.47
             Y: =201
             ZIndex: =9
 
@@ -257,10 +310,12 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =31
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="Head"
-            Width: =271
-            X: =400
+            Width: =380.91
+            X: =562.23
             Y: =161
             ZIndex: =15
 
@@ -279,9 +334,12 @@ Home As screen:
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
-            Width: =270
-            X: =93
+            Size: =18.27
+            Width: =379.5
+            X: =130.72
             Y: =192
             ZIndex: =6
 
@@ -289,8 +347,8 @@ Home As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
-            Width: =18
-            X: =100
+            Width: =25.3
+            X: =140.56
             Y: =201
             ZIndex: =7
 
@@ -298,10 +356,12 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =31
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="Área"
-            Width: =270
-            X: =93
+            Width: =379.5
+            X: =130.72
             Y: =161
             ZIndex: =14
 
@@ -320,9 +380,12 @@ Home As screen:
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_2.SearchText,"Value1")
-            Width: =270
-            X: =757
+            Size: =18.27
+            Width: =379.5
+            X: =1064.01
             Y: =195
             ZIndex: =10
 
@@ -330,8 +393,8 @@ Home As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
-            Width: =18
-            X: =764
+            Width: =25.3
+            X: =1073.85
             Y: =197
             ZIndex: =11
 
@@ -339,10 +402,12 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =31
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="Gerência"
-            Width: =271
-            X: =756
+            Width: =380.91
+            X: =1062.61
             Y: =164
             ZIndex: =16
 
@@ -361,9 +426,12 @@ Home As screen:
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_3.SearchText,"Value1")
-            Width: =270
-            X: =1075
+            Size: =18.27
+            Width: =379.5
+            X: =1510.98
             Y: =195
             ZIndex: =12
 
@@ -371,8 +439,8 @@ Home As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
-            Width: =18
-            X: =1082
+            Width: =25.3
+            X: =1520.82
             Y: =204
             ZIndex: =13
 
@@ -380,10 +448,12 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =31
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="Gestor"
-            Width: =271
-            X: =1074
+            Width: =380.91
+            X: =1509.58
             Y: =164
             ZIndex: =17
 
@@ -402,9 +472,12 @@ Home As screen:
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_4.SearchText,"Value1")
-            Width: =270
-            X: =93
+            Size: =18.27
+            Width: =379.5
+            X: =130.72
             Y: =272
             ZIndex: =18
 
@@ -412,8 +485,8 @@ Home As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
-            Width: =18
-            X: =100
+            Width: =25.3
+            X: =140.56
             Y: =281
             ZIndex: =19
 
@@ -421,26 +494,28 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =31
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="Sequencial"
-            Width: =270
-            X: =93
+            Width: =379.5
+            X: =130.72
             Y: =241
             ZIndex: =20
 
     linha As rectangle:
         Fill: =RGBA(219, 219, 219, 1)
         Height: =2
-        Width: =1286
-        X: =80
+        Width: =1807.55
+        X: =112.45
         Y: =332
         ZIndex: =27
 
     fundo As rectangle:
         Fill: =RGBA(248, 248, 248, 1)
         Height: =98
-        Width: =1286
-        X: =80
+        Width: =1807.55
+        X: =112.45
         Y: =336
         ZIndex: =28
 
@@ -459,9 +534,12 @@ Home As screen:
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_5.SearchText,"Value1")
-            Width: =638
-            X: =400
+            Size: =18.27
+            Width: =896.75
+            X: =562.23
             Y: =272
             ZIndex: =21
 
@@ -469,8 +547,8 @@ Home As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
-            Width: =18
-            X: =407
+            Width: =25.3
+            X: =572.06
             Y: =281
             ZIndex: =22
 
@@ -478,10 +556,12 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =31
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="Descrição (Projeto Consolidado / Tag)"
-            Width: =568
-            X: =400
+            Width: =798.36
+            X: =562.23
             Y: =241
             ZIndex: =23
 
@@ -500,9 +580,12 @@ Home As screen:
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_6.SearchText,"Value1")
-            Width: =270
-            X: =1075
+            Size: =18.27
+            Width: =379.5
+            X: =1510.98
             Y: =275
             ZIndex: =24
 
@@ -510,8 +593,8 @@ Home As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
-            Width: =18
-            X: =1082
+            Width: =25.3
+            X: =1520.82
             Y: =284
             ZIndex: =25
 
@@ -519,10 +602,12 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =31
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="Fornecedor"
-            Width: =270
-            X: =1075
+            Width: =379.5
+            X: =1510.98
             Y: =244
             ZIndex: =26
 
@@ -532,8 +617,11 @@ Home As screen:
         Height: =72
         HintText: ="Descrição TI"
         Mode: =TextMode.MultiLine
-        Width: =301
-        X: =252
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =18.27
+        Width: =423.07
+        X: =354.2
         Y: =349
         ZIndex: =33
 
@@ -553,9 +641,12 @@ Home As screen:
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_7.SearchText,"Value1")
-            Width: =147
-            X: =91
+            Size: =18.27
+            Width: =206.62
+            X: =127.91
             Y: =381
             ZIndex: =29
 
@@ -563,10 +654,12 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =29
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="ID Fábrica"
-            Width: =147
-            X: =91
+            Width: =206.62
+            X: =127.91
             Y: =349
             ZIndex: =31
 
@@ -585,9 +678,12 @@ Home As screen:
             Height: =39
             InputTextPlaceholder: ="2023"
             Items: =ComboBoxSample
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_8.SearchText,"Value1")
-            Width: =84
-            X: =567
+            Size: =18.27
+            Width: =118.07
+            X: =796.95
             Y: =382
             ZIndex: =34
 
@@ -596,12 +692,14 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =47
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: |-
                 ="Ano 
                 Consumo"
-            Width: =84
-            X: =567
+            Width: =118.07
+            X: =796.95
             Y: =335
             ZIndex: =36
 
@@ -620,9 +718,12 @@ Home As screen:
             Height: =41
             InputTextPlaceholder: ="JAN"
             Items: =ComboBoxSample
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_9.SearchText,"Value1")
-            Width: =72
-            X: =660
+            Size: =18.27
+            Width: =101.2
+            X: =927.67
             Y: =380
             ZIndex: =37
 
@@ -631,12 +732,14 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =43
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: |-
                 ="Mês
                 Consumo"
-            Width: =90
-            X: =651
+            Width: =126.5
+            X: =915.02
             Y: =338
             ZIndex: =39
 
@@ -653,12 +756,14 @@ Home As screen:
             FontWeight: =FontWeight.Semibold
             Height: =45
             PaddingLeft: =0
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: |-
                 ="Qtde
                 Horas"
-            Width: =109
-            X: =735
+            Width: =153.21
+            X: =1033.09
             Y: =335
             ZIndex: =42
 
@@ -666,8 +771,11 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =39
-            Width: =94
-            X: =744
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Width: =132.12
+            X: =1045.74
             Y: =382
             ZIndex: =43
 
@@ -684,18 +792,23 @@ Home As screen:
             FontWeight: =FontWeight.Semibold
             Height: =46
             PaddingLeft: =0
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="Baseline Produto"
-            Width: =109
-            X: =838
+            Width: =153.21
+            X: =1177.86
             Y: =336
             ZIndex: =44
 
         TextInput1_2 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
-            Width: =94
-            X: =847
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Width: =132.12
+            X: =1190.51
             Y: =381
             ZIndex: =45
 
@@ -715,9 +828,12 @@ Home As screen:
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_10.SearchText,"Value1")
-            Width: =117
-            X: =949
+            Size: =18.27
+            Width: =164.45
+            X: =1333.88
             Y: =378
             ZIndex: =46
 
@@ -726,20 +842,22 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =45
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: |-
                 ="Modelo
                 Tarifação"
-            Width: =117
-            X: =949
+            Width: =164.45
+            X: =1333.88
             Y: =335
             ZIndex: =48
 
     btnAddFabrica As image:
         Height: =20
         Image: ='Button-mais'
-        Width: =20
-        X: =179
+        Width: =28.11
+        X: =251.6
         Y: =355
         ZIndex: =51
 
@@ -755,10 +873,12 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             PaddingLeft: =0
-            Size: =12
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
             Text: ="Valor do Período"
-            Width: =197
-            X: =1074
+            Width: =276.9
+            X: =1509.58
             Y: =337
             ZIndex: =49
 
@@ -768,8 +888,11 @@ Home As screen:
             Font: =Font.Lato
             Height: =36
             HintText: ="R$"
-            Width: =188
-            X: =1083
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Width: =264.25
+            X: =1522.23
             Y: =382
             ZIndex: =50
 
@@ -779,9 +902,12 @@ Home As screen:
         Height: =39
         OnSelect: |-
             =UpdateContext({vShowMensalizacao:true})
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =21.08
         Text: ="+"
-        Width: =59
-        X: =1286
+        Width: =82.93
+        X: =1807.55
         Y: =378
         ZIndex: =52
 
@@ -796,7 +922,7 @@ Home As screen:
             Fill: =RGBA(245, 245, 245, 0.8)
             Height: =768
             Visible: =vShowMensalizacao
-            Width: =1366
+            Width: =1920
             ZIndex: =53
 
         Rectangle5 As rectangle:
@@ -804,8 +930,8 @@ Home As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =390
             Visible: =vShowMensalizacao
-            Width: =1248
-            X: =80
+            Width: =1754.14
+            X: =112.45
             Y: =102
             ZIndex: =54
 
@@ -814,11 +940,13 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =42
-            Size: =20
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =28.11
             Text: ="Mensalização"
             Visible: =vShowMensalizacao
-            Width: =200
-            X: =112
+            Width: =281.11
+            X: =157.42
             Y: =121
             ZIndex: =55
 
@@ -826,23 +954,28 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =42
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: |-
                 ="Id Fábrica:"
             Visible: =vShowMensalizacao
-            Width: =120
-            X: =116
+            Width: =168.67
+            X: =163.05
             Y: =176
             ZIndex: =56
 
         Label5_1 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: |-
                 ="Total Baseline:"
             Visible: =vShowMensalizacao
-            X: =367
+            Width: =210.83
+            X: =515.84
             Y: =176
             ZIndex: =57
 
@@ -850,45 +983,53 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =43
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: |-
                 ="Ano:"
             Visible: =vShowMensalizacao
-            Width: =72
-            X: =658
+            Width: =101.2
+            X: =924.86
             Y: =176
             ZIndex: =58
 
         Label5_3 As label:
             Font: =Font.Lato
             Height: =42
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="FO0001"
             Visible: =vShowMensalizacao
-            Width: =120
-            X: =223
+            Width: =168.67
+            X: =313.44
             Y: =176
             ZIndex: =59
 
         Label5_4 As label:
             Font: =Font.Lato
             Height: =42
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="2023"
             Visible: =vShowMensalizacao
-            Width: =120
-            X: =718
+            Width: =168.67
+            X: =1009.19
             Y: =176
             ZIndex: =60
 
         Label5_5 As label:
             Font: =Font.Lato
             Height: =42
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="12.000"
             Visible: =vShowMensalizacao
-            Width: =120
-            X: =512
+            Width: =168.67
+            X: =719.65
             Y: =176
             ZIndex: =61
 
@@ -896,23 +1037,27 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =45
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: |-
                 ="Descrição TI:"
             Visible: =vShowMensalizacao
-            Width: =134
-            X: =116
+            Width: =188.35
+            X: =163.05
             Y: =226
             ZIndex: =62
 
         Label5_7 As label:
             Font: =Font.Lato
             Height: =45
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="TESTE 01"
             Visible: =vShowMensalizacao
-            Width: =537
-            X: =254
+            Width: =754.79
+            X: =357.01
             Y: =226
             ZIndex: =63
 
@@ -921,10 +1066,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Janeiro"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =163
+            Width: =140.56
+            X: =229.11
             Y: =292
             ZIndex: =64
 
@@ -933,10 +1081,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Fevereiro"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =242
+            Width: =140.56
+            X: =340.15
             Y: =292
             ZIndex: =65
 
@@ -945,10 +1096,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Março"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =338
+            Width: =140.56
+            X: =475.08
             Y: =292
             ZIndex: =66
 
@@ -957,10 +1111,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Abril"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =431
+            Width: =140.56
+            X: =605.8
             Y: =292
             ZIndex: =67
 
@@ -969,10 +1126,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Maio"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =508
+            Width: =140.56
+            X: =714.03
             Y: =292
             ZIndex: =68
 
@@ -981,10 +1141,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Junho"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =597
+            Width: =140.56
+            X: =839.12
             Y: =292
             ZIndex: =69
 
@@ -993,10 +1156,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Julho"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =692
+            Width: =140.56
+            X: =972.65
             Y: =292
             ZIndex: =70
 
@@ -1005,10 +1171,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Agosto"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =775
+            Width: =140.56
+            X: =1089.31
             Y: =292
             ZIndex: =71
 
@@ -1017,10 +1186,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Setembro"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =856
+            Width: =140.56
+            X: =1203.16
             Y: =292
             ZIndex: =72
 
@@ -1029,10 +1201,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Outubro"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =943
+            Width: =140.56
+            X: =1325.45
             Y: =292
             ZIndex: =73
 
@@ -1041,10 +1216,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Novembro"
             Visible: =vShowMensalizacao
-            Width: =113
-            X: =1033
+            Width: =158.83
+            X: =1451.95
             Y: =292
             ZIndex: =74
 
@@ -1053,10 +1231,13 @@ Home As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Text: ="Dezembro"
             Visible: =vShowMensalizacao
-            Width: =100
-            X: =1125
+            Width: =140.56
+            X: =1581.26
             Y: =292
             ZIndex: =75
 
@@ -1064,9 +1245,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =169
+            Width: =102.61
+            X: =237.54
             Y: =349
             ZIndex: =76
 
@@ -1074,9 +1258,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =253
+            Width: =102.61
+            X: =355.61
             Y: =349
             ZIndex: =77
 
@@ -1084,9 +1271,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =338
+            Width: =102.61
+            X: =475.08
             Y: =349
             ZIndex: =78
 
@@ -1094,9 +1284,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =422
+            Width: =102.61
+            X: =593.15
             Y: =349
             ZIndex: =79
 
@@ -1104,9 +1297,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =507
+            Width: =102.61
+            X: =712.62
             Y: =349
             ZIndex: =80
 
@@ -1114,9 +1310,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =597
+            Width: =102.61
+            X: =839.12
             Y: =349
             ZIndex: =81
 
@@ -1124,9 +1323,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =682
+            Width: =102.61
+            X: =958.59
             Y: =349
             ZIndex: =82
 
@@ -1134,9 +1336,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =772
+            Width: =102.61
+            X: =1085.1
             Y: =349
             ZIndex: =83
 
@@ -1144,9 +1349,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =862
+            Width: =102.61
+            X: =1211.6
             Y: =349
             ZIndex: =84
 
@@ -1154,9 +1362,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =954
+            Width: =102.61
+            X: =1340.91
             Y: =349
             ZIndex: =85
 
@@ -1164,9 +1375,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =1039
+            Width: =102.61
+            X: =1460.38
             Y: =349
             ZIndex: =86
 
@@ -1174,9 +1388,12 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =73
-            X: =1137
+            Width: =102.61
+            X: =1598.13
             Y: =349
             ZIndex: =87
 
@@ -1186,9 +1403,13 @@ Home As screen:
                 =ColorValue("#FF0000")
             OnSelect: |-
                 =UpdateContext({vShowMensalizacao:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="Salvar"
             Visible: =vShowMensalizacao
-            X: =888
+            Width: =224.89
+            X: =1248.14
             Y: =434
             ZIndex: =88
 
@@ -1202,11 +1423,18 @@ Home As screen:
             HoverFill: =
             OnSelect: |-
                 =UpdateContext({vShowMensalizacao:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="Cancelar"
             Visible: =vShowMensalizacao
-            X: =1066
+            Width: =224.89
+            X: =1498.33
             Y: =434
             ZIndex: =89
+
+    SideMenu_1 As SideMenu:
+        ZIndex: =127
 
     gp_edição As group:
         Height: =5
@@ -1219,7 +1447,7 @@ Home As screen:
             Fill: =RGBA(245, 245, 245, 0.8)
             Height: =768
             Visible: =vShowEdicao
-            Width: =1366
+            Width: =1920
             ZIndex: =90
 
         Rectangle5_1 As rectangle:
@@ -1227,8 +1455,8 @@ Home As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =390
             Visible: =vShowEdicao
-            Width: =1248
-            X: =80
+            Width: =1754.14
+            X: =112.45
             Y: =102
             ZIndex: =91
 
@@ -1237,11 +1465,13 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =42
-            Size: =20
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =28.11
             Text: ="Editar Cadastro de Fábrica"
             Visible: =vShowEdicao
-            Width: =455
-            X: =112
+            Width: =639.53
+            X: =157.42
             Y: =121
             ZIndex: =92
 
@@ -1249,23 +1479,28 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =42
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: |-
                 ="Id Fábrica:"
             Visible: =vShowEdicao
-            Width: =120
-            X: =116
+            Width: =168.67
+            X: =163.05
             Y: =176
             ZIndex: =93
 
         Label5_14 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: |-
                 ="Total Baseline:"
             Visible: =vShowEdicao
-            X: =367
+            Width: =210.83
+            X: =515.84
             Y: =176
             ZIndex: =94
 
@@ -1273,45 +1508,53 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =43
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: |-
                 ="Ano:"
             Visible: =vShowEdicao
-            Width: =72
-            X: =658
+            Width: =101.2
+            X: =924.86
             Y: =176
             ZIndex: =95
 
         Label5_12 As label:
             Font: =Font.Lato
             Height: =42
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="FO0001"
             Visible: =vShowEdicao
-            Width: =120
-            X: =223
+            Width: =168.67
+            X: =313.44
             Y: =176
             ZIndex: =96
 
         Label5_11 As label:
             Font: =Font.Lato
             Height: =42
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="2023"
             Visible: =vShowEdicao
-            Width: =120
-            X: =718
+            Width: =168.67
+            X: =1009.19
             Y: =176
             ZIndex: =97
 
         Label5_10 As label:
             Font: =Font.Lato
             Height: =42
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="12.000"
             Visible: =vShowEdicao
-            Width: =120
-            X: =512
+            Width: =168.67
+            X: =719.65
             Y: =176
             ZIndex: =98
 
@@ -1319,23 +1562,27 @@ Home As screen:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =45
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: |-
                 ="Descrição TI:"
             Visible: =vShowEdicao
-            Width: =134
-            X: =116
+            Width: =188.35
+            X: =163.05
             Y: =226
             ZIndex: =99
 
         Label5_8 As label:
             Font: =Font.Lato
             Height: =45
-            Size: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="TESTE 01"
             Visible: =vShowEdicao
-            Width: =537
-            X: =254
+            Width: =754.79
+            X: =357.01
             Y: =226
             ZIndex: =100
 
@@ -1345,9 +1592,13 @@ Home As screen:
                 =ColorValue("#FF0000")
             OnSelect: |-
                 =UpdateContext({vShowEdicao:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="Atualizar"
             Visible: =vShowEdicao
-            X: =888
+            Width: =224.89
+            X: =1248.14
             Y: =434
             ZIndex: =125
 
@@ -1361,9 +1612,13 @@ Home As screen:
             HoverFill: =
             OnSelect: |-
                 =UpdateContext({vShowEdicao:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
             Text: ="Cancelar"
             Visible: =vShowEdicao
-            X: =1066
+            Width: =224.89
+            X: =1498.33
             Y: =434
             ZIndex: =126
 

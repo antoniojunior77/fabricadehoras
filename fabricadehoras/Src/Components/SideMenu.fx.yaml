@@ -1,0 +1,46 @@
+SideMenu As CanvasComponent:
+    Botões: =colMenu
+    Fill: =RGBA(213, 25, 32, 1)
+    Height: =App.Height
+    Width: =80
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Logo As image:
+        Height: =80
+        Image: ='Logo CLARO_Portal TI'
+        Width: =80
+        ZIndex: =1
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        DelayItemLoading: =true
+        Height: =688
+        Items: =SideMenu.Botões
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =2
+        TemplateSize: =80
+        Width: =112.45
+        Y: =80
+        ZIndex: =2
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =0
+            Height: =80
+            Icon: =ThisItem.Icone
+            OnSelect: |-
+                =Navigate(ThisItem.Tela);
+                Set(VarPesquisar, false)
+            PaddingBottom: =22
+            PaddingLeft: =22
+            PaddingRight: =30.92
+            PaddingTop: =30.92
+            TabIndex: =0
+            Tooltip: =ThisItem.Label
+            Width: =106.82
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+

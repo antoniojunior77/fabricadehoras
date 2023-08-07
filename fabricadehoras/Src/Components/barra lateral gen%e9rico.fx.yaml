@@ -9,13 +9,13 @@
     Rectangle2 As rectangle:
         Fill: =RGBA(213, 25, 32, 1)
         Height: =768
-        Width: =80
+        Width: =112.45
         ZIndex: =1
 
     Image3 As image:
         Height: =70
         Image: ='MicrosoftTeams-image (1)'
-        Width: =80
+        Width: =112.45
         Y: =9
         ZIndex: =2
 

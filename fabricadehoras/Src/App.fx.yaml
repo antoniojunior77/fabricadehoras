@@ -10,6 +10,20 @@ App As appinfo:
         Set(vTabMenu,"Tab1");
         Set(varShowIdFab,0);
         
+        /*
+        Set(varCorVermelho; RGBA(213;25;32;1));;
+        Set(varCorCinzaClaro;RGBA(237; 237; 237; 1));;
+        Set(varCorCinzaMedio; RGBA(215;218;218;1));;
+        Set(varCorCinzaEscuro; RGBA(128; 128; 128; 1));;
+        Set(varCorCinzaBlur; RGBA(77; 75; 75; 0,88));;
+        Set(varCorFonteClara; RGBA(255; 255; 255; 1));;
+        Set(varCorFonteEscura; RGBA(255; 255; 255; 1));;
+        Set(varFont; Font.'Open Sans');;
+        Set(varSizeTitulo; 16);;
+        Set(varSizeSubTitulo; 14);;
+        Set(varSizeText; 12);;
+        */
+        
         Clear(clc_tabela1);
         ClearCollect(clc_tabela1,
         {

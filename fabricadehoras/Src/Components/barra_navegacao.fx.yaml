@@ -19,7 +19,8 @@ barra_navegacao As CanvasComponent:
             DisplayMode: =If(vTabMenu="Tab2", DisplayMode.Disabled, DisplayMode.Edit )
             Fill: =RGBA(255, 0, 0, 1)
             Height: =4
-            X: =247
+            Width: =210.83
+            X: =347.17
             Y: =65
             ZIndex: =1
 
@@ -33,11 +34,14 @@ barra_navegacao As CanvasComponent:
             HoverColor: =RGBA(255, 0, 0, 1)
             HoverFill: =
             OnSelect: =Set(vTabMenu,"Tab2")
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             PressedColor: =ColorFade(Self.Color, -20%)
             PressedFill: =
-            Size: =18
+            Size: =25.3
             Text: ="Tab 2"
-            X: =237
+            Width: =224.89
+            X: =333.12
             Y: =12
             ZIndex: =2
 
@@ -54,7 +58,8 @@ barra_navegacao As CanvasComponent:
             DisplayMode: =If(vTabMenu="Tab1", DisplayMode.Disabled, DisplayMode.Edit )
             Fill: =RGBA(255, 0, 0, 1)
             Height: =4
-            X: =41
+            Width: =210.83
+            X: =57.63
             Y: =65
             ZIndex: =4
 
@@ -68,11 +73,14 @@ barra_navegacao As CanvasComponent:
             HoverColor: =RGBA(255, 0, 0, 1)
             HoverFill: =
             OnSelect: =Set(vTabMenu,"Tab1")
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             PressedColor: =ColorFade(Self.Color, -20%)
             PressedFill: =
-            Size: =18
+            Size: =25.3
             Text: ="Tab 1"
-            X: =31
+            Width: =224.89
+            X: =43.57
             Y: =12
             ZIndex: =5
 
@@ -89,7 +97,8 @@ barra_navegacao As CanvasComponent:
             DisplayMode: =If(vTabMenu="Tab3", DisplayMode.Disabled, DisplayMode.Edit )
             Fill: =RGBA(255, 0, 0, 1)
             Height: =4
-            X: =449
+            Width: =210.83
+            X: =631.1
             Y: =65
             ZIndex: =6
 
@@ -103,11 +112,14 @@ barra_navegacao As CanvasComponent:
             HoverColor: =RGBA(255, 0, 0, 1)
             HoverFill: =
             OnSelect: =Set(vTabMenu,"Tab3")
+            PaddingRight: =7.03
+            PaddingTop: =7.03
             PressedColor: =ColorFade(Self.Color, -20%)
             PressedFill: =
-            Size: =18
+            Size: =25.3
             Text: ="Tab 3"
-            X: =439
+            Width: =224.89
+            X: =617.04
             Y: =12
             ZIndex: =7
 
