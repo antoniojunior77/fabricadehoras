@@ -116,7 +116,7 @@
         "Name": "btnTab1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 152,
+        "PublishOrderIndex": 293,
         "Rules": [
           {
             "Category": "Data",
@@ -475,7 +475,7 @@
         "Name": "btnTab2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 153,
+        "PublishOrderIndex": 295,
         "Rules": [
           {
             "Category": "Data",
@@ -834,7 +834,7 @@
         "Name": "btnTab2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 154,
+        "PublishOrderIndex": 297,
         "Rules": [
           {
             "Category": "Data",
@@ -1128,7 +1128,7 @@
         "Name": "barraBottom1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 158,
+        "PublishOrderIndex": 298,
         "Rules": [
           {
             "Category": "Design",
@@ -1284,7 +1284,7 @@
         "Name": "barraBottom2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 159,
+        "PublishOrderIndex": 299,
         "Rules": [
           {
             "Category": "Design",
@@ -1440,7 +1440,7 @@
         "Name": "barraBottom2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 160,
+        "PublishOrderIndex": 300,
         "Rules": [
           {
             "Category": "Design",
@@ -1576,7 +1576,7 @@
         "Name": "Botão 2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 157,
+        "PublishOrderIndex": 294,
         "Rules": [
           {
             "Category": "Design",
@@ -1652,7 +1652,7 @@
         "Name": "Botão 1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 155,
+        "PublishOrderIndex": 292,
         "Rules": [
           {
             "Category": "Design",
@@ -1728,7 +1728,7 @@
         "Name": "Botão 2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 156,
+        "PublishOrderIndex": 296,
         "Rules": [
           {
             "Category": "Design",
@@ -1788,12 +1788,19 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "Width",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Width",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "X",
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638271793537919698",
+    "LastModifiedTimestamp": "638272010600815896",
     "Name": "barra_navegacao",
     "Rules": [
       {
@@ -1816,9 +1823,9 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "640",
+        "InvariantScript": "900",
         "Property": "Width",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -1852,7 +1859,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638271793537919698",
+  "LastModifiedTimestamp": "638272010600815896",
   "Name": "29c757b23e744ecaaa0ea2784df6a60d",
   "OverridableProperties": {},
   "Version": "638266685314298999"
