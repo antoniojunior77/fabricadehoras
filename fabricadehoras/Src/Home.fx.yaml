@@ -12,8 +12,8 @@ Home As screen:
         TemplatePadding: =4
         TemplateSize: =122
         Width: =1738.68
-        X: =127.91
-        Y: =445
+        X: =120
+        Y: =492
         ZIndex: =1
 
         Label3 As label:
@@ -1621,4 +1621,124 @@ Home As screen:
             X: =1498.33
             Y: =434
             ZIndex: =126
+
+    Rectangle1 As rectangle:
+        Fill: =varCorVermelho
+        Height: =47
+        Width: =1749
+        X: =140
+        Y: =445
+        ZIndex: =128
+
+    Label2_8 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =139
+        X: =140
+        Y: =445
+        ZIndex: =129
+
+    Label2_15 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =589
+        X: =279
+        Y: =445
+        ZIndex: =130
+
+    Label2_16 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =90
+        X: =868
+        Y: =445
+        ZIndex: =131
+
+    Label2_17 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =90
+        X: =969
+        Y: =445
+        ZIndex: =132
+
+    Label2_18 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =90
+        X: =1061
+        Y: =445
+        ZIndex: =133
+
+    Label2_19 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =183
+        X: =1177
+        Y: =445
+        ZIndex: =134
+
+    Label2_20 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =271
+        X: =1360
+        Y: =445
+        ZIndex: =135
+
+    Label2_21 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =258
+        X: =1631
+        Y: =445
+        ZIndex: =136
 

@@ -10,6 +10,8 @@ App As appinfo:
         Set(vTabMenu,"Tab1");
         Set(varShowIdFab,0);
         
+        Set(varCorVermelho, RGBA(213,25,32,1));
+        
         /*
         Set(varCorVermelho; RGBA(213;25;32;1));;
         Set(varCorCinzaClaro;RGBA(237; 237; 237; 1));;
@@ -76,6 +78,7 @@ App As appinfo:
         }
         )
     StartScreen: =
+    Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false
