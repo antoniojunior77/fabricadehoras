@@ -57,7 +57,30 @@ App As appinfo:
         */
         Clear(clc_tabela1);
         Clear(clc_base_sequencial); 
-        
+        Clear(clc_area); 
+        Clear(clc_fabrica);
+        ClearCollect(clc_fabrica,
+        {
+            id:1,
+            id_fabrica: "FO001"
+        },
+        {
+            id:2,
+            id_fabrica: "FO002"
+        },
+        {
+            id:3,
+            id_fabrica: "FO003"
+        },
+        {
+            id:4,
+            id_fabrica: "FO004"
+        },
+        {
+            id:5,
+            id_fabrica: "FO005"
+        }
+        );
         ClearCollect(
             clc_tabela1,
             {
@@ -156,7 +179,7 @@ App As appinfo:
             }
         );
         
-        Clear(clc_area); 
+        
         ClearCollect(
             clc_area,
             {
