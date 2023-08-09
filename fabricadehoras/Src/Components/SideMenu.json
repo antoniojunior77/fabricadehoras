@@ -65,7 +65,7 @@
         "Name": "Logo",
         "Parent": "SideMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 151,
+        "PublishOrderIndex": 161,
         "Rules": [
           {
             "Category": "Data",
@@ -280,7 +280,7 @@
             "Name": "galleryTemplate1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 153,
+            "PublishOrderIndex": 163,
             "Rules": [
               {
                 "Category": "Design",
@@ -438,7 +438,7 @@
             "Name": "NextArrow1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 154,
+            "PublishOrderIndex": 164,
             "Rules": [
               {
                 "Category": "Data",
@@ -719,7 +719,7 @@
         "Name": "Gallery1",
         "Parent": "SideMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 152,
+        "PublishOrderIndex": 162,
         "Rules": [
           {
             "Category": "Data",

@@ -422,7 +422,12 @@ App As appinfo:
                 complexidade:"",
                 criticidade:""
             }
-        )
+        );
+        Clear(clc_ano_consumo);
+        ClearCollect(clc_ano_consumo,{ano:"2023"},{ano:"2024"},{ano:"2025"},{ano:"2026"});
+        
+        Clear(clc_mes_consumo);
+        ClearCollect(clc_mes_consumo,{mes:"JAN"},{mes:"FEV"},{mes:"MAR"},{mes:"ABR"},{mes:"MAI"},{mes:"JUN"},{mes:"JUL"},{mes:"AGO"},{mes:"SET"},{mes:"OUT"},{mes:"NOV"},{mes:"DEZ"});
     StartScreen: =
     Theme: =PowerAppsTheme
 
