@@ -11,7 +11,7 @@ Home As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
         TemplateSize: =122
-        Width: =1738.68
+        Width: =1775
         X: =120
         Y: =492
         ZIndex: =1
@@ -78,7 +78,7 @@ Home As screen:
             PaddingTop: =7.03
             Size: =18.27
             Text: =ThisItem.total_baseline
-            Width: =210.83
+            Width: =180
             X: =1054.17
             ZIndex: =6
 
@@ -89,8 +89,8 @@ Home As screen:
             PaddingTop: =7.03
             Size: =18.27
             Text: =ThisItem.valor_contratao
-            Width: =245.97
-            X: =1265.01
+            Width: =276
+            X: =1234
             ZIndex: =7
 
         Label3_7 As label:
@@ -100,7 +100,7 @@ Home As screen:
             PaddingTop: =7.03
             Size: =18.27
             Text: =ThisItem.valor_unitario
-            Width: =210.83
+            Width: =256
             X: =1510.98
             ZIndex: =8
 
@@ -620,7 +620,7 @@ Home As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =18.27
-        Width: =423.07
+        Width: =495
         X: =354.2
         Y: =349
         ZIndex: =33
@@ -647,7 +647,7 @@ Home As screen:
             Size: =18.27
             Width: =206.62
             X: =127.91
-            Y: =381
+            Y: =378
             ZIndex: =29
 
         Label2_7 As label:
@@ -656,11 +656,11 @@ Home As screen:
             Height: =29
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =16.87
+            Size: =14
             Text: ="ID Fábrica"
             Width: =206.62
             X: =127.91
-            Y: =349
+            Y: =340
             ZIndex: =31
 
     Group3_5 As group:
@@ -681,10 +681,10 @@ Home As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_8.SearchText,"Value1")
-            Size: =18.27
-            Width: =118.07
-            X: =796.95
-            Y: =382
+            Size: =14
+            Width: =85
+            X: =868
+            Y: =380
             ZIndex: =34
 
         Label2_9 As label:
@@ -694,13 +694,13 @@ Home As screen:
             Height: =47
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =16.87
+            Size: =14
             Text: |-
                 ="Ano 
                 Consumo"
             Width: =118.07
-            X: =796.95
-            Y: =335
+            X: =849
+            Y: =332
             ZIndex: =36
 
     Group3_6 As group:
@@ -715,15 +715,14 @@ Home As screen:
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
             Font: =Font.Lato
-            Height: =41
             InputTextPlaceholder: ="JAN"
             Items: =ComboBoxSample
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchItems: =Search(ComboBoxSample,ComboBox1_9.SearchText,"Value1")
-            Size: =18.27
-            Width: =101.2
-            X: =927.67
+            Size: =14
+            Width: =80
+            X: =972
             Y: =380
             ZIndex: =37
 
@@ -734,13 +733,13 @@ Home As screen:
             Height: =43
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =16.87
+            Size: =14
             Text: |-
                 ="Mês
                 Consumo"
             Width: =126.5
-            X: =915.02
-            Y: =338
+            X: =948
+            Y: =333
             ZIndex: =39
 
     Group8 As group:
@@ -758,25 +757,24 @@ Home As screen:
             PaddingLeft: =0
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =16.87
+            Size: =14
             Text: |-
                 ="Qtde
                 Horas"
             Width: =153.21
-            X: =1033.09
+            X: =1051
             Y: =335
             ZIndex: =42
 
         TextInput1_1 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
-            Height: =39
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
             Width: =132.12
-            X: =1045.74
-            Y: =382
+            X: =1063
+            Y: =380
             ZIndex: =43
 
     Group8_1 As group:
@@ -794,11 +792,11 @@ Home As screen:
             PaddingLeft: =0
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =16.87
+            Size: =14
             Text: ="Baseline Produto"
             Width: =153.21
-            X: =1177.86
-            Y: =336
+            X: =1211
+            Y: =334
             ZIndex: =44
 
         TextInput1_2 As text:
@@ -807,9 +805,9 @@ Home As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
-            Width: =132.12
-            X: =1190.51
-            Y: =381
+            Width: =150
+            X: =1211
+            Y: =380
             ZIndex: =45
 
     Group3_7 As group:
@@ -824,7 +822,6 @@ Home As screen:
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
             Font: =Font.Lato
-            Height: =41
             InputTextPlaceholder: =""
             Items: =ComboBoxSample
             PaddingLeft: =35
@@ -833,8 +830,8 @@ Home As screen:
             SearchItems: =Search(ComboBoxSample,ComboBox1_10.SearchText,"Value1")
             Size: =18.27
             Width: =164.45
-            X: =1333.88
-            Y: =378
+            X: =1387
+            Y: =380
             ZIndex: =46
 
         Label2_13 As label:
@@ -844,13 +841,11 @@ Home As screen:
             Height: =45
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =16.87
-            Text: |-
-                ="Modelo
-                Tarifação"
+            Size: =14
+            Text: ="Modelo Tarifação"
             Width: =164.45
-            X: =1333.88
-            Y: =335
+            X: =1388
+            Y: =334
             ZIndex: =48
 
     btnAddFabrica As image:
@@ -858,7 +853,7 @@ Home As screen:
         Image: ='Button-mais'
         Width: =28.11
         X: =251.6
-        Y: =355
+        Y: =346
         ZIndex: =51
 
     Group8_2 As group:
@@ -875,10 +870,10 @@ Home As screen:
             PaddingLeft: =0
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =16.87
+            Size: =14
             Text: ="Valor do Período"
             Width: =276.9
-            X: =1509.58
+            X: =1554
             Y: =337
             ZIndex: =49
 
@@ -886,28 +881,26 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Font: =Font.Lato
-            Height: =36
             HintText: ="R$"
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
             Width: =264.25
-            X: =1522.23
-            Y: =382
+            X: =1567
+            Y: =380
             ZIndex: =50
 
     btnAdd As button:
         Fill: =RGBA(255, 0, 0, 1)
         FontWeight: =FontWeight.Bold
-        Height: =39
         OnSelect: |-
             =UpdateContext({vShowMensalizacao:true})
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =21.08
         Text: ="+"
-        Width: =82.93
-        X: =1807.55
+        Width: =52
+        X: =1846
         Y: =378
         ZIndex: =52
 
@@ -1652,13 +1645,14 @@ Home As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
-        Text: ="ID Fábrica"
+        Text: ="Descrição TI "
         Width: =589
         X: =279
         Y: =445
         ZIndex: =130
 
     Label2_16 As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
@@ -1666,13 +1660,14 @@ Home As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
-        Text: ="ID Fábrica"
+        Text: ="Ano Consumo"
         Width: =90
         X: =868
         Y: =445
         ZIndex: =131
 
     Label2_17 As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
@@ -1680,13 +1675,16 @@ Home As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
-        Text: ="ID Fábrica"
+        Text: |-
+            ="Mês
+            Início"
         Width: =90
         X: =969
         Y: =445
         ZIndex: =132
 
     Label2_18 As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
@@ -1694,7 +1692,9 @@ Home As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
-        Text: ="ID Fábrica"
+        Text: |-
+            ="Qtde
+            Meses"
         Width: =90
         X: =1061
         Y: =445
@@ -1708,7 +1708,7 @@ Home As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
-        Text: ="ID Fábrica"
+        Text: ="Total Baseline"
         Width: =183
         X: =1177
         Y: =445
@@ -1722,7 +1722,7 @@ Home As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
-        Text: ="ID Fábrica"
+        Text: ="Valor Contratado"
         Width: =271
         X: =1360
         Y: =445
@@ -1736,7 +1736,7 @@ Home As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
-        Text: ="ID Fábrica"
+        Text: ="Valor Unitário"
         Width: =258
         X: =1631
         Y: =445

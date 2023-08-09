@@ -1,17 +1,47 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =Set(vTitFontFamily,"Lato");
-        Set(vTitFontColor,"#D51920");
-        Set(vTitFonSize,"30");
-        Set(vTitFontWeightB,"Bold");
-        Set(vTitFontWeightN,"Normal");
-        Set(vTitFontWeightS,"Semibold");
-        Set(vTabMenu,"Tab1");
-        Set(varShowIdFab,0);
-        
-        Set(varCorVermelho, RGBA(213,25,32,1));
-        
+        =Set(
+            vTitFontFamily,
+            "Lato"
+        );
+        Set(
+            vTitFontColor,
+            "#D51920"
+        );
+        Set(
+            vTitFonSize,
+            "30"
+        );
+        Set(
+            vTitFontWeightB,
+            "Bold"
+        );
+        Set(
+            vTitFontWeightN,
+            "Normal"
+        );
+        Set(
+            vTitFontWeightS,
+            "Semibold"
+        );
+        Set(
+            vTabMenu,
+            "Tab1"
+        );
+        Set(
+            varShowIdFab,
+            0
+        );
+        Set(
+            varCorVermelho,
+            RGBA(
+                213,
+                25,
+                32,
+                1
+            )
+        );
         /*
         Set(varCorVermelho; RGBA(213;25;32;1));;
         Set(varCorCinzaClaro;RGBA(237; 237; 237; 1));;
@@ -25,57 +55,104 @@ App As appinfo:
         Set(varSizeSubTitulo; 14);;
         Set(varSizeText; 12);;
         */
-        
         Clear(clc_tabela1);
-        ClearCollect(clc_tabela1,
-        {
-            id:1,
-            id_fabrica:"FO001",
-            descricao:"TESTE 1",
-            ano_consumo:"2023",
-            mes_inicio: "JAN",
-            qtd_meses: 12,
-            total_baseline:"12.000",
-            valor_contratao:"R$ 1.000.000,00",
-            valor_unitario:"R$ 83,33"
+        Clear(clc_base_sequencial);
+        ClearCollect(
+            clc_tabela1,
+            {
+                id: 1,
+                id_fabrica: "FO001",
+                descricao: "TESTE 1",
+                ano_consumo: "2023",
+                mes_inicio: "JAN",
+                qtd_meses: 12,
+                total_baseline: "12.000",
+                valor_contratao: "R$ 1.000.000,00",
+                valor_unitario: "R$ 83,33"
+            },
+            {
+                id: 2,
+                id_fabrica: "FO002",
+                descricao: "TESTE 2",
+                ano_consumo: "2023",
+                mes_inicio: "JAN",
+                qtd_meses: 12,
+                total_baseline: "12.000",
+                valor_contratao: "R$ 1.000.000,00",
+                valor_unitario: "R$ 83,33"
+            },
+            {
+                id: 3,
+                id_fabrica: "FO003",
+                descricao: "TESTE 3",
+                ano_consumo: "2023",
+                mes_inicio: "JAN",
+                qtd_meses: 12,
+                total_baseline: "12.000",
+                valor_contratao: "R$ 1.000.000,00",
+                valor_unitario: "R$ 83,33"
+            },
+            {
+                id: 4,
+                id_fabrica: "FO004",
+                descricao: "TESTE 4",
+                ano_consumo: "2023",
+                mes_inicio: "JAN",
+                qtd_meses: 12,
+                total_baseline: "12.000",
+                valor_contratao: "R$ 1.000.000,00",
+                valor_unitario: "R$ 83,33"
+            }
+        );
+        ClearCollect(
+            clc_base_sequencial,
+            {
+                id: 1,
+                sequencial_orcamento:"OP_200",
+                nome_tag:"Fábrica de Causa Raiz",
+                ano_orcamento:"2023",
+                periodo_inicial:"JAN",
+                periodo_fim:"FEV",
+                valor_ano:1000000,
+                fornecedor:"HITSS",
+                baseline: 10000
         
-        },
-        {
-            id:2,
-            id_fabrica:"FO002",
-            descricao:"TESTE 2",
-            ano_consumo:"2023",
-            mes_inicio: "JAN",
-            qtd_meses: 12,
-            total_baseline:"12.000",
-            valor_contratao:"R$ 1.000.000,00",
-            valor_unitario:"R$ 83,33"
+            },
+            {
+                id: 2,
+                sequencial_orcamento:"OP_300",
+                nome_tag:"Fábrica IW",
+                ano_orcamento:"2023",
+                periodo_inicial:"JAN",
+                periodo_fim:"MAI",
+                valor_ano:850000,
+                fornecedor:"SPREAD",
+                baseline: 8500
         
-        },
-        {
-            id:3,
-            id_fabrica:"FO003",
-            descricao:"TESTE 3",
-            ano_consumo:"2023",
-            mes_inicio: "JAN",
-            qtd_meses: 12,
-            total_baseline:"12.000",
-            valor_contratao:"R$ 1.000.000,00",
-            valor_unitario:"R$ 83,33"
+            },
+            {
+                id: 3,
+                sequencial_orcamento:"OP_300",
+                nome_tag:"Fábrica IW",
+                ano_orcamento:"2023",
+                periodo_inicial:"JUN",
+                periodo_fim:"DEZ",
+                valor_ano:2500000,
+                fornecedor:"SYSMAP",
+                baseline: 25000
+            },
+            {
+                id: 4,
+                sequencial_orcamento:"OP_300",
+                nome_tag:"Fábrica IW",
+                ano_orcamento:"2023",
+                periodo_inicial:"JAN",
+                periodo_fim:"DEZ",
+                valor_ano:3350000,
+                fornecedor:"SYSMAP",
+                baseline: 33500
         
-        },
-        {
-            id:4,
-            id_fabrica:"FO004",
-            descricao:"TESTE 4",
-            ano_consumo:"2023",
-            mes_inicio: "JAN",
-            qtd_meses: 12,
-            total_baseline:"12.000",
-            valor_contratao:"R$ 1.000.000,00",
-            valor_unitario:"R$ 83,33"
-        
-        }
+            }
         )
     StartScreen: =
     Theme: =PowerAppsTheme
