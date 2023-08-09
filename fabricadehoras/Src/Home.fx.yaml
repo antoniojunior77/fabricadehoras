@@ -11,8 +11,8 @@ Home As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
         TemplateSize: =122
-        Width: =1775
-        X: =120
+        Width: =1758
+        X: =136
         Y: =492
         ZIndex: =1
 
@@ -24,7 +24,7 @@ Home As screen:
             Size: =18.27
             Text: =ThisItem.id_fabrica
             Width: =126.5
-            X: =56.22
+            X: =47
             ZIndex: =1
 
         Label3_1 As label:
@@ -115,7 +115,7 @@ Home As screen:
                     Set(varShowIdFab,ThisItem.id)
                 )
             Width: =21.08
-            X: =18.27
+            X: =9
             Y: =10
             ZIndex: =16
 
@@ -468,13 +468,15 @@ Home As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
+            DisplayFields: =["sequencial_orcamento"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =ComboBoxSample
+            Items: =clc_base_sequencial
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchItems: =Search(ComboBoxSample,ComboBox1_4.SearchText,"Value1")
+            SearchFields: =["sequencial_orcamento"]
+            SearchItems: =Search(clc_base_sequencial,ComboBox1_4.SearchText,"sequencial_orcamento")
             Size: =18.27
             Width: =379.5
             X: =130.72
@@ -1624,6 +1626,7 @@ Home As screen:
         ZIndex: =128
 
     Label2_8 As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
@@ -1638,6 +1641,7 @@ Home As screen:
         ZIndex: =129
 
     Label2_15 As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
@@ -1715,6 +1719,7 @@ Home As screen:
         ZIndex: =134
 
     Label2_20 As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
@@ -1729,6 +1734,7 @@ Home As screen:
         ZIndex: =135
 
     Label2_21 As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold

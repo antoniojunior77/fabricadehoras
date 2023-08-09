@@ -3440,7 +3440,14 @@
         "MoreItemsButtonColor",
         "DisplayFields",
         "SearchFields",
-        "Items",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Items",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "SelectionColor",
         {
           "AFDDataSourceName": "",
@@ -10049,7 +10056,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2_10",
-      "ParentIndex": 63,
+      "ParentIndex": 61,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10671,7 +10678,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2_12",
-      "ParentIndex": 61,
+      "ParentIndex": 62,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10975,7 +10982,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2_13",
-      "ParentIndex": 62,
+      "ParentIndex": 63,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
