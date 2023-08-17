@@ -1,47 +1,15 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =Set(
-            vTitFontFamily,
-            "Lato"
-        );
-        Set(
-            vTitFontColor,
-            "#D51920"
-        );
-        Set(
-            vTitFonSize,
-            "30"
-        );
-        Set(
-            vTitFontWeightB,
-            "Bold"
-        );
-        Set(
-            vTitFontWeightN,
-            "Normal"
-        );
-        Set(
-            vTitFontWeightS,
-            "Semibold"
-        );
-        Set(
-            vTabMenu,
-            "Tab1"
-        );
-        Set(
-            varShowIdFab,
-            0
-        );
-        Set(
-            varCorVermelho,
-            RGBA(
-                213,
-                25,
-                32,
-                1
-            )
-        );
+        =Set(vTitFontFamily,"Lato");
+        Set(vTitFontColor, "#D51920");
+        Set(vTitFonSize,"30");
+        Set( vTitFontWeightB,"Bold");
+        Set(vTitFontWeightN,"Normal");
+        Set(vTitFontWeightS,"Semibold");
+        Set( vTabMenu,"Tab1");
+        Set(varShowIdFab, 0);
+        Set( varCorVermelho,RGBA(213,25,32, 1));
         /*
         Set(varCorVermelho; RGBA(213;25;32;1));;
         Set(varCorCinzaClaro;RGBA(237; 237; 237; 1));;
@@ -60,26 +28,11 @@ App As appinfo:
         Clear(clc_area); 
         Clear(clc_fabrica);
         ClearCollect(clc_fabrica,
-        {
-            id:1,
-            id_fabrica: "FO001"
-        },
-        {
-            id:2,
-            id_fabrica: "FO002"
-        },
-        {
-            id:3,
-            id_fabrica: "FO003"
-        },
-        {
-            id:4,
-            id_fabrica: "FO004"
-        },
-        {
-            id:5,
-            id_fabrica: "FO005"
-        }
+        { id:1,id_fabrica: "FO001"},
+        {id:2,id_fabrica: "FO002"},
+        {id:3,id_fabrica: "FO003"},
+        {id:4,id_fabrica: "FO004"},
+        {id:5,id_fabrica: "FO005"}
         );
         ClearCollect(
             clc_tabela1,
