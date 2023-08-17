@@ -397,9 +397,9 @@ Fornecedor As screen:
             SearchItems: =Search(clc_tb_perfis,ComboBox1_2.SearchText,"NO_AREA")
             SelectMultiple: =false
             Size: =18.27
-            Width: =379.5
-            X: =1064.01
-            Y: =195
+            Width: =443
+            X: =1019
+            Y: =191
             ZIndex: =9
 
         Icon1_2 As icon.Search:
@@ -407,8 +407,8 @@ Fornecedor As screen:
             Height: =22
             Icon: =Icon.Search
             Width: =25.3
-            X: =1073.85
-            Y: =197
+            X: =1028
+            Y: =193
             ZIndex: =10
 
         Label2_2 As label:
@@ -420,8 +420,8 @@ Fornecedor As screen:
             Size: =16.87
             Text: ="Gerência"
             Width: =380.91
-            X: =1062.61
-            Y: =164
+            X: =1017
+            Y: =160
             ZIndex: =15
 
     Group6 As group:
