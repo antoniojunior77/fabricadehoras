@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "Criaçao telas adicionais: Fornecedor e Lista",
+    "AppDescription": "Ajustes tela fornecedor",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
