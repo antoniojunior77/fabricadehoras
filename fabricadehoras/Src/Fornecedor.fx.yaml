@@ -6,7 +6,9 @@ Fornecedor As screen:
     gal_valores As gallery.variableTemplateHeightGallery:
         DelayItemLoading: =true
         Height: =302
-        Items: =clc_tabela1
+        Items: |-
+            =//clc_tabela1
+            clc_group_msl
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
@@ -408,7 +410,7 @@ Fornecedor As screen:
             Icon: =Icon.Search
             Width: =25.3
             X: =1028
-            Y: =193
+            Y: =201
             ZIndex: =10
 
         Label2_2 As label:
@@ -793,7 +795,7 @@ Fornecedor As screen:
             =Patch(clc_tabela1,
                 Defaults(clc_tabela1),
                 {
-                    id: Last( SortByColumns( clc_tabela1, "id", SortOrder.Descending )).id,
+                    id: Last( SortByColumns( clc_tabela1, "id", SortOrder.Ascending )).id + 1,
                     id_fabrica: cmb_id_fabrica.Selected.id_fabrica,
                     descricao: txt_descricao.Text,
                     ano_consumo: cmb_ano_consumo.Selected.ano,

@@ -81,6 +81,25 @@ App As appinfo:
                 valor_unitario: "83,33"
             }
         );
+        
+        //----agrupar tabela de mensalização
+        
+        Clear(clc_group_msl);
+        ClearCollect(clc_group_msl,
+            AddColumns(
+                    GroupBy(clc_tabela1, "id_fabrica","fabrica"),
+                    "id",First(fabrica).id,
+                    "descricao",First(fabrica).descricao,
+                    "ano_consumo",First(fabrica).ano_consumo,
+                    "mes_inicio",First(fabrica).mes_inicio,
+                    "qtd_meses",First(fabrica).qtd_meses,
+                    "total_baseline",First(fabrica).total_baseline,
+                    "valor_contratao",First(fabrica).valor_contratao,
+                    "valor_unitario",First(fabrica).valor_unitario
+            )
+        );
+        
+        
         ClearCollect(
             clc_base_sequencial,
             {
