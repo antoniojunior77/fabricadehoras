@@ -110,7 +110,7 @@ Fornecedor As screen:
             Height: =15
             Icon: |-
                 =//Icon.ChevronDown
-                If(varShowIdFab=0,Icon.ChevronDown,Icon.ChevronRight)
+                If(varShowIdFab="0",Icon.ChevronRight,If(varShowIdFab=ThisItem.id_fabrica, Icon.ChevronDown, Icon.ChevronRight))
             OnSelect: |-
                 =If(varShowIdFab = ThisItem.id_fabrica, 
                     UpdateContext({varShowIdFab:"0"}),
