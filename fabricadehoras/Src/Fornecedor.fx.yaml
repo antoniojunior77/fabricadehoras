@@ -1833,14 +1833,14 @@ Fornecedor As screen:
             Height: =32
             OnSelect: |-
                 =UpdateIf(clc_tabela1, id=vAllitems.id And id_fabrica=vAllitems.id_fabrica,{
-                        id_fabrica: cmb_id_fabrica.Selected.id_fabrica,
-                        descricao: txt_descricao.Text,
-                        ano_consumo: cmb_ano_consumo.Selected.ano,
-                        mes_inicio: cmb_mes_consumo.Selected.mes,
-                        qtd_meses: Value(txt_qtd_horas.Text),
-                        total_baseline: txt_baseline.Text,
-                        valor_contratao: txt_valor_periodo.Text,
-                        valor_unitario: Value(txt_valor_periodo.Text) / Value(txt_qtd_horas.Text)
+                        id_fabrica: If(!IsBlank(cmb_id_fabrica.Selected.id_fabrica),cmb_id_fabrica.Selected.id_fabrica, vAllitems.id_fabrica),
+                        descricao: If(!IsBlank(txt_descricao.Text),txt_descricao.Text, vAllitems.descricao),
+                        ano_consumo: If(!IsBlank(cmb_ano_consumo.Selected.ano),cmb_ano_consumo.Selected.ano, vAllitems.ano_consumo) ,
+                        mes_inicio: If(!IsBlank(cmb_mes_consumo.Selected.mes),cmb_mes_consumo.Selected.mes, vAllitems.mes_inicio) ,
+                        qtd_meses: If(!IsBlank(Value(txt_qtd_horas.Text)), Value(txt_qtd_horas.Text), vAllitems.qtd_meses),
+                        total_baseline: If(!IsBlank(txt_baseline.Text),txt_baseline.Text, vAllitems.total_baseline),
+                        valor_contratao: If(!IsBlank(Value(txt_valor_periodo.Text)),Value(txt_valor_periodo.Text), vAllitems.valor_contratao),
+                        valor_unitario: If(!IsBlank(Value(txt_valor_periodo.Text)),Value(txt_valor_periodo.Text), vAllitems.valor_contratao) / If(!IsBlank(Value(txt_qtd_horas.Text)), Value(txt_qtd_horas.Text), vAllitems.qtd_meses)
                 });
                 UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
                 Reset(cmb_id_fabrica);
@@ -1866,14 +1866,14 @@ Fornecedor As screen:
             Icon: =Icon.CheckBadge
             OnSelect: |-
                 =UpdateIf(clc_tabela1, id=vAllitems.id And id_fabrica=vAllitems.id_fabrica,{
-                        id_fabrica: cmb_id_fabrica.Selected.id_fabrica,
-                        descricao: txt_descricao.Text,
-                        ano_consumo: cmb_ano_consumo.Selected.ano,
-                        mes_inicio: cmb_mes_consumo.Selected.mes,
-                        qtd_meses: Value(txt_qtd_horas.Text),
-                        total_baseline: txt_baseline.Text,
-                        valor_contratao: txt_valor_periodo.Text,
-                        valor_unitario: Value(txt_valor_periodo.Text) / Value(txt_qtd_horas.Text)
+                        id_fabrica: If(!IsBlank(cmb_id_fabrica.Selected.id_fabrica),cmb_id_fabrica.Selected.id_fabrica, vAllitems.id_fabrica),
+                        descricao: If(!IsBlank(txt_descricao.Text),txt_descricao.Text, vAllitems.descricao),
+                        ano_consumo: If(!IsBlank(cmb_ano_consumo.Selected.ano),cmb_ano_consumo.Selected.ano, vAllitems.ano_consumo) ,
+                        mes_inicio: If(!IsBlank(cmb_mes_consumo.Selected.mes),cmb_mes_consumo.Selected.mes, vAllitems.mes_inicio) ,
+                        qtd_meses: If(!IsBlank(Value(txt_qtd_horas.Text)), Value(txt_qtd_horas.Text), vAllitems.qtd_meses),
+                        total_baseline: If(!IsBlank(txt_baseline.Text),txt_baseline.Text, vAllitems.total_baseline),
+                        valor_contratao: If(!IsBlank(Value(txt_valor_periodo.Text)),Value(txt_valor_periodo.Text), vAllitems.valor_contratao),
+                        valor_unitario: If(!IsBlank(Value(txt_valor_periodo.Text)),Value(txt_valor_periodo.Text), vAllitems.valor_contratao) / If(!IsBlank(Value(txt_qtd_horas.Text)), Value(txt_qtd_horas.Text), vAllitems.qtd_meses)
                 });
                 UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
                 Reset(cmb_id_fabrica);
@@ -1888,6 +1888,13 @@ Fornecedor As screen:
             X: =1845
             Y: =387
             ZIndex: =143
+
+    Label7 As label:
+        BorderThickness: =1
+        Text: =cmb_id_fabrica.Selected.id_fabrica
+        X: =1148
+        Y: =93
+        ZIndex: =146
 
     BtnCancel As group:
         Height: =5
