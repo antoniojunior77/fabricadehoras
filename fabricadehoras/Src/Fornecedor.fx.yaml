@@ -1908,7 +1908,7 @@ Fornecedor As screen:
             FontWeight: =FontWeight.Bold
             Height: =32
             OnSelect: |-
-                =UpdateContext({vEdicaoItem:false});
+                =UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
                 Reset(cmb_id_fabrica);
                 Reset(txt_descricao);
                 Reset(cmb_ano_consumo);
@@ -1931,7 +1931,7 @@ Fornecedor As screen:
             Height: =22
             Icon: =Icon.CancelBadge
             OnSelect: |-
-                =UpdateContext({vEdicaoItem:false});
+                =UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
                 Reset(cmb_id_fabrica);
                 Reset(txt_descricao);
                 Reset(cmb_ano_consumo);
