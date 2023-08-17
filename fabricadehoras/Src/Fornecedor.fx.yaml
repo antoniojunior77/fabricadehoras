@@ -1740,6 +1740,11 @@ Fornecedor As screen:
         Y: =1010
         ZIndex: =118
 
+    imagem_header_1 As imagem_header:
+        X: =1570
+        Y: =12
+        ZIndex: =124
+
     gp_conf_exclusao As group:
         Height: =5
         Width: =5
