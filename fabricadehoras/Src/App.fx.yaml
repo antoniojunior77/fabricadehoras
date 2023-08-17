@@ -127,7 +127,13 @@ App As appinfo:
                     "qtd_meses",First(fabrica).qtd_meses,
                     "total_baseline",First(fabrica).total_baseline,
                     "valor_contratao",First(fabrica).valor_contratao,
-                    "valor_unitario",First(fabrica).valor_unitario
+                    "valor_unitario",First(fabrica).valor_unitario,
+                    "co_area",First(fabrica).co_area,
+                    "co_lider_area",First(fabrica).co_lider_area,
+                    "no_area",First(fabrica).no_area,
+                    "co_lider_area_gestor",First(fabrica).co_lider_area_gestor,
+                    "id_sequencial",First(fabrica).id_sequencial,
+                    "id_fornecedor",First(fabrica).id_fornecedor
             )
         );
         

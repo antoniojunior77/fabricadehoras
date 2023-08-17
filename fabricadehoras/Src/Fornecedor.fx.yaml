@@ -148,8 +148,11 @@ Fornecedor As screen:
             ZIndex: =21
 
             Label11 As label:
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                Size: =14
                 Text: =ThisItem.descricao
                 X: =140
                 ZIndex: =1
@@ -174,48 +177,66 @@ Fornecedor As screen:
                 ZIndex: =3
 
             Label11_1 As label:
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                Size: =14
                 Text: =ThisItem.ano_consumo
                 Width: =76
                 X: =723
                 ZIndex: =4
 
             Label11_2 As label:
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                Size: =14
                 Text: =ThisItem.mes_inicio
                 Width: =63
                 X: =824
                 ZIndex: =5
 
             Label11_3 As label:
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                Size: =14
                 Text: =ThisItem.qtd_meses
                 Width: =64
                 X: =916
                 ZIndex: =6
 
             Label11_4 As label:
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                Size: =14
                 Text: =ThisItem.total_baseline
                 Width: =131
                 X: =1010
                 ZIndex: =7
 
             Label11_5 As label:
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                Size: =14
                 Text: =ThisItem.valor_contratao
                 Width: =224
                 X: =1195
                 ZIndex: =8
 
             Label11_6 As label:
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Semibold
                 Italic: =true
                 OnSelect: =Select(Parent)
+                Size: =14
                 Text: =ThisItem.valor_unitario
                 Width: =184
                 X: =1460
@@ -280,19 +301,19 @@ Fornecedor As screen:
         Y: =40
         ZIndex: =23
 
-        ComboBox1_1 As combobox:
+        cmb_head As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
             DisplayFields: =["NO_LIDER_AREA"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =clc_areas
+            Items: =Filter(clc_areas, CO_AREA= cmb_area.Selected.CO_AREA)
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["NO_LIDER_AREA"]
-            SearchItems: =Search(clc_areas,ComboBox1_1.SearchText,"NO_LIDER_AREA")
+            SearchItems: =Search(Filter(clc_areas, CO_AREA= cmb_area.Selected.CO_AREA),cmb_head.SearchText,"NO_LIDER_AREA")
             SelectMultiple: =false
             Size: =18.27
             Width: =423.07
@@ -329,7 +350,7 @@ Fornecedor As screen:
         Y: =40
         ZIndex: =23
 
-        ComboBox1 As combobox:
+        cmb_area As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -386,12 +407,12 @@ Fornecedor As screen:
             DisplayFields: =["NO_AREA"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =clc_tb_perfis
+            Items: =Filter(clc_tb_perfis, CO_AREA = cmb_head.Selected.CO_AREA)
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["NO_AREA"]
-            SearchItems: =Search(clc_tb_perfis,ComboBox1_2.SearchText,"NO_AREA")
+            SearchItems: =Search(Filter(clc_tb_perfis, CO_AREA = cmb_head.Selected.CO_AREA),ComboBox1_2.SearchText,"NO_AREA")
             SelectMultiple: =false
             Size: =18.27
             Width: =443
@@ -445,7 +466,7 @@ Fornecedor As screen:
             Size: =18.27
             Width: =379.5
             X: =1510.98
-            Y: =195
+            Y: =191
             ZIndex: =12
 
         Icon1_3 As icon.Search:
@@ -454,7 +475,7 @@ Fornecedor As screen:
             Icon: =Icon.Search
             Width: =25.3
             X: =1520.82
-            Y: =204
+            Y: =201
             ZIndex: =13
 
         Label2_3 As label:
@@ -1645,6 +1666,67 @@ Fornecedor As screen:
             X: =1498.33
             Y: =434
             ZIndex: =100
+
+    btnAdd_5 As button:
+        Fill: =RGBA(255, 0, 0, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        OnSelect: |-
+            =UpdateContext({vValidacao:true});
+            
+            If(IsBlank(cmb_id_fabrica.Selected.id_fabrica),UpdateContext({vValidacao:false}));
+            If(IsBlank(txt_descricao.Text),UpdateContext({vValidacao:false}));
+            If(IsBlank(cmb_ano_consumo.Selected.ano),UpdateContext({vValidacao:false}));
+            If(IsBlank(cmb_mes_consumo.Selected.mes),UpdateContext({vValidacao:false}));
+            If(IsBlank(txt_qtd_horas.Text),UpdateContext({vValidacao:false}));
+            If(IsBlank(cmb_modelo_tarifacao.Selected.no_modelo),UpdateContext({vValidacao:false}));
+            If(IsBlank(txt_valor_periodo.Text),UpdateContext({vValidacao:false}));
+            
+            If(vValidacao=true,
+            
+                Patch(clc_tabela1,
+                    Defaults(clc_tabela1),
+                    {
+                        id: Last( SortByColumns( clc_tabela1, "id", SortOrder.Ascending )).id + 1,
+                        id_fabrica: cmb_id_fabrica.Selected.id_fabrica,
+                        descricao: txt_descricao.Text,
+                        ano_consumo: cmb_ano_consumo.Selected.ano,
+                        mes_inicio: cmb_mes_consumo.Selected.mes,
+                        qtd_meses: Value(txt_qtd_horas.Text),
+                        total_baseline: txt_baseline.Text,
+                        valor_contratao: txt_valor_periodo.Text,
+                        valor_unitario: Value(txt_valor_periodo.Text) / Value(txt_qtd_horas.Text)
+                    }
+                );
+            
+                Clear(clc_group_msl);
+                ClearCollect(clc_group_msl,
+                    AddColumns(
+                            GroupBy(clc_tabela1, "id_fabrica","fabrica"),
+                            "id",First(fabrica).id,
+                            "descricao",First(fabrica).descricao,
+                            "ano_consumo",First(fabrica).ano_consumo,
+                            "mes_inicio",First(fabrica).mes_inicio,
+                            "qtd_meses",First(fabrica).qtd_meses,
+                            "total_baseline",First(fabrica).total_baseline,
+                            "valor_contratao",First(fabrica).valor_contratao,
+                            "valor_unitario",First(fabrica).valor_unitario
+                    )
+                )
+            ,
+                UpdateContext({vShowValidacao:true})
+            );
+            
+            //UpdateContext({vShowMensalizacao:true})
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =21.08
+        Text: ="Salvar"
+        Visible: =!vEdicaoItem
+        Width: =254
+        X: =1631
+        Y: =1010
+        ZIndex: =118
 
     gp_edição As group:
         Height: =5

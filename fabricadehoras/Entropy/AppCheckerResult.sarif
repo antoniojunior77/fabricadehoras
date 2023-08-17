@@ -5418,6 +5418,18 @@
               "message": {
                 "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -6758,19 +6770,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1.AccessibleLabel"
+                  "fullyQualifiedName": "Fornecedor.cmb_area.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1.AccessibleLabel",
+                  "fullyQualifiedName": "Fornecedor.cmb_area.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Fornecedor",
-                "type": "Fornecedor.ComboBox1"
+                "type": "Fornecedor.cmb_area"
               }
             }
           ],
@@ -6788,19 +6800,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_1.AccessibleLabel"
+                  "fullyQualifiedName": "Fornecedor.cmb_head.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_1.AccessibleLabel",
+                  "fullyQualifiedName": "Fornecedor.cmb_head.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Fornecedor",
-                "type": "Fornecedor.ComboBox1_1"
+                "type": "Fornecedor.cmb_head"
               }
             }
           ],
@@ -9261,7 +9273,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Cada controle consome recursos e, quando uma tela tem muitos controles, o aplicativo pode ficar lento ou parar de responder. A complexidade estimada de \"Fornecedor\" é 463, o que excede o limite máximo recomendado (300)."
+                "whyFix": "Cada controle consome recursos e, quando uma tela tem muitos controles, o aplicativo pode ficar lento ou parar de responder. A complexidade estimada de \"Fornecedor\" é 464, o que excede o limite máximo recomendado (300)."
               }
             },
             {
