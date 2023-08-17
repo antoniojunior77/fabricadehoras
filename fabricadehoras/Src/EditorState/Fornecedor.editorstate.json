@@ -3837,7 +3837,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox1",
-      "ParentIndex": 28,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4216,7 +4216,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox1_1",
-      "ParentIndex": 29,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4594,7 +4594,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox1_2",
-      "ParentIndex": 31,
+      "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4960,7 +4960,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox1_3",
-      "ParentIndex": 32,
+      "ParentIndex": 33,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8479,7 +8479,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1_2",
-      "ParentIndex": 33,
+      "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10408,7 +10408,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10691,7 +10691,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2_1",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14021,7 +14021,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2_2",
-      "ParentIndex": 13,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21856,7 +21856,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_2",
-      "ParentIndex": 30,
+      "ParentIndex": 32,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

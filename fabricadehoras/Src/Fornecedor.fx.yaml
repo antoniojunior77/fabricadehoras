@@ -877,7 +877,7 @@ Fornecedor As screen:
             Size: =14
             Text: ="Baseline Produto"
             Width: =153.21
-            X: =1211
+            X: =1202
             Y: =334
             ZIndex: =37
 
@@ -888,7 +888,7 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Width: =150
-            X: =1211
+            X: =1202
             Y: =380
             ZIndex: =38
 
@@ -959,8 +959,8 @@ Fornecedor As screen:
             SearchItems: =Search(clc_modelo_tarifacao,cmb_modelo_tarifacao.SearchText,"no_modelo")
             SelectMultiple: =false
             Size: =18.27
-            Width: =164.45
-            X: =1387
+            Width: =195
+            X: =1360
             Y: =380
             ZIndex: =39
 
@@ -974,7 +974,7 @@ Fornecedor As screen:
             Size: =14
             Text: ="Modelo Tarifação"
             Width: =164.45
-            X: =1388
+            X: =1361
             Y: =334
             ZIndex: =40
 
