@@ -34,6 +34,7 @@ App As appinfo:
         {id:4,id_fabrica: "FO004"},
         {id:5,id_fabrica: "FO005"}
         );
+        //----criaçao tabela1
         ClearCollect(
             clc_tabela1,
             {

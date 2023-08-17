@@ -5,14 +5,14 @@ Fornecedor As screen:
 
     gal_valores As gallery.variableTemplateHeightGallery:
         DelayItemLoading: =true
-        Height: =302
+        Height: =470
         Items: |-
-            =//clc_tabela1
-            clc_group_msl
+            =clc_group_msl
+            //clc_tabela1
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
-        TemplateSize: =122
+        TemplateSize: =276
         Width: =1758
         X: =136
         Y: =492
@@ -112,140 +112,154 @@ Fornecedor As screen:
                 =//Icon.ChevronDown
                 If(varShowIdFab=0,Icon.ChevronDown,Icon.ChevronRight)
             OnSelect: |-
-                =If(varShowIdFab= ThisItem.id, 
+                =If(varShowIdFab = ThisItem.id_fabrica, 
                     Set(varShowIdFab,0),
-                    Set(varShowIdFab,ThisItem.id)
-                )
+                    Set(varShowIdFab,ThisItem.id_fabrica)
+                );
             Width: =21.08
             X: =9
             Y: =10
             ZIndex: =16
 
-        Icon3 As icon.Trash:
-            Height: =15
-            Icon: =Icon.Trash
-            OnSelect: =Select(Parent)
-            Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-            Width: =21.08
-            X: =81.52
-            Y: =65
-            ZIndex: =17
+        Gallery3 As gallery.galleryVertical:
+            BorderThickness: =1
+            DelayItemLoading: =true
+            Height: =196
+            Items: =Filter(clc_tabela1, id_fabrica=ThisItem.id_fabrica)
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =191
+            Visible: =varShowIdFab
+            Width: =1680
+            X: =43
+            Y: =38
+            ZIndex: =19
 
-        Group1 As group:
-            Height: =5
-            Width: =5
-            X: =60
-            Y: =60
-            ZIndex: =17
-
-            Label3_8 As label:
-                FontWeight: =FontWeight.Semibold
-                Italic: =true
+            Icon3_3 As icon.Trash:
+                Height: =15
+                Icon: =Icon.Trash
                 OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.descricao
                 Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =570.66
-                X: =182.72
-                Y: =53
+                Width: =21.08
+                X: =40
+                Y: =40
                 ZIndex: =9
 
-            Label3_9 As label:
-                FontWeight: =FontWeight.Semibold
-                Italic: =true
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.ano_consumo
+            Group1_3 As group:
+                Height: =5
+                Width: =5
+                X: =-122.72
+                Y: =7
+                ZIndex: =9
+
+                Label3_53 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Italic: =true
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.27
+                    Text: =ThisItem.descricao
+                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                    Width: =570.66
+                    X: =130
+                    Y: =20
+                    ZIndex: =2
+
+                Label3_54 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Italic: =true
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.27
+                    Text: =ThisItem.ano_consumo
+                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                    Width: =94.17
+                    X: =700
+                    Y: =20
+                    ZIndex: =3
+
+                Label3_55 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Italic: =true
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.27
+                    Text: =ThisItem.mes_inicio
+                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                    Width: =87.14
+                    X: =813
+                    Y: =20
+                    ZIndex: =4
+
+                Label3_56 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Italic: =true
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.27
+                    Text: =ThisItem.qtd_meses
+                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                    Width: =101.2
+                    X: =900
+                    Y: =20
+                    ZIndex: =5
+
+                Label3_57 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Italic: =true
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.27
+                    Text: =ThisItem.total_baseline
+                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                    Width: =210.83
+                    X: =1001
+                    Y: =20
+                    ZIndex: =6
+
+                Label3_58 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Italic: =true
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.27
+                    Text: =ThisItem.valor_contratao
+                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                    Width: =245.97
+                    X: =1212
+                    Y: =20
+                    ZIndex: =7
+
+                Label3_59 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Italic: =true
+                    OnSelect: =Select(Parent)
+                    PaddingRight: =7.03
+                    PaddingTop: =7.03
+                    Size: =18.27
+                    Text: =ThisItem.valor_unitario
+                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                    Width: =210.83
+                    X: =1458
+                    Y: =20
+                    ZIndex: =8
+
+            Image4_3 As image:
+                Height: =15
+                Image: =compose
+                OnSelect: |-
+                    =UpdateContext({vShowEdicao:true})
                 Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =94.17
-                X: =753.38
-                Y: =53
+                Width: =21.08
+                X: =68.11
+                Y: =40
                 ZIndex: =10
-
-            Label3_10 As label:
-                FontWeight: =FontWeight.Semibold
-                Italic: =true
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.mes_inicio
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =87.14
-                X: =865.83
-                Y: =53
-                ZIndex: =11
-
-            Label3_11 As label:
-                FontWeight: =FontWeight.Semibold
-                Italic: =true
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.qtd_meses
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =101.2
-                X: =952.97
-                Y: =53
-                ZIndex: =12
-
-            Label3_12 As label:
-                FontWeight: =FontWeight.Semibold
-                Italic: =true
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.total_baseline
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =210.83
-                X: =1054.17
-                Y: =53
-                ZIndex: =13
-
-            Label3_13 As label:
-                FontWeight: =FontWeight.Semibold
-                Italic: =true
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.valor_contratao
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =245.97
-                X: =1265.01
-                Y: =53
-                ZIndex: =14
-
-            Label3_14 As label:
-                FontWeight: =FontWeight.Semibold
-                Italic: =true
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.valor_unitario
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =210.83
-                X: =1510.98
-                Y: =53
-                ZIndex: =15
-
-        Image4 As image:
-            Height: =15
-            Image: =compose
-            OnSelect: |-
-                =UpdateContext({vShowEdicao:true})
-            Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-            Width: =21.08
-            X: =109.63
-            Y: =65
-            ZIndex: =18
 
     Label1 As label:
         Color: =ColorValue(vTitFontColor)  
@@ -806,6 +820,22 @@ Fornecedor As screen:
                     valor_unitario: Value(txt_valor_periodo.Text) / Value(txt_qtd_horas.Text)
                 }
             );
+            
+            Clear(clc_group_msl);
+            ClearCollect(clc_group_msl,
+                AddColumns(
+                        GroupBy(clc_tabela1, "id_fabrica","fabrica"),
+                        "id",First(fabrica).id,
+                        "descricao",First(fabrica).descricao,
+                        "ano_consumo",First(fabrica).ano_consumo,
+                        "mes_inicio",First(fabrica).mes_inicio,
+                        "qtd_meses",First(fabrica).qtd_meses,
+                        "total_baseline",First(fabrica).total_baseline,
+                        "valor_contratao",First(fabrica).valor_contratao,
+                        "valor_unitario",First(fabrica).valor_unitario
+                )
+            );
+            
             
             //UpdateContext({vShowMensalizacao:true})
             
