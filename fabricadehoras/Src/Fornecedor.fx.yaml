@@ -146,6 +146,7 @@ Fornecedor As screen:
             ZIndex: =21
 
             Label11 As label:
+                Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.descricao
                 X: =140
@@ -171,6 +172,7 @@ Fornecedor As screen:
                 ZIndex: =3
 
             Label11_1 As label:
+                Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.ano_consumo
                 Width: =76
@@ -178,6 +180,7 @@ Fornecedor As screen:
                 ZIndex: =4
 
             Label11_2 As label:
+                Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.mes_inicio
                 Width: =63
@@ -185,6 +188,7 @@ Fornecedor As screen:
                 ZIndex: =5
 
             Label11_3 As label:
+                Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.qtd_meses
                 Width: =64
@@ -192,6 +196,7 @@ Fornecedor As screen:
                 ZIndex: =6
 
             Label11_4 As label:
+                Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.total_baseline
                 Width: =131
@@ -199,13 +204,15 @@ Fornecedor As screen:
                 ZIndex: =7
 
             Label11_5 As label:
+                Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.valor_contratao
                 Width: =224
-                X: =1186
+                X: =1195
                 ZIndex: =8
 
             Label11_6 As label:
+                Italic: =true
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.valor_unitario
                 Width: =184
