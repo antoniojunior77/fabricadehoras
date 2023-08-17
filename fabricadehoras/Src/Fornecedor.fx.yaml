@@ -12,7 +12,7 @@ Fornecedor As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
-        TemplateSize: =86
+        TemplateSize: =206
         Width: =1758
         X: =136
         Y: =492
@@ -218,6 +218,30 @@ Fornecedor As screen:
                 Width: =184
                 X: =1460
                 ZIndex: =9
+
+            Button2 As button:
+                BorderThickness: =0
+                DisabledColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =15
+                HoverColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(56, 96, 178, 0)
+                OnSelect: |-
+                    =UpdateContext({
+                    vIdFabrica: ThisItem.id_fabrica
+                    
+                    })
+                PressedFill: =
+                RadiusBottomLeft: =1
+                RadiusBottomRight: =1
+                RadiusTopLeft: =1
+                RadiusTopRight: =1
+                Text: =""
+                Width: =17
+                X: =45
+                Y: =13
+                ZIndex: =10
 
     Label1 As label:
         Color: =ColorValue(vTitFontColor)  
@@ -474,7 +498,7 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["Value"]
-            SearchItems: =[]
+            SearchItems: =Search(Distinct(clc_base_sequencial,sequencial_orcamento),ComboBox1_4.SearchText,"Value")
             SelectMultiple: =false
             Size: =18.27
             Width: =379.5
@@ -635,6 +659,7 @@ Fornecedor As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
+            DefaultSelectedItems: =[vIdFabrica]
             DisplayFields: =["id_fabrica"]
             Font: =Font.Lato
             Height: =39
