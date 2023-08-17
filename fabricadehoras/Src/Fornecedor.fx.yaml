@@ -1832,7 +1832,17 @@ Fornecedor As screen:
             FontWeight: =FontWeight.Bold
             Height: =32
             OnSelect: |-
-                =UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
+                =UpdateIf(clc_tabela1, id=vAllitems.id And id_fabrica=vAllitems.id_fabrica,{
+                        id_fabrica: cmb_id_fabrica.Selected.id_fabrica,
+                        descricao: txt_descricao.Text,
+                        ano_consumo: cmb_ano_consumo.Selected.ano,
+                        mes_inicio: cmb_mes_consumo.Selected.mes,
+                        qtd_meses: Value(txt_qtd_horas.Text),
+                        total_baseline: txt_baseline.Text,
+                        valor_contratao: txt_valor_periodo.Text,
+                        valor_unitario: Value(txt_valor_periodo.Text) / Value(txt_qtd_horas.Text)
+                });
+                UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
                 Reset(cmb_id_fabrica);
                 Reset(txt_descricao);
                 Reset(cmb_ano_consumo);
@@ -1855,7 +1865,17 @@ Fornecedor As screen:
             Height: =22
             Icon: =Icon.CheckBadge
             OnSelect: |-
-                =UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
+                =UpdateIf(clc_tabela1, id=vAllitems.id And id_fabrica=vAllitems.id_fabrica,{
+                        id_fabrica: cmb_id_fabrica.Selected.id_fabrica,
+                        descricao: txt_descricao.Text,
+                        ano_consumo: cmb_ano_consumo.Selected.ano,
+                        mes_inicio: cmb_mes_consumo.Selected.mes,
+                        qtd_meses: Value(txt_qtd_horas.Text),
+                        total_baseline: txt_baseline.Text,
+                        valor_contratao: txt_valor_periodo.Text,
+                        valor_unitario: Value(txt_valor_periodo.Text) / Value(txt_qtd_horas.Text)
+                });
+                UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
                 Reset(cmb_id_fabrica);
                 Reset(txt_descricao);
                 Reset(cmb_ano_consumo);
