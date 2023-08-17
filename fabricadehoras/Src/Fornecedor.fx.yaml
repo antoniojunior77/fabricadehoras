@@ -3,7 +3,249 @@ Fornecedor As screen:
     LoadingSpinnerColor: =RGBA(56, 96, 178, 1.5)
     OnVisible: =
 
-    Label1_1 As label:
+    gal_valores As gallery.variableTemplateHeightGallery:
+        DelayItemLoading: =true
+        Height: =302
+        Items: =clc_tabela1
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =4
+        TemplateSize: =122
+        Width: =1758
+        X: =136
+        Y: =492
+        ZIndex: =1
+
+        Label3 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: =ThisItem.id_fabrica
+            Width: =126.5
+            X: =47
+            ZIndex: =1
+
+        Label3_1 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: =ThisItem.descricao
+            Width: =570.66
+            X: =182.72
+            ZIndex: =2
+
+        Label3_2 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: =ThisItem.ano_consumo
+            Width: =94.17
+            X: =753.38
+            ZIndex: =3
+
+        Label3_3 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: =ThisItem.mes_inicio
+            Width: =87.14
+            X: =865.83
+            ZIndex: =4
+
+        Label3_4 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: =ThisItem.qtd_meses
+            Width: =101.2
+            X: =952.97
+            ZIndex: =5
+
+        Label3_5 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: =ThisItem.total_baseline
+            Width: =180
+            X: =1054.17
+            ZIndex: =6
+
+        Label3_6 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: =ThisItem.valor_contratao
+            Width: =276
+            X: =1234
+            ZIndex: =7
+
+        Label3_7 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: =ThisItem.valor_unitario
+            Width: =256
+            X: =1510.98
+            ZIndex: =8
+
+        Icon2 As icon.ChevronDown:
+            Height: =15
+            Icon: |-
+                =//Icon.ChevronDown
+                If(varShowIdFab=0,Icon.ChevronDown,Icon.ChevronRight)
+            OnSelect: |-
+                =If(varShowIdFab= ThisItem.id, 
+                    Set(varShowIdFab,0),
+                    Set(varShowIdFab,ThisItem.id)
+                )
+            Width: =21.08
+            X: =9
+            Y: =10
+            ZIndex: =16
+
+        Icon3 As icon.Trash:
+            Height: =15
+            Icon: =Icon.Trash
+            OnSelect: =Select(Parent)
+            Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+            Width: =21.08
+            X: =81.52
+            Y: =65
+            ZIndex: =17
+
+        Group1 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =17
+
+            Label3_8 As label:
+                FontWeight: =FontWeight.Semibold
+                Italic: =true
+                OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
+                Text: =ThisItem.descricao
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                Width: =570.66
+                X: =182.72
+                Y: =53
+                ZIndex: =9
+
+            Label3_9 As label:
+                FontWeight: =FontWeight.Semibold
+                Italic: =true
+                OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
+                Text: =ThisItem.ano_consumo
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                Width: =94.17
+                X: =753.38
+                Y: =53
+                ZIndex: =10
+
+            Label3_10 As label:
+                FontWeight: =FontWeight.Semibold
+                Italic: =true
+                OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
+                Text: =ThisItem.mes_inicio
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                Width: =87.14
+                X: =865.83
+                Y: =53
+                ZIndex: =11
+
+            Label3_11 As label:
+                FontWeight: =FontWeight.Semibold
+                Italic: =true
+                OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
+                Text: =ThisItem.qtd_meses
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                Width: =101.2
+                X: =952.97
+                Y: =53
+                ZIndex: =12
+
+            Label3_12 As label:
+                FontWeight: =FontWeight.Semibold
+                Italic: =true
+                OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
+                Text: =ThisItem.total_baseline
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                Width: =210.83
+                X: =1054.17
+                Y: =53
+                ZIndex: =13
+
+            Label3_13 As label:
+                FontWeight: =FontWeight.Semibold
+                Italic: =true
+                OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
+                Text: =ThisItem.valor_contratao
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                Width: =245.97
+                X: =1265.01
+                Y: =53
+                ZIndex: =14
+
+            Label3_14 As label:
+                FontWeight: =FontWeight.Semibold
+                Italic: =true
+                OnSelect: =Select(Parent)
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =18.27
+                Text: =ThisItem.valor_unitario
+                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+                Width: =210.83
+                X: =1510.98
+                Y: =53
+                ZIndex: =15
+
+        Image4 As image:
+            Height: =15
+            Image: =compose
+            OnSelect: |-
+                =UpdateContext({vShowEdicao:true})
+            Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
+            Width: =21.08
+            X: =109.63
+            Y: =65
+            ZIndex: =18
+
+    Label1 As label:
         Color: =ColorValue(vTitFontColor)  
         Font: =vTitFontFamily
         FontWeight: =vTitFontWeightB
@@ -12,33 +254,81 @@ Fornecedor As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =42.17
-        Text: ="[Fábrica de Horas] Cadastro Fornecedor"
+        Text: ="[Fábrica de Horas] Cadastro Consumo"
         Width: =1807.55
         X: =112.45
-        ZIndex: =1
+        ZIndex: =2
 
-    barra_navegacao_2 As barra_navegacao:
+    barra_navegacao_1 As barra_navegacao:
         Width: =899.56
         X: =112.45
         Y: =64
-        ZIndex: =2
+        ZIndex: =3
 
-    Rectangle4_1 As rectangle:
+    Rectangle4 As rectangle:
         Fill: =RGBA(248, 248, 248, 1)
         Height: =170
         Width: =1807.55
         X: =112.45
         Y: =155
-        ZIndex: =3
+        ZIndex: =4
 
-    Group3_8 As group:
+    Group4 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =23
 
-        ComboBox1_7 As combobox:
+        ComboBox1_1 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            DisplayFields: =["Value"]
+            Font: =Font.Lato
+            InputTextPlaceholder: =""
+            Items: =Distinct(clc_area, diretor)
+            PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            SearchFields: =["Value"]
+            SearchItems: =Search(Distinct(clc_area, diretor),ComboBox1_1.SearchText,"Value")
+            Size: =18.27
+            Width: =423.07
+            X: =563.63
+            Y: =192
+            ZIndex: =7
+
+        Icon1_1 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =25.3
+            X: =573.47
+            Y: =201
+            ZIndex: =8
+
+        Label2_1 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
+            Text: ="Head"
+            Width: =380.91
+            X: =562.23
+            Y: =161
+            ZIndex: =14
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        ComboBox1 As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -56,54 +346,347 @@ Fornecedor As screen:
             Width: =379.5
             X: =130.72
             Y: =192
-            ZIndex: =4
+            ZIndex: =5
 
-        Icon1_8 As icon.Search:
+        Icon1 As icon.Search:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
             Width: =25.3
             X: =140.56
             Y: =201
-            ZIndex: =5
+            ZIndex: =6
 
-        Label2_22 As label:
+        Label2 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =31
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =16.87
-            Text: ="Situação"
+            Text: ="Área"
             Width: =379.5
             X: =130.72
             Y: =161
+            ZIndex: =13
+
+    Group5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        ComboBox1_2 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            Font: =Font.Lato
+            InputTextPlaceholder: =""
+            Items: =ComboBoxSample
+            PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            SearchItems: =Search(ComboBoxSample,ComboBox1_2.SearchText,"Value1")
+            Size: =18.27
+            Width: =379.5
+            X: =1064.01
+            Y: =195
+            ZIndex: =9
+
+        Icon1_2 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =25.3
+            X: =1073.85
+            Y: =197
+            ZIndex: =10
+
+        Label2_2 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
+            Text: ="Gerência"
+            Width: =380.91
+            X: =1062.61
+            Y: =164
+            ZIndex: =15
+
+    Group6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        ComboBox1_3 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            DisplayFields: =["Value"]
+            Font: =Font.Lato
+            InputTextPlaceholder: =""
+            Items: =Distinct(clc_area, gestor)
+            PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            SearchFields: =["Value"]
+            SearchItems: =Search(Distinct(clc_area, gestor),ComboBox1_3.SearchText,"Value")
+            Size: =18.27
+            Width: =379.5
+            X: =1510.98
+            Y: =195
+            ZIndex: =11
+
+        Icon1_3 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =25.3
+            X: =1520.82
+            Y: =204
             ZIndex: =12
 
-    linha_1 As rectangle:
+        Label2_3 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
+            Text: ="Gestor"
+            Width: =380.91
+            X: =1509.58
+            Y: =164
+            ZIndex: =16
+
+    linha As rectangle:
         Fill: =RGBA(219, 219, 219, 1)
         Height: =2
         Width: =1807.55
         X: =112.45
         Y: =332
-        ZIndex: =25
+        ZIndex: =26
 
-    fundo_1 As rectangle:
+    Group3_1 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =26
+
+        ComboBox1_4 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            DisplayFields: =["Value"]
+            Font: =Font.Lato
+            InputTextPlaceholder: =""
+            IsSearchable: =false
+            Items: =Distinct(clc_base_sequencial,sequencial_orcamento)
+            PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            SearchFields: =["Value"]
+            SearchItems: =[]
+            Size: =18.27
+            Width: =379.5
+            X: =130.72
+            Y: =272
+            ZIndex: =17
+
+        Icon1_4 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =25.3
+            X: =140.56
+            Y: =281
+            ZIndex: =18
+
+        Label2_4 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
+            Text: ="Sequencial"
+            Width: =379.5
+            X: =130.72
+            Y: =241
+            ZIndex: =19
+
+    fundo As rectangle:
         Fill: =RGBA(248, 248, 248, 1)
         Height: =98
         Width: =1807.55
-        X: =106
-        Y: =515
-        ZIndex: =26
+        X: =112.45
+        Y: =336
+        ZIndex: =27
 
-    Group3_13 As group:
+    Group3_2 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =29
+
+        ComboBox1_5 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            DisplayFields: =["Value"]
+            Font: =Font.Lato
+            InputTextPlaceholder: =""
+            Items: =Distinct(clc_base_sequencial, nome_tag)
+            PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            SearchFields: =["Value"]
+            SearchItems: =Search(Distinct(clc_base_sequencial, nome_tag),ComboBox1_5.SearchText,"Value")
+            Size: =18.27
+            Width: =896.75
+            X: =562.23
+            Y: =272
+            ZIndex: =20
+
+        Icon1_5 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =25.3
+            X: =572.06
+            Y: =281
+            ZIndex: =21
+
+        Label2_5 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
+            Text: ="Descrição (Projeto Consolidado / Tag)"
+            Width: =798.36
+            X: =562.23
+            Y: =241
+            ZIndex: =22
+
+    txt_descricao As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        Default: =""
+        Height: =72
+        HintText: ="Descrição TI"
+        Mode: =TextMode.MultiLine
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =18.27
+        Width: =495
+        X: =354.2
+        Y: =349
+        ZIndex: =30
+
+    Group3_3 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =32
+
+        ComboBox1_6 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            DisplayFields: =["Value"]
+            Font: =Font.Lato
+            InputTextPlaceholder: =""
+            Items: =Distinct(clc_area, fornecedor)
+            PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            SearchFields: =["Value"]
+            SearchItems: =Search(Distinct(clc_area, fornecedor),ComboBox1_6.SearchText,"Value")
+            Size: =18.27
+            Width: =379.5
+            X: =1510.98
+            Y: =275
+            ZIndex: =23
+
+        Icon1_6 As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =22
+            Icon: =Icon.Search
+            Width: =25.3
+            X: =1520.82
+            Y: =284
+            ZIndex: =24
+
+        Label2_6 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =16.87
+            Text: ="Fornecedor"
+            Width: =379.5
+            X: =1510.98
+            Y: =244
+            ZIndex: =25
+
+    Group3_4 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =36
+
+        cmb_id_fabrica As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            DisplayFields: =["id_fabrica"]
+            Font: =Font.Lato
+            Height: =39
+            InputTextPlaceholder: =""
+            Items: =clc_fabrica
+            PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            SearchFields: =["id_fabrica"]
+            SearchItems: =Search(clc_fabrica,cmb_id_fabrica.SearchText,"id_fabrica")
+            Size: =18.27
+            Width: =206.62
+            X: =127.91
+            Y: =378
+            ZIndex: =28
+
+        Label2_7 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =14
+            Text: ="ID Fábrica"
+            Width: =206.62
+            X: =127.91
+            Y: =340
+            ZIndex: =29
+
+    Group3_5 As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
         ZIndex: =37
 
-        cmb_ano_consumo_1 As combobox:
+        cmb_ano_consumo As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -115,14 +698,14 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["ano"]
-            SearchItems: =Search(clc_ano_consumo,cmb_ano_consumo_1.SearchText,"ano")
+            SearchItems: =Search(clc_ano_consumo,cmb_ano_consumo.SearchText,"ano")
             Size: =14
             Width: =85
-            X: =854
-            Y: =563
-            ZIndex: =30
+            X: =868
+            Y: =380
+            ZIndex: =31
 
-        Label2_29 As label:
+        Label2_9 As label:
             Align: =Align.Center
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
@@ -134,18 +717,18 @@ Fornecedor As screen:
                 ="Ano 
                 Consumo"
             Width: =118.07
-            X: =835
-            Y: =515
-            ZIndex: =31
+            X: =849
+            Y: =332
+            ZIndex: =32
 
-    Group3_14 As group:
+    Group3_6 As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
         ZIndex: =40
 
-        cmb_mes_consumo_1 As combobox:
+        cmb_mes_consumo As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -156,14 +739,14 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["mes"]
-            SearchItems: =Search(clc_mes_consumo,cmb_mes_consumo_1.SearchText,"mes")
+            SearchItems: =Search(clc_mes_consumo,cmb_mes_consumo.SearchText,"mes")
             Size: =14
             Width: =80
-            X: =958
-            Y: =563
-            ZIndex: =32
+            X: =972
+            Y: =380
+            ZIndex: =33
 
-        Label2_34 As label:
+        Label2_10 As label:
             Align: =Align.Center
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
@@ -175,11 +758,21 @@ Fornecedor As screen:
                 ="Mês
                 Consumo"
             Width: =126.5
-            X: =934
-            Y: =516
-            ZIndex: =33
+            X: =948
+            Y: =333
+            ZIndex: =34
 
-    btnAdd_1 As button:
+    btnAddFabrica As image:
+        Height: =20
+        Image: ='Button-mais'
+        OnSelect: |-
+            =UpdateContext({vShowAddFabrica:true})
+        Width: =28.11
+        X: =251.6
+        Y: =346
+        ZIndex: =43
+
+    btnAdd As button:
         Fill: =RGBA(255, 0, 0, 1)
         FontWeight: =FontWeight.Bold
         OnSelect: |+
@@ -205,21 +798,18 @@ Fornecedor As screen:
         Size: =21.08
         Text: ="+"
         Width: =52
-        X: =1832
-        Y: =561
-        ZIndex: =43
-
-    SideMenu_2 As SideMenu:
+        X: =1846
+        Y: =378
         ZIndex: =44
 
-    Group8_3 As group:
+    Group8 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =44
 
-        Label2_30 As label:
+        Label2_11 As label:
             Align: =Align.Center
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
@@ -232,29 +822,40 @@ Fornecedor As screen:
                 ="Qtde
                 Horas"
             Width: =153.21
-            X: =1037
-            Y: =518
-            ZIndex: =34
+            X: =1051
+            Y: =335
+            ZIndex: =35
 
-        txt_qtd_horas_1 As text:
+        txt_qtd_horas As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
             Width: =132.12
-            X: =1049
-            Y: =563
-            ZIndex: =35
+            X: =1063
+            Y: =380
+            ZIndex: =36
 
-    Group8_4 As group:
+    SideMenu_1 As SideMenu:
+        ZIndex: =45
+
+    Rectangle1 As rectangle:
+        Fill: =varCorVermelho
+        Height: =47
+        Width: =1749
+        X: =140
+        Y: =445
+        ZIndex: =46
+
+    Group8_1 As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
         ZIndex: =46
 
-        Label2_32 As label:
+        Label2_12 As label:
             Align: =Align.Center
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
@@ -264,32 +865,75 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =14
             Text: ="Baseline Produto"
-            Visible: =false
             Width: =153.21
-            X: =1197
-            Y: =517
-            ZIndex: =36
+            X: =1211
+            Y: =334
+            ZIndex: =37
 
-        txt_baseline_1 As text:
+        txt_baseline As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
-            Visible: =false
             Width: =150
-            X: =1197
-            Y: =563
-            ZIndex: =37
+            X: =1211
+            Y: =380
+            ZIndex: =38
 
-    Group3_15 As group:
+    Label2_8 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =139
+        X: =140
+        Y: =445
+        ZIndex: =47
+
+    Label2_15 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="Descrição TI "
+        Width: =589
+        X: =279
+        Y: =445
+        ZIndex: =48
+
+    Label2_16 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="Ano Consumo"
+        Width: =90
+        X: =868
+        Y: =445
+        ZIndex: =49
+
+    Group3_7 As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
         ZIndex: =49
 
-        cmb_modelo_tarifacao_1 As combobox:
+        cmb_modelo_tarifacao As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -299,15 +943,14 @@ Fornecedor As screen:
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchItems: =Search(ComboBoxSample,cmb_modelo_tarifacao_1.SearchText,"Value1")
+            SearchItems: =Search(ComboBoxSample,cmb_modelo_tarifacao.SearchText,"Value1")
             Size: =18.27
-            Visible: =false
             Width: =164.45
-            X: =1373
-            Y: =563
-            ZIndex: =38
+            X: =1387
+            Y: =380
+            ZIndex: =39
 
-        Label2_31 As label:
+        Label2_13 As label:
             Align: =Align.Center
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
@@ -316,20 +959,53 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =14
             Text: ="Modelo Tarifação"
-            Visible: =false
             Width: =164.45
-            X: =1374
-            Y: =517
-            ZIndex: =39
+            X: =1388
+            Y: =334
+            ZIndex: =40
 
-    Group8_5 As group:
+    Label2_17 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: |-
+            ="Mês
+            Início"
+        Width: =90
+        X: =969
+        Y: =445
+        ZIndex: =50
+
+    Label2_18 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: |-
+            ="Qtde
+            Meses"
+        Width: =90
+        X: =1061
+        Y: =445
+        ZIndex: =51
+
+    Group8_2 As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
         ZIndex: =51
 
-        Label2_33 As label:
+        Label2_14 As label:
             Align: =Align.Center
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
@@ -339,11 +1015,11 @@ Fornecedor As screen:
             Size: =14
             Text: ="Valor do Período"
             Width: =276.9
-            X: =1540
-            Y: =520
-            ZIndex: =40
+            X: =1554
+            Y: =337
+            ZIndex: =41
 
-        txt_valor_periodo_1 As text:
+        txt_valor_periodo As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Font: =Font.Lato
@@ -352,25 +1028,69 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Width: =264.25
-            X: =1553
-            Y: =563
-            ZIndex: =41
+            X: =1567
+            Y: =380
+            ZIndex: =42
 
-    gp_mensalização_1 As group:
+    Label2_19 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="Total Baseline"
+        Width: =183
+        X: =1177
+        Y: =445
+        ZIndex: =52
+
+    Label2_20 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="Valor Contratado"
+        Width: =271
+        X: =1360
+        Y: =445
+        ZIndex: =53
+
+    Label2_21 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="Valor Unitário"
+        Width: =258
+        X: =1631
+        Y: =445
+        ZIndex: =54
+
+    gp_mensalização As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =90
 
-        fundo_modal_3 As rectangle:
+        fundo_modal As rectangle:
             Fill: =RGBA(245, 245, 245, 0.8)
             Height: =768
             Visible: =vShowMensalizacao
             Width: =1920
-            ZIndex: =68
+            ZIndex: =92
 
-        Rectangle5_3 As rectangle:
+        Rectangle5 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =390
@@ -378,9 +1098,9 @@ Fornecedor As screen:
             Width: =1754.14
             X: =112.45
             Y: =102
-            ZIndex: =69
+            ZIndex: =93
 
-        Label4_3 As label:
+        Label4 As label:
             Color: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
@@ -393,9 +1113,9 @@ Fornecedor As screen:
             Width: =281.11
             X: =157.42
             Y: =121
-            ZIndex: =70
+            ZIndex: =94
 
-        Label5_16 As label:
+        Label5 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =42
@@ -408,9 +1128,9 @@ Fornecedor As screen:
             Width: =168.67
             X: =163.05
             Y: =176
-            ZIndex: =71
+            ZIndex: =95
 
-        Label5_21 As label:
+        Label5_1 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             PaddingRight: =7.03
@@ -422,9 +1142,9 @@ Fornecedor As screen:
             Width: =210.83
             X: =515.84
             Y: =176
-            ZIndex: =72
+            ZIndex: =96
 
-        Label5_26 As label:
+        Label5_2 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =43
@@ -437,9 +1157,9 @@ Fornecedor As screen:
             Width: =101.2
             X: =924.86
             Y: =176
-            ZIndex: =73
+            ZIndex: =97
 
-        Label5_19 As label:
+        Label5_3 As label:
             Font: =Font.Lato
             Height: =42
             PaddingRight: =7.03
@@ -450,9 +1170,9 @@ Fornecedor As screen:
             Width: =168.67
             X: =313.44
             Y: =176
-            ZIndex: =74
+            ZIndex: =98
 
-        Label5_28 As label:
+        Label5_4 As label:
             Font: =Font.Lato
             Height: =42
             PaddingRight: =7.03
@@ -463,9 +1183,9 @@ Fornecedor As screen:
             Width: =168.67
             X: =1009.19
             Y: =176
-            ZIndex: =75
+            ZIndex: =99
 
-        Label5_24 As label:
+        Label5_5 As label:
             Font: =Font.Lato
             Height: =42
             PaddingRight: =7.03
@@ -476,9 +1196,9 @@ Fornecedor As screen:
             Width: =168.67
             X: =719.65
             Y: =176
-            ZIndex: =76
+            ZIndex: =100
 
-        Label5_30 As label:
+        Label5_6 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =45
@@ -491,9 +1211,9 @@ Fornecedor As screen:
             Width: =188.35
             X: =163.05
             Y: =226
-            ZIndex: =77
+            ZIndex: =101
 
-        Label5_32 As label:
+        Label5_7 As label:
             Font: =Font.Lato
             Height: =45
             PaddingRight: =7.03
@@ -504,9 +1224,9 @@ Fornecedor As screen:
             Width: =754.79
             X: =357.01
             Y: =226
-            ZIndex: =78
+            ZIndex: =102
 
-        Label6_12 As label:
+        Label6 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -519,9 +1239,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =229.11
             Y: =292
-            ZIndex: =79
+            ZIndex: =103
 
-        Label6_13 As label:
+        Label6_1 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -534,9 +1254,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =340.15
             Y: =292
-            ZIndex: =80
+            ZIndex: =104
 
-        Label6_14 As label:
+        Label6_2 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -549,9 +1269,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =475.08
             Y: =292
-            ZIndex: =81
+            ZIndex: =105
 
-        Label6_15 As label:
+        Label6_3 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -564,9 +1284,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =605.8
             Y: =292
-            ZIndex: =82
+            ZIndex: =106
 
-        Label6_16 As label:
+        Label6_4 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -579,9 +1299,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =714.03
             Y: =292
-            ZIndex: =83
+            ZIndex: =107
 
-        Label6_17 As label:
+        Label6_5 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -594,9 +1314,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =839.12
             Y: =292
-            ZIndex: =84
+            ZIndex: =108
 
-        Label6_18 As label:
+        Label6_6 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -609,9 +1329,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =972.65
             Y: =292
-            ZIndex: =85
+            ZIndex: =109
 
-        Label6_19 As label:
+        Label6_7 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -624,9 +1344,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =1089.31
             Y: =292
-            ZIndex: =86
+            ZIndex: =110
 
-        Label6_20 As label:
+        Label6_8 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -639,9 +1359,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =1203.16
             Y: =292
-            ZIndex: =87
+            ZIndex: =111
 
-        Label6_21 As label:
+        Label6_9 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -654,9 +1374,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =1325.45
             Y: =292
-            ZIndex: =88
+            ZIndex: =112
 
-        Label6_22 As label:
+        Label6_10 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -669,9 +1389,9 @@ Fornecedor As screen:
             Width: =158.83
             X: =1451.95
             Y: =292
-            ZIndex: =89
+            ZIndex: =113
 
-        Label6_23 As label:
+        Label6_11 As label:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
@@ -684,9 +1404,9 @@ Fornecedor As screen:
             Width: =140.56
             X: =1581.26
             Y: =292
-            ZIndex: =90
+            ZIndex: =114
 
-        TextInput2_12 As text:
+        TextInput2 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -697,9 +1417,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =237.54
             Y: =349
-            ZIndex: =91
+            ZIndex: =115
 
-        TextInput2_13 As text:
+        TextInput2_1 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -710,9 +1430,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =355.61
             Y: =349
-            ZIndex: =92
+            ZIndex: =116
 
-        TextInput2_14 As text:
+        TextInput2_2 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -723,9 +1443,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =475.08
             Y: =349
-            ZIndex: =93
+            ZIndex: =117
 
-        TextInput2_15 As text:
+        TextInput2_3 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -736,9 +1456,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =593.15
             Y: =349
-            ZIndex: =94
+            ZIndex: =118
 
-        TextInput2_16 As text:
+        TextInput2_4 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -749,9 +1469,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =712.62
             Y: =349
-            ZIndex: =95
+            ZIndex: =119
 
-        TextInput2_19 As text:
+        TextInput2_5 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -762,9 +1482,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =839.12
             Y: =349
-            ZIndex: =96
+            ZIndex: =120
 
-        TextInput2_20 As text:
+        TextInput2_6 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -775,9 +1495,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =958.59
             Y: =349
-            ZIndex: =97
+            ZIndex: =121
 
-        TextInput2_21 As text:
+        TextInput2_7 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -788,9 +1508,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =1085.1
             Y: =349
-            ZIndex: =98
+            ZIndex: =122
 
-        TextInput2_22 As text:
+        TextInput2_8 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -801,9 +1521,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =1211.6
             Y: =349
-            ZIndex: =99
+            ZIndex: =123
 
-        TextInput2_23 As text:
+        TextInput2_9 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -814,9 +1534,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =1340.91
             Y: =349
-            ZIndex: =100
+            ZIndex: =124
 
-        TextInput2_24 As text:
+        TextInput2_10 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -827,9 +1547,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =1460.38
             Y: =349
-            ZIndex: =101
+            ZIndex: =125
 
-        TextInput2_25 As text:
+        TextInput2_11 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -840,9 +1560,9 @@ Fornecedor As screen:
             Width: =102.61
             X: =1598.13
             Y: =349
-            ZIndex: =102
+            ZIndex: =126
 
-        Button1_6 As button:
+        Button1 As button:
             Fill: =RGBA(255, 0, 0, 1)
             HoverFill: |-
                 =ColorValue("#FF0000")
@@ -856,9 +1576,9 @@ Fornecedor As screen:
             Width: =224.89
             X: =1248.14
             Y: =434
-            ZIndex: =103
+            ZIndex: =127
 
-        Button1_8 As button:
+        Button1_1 As button:
             BorderColor: |
                 =ColorValue("#FF0000")
             BorderThickness: =1
@@ -876,614 +1596,23 @@ Fornecedor As screen:
             Width: =224.89
             X: =1498.33
             Y: =434
-            ZIndex: =104
+            ZIndex: =128
 
-    grupo_grid As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =114
-
-        Rectangle1_1 As rectangle:
-            Fill: =varCorVermelho
-            Height: =47
-            Width: =1749
-            X: =135
-            Y: =678
-            ZIndex: =45
-
-        Label2_36 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =47
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Text: ="Situação"
-            Width: =139
-            X: =135
-            Y: =678
-            ZIndex: =46
-
-        Label2_37 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =47
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Text: ="Identificado Interno"
-            Width: =414
-            X: =274
-            Y: =678
-            ZIndex: =47
-
-        Label2_38 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =47
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Text: ="Tipo"
-            Width: =90
-            X: =739
-            Y: =678
-            ZIndex: =48
-
-        Label2_39 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =47
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Text: |-
-                ="Mês
-                Início"
-            Width: =90
-            X: =964
-            Y: =678
-            ZIndex: =49
-
-        Label2_40 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =47
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Text: ="Complexidade"
-            Width: =90
-            X: =1056
-            Y: =678
-            ZIndex: =50
-
-        Label2_41 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =47
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Text: ="Sistema Principal"
-            Width: =183
-            X: =1172
-            Y: =678
-            ZIndex: =51
-
-        Label2_42 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =47
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Text: ="Esforço"
-            Width: =271
-            X: =1355
-            Y: =678
-            ZIndex: =52
-
-        Label2_43 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =47
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Text: ="Tipo"
-            Width: =154
-            X: =1568
-            Y: =678
-            ZIndex: =53
-
-        gal_valores_1 As gallery.variableTemplateHeightGallery:
-            DelayItemLoading: =true
-            Height: =302
-            Items: =clc_area
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =4
-            TemplateSize: =122
-            Width: =1758
-            X: =131
-            Y: =725
-            ZIndex: =64
-
-            Label3_15 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.aprovacao_esforco
-                Width: =156
-                X: =47
-                ZIndex: =1
-
-            Label3_16 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.identificador_interno
-                Width: =570.66
-                X: =182.72
-                ZIndex: =2
-
-            Label3_17 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.tipo_demanda
-                Width: =144
-                X: =581
-                ZIndex: =3
-
-            Label3_18 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =Month(ThisItem.data_inicio)
-                Width: =87.14
-                X: =865.83
-                ZIndex: =4
-
-            Label3_19 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =Month(ThisItem.data_fim)
-                Width: =84
-                X: =952.97
-                ZIndex: =5
-
-            Label3_20 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.criticidade
-                Width: =180
-                X: =1054.17
-                ZIndex: =6
-
-            Label3_21 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.data_fim
-                Width: =276
-                X: =1234
-                ZIndex: =7
-
-            Label3_22 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.data_inicio
-                Width: =256
-                X: =1494
-                ZIndex: =8
-
-            Icon2_1 As icon.ChevronDown:
-                Height: =15
-                Icon: |-
-                    =//Icon.ChevronDown
-                    If(varShowIdFab=0,Icon.ChevronDown,Icon.ChevronRight)
-                OnSelect: |-
-                    =If(varShowIdFab= ThisItem.id, 
-                        Set(varShowIdFab,0),
-                        Set(varShowIdFab,ThisItem.id)
-                    )
-                Width: =21.08
-                X: =9
-                Y: =10
-                ZIndex: =16
-
-            Icon3_1 As icon.Trash:
-                Height: =15
-                Icon: =Icon.Trash
-                OnSelect: =Select(Parent)
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =21.08
-                X: =81.52
-                Y: =65
-                ZIndex: =17
-
-            Group1_1 As group:
-                Height: =5
-                Width: =5
-                X: =60
-                Y: =60
-                ZIndex: =17
-
-                Label3_23 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.descrica
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                    Width: =570.66
-                    X: =182.72
-                    Y: =53
-                    ZIndex: =9
-
-                Label3_24 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.diretor
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                    Width: =94.17
-                    X: =753.38
-                    Y: =53
-                    ZIndex: =10
-
-                Label3_25 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.esforco_hr
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                    Width: =87.14
-                    X: =865.83
-                    Y: =53
-                    ZIndex: =11
-
-                Label3_26 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.fornecedor
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                    Width: =101.2
-                    X: =952.97
-                    Y: =53
-                    ZIndex: =12
-
-                Label3_27 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.gestor
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                    Width: =210.83
-                    X: =1054.17
-                    Y: =53
-                    ZIndex: =13
-
-                Label3_28 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.identificador_interno
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                    Width: =245.97
-                    X: =1265.01
-                    Y: =53
-                    ZIndex: =14
-
-                Label3_29 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.ponto_focal
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                    Width: =210.83
-                    X: =1510.98
-                    Y: =53
-                    ZIndex: =15
-
-            Image4_1 As image:
-                Height: =15
-                Image: =compose
-                OnSelect: |-
-                    =UpdateContext({vShowEdicao:true})
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
-                Width: =21.08
-                X: =109.63
-                Y: =65
-                ZIndex: =18
-
-            Label3_30 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =Year(ThisItem.data_inicio)
-                Width: =87.14
-                X: =751
-                ZIndex: =19
-
-            Label3_31 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.sistema_principal
-                Width: =125
-                X: =1075
-                ZIndex: =20
-
-            Label3_32 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.esforco_hr
-                Width: =125
-                X: =1309
-                ZIndex: =21
-
-            Label3_33 As label:
-                FontWeight: =FontWeight.Bold
-                OnSelect: =Select(Parent)
-                PaddingRight: =7.03
-                PaddingTop: =7.03
-                Size: =18.27
-                Text: =ThisItem.tipo_financeiro
-                Width: =125
-                X: =1471
-                Y: =10
-                ZIndex: =22
-
-    Label2_25 As label:
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =31
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =16.87
-        Text: ="Sistema principal"
-        Width: =281
-        X: =1257
-        Y: =152
-        ZIndex: =119
-
-    Group3_9 As group:
-        Height: =5
-        Width: =5
-        X: =19.28
-        Y: =20
-        ZIndex: =119
-
-        ComboBox1_8 As combobox:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            ChevronBackground: =RGBA(0, 0, 0, 0)
-            ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["Value"]
-            Font: =Font.Lato
-            InputTextPlaceholder: =""
-            IsSearchable: =false
-            Items: =Distinct(clc_area, area)
-            PaddingLeft: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            SearchFields: =["Value"]
-            SearchItems: =[]
-            Size: =18.27
-            Width: =379.5
-            X: =863
-            Y: =186
-            ZIndex: =116
-
-        Icon1_9 As icon.Search:
-            Color: =RGBA(128, 128, 128, 1)
-            Height: =22
-            Icon: =Icon.Search
-            Width: =25.3
-            X: =872
-            Y: =195
-            ZIndex: =117
-
-        Label2_24 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =31
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =16.87
-            Text: ="Tipo"
-            Width: =379.5
-            X: =863
-            Y: =155
-            ZIndex: =118
-
-    Group10 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =119
-
-        Label2_23 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =31
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =16.87
-            Text: ="Identificador Interno"
-            Width: =379.5
-            X: =555
-            Y: =161
-            ZIndex: =114
-
-        txt_baseline_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Width: =274
-            X: =561
-            Y: =192
-            ZIndex: =115
-
-    txt_baseline_3 As text:
-        BorderColor: =RGBA(128, 128, 128, 1)
-        Default: =""
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =18.27
-        Width: =274
-        X: =1263
-        Y: =183
-        ZIndex: =120
-
-    Label2_44 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =47
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =12
-        Text: ="Ano"
-        Width: =90
-        X: =857
-        Y: =678
-        ZIndex: =124
-
-    Group3_10 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =124
-
-        ComboBox1_9 As combobox:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            ChevronBackground: =RGBA(0, 0, 0, 0)
-            ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["Value"]
-            Font: =Font.Lato
-            InputTextPlaceholder: =""
-            IsSearchable: =false
-            Items: =Distinct(clc_area, area)
-            PaddingLeft: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            SearchFields: =["Value"]
-            SearchItems: =[]
-            Size: =18.27
-            Width: =315
-            X: =1565
-            Y: =183
-            ZIndex: =121
-
-        Icon1_10 As icon.Search:
-            Color: =RGBA(128, 128, 128, 1)
-            Height: =22
-            Icon: =Icon.Search
-            Width: =23
-            X: =1573
-            Y: =192
-            ZIndex: =122
-
-        Label2_26 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =31
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =16.87
-            Text: ="Complexidade"
-            Width: =348
-            X: =1565
-            Y: =152
-            ZIndex: =123
-
-    gp_edição_1 As group:
+    gp_edição As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =127
 
-        fundo_modal_4 As rectangle:
+        fundo_modal_1 As rectangle:
             Fill: =RGBA(245, 245, 245, 0.8)
             Height: =768
             Visible: =vShowEdicao
             Width: =1920
-            ZIndex: =54
+            ZIndex: =129
 
-        Rectangle5_4 As rectangle:
+        Rectangle5_1 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =390
@@ -1491,9 +1620,9 @@ Fornecedor As screen:
             Width: =1754.14
             X: =112.45
             Y: =102
-            ZIndex: =55
+            ZIndex: =130
 
-        Label4_4 As label:
+        Label4_1 As label:
             Color: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
@@ -1506,9 +1635,9 @@ Fornecedor As screen:
             Width: =639.53
             X: =157.42
             Y: =121
-            ZIndex: =56
+            ZIndex: =131
 
-        Label5_18 As label:
+        Label5_15 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =42
@@ -1521,9 +1650,9 @@ Fornecedor As screen:
             Width: =168.67
             X: =163.05
             Y: =176
-            ZIndex: =57
+            ZIndex: =132
 
-        Label5_22 As label:
+        Label5_14 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             PaddingRight: =7.03
@@ -1535,9 +1664,9 @@ Fornecedor As screen:
             Width: =210.83
             X: =515.84
             Y: =176
-            ZIndex: =58
+            ZIndex: =133
 
-        Label5_27 As label:
+        Label5_13 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =43
@@ -1550,9 +1679,9 @@ Fornecedor As screen:
             Width: =101.2
             X: =924.86
             Y: =176
-            ZIndex: =59
+            ZIndex: =134
 
-        Label5_20 As label:
+        Label5_12 As label:
             Font: =Font.Lato
             Height: =42
             PaddingRight: =7.03
@@ -1563,9 +1692,9 @@ Fornecedor As screen:
             Width: =168.67
             X: =313.44
             Y: =176
-            ZIndex: =60
+            ZIndex: =135
 
-        Label5_29 As label:
+        Label5_11 As label:
             Font: =Font.Lato
             Height: =42
             PaddingRight: =7.03
@@ -1576,9 +1705,9 @@ Fornecedor As screen:
             Width: =168.67
             X: =1009.19
             Y: =176
-            ZIndex: =61
+            ZIndex: =136
 
-        Label5_25 As label:
+        Label5_10 As label:
             Font: =Font.Lato
             Height: =42
             PaddingRight: =7.03
@@ -1589,9 +1718,9 @@ Fornecedor As screen:
             Width: =168.67
             X: =719.65
             Y: =176
-            ZIndex: =62
+            ZIndex: =137
 
-        Label5_31 As label:
+        Label5_9 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =45
@@ -1604,9 +1733,9 @@ Fornecedor As screen:
             Width: =188.35
             X: =163.05
             Y: =226
-            ZIndex: =63
+            ZIndex: =138
 
-        Label5_33 As label:
+        Label5_8 As label:
             Font: =Font.Lato
             Height: =45
             PaddingRight: =7.03
@@ -1617,9 +1746,9 @@ Fornecedor As screen:
             Width: =754.79
             X: =357.01
             Y: =226
-            ZIndex: =65
+            ZIndex: =139
 
-        Button1_7 As button:
+        Button1_3 As button:
             Fill: =RGBA(255, 0, 0, 1)
             HoverFill: |-
                 =ColorValue("#FF0000")
@@ -1633,9 +1762,9 @@ Fornecedor As screen:
             Width: =224.89
             X: =1248.14
             Y: =434
-            ZIndex: =66
+            ZIndex: =140
 
-        Button1_9 As button:
+        Button1_2 As button:
             BorderColor: |
                 =ColorValue("#FF0000")
             BorderThickness: =1
@@ -1653,23 +1782,23 @@ Fornecedor As screen:
             Width: =224.89
             X: =1498.33
             Y: =434
-            ZIndex: =67
+            ZIndex: =141
 
-    "'gp_add-Fabrica_1' As group":
+    "'gp_add-Fabrica' As group":
         Height: =5
         Width: =5
         X: =40
         Y: =20
         ZIndex: =174
 
-        fundo_modal_5 As rectangle:
+        fundo_modal_2 As rectangle:
             Fill: =RGBA(245, 245, 245, 0.8)
             Height: =1080
             Visible: =vShowAddFabrica
             Width: =1920
-            ZIndex: =105
+            ZIndex: =55
 
-        Rectangle5_5 As rectangle:
+        Rectangle5_2 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =390
@@ -1677,9 +1806,9 @@ Fornecedor As screen:
             Width: =702
             X: =637
             Y: =176
-            ZIndex: =106
+            ZIndex: =56
 
-        Label4_5 As label:
+        Label4_2 As label:
             Color: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
@@ -1692,9 +1821,9 @@ Fornecedor As screen:
             Width: =281.11
             X: =682
             Y: =195
-            ZIndex: =107
+            ZIndex: =57
 
-        Label5_35 As label:
+        Label5_23 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =42
@@ -1707,9 +1836,9 @@ Fornecedor As screen:
             Width: =168.67
             X: =688
             Y: =250
-            ZIndex: =108
+            ZIndex: =58
 
-        Label5_34 As label:
+        Label5_17 As label:
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =45
@@ -1722,9 +1851,9 @@ Fornecedor As screen:
             Width: =188.35
             X: =690
             Y: =310
-            ZIndex: =109
+            ZIndex: =64
 
-        TextInput2_26 As text:
+        TextInput2_17 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             PaddingRight: =7.03
@@ -1734,9 +1863,9 @@ Fornecedor As screen:
             Width: =360
             X: =837
             Y: =258
-            ZIndex: =110
+            ZIndex: =78
 
-        TextInput2_27 As text:
+        TextInput2_18 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =120
@@ -1747,9 +1876,9 @@ Fornecedor As screen:
             Width: =358
             X: =839
             Y: =318
-            ZIndex: =111
+            ZIndex: =79
 
-        Button1_11 As button:
+        Button1_5 As button:
             Fill: =RGBA(255, 0, 0, 1)
             HoverFill: |-
                 =ColorValue("#FF0000")
@@ -1771,9 +1900,9 @@ Fornecedor As screen:
             Width: =224.89
             X: =723
             Y: =475
-            ZIndex: =112
+            ZIndex: =90
 
-        Button1_10 As button:
+        Button1_4 As button:
             BorderColor: |
                 =ColorValue("#FF0000")
             BorderThickness: =1
@@ -1791,5 +1920,5 @@ Fornecedor As screen:
             Width: =224.89
             X: =973
             Y: =475
-            ZIndex: =113
+            ZIndex: =91
 

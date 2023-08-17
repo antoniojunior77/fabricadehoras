@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "Alteração menu de navegação",
+    "AppDescription": "Criaçao telas adicionais: Fornecedor e Lista",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
@@ -129,8 +129,8 @@
     "UserLocale": "pt-BR"
   },
   "ScreenOrder": [
-    "Home",
     "Fornecedor",
-    "Fornecedor_1"
+    "Gestor",
+    "Lista"
   ]
 }
