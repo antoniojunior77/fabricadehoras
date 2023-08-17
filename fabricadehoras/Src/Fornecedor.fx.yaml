@@ -671,6 +671,7 @@ Fornecedor As screen:
             PaddingTop: =7.03
             SearchFields: =["id_fabrica"]
             SearchItems: =Search(clc_fabrica,cmb_id_fabrica.SearchText,"id_fabrica")
+            SelectMultiple: =false
             Size: =18.27
             Width: =206.62
             X: =127.91
@@ -710,6 +711,7 @@ Fornecedor As screen:
             PaddingTop: =7.03
             SearchFields: =["ano"]
             SearchItems: =Search(clc_ano_consumo,cmb_ano_consumo.SearchText,"ano")
+            SelectMultiple: =false
             Size: =14
             Width: =85
             X: =868
@@ -751,6 +753,7 @@ Fornecedor As screen:
             PaddingTop: =7.03
             SearchFields: =["mes"]
             SearchItems: =Search(clc_mes_consumo,cmb_mes_consumo.SearchText,"mes")
+            SelectMultiple: =false
             Size: =14
             Width: =80
             X: =972
