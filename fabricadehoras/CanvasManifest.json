@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "Bind das tabelas",
+    "AppDescription": "Alteração menu de navegação",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
@@ -95,7 +95,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 6,
+    "BindingErrorCount": 7,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -130,6 +130,7 @@
   },
   "ScreenOrder": [
     "Home",
-    "Fornecedor"
+    "Fornecedor",
+    "Fornecedor_1"
   ]
 }

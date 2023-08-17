@@ -116,7 +116,7 @@
         "Name": "btnTab1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 292,
+        "PublishOrderIndex": 293,
         "Rules": [
           {
             "Category": "Data",
@@ -475,7 +475,7 @@
         "Name": "btnTab2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 293,
+        "PublishOrderIndex": 295,
         "Rules": [
           {
             "Category": "Data",
@@ -834,7 +834,7 @@
         "Name": "btnTab2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 294,
+        "PublishOrderIndex": 297,
         "Rules": [
           {
             "Category": "Data",
@@ -1576,7 +1576,7 @@
         "Name": "Botão 2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 297,
+        "PublishOrderIndex": 294,
         "Rules": [
           {
             "Category": "Design",
@@ -1652,7 +1652,7 @@
         "Name": "Botão 1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 295,
+        "PublishOrderIndex": 292,
         "Rules": [
           {
             "Category": "Design",
