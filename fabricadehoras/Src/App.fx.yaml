@@ -43,7 +43,7 @@ App As appinfo:
         //----criaçao tabela1
         ClearCollect(
             clc_tabela1,
-            {
+        {
                 id: 1,
                 id_fabrica: "FO001",
                 descricao: "TESTE 1",
@@ -52,7 +52,13 @@ App As appinfo:
                 qtd_meses: 12,
                 total_baseline: "12.000",
                 valor_contratao: "1.000.000,00",
-                valor_unitario: "83,33"
+                valor_unitario: "83,33",
+                co_area:"A0005",
+                co_lider_area:"A00051",
+                no_area:"FORNECEDORES TI",
+                co_lider_area:"19374",
+                id_sequencial:"OP_200",
+                id_fornecedor:1
             },
             {
                 id: 2,
@@ -63,7 +69,13 @@ App As appinfo:
                 qtd_meses: 12,
                 total_baseline: "12.000",
                 valor_contratao: "1.000.000,00",
-                valor_unitario: "83,33"
+                valor_unitario: "83,33",
+                co_area:"A0005",
+                co_lider_area:"A00051",
+                no_area:"FORNECEDORES TI",
+                co_lider_area_gestor:"19374",
+                id_sequencial:"OP_200",
+                id_fornecedor:1
             },
             {
                 id: 3,
@@ -74,7 +86,13 @@ App As appinfo:
                 qtd_meses: 12,
                 total_baseline: "12.000",
                 valor_contratao: "1.000.000,00",
-                valor_unitario: "83,33"
+                valor_unitario: "83,33",
+                co_area:"A0005",
+                co_lider_area:"A00051",
+                no_area:"FORNECEDORES TI",
+                co_lider_area_gestor:"19374",
+                id_sequencial:"OP_200",
+                id_fornecedor:1
             },
             {
                 id: 4,
@@ -85,11 +103,18 @@ App As appinfo:
                 qtd_meses: 12,
                 total_baseline: "12.000",
                 valor_contratao: "1.000.000,00",
-                valor_unitario: "83,33"
+                valor_unitario: "83,33",
+                co_area:"A0005",
+                co_lider_area:"A00051",
+                no_area:"FORNECEDORES TI",
+                co_lider_area_gestor:"19374",
+                id_sequencial:"OP_200",
+                id_fornecedor:1
             }
         );
         
         //----agrupar tabela de mensalização
+        
         
         Clear(clc_group_msl);
         ClearCollect(clc_group_msl,
@@ -103,6 +128,8 @@ App As appinfo:
                     "total_baseline",First(fabrica).total_baseline,
                     "valor_contratao",First(fabrica).valor_contratao,
                     "valor_unitario",First(fabrica).valor_unitario
+        
+        
             )
         );
         
@@ -1500,7 +1527,7 @@ App As appinfo:
          {
           CO_AREA: "A0005",
           NO_AREA: "FORNECEDORES TI",
-          CO_LIDER_AREA:"null",
+          CO_LIDER_AREA:"A00051",
          NIVEL_H: "NÍVEL 5",
           NO_LIDER_AREA: "FABIANO",
           CO_PFOCAL: "null",
@@ -1510,7 +1537,7 @@ App As appinfo:
          {
           CO_AREA: "A0004",
           NO_AREA: "EF; FOR; COM E LIC",
-          CO_LIDER_AREA:"null",
+          CO_LIDER_AREA:"A00041",
          NIVEL_H: "NÍVEL 4",
           NO_LIDER_AREA: "ANA",
           CO_PFOCAL: "null",
@@ -1520,7 +1547,7 @@ App As appinfo:
          {
           CO_AREA: "A0003",
           NO_AREA: "GOVE E FIN TI",
-          CO_LIDER_AREA:"null",
+          CO_LIDER_AREA:"A00031",
          NIVEL_H: "NÍVEL 3",
           NO_LIDER_AREA: "ANDREA",
           CO_PFOCAL: "null",
@@ -1530,7 +1557,7 @@ App As appinfo:
          {
           CO_AREA: "A0002",
           NO_AREA: "DIR TI",
-          CO_LIDER_AREA:"null",
+          CO_LIDER_AREA:"A00021",
          NIVEL_H: "NÍVEL 2",
           NO_LIDER_AREA: "CESAR",
           CO_PFOCAL: "null",
@@ -1540,7 +1567,7 @@ App As appinfo:
          {
           CO_AREA: "A0001",
           NO_AREA: "VP ENG. E TI",
-          CO_LIDER_AREA:"null",
+          CO_LIDER_AREA:"A00011",
          NIVEL_H: "NÍVEL 1",
           NO_LIDER_AREA: "VP ENGENHARIA",
           CO_PFOCAL: "null",
@@ -1550,7 +1577,7 @@ App As appinfo:
          {
           CO_AREA: "A0006",
           NO_AREA: "SISTEMAS DE NEGÓCIO",
-          CO_LIDER_AREA:"null",
+          CO_LIDER_AREA:"A00061",
          NIVEL_H: "NÍVEL 3",
           NO_LIDER_AREA: "WASHINGTON",
           CO_PFOCAL: "null",
@@ -1560,7 +1587,7 @@ App As appinfo:
          {
           CO_AREA: "A0007",
           NO_AREA: "SISTEMAS DE PRÉ-PAGO",
-          CO_LIDER_AREA:"null",
+          CO_LIDER_AREA:"A00071",
          NIVEL_H: "NÍVEL 4",
           NO_LIDER_AREA: "MEZADRI",
           CO_PFOCAL: "null",
@@ -1570,7 +1597,7 @@ App As appinfo:
          {
           CO_AREA: "A0008",
           NO_AREA: "SISTEMAS DE RECARGA",
-          CO_LIDER_AREA:"null",
+          CO_LIDER_AREA:"A00081",
          NIVEL_H: "NÍVEL 5",
           NO_LIDER_AREA: "TARCÍSIO",
           CO_PFOCAL: "null",
@@ -1580,7 +1607,7 @@ App As appinfo:
          {
           CO_AREA: "A0009",
           NO_AREA: "SISTEMAS ONLINE DE PRÉ",
-          CO_LIDER_AREA:"null",
+          CO_LIDER_AREA:"A00091",
          NIVEL_H: "NÍVEL 5",
           NO_LIDER_AREA: "KIROGA",
           CO_PFOCAL: "null",

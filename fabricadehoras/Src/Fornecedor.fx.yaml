@@ -285,16 +285,12 @@ Fornecedor As screen:
             DisplayFields: =["NO_LIDER_AREA"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: |-
-                =//Distinct(clc_area; diretor)
-                clc_areas
+            Items: =clc_areas
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["NO_LIDER_AREA"]
-            SearchItems: |-
-                =Search(//Distinct(clc_area; diretor)
-                clc_areas,ComboBox1_1.SearchText,"NO_LIDER_AREA")
+            SearchItems: =Search(clc_areas,ComboBox1_1.SearchText,"NO_LIDER_AREA")
             SelectMultiple: =false
             Size: =18.27
             Width: =423.07
@@ -338,12 +334,13 @@ Fornecedor As screen:
             DisplayFields: =["NO_AREA"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
+            IsSearchable: =false
             Items: =clc_areas
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["NO_AREA"]
-            SearchItems: =Search(clc_areas,ComboBox1.SearchText,"NO_AREA")
+            SearchItems: =[]
             SelectMultiple: =false
             Size: =18.27
             Width: =379.5
@@ -613,15 +610,15 @@ Fornecedor As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["Value"]
+            DisplayFields: =["no_fornecedor"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =Distinct(clc_area, fornecedor)
+            Items: =clc_base_forncecedor
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["Value"]
-            SearchItems: =Search(Distinct(clc_area, fornecedor),ComboBox1_6.SearchText,"Value")
+            SearchFields: =["no_fornecedor"]
+            SearchItems: =Search(clc_base_forncecedor,ComboBox1_6.SearchText,"no_fornecedor")
             SelectMultiple: =false
             Size: =18.27
             Width: =379.5
@@ -1891,13 +1888,6 @@ Fornecedor As screen:
             X: =1845
             Y: =387
             ZIndex: =143
-
-    Label7 As label:
-        BorderThickness: =1
-        Text: =cmb_id_fabrica.Selected.id_fabrica
-        X: =1148
-        Y: =93
-        ZIndex: =146
 
     BtnCancel As group:
         Height: =5
