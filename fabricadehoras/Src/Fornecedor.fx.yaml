@@ -400,7 +400,7 @@ Fornecedor As screen:
         Y: =40
         ZIndex: =23
 
-        ComboBox1_2 As combobox:
+        cmb_no_area As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -412,7 +412,7 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["NO_AREA"]
-            SearchItems: =Search(Filter(clc_tb_perfis, CO_AREA = cmb_head.Selected.CO_AREA),ComboBox1_2.SearchText,"NO_AREA")
+            SearchItems: =Search(Filter(clc_tb_perfis, CO_AREA = cmb_head.Selected.CO_AREA),cmb_no_area.SearchText,"NO_AREA")
             SelectMultiple: =false
             Size: =18.27
             Width: =443
@@ -449,7 +449,7 @@ Fornecedor As screen:
         Y: =40
         ZIndex: =23
 
-        ComboBox1_3 As combobox:
+        cmb_co_area_lider_gestor As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -461,7 +461,7 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["NO_LIDER"]
-            SearchItems: =Search(clc_tb_perfis,ComboBox1_3.SearchText,"NO_LIDER")
+            SearchItems: =Search(clc_tb_perfis,cmb_co_area_lider_gestor.SearchText,"NO_LIDER")
             SelectMultiple: =false
             Size: =18.27
             Width: =379.5
@@ -498,7 +498,7 @@ Fornecedor As screen:
         Y: =20
         ZIndex: =26
 
-        ComboBox1_4 As combobox:
+        cmb_id_sequencial As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -629,7 +629,7 @@ Fornecedor As screen:
         Y: =20
         ZIndex: =32
 
-        ComboBox1_6 As combobox:
+        cmb_id_fornecedor As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -641,7 +641,7 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["no_fornecedor"]
-            SearchItems: =Search(clc_base_forncecedor,ComboBox1_6.SearchText,"no_fornecedor")
+            SearchItems: =Search(clc_base_forncecedor,cmb_id_fornecedor.SearchText,"no_fornecedor")
             SelectMultiple: =false
             Size: =18.27
             Width: =379.5
@@ -872,7 +872,13 @@ Fornecedor As screen:
                         qtd_meses: Value(txt_qtd_horas.Text),
                         total_baseline: txt_baseline.Text,
                         valor_contratao: txt_valor_periodo.Text,
-                        valor_unitario: Value(txt_valor_periodo.Text) / Value(txt_qtd_horas.Text)
+                        valor_unitario: Value(txt_valor_periodo.Text) / Value(txt_qtd_horas.Text),
+                        co_area: cmb_area.Selected.CO_AREA,
+                        co_lider_area: cmb_head.Selected.CO_LIDER_AREA,
+                        no_area: cmb_no_area.Selected.NO_AREA,
+                        co_lider_area_gestor: cmb_co_area_lider_gestor.Selected.CO_LIDER_AREA,
+                        id_sequencial: cmb_id_sequencial.Selected.id,
+                        id_fornecedor: cmb_id_fornecedor.Selected.id
                     }
                 );
             
@@ -887,7 +893,13 @@ Fornecedor As screen:
                             "qtd_meses",First(fabrica).qtd_meses,
                             "total_baseline",First(fabrica).total_baseline,
                             "valor_contratao",First(fabrica).valor_contratao,
-                            "valor_unitario",First(fabrica).valor_unitario
+                            "valor_unitario",First(fabrica).valor_unitario,
+                            "co_area",First(fabrica).co_area,
+                            "co_lider_area",First(fabrica).co_lider_area,
+                            "no_area",First(fabrica).no_area,
+                            "co_lider_area_gestor",First(fabrica).co_lider_area_gestor,
+                            "id_sequencial",First(fabrica).id_sequencial,
+                            "id_fornecedor",First(fabrica).id_fornecedor
                     )
                 )
             ,
@@ -1728,7 +1740,77 @@ Fornecedor As screen:
         Y: =1010
         ZIndex: =118
 
-    gp_edição As group:
+    gp_conf_exclusao As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =124
+
+        fundo_modal_9 As rectangle:
+            Fill: =RGBA(245, 245, 245, 0.8)
+            Height: =1080
+            Visible: =vShowValidacao
+            Width: =1920
+            ZIndex: =119
+
+        Rectangle5_9 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =390
+            Visible: =vShowValidacao
+            Width: =1754.14
+            X: =118
+            Y: =271
+            ZIndex: =120
+
+        Label4_9 As label:
+            Color: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =28.11
+            Text: ="Erro"
+            Visible: =vShowValidacao
+            Width: =639.53
+            X: =163
+            Y: =290
+            ZIndex: =121
+
+        Label5_54 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =63
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Todos os campos são obrigatórios"
+            Visible: =vShowValidacao
+            Width: =1755
+            X: =112
+            Y: =429
+            ZIndex: =122
+
+        Button1_18 As button:
+            Fill: =RGBA(255, 0, 0, 1)
+            HoverFill: |-
+                =ColorValue("#FF0000")
+            OnSelect: |-
+                =UpdateContext({vShowValidacao:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Fechar"
+            Visible: =vShowValidacao
+            Width: =224.89
+            X: =867
+            Y: =601
+            ZIndex: =123
+
+    gp_validaçao As group:
         Height: =5
         Width: =5
         X: =40

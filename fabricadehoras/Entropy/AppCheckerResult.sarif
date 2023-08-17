@@ -5430,6 +5430,114 @@
               "message": {
                 "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Ocorreu um erro ao executar a regra app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -6740,19 +6848,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_2.AccessibleLabel"
+                  "fullyQualifiedName": "Fornecedor.cmb_no_area.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_2.AccessibleLabel",
+                  "fullyQualifiedName": "Fornecedor.cmb_no_area.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Fornecedor",
-                "type": "Fornecedor.ComboBox1_2"
+                "type": "Fornecedor.cmb_no_area"
               }
             }
           ],
@@ -6830,19 +6938,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_3.AccessibleLabel"
+                  "fullyQualifiedName": "Fornecedor.cmb_co_area_lider_gestor.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_3.AccessibleLabel",
+                  "fullyQualifiedName": "Fornecedor.cmb_co_area_lider_gestor.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Fornecedor",
-                "type": "Fornecedor.ComboBox1_3"
+                "type": "Fornecedor.cmb_co_area_lider_gestor"
               }
             }
           ],
@@ -6890,19 +6998,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_4.AccessibleLabel"
+                  "fullyQualifiedName": "Fornecedor.cmb_id_sequencial.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_4.AccessibleLabel",
+                  "fullyQualifiedName": "Fornecedor.cmb_id_sequencial.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Fornecedor",
-                "type": "Fornecedor.ComboBox1_4"
+                "type": "Fornecedor.cmb_id_sequencial"
               }
             }
           ],
@@ -6950,19 +7058,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_6.AccessibleLabel"
+                  "fullyQualifiedName": "Fornecedor.cmb_id_fornecedor.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_6.AccessibleLabel",
+                  "fullyQualifiedName": "Fornecedor.cmb_id_fornecedor.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Fornecedor",
-                "type": "Fornecedor.ComboBox1_6"
+                "type": "Fornecedor.cmb_id_fornecedor"
               }
             }
           ],
@@ -9273,7 +9381,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Cada controle consome recursos e, quando uma tela tem muitos controles, o aplicativo pode ficar lento ou parar de responder. A complexidade estimada de \"Fornecedor\" é 464, o que excede o limite máximo recomendado (300)."
+                "whyFix": "Cada controle consome recursos e, quando uma tela tem muitos controles, o aplicativo pode ficar lento ou parar de responder. A complexidade estimada de \"Fornecedor\" é 470, o que excede o limite máximo recomendado (300)."
               }
             },
             {
