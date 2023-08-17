@@ -128,8 +128,6 @@ App As appinfo:
                     "total_baseline",First(fabrica).total_baseline,
                     "valor_contratao",First(fabrica).valor_contratao,
                     "valor_unitario",First(fabrica).valor_unitario
-        
-        
             )
         );
         
