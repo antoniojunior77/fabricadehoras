@@ -7831,19 +7831,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery3.Image4_3.TabIndex"
+                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery4.Image4_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery3.Image4_3.TabIndex",
+                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery4.Image4_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Fornecedor",
-                "type": "Fornecedor.gal_valores.Gallery3.Image4_3"
+                "type": "Fornecedor.gal_valores.Gallery4.Image4_5"
               }
             }
           ],
@@ -7861,19 +7861,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery3.Image4_3.AccessibleLabel"
+                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery4.Image4_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery3.Image4_3.AccessibleLabel",
+                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery4.Image4_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Fornecedor",
-                "type": "Fornecedor.gal_valores.Gallery3.Image4_3"
+                "type": "Fornecedor.gal_valores.Gallery4.Image4_5"
               }
             }
           ],
@@ -8821,49 +8821,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery3.TabIndex"
+                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Fornecedor",
-                "type": "Fornecedor.gal_valores.Gallery3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery3.AccessibleLabel",
+                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Fornecedor",
-                "type": "Fornecedor.gal_valores.Gallery3"
+                "type": "Fornecedor.gal_valores.Gallery4"
               }
             }
           ],
@@ -8875,6 +8845,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Fornecedor.gal_valores.Gallery4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Fornecedor",
+                "type": "Fornecedor.gal_valores.Gallery4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9182,7 +9182,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Cada controle consome recursos e, quando uma tela tem muitos controles, o aplicativo pode ficar lento ou parar de responder. A complexidade estimada de \"Fornecedor\" é 460, o que excede o limite máximo recomendado (300)."
+                "whyFix": "Cada controle consome recursos e, quando uma tela tem muitos controles, o aplicativo pode ficar lento ou parar de responder. A complexidade estimada de \"Fornecedor\" é 440, o que excede o limite máximo recomendado (300)."
               }
             },
             {

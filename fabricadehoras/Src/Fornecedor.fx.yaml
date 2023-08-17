@@ -12,7 +12,7 @@ Fornecedor As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
-        TemplateSize: =36
+        TemplateSize: =86
         Width: =1758
         X: =136
         Y: =492
@@ -122,135 +122,95 @@ Fornecedor As screen:
             Y: =10
             ZIndex: =16
 
-        Gallery3 As gallery.galleryVertical:
+        Rectangle8 As rectangle:
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =1
+            OnSelect: =
+            Visible: =Switch(varShowIdFab,"0",false,ThisItem.id_fabrica,true)
+            Width: =1676
+            X: =47
+            Y: =223
+            ZIndex: =20
+
+        Gallery4 As gallery.galleryVertical:
             DelayItemLoading: =true
-            Height: =196
+            Height: =162
             Items: =Filter(clc_tabela1, id_fabrica=ThisItem.id_fabrica)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =191
+            TemplateSize: =55
             Visible: =Switch(varShowIdFab,"0",false,ThisItem.id_fabrica,true)
-            Width: =1680
-            X: =43
-            Y: =38
-            ZIndex: =19
+            Width: =1668
+            X: =40
+            Y: =35
+            ZIndex: =21
 
-            Icon3_3 As icon.Trash:
+            Label11 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.descricao
+                X: =140
+                ZIndex: =1
+
+            Icon3_5 As icon.Trash:
                 Height: =15
                 Icon: =Icon.Trash
                 OnSelect: =Select(Parent)
                 Width: =21.08
-                X: =40
-                Y: =40
-                ZIndex: =9
+                X: =13
+                Y: =13
+                ZIndex: =2
 
-            Group1_3 As group:
-                Height: =5
-                Width: =5
-                X: =-122.72
-                Y: =7
-                ZIndex: =9
-
-                Label3_53 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.descricao
-                    Width: =570.66
-                    X: =130
-                    Y: =20
-                    ZIndex: =2
-
-                Label3_54 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.ano_consumo
-                    Width: =94.17
-                    X: =700
-                    Y: =20
-                    ZIndex: =3
-
-                Label3_55 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.mes_inicio
-                    Width: =87.14
-                    X: =813
-                    Y: =20
-                    ZIndex: =4
-
-                Label3_56 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.qtd_meses
-                    Width: =101.2
-                    X: =900
-                    Y: =20
-                    ZIndex: =5
-
-                Label3_57 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.total_baseline
-                    Width: =210.83
-                    X: =1001
-                    Y: =20
-                    ZIndex: =6
-
-                Label3_58 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.valor_contratao
-                    Width: =245.97
-                    X: =1212
-                    Y: =20
-                    ZIndex: =7
-
-                Label3_59 As label:
-                    FontWeight: =FontWeight.Semibold
-                    Italic: =true
-                    OnSelect: =Select(Parent)
-                    PaddingRight: =7.03
-                    PaddingTop: =7.03
-                    Size: =18.27
-                    Text: =ThisItem.valor_unitario
-                    Width: =210.83
-                    X: =1458
-                    Y: =20
-                    ZIndex: =8
-
-            Image4_3 As image:
+            Image4_5 As image:
                 Height: =15
                 Image: =compose
                 OnSelect: |-
                     =UpdateContext({vShowEdicao:true})
                 Width: =21.08
-                X: =68.11
-                Y: =40
-                ZIndex: =10
+                X: =41
+                Y: =13
+                ZIndex: =3
+
+            Label11_1 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.ano_consumo
+                Width: =76
+                X: =723
+                ZIndex: =4
+
+            Label11_2 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.mes_inicio
+                Width: =63
+                X: =824
+                ZIndex: =5
+
+            Label11_3 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.qtd_meses
+                Width: =64
+                X: =916
+                ZIndex: =6
+
+            Label11_4 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.total_baseline
+                Width: =131
+                X: =1010
+                ZIndex: =7
+
+            Label11_5 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.valor_contratao
+                Width: =224
+                X: =1186
+                ZIndex: =8
+
+            Label11_6 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.valor_unitario
+                Width: =184
+                X: =1460
+                ZIndex: =9
 
     Label1 As label:
         Color: =ColorValue(vTitFontColor)  
