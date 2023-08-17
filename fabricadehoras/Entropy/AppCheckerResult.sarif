@@ -8948,47 +8948,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.vTitFonSize"
+                  "fullyQualifiedName": "App.vTabMenu"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.vTitFonSize",
+                  "fullyQualifiedName": "App.vTabMenu",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "vTitFonSize",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.vTitFontWeightN"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.vTitFontWeightN",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "vTitFontWeightN",
+                "member": "vTabMenu",
                 "module": "App",
                 "type": "App"
               }
@@ -9038,17 +9008,47 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.vTabMenu"
+                  "fullyQualifiedName": "App.vTitFontWeightN"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.vTabMenu",
+                  "fullyQualifiedName": "App.vTitFontWeightN",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "vTabMenu",
+                "member": "vTitFontWeightN",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.vTitFonSize"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.vTitFonSize",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "vTitFonSize",
                 "module": "App",
                 "type": "App"
               }

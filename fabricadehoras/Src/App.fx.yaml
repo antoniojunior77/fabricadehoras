@@ -1523,6 +1523,7 @@ App As appinfo:
          Clear(clc_areas);
         ClearCollect(clc_areas,
          {
+          id:1,
           CO_AREA: "A0005",
           NO_AREA: "FORNECEDORES TI",
           CO_LIDER_AREA:"A00051",
@@ -1533,6 +1534,7 @@ App As appinfo:
           NO_PFOCAL: "FABIANO LARA"
          },
          {
+          id:2,
           CO_AREA: "A0004",
           NO_AREA: "EF; FOR; COM E LIC",
           CO_LIDER_AREA:"A00041",
@@ -1543,6 +1545,7 @@ App As appinfo:
           NO_PFOCAL: "FABIANO LARA"
          },
          {
+            id:3,
           CO_AREA: "A0003",
           NO_AREA: "GOVE E FIN TI",
           CO_LIDER_AREA:"A00031",
@@ -1553,6 +1556,7 @@ App As appinfo:
           NO_PFOCAL: "ANDRÉ SALAS"
          },
          {
+            id:4,
           CO_AREA: "A0002",
           NO_AREA: "DIR TI",
           CO_LIDER_AREA:"A00021",
@@ -1563,6 +1567,7 @@ App As appinfo:
           NO_PFOCAL: "ANDRÉ SALAS"
          },
          {
+          id:5,
           CO_AREA: "A0001",
           NO_AREA: "VP ENG. E TI",
           CO_LIDER_AREA:"A00011",
@@ -1573,6 +1578,7 @@ App As appinfo:
           NO_PFOCAL: "ANDRÉ SALAS"
          },
          {
+          id:6,
           CO_AREA: "A0006",
           NO_AREA: "SISTEMAS DE NEGÓCIO",
           CO_LIDER_AREA:"A00061",
@@ -1583,6 +1589,7 @@ App As appinfo:
           NO_PFOCAL: "LÉO SANCHES"
          },
          {
+          id:7,
           CO_AREA: "A0007",
           NO_AREA: "SISTEMAS DE PRÉ-PAGO",
           CO_LIDER_AREA:"A00071",
@@ -1593,6 +1600,7 @@ App As appinfo:
           NO_PFOCAL: "MEZADRI"
          },
          {
+          id:8,
           CO_AREA: "A0008",
           NO_AREA: "SISTEMAS DE RECARGA",
           CO_LIDER_AREA:"A00081",
@@ -1603,6 +1611,7 @@ App As appinfo:
           NO_PFOCAL: "MEZADRI"
          },
          {
+         id:9,
           CO_AREA: "A0009",
           NO_AREA: "SISTEMAS ONLINE DE PRÉ",
           CO_LIDER_AREA:"A00091",
