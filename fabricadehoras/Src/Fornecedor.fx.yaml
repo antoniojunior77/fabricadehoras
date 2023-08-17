@@ -12,7 +12,7 @@ Fornecedor As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
-        TemplateSize: =276
+        TemplateSize: =36
         Width: =1758
         X: =136
         Y: =492
@@ -113,8 +113,9 @@ Fornecedor As screen:
                 If(varShowIdFab=0,Icon.ChevronDown,Icon.ChevronRight)
             OnSelect: |-
                 =If(varShowIdFab = ThisItem.id_fabrica, 
-                    Set(varShowIdFab,0),
-                    Set(varShowIdFab,ThisItem.id_fabrica)
+                    UpdateContext({varShowIdFab:"0"}),
+                    UpdateContext({varShowIdFab:ThisItem.id_fabrica})
+                    //Set(varShowIdFab;ThisItem.id_fabrica)
                 );
             Width: =21.08
             X: =9
@@ -122,14 +123,13 @@ Fornecedor As screen:
             ZIndex: =16
 
         Gallery3 As gallery.galleryVertical:
-            BorderThickness: =1
             DelayItemLoading: =true
             Height: =196
             Items: =Filter(clc_tabela1, id_fabrica=ThisItem.id_fabrica)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =191
-            Visible: =varShowIdFab
+            Visible: =Switch(varShowIdFab,"0",false,ThisItem.id_fabrica,true)
             Width: =1680
             X: =43
             Y: =38
@@ -139,7 +139,6 @@ Fornecedor As screen:
                 Height: =15
                 Icon: =Icon.Trash
                 OnSelect: =Select(Parent)
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                 Width: =21.08
                 X: =40
                 Y: =40
@@ -160,7 +159,6 @@ Fornecedor As screen:
                     PaddingTop: =7.03
                     Size: =18.27
                     Text: =ThisItem.descricao
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                     Width: =570.66
                     X: =130
                     Y: =20
@@ -174,7 +172,6 @@ Fornecedor As screen:
                     PaddingTop: =7.03
                     Size: =18.27
                     Text: =ThisItem.ano_consumo
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                     Width: =94.17
                     X: =700
                     Y: =20
@@ -188,7 +185,6 @@ Fornecedor As screen:
                     PaddingTop: =7.03
                     Size: =18.27
                     Text: =ThisItem.mes_inicio
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                     Width: =87.14
                     X: =813
                     Y: =20
@@ -202,7 +198,6 @@ Fornecedor As screen:
                     PaddingTop: =7.03
                     Size: =18.27
                     Text: =ThisItem.qtd_meses
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                     Width: =101.2
                     X: =900
                     Y: =20
@@ -216,7 +211,6 @@ Fornecedor As screen:
                     PaddingTop: =7.03
                     Size: =18.27
                     Text: =ThisItem.total_baseline
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                     Width: =210.83
                     X: =1001
                     Y: =20
@@ -230,7 +224,6 @@ Fornecedor As screen:
                     PaddingTop: =7.03
                     Size: =18.27
                     Text: =ThisItem.valor_contratao
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                     Width: =245.97
                     X: =1212
                     Y: =20
@@ -244,7 +237,6 @@ Fornecedor As screen:
                     PaddingTop: =7.03
                     Size: =18.27
                     Text: =ThisItem.valor_unitario
-                    Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                     Width: =210.83
                     X: =1458
                     Y: =20
@@ -255,7 +247,6 @@ Fornecedor As screen:
                 Image: =compose
                 OnSelect: |-
                     =UpdateContext({vShowEdicao:true})
-                Visible: =Switch(varShowIdFab,0,false,ThisItem.id,true)
                 Width: =21.08
                 X: =68.11
                 Y: =40
