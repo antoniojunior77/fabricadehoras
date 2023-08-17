@@ -1832,7 +1832,14 @@ Fornecedor As screen:
             FontWeight: =FontWeight.Bold
             Height: =32
             OnSelect: |-
-                =UpdateContext({vEdicaoItem:false, vAllitems:Blank()})
+                =UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
+                Reset(cmb_id_fabrica);
+                Reset(txt_descricao);
+                Reset(cmb_ano_consumo);
+                Reset(cmb_mes_consumo);
+                Reset(txt_qtd_horas);
+                Reset(cmb_modelo_tarifacao);
+                Reset(txt_valor_periodo);
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
@@ -1848,7 +1855,14 @@ Fornecedor As screen:
             Height: =22
             Icon: =Icon.CheckBadge
             OnSelect: |-
-                =UpdateContext({vEdicaoItem:false, vAllitems:Blank()})
+                =UpdateContext({vEdicaoItem:false, vAllitems:Blank()});
+                Reset(cmb_id_fabrica);
+                Reset(txt_descricao);
+                Reset(cmb_ano_consumo);
+                Reset(cmb_mes_consumo);
+                Reset(txt_qtd_horas);
+                Reset(cmb_modelo_tarifacao);
+                Reset(txt_valor_periodo);
             Visible: =vEdicaoItem
             Width: =22
             X: =1845
