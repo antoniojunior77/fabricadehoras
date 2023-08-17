@@ -490,15 +490,18 @@ Fornecedor As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["Value"]
+            DisplayFields: =["no_sequencial"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =Distinct(clc_base_sequencial,sequencial_orcamento)
+            IsSearchable: =false
+            Items: |-
+                =//Distinct(clc_base_sequencial;sequencial_orcamento)
+                clc_base_sequencial2
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["Value"]
-            SearchItems: =Search(Distinct(clc_base_sequencial,sequencial_orcamento),ComboBox1_4.SearchText,"Value")
+            SearchFields: =["no_sequencial"]
+            SearchItems: =[]
             SelectMultiple: =false
             Size: =18.27
             Width: =379.5

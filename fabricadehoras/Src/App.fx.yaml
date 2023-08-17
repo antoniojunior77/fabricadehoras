@@ -4,12 +4,12 @@ App As appinfo:
         =Set(vTitFontFamily,"Lato");
         Set(vTitFontColor, "#D51920");
         Set(vTitFonSize,"30");
-        Set( vTitFontWeightB,"Bold");
+        Set(vTitFontWeightB,"Bold");
         Set(vTitFontWeightN,"Normal");
         Set(vTitFontWeightS,"Semibold");
-        Set( vTabMenu,"Tab1");
+        Set(vTabMenu,"Tab1");
         Set(varShowIdFab, 0);
-        Set( varCorVermelho,RGBA(213,25,32, 1));
+        Set(varCorVermelho,RGBA(213,25,32, 1));
         /*
         Set(varCorVermelho; RGBA(213;25;32;1));;
         Set(varCorCinzaClaro;RGBA(237; 237; 237; 1));;
@@ -25,15 +25,21 @@ App As appinfo:
         */
         Clear(clc_tabela1);
         Clear(clc_base_sequencial); 
+        Clear(clc_base_sequencial2); 
+        Clear(clc_base_forncecedor); 
         Clear(clc_area); 
         Clear(clc_fabrica);
         ClearCollect(clc_fabrica,
-        { id:1,id_fabrica: "FO001"},
+        {id:1,id_fabrica: "FO001"},
         {id:2,id_fabrica: "FO002"},
         {id:3,id_fabrica: "FO003"},
         {id:4,id_fabrica: "FO004"},
         {id:5,id_fabrica: "FO005"}
         );
+        //--base fornecedor
+        ClearCollect(clc_base_forncecedor,{id:1,no_fornecedor:"SYSMAP"},{id:2, no_fornecedor:"TQl"},{id:3,no_fornecedor:"HITSS"},{id:4,no_fornecedor:"SPREAD"},{id:5,no_fornecedor:"BETTA"});
+        //----base sequencial
+        ClearCollect(clc_base_sequencial2,{id:1,no_sequencial:"OP_100"},{id:2, no_sequencial:"OP_200"},{id:3,no_sequencial:"OP_300"},{id:4,no_sequencial:"OP_400"});
         //----criaçao tabela1
         ClearCollect(
             clc_tabela1,
