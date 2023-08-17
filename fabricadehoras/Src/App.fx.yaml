@@ -56,7 +56,7 @@ App As appinfo:
                 co_area:"A0005",
                 co_lider_area:"A00051",
                 no_area:"FORNECEDORES TI",
-                co_lider_area:"19374",
+                co_lider_area_gestor:"19374",
                 id_sequencial:"OP_200",
                 id_fornecedor:1
             },
