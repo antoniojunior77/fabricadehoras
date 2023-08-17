@@ -1562,6 +1562,9 @@ App As appinfo:
           NO_PFOCAL: "MEZADRI"
          }
         );
+        
+        Clear(clc_modelo_tarifacao);
+        ClearCollect(clc_modelo_tarifacao,{id:1,no_modelo:"modelo 1"},{id:2,no_modelo:"modelo 2"},{id:3,no_modelo:"modelo 3"},{id:4,no_modelo:"modelo 4"},{id:5,no_modelo:"modelo 5"});
     StartScreen: =
     Theme: =PowerAppsTheme
 
