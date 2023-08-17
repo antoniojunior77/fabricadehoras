@@ -120,7 +120,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "\"Tab 1\"",
+            "InvariantScript": "\"Fornecedor\"",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -479,7 +479,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "\"Tab 2\"",
+            "InvariantScript": "\"Gestor\"",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -838,7 +838,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "\"Tab 3\"",
+            "InvariantScript": "\"Lista\"",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -1800,7 +1800,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638278318888399493",
+    "LastModifiedTimestamp": "638278368046038404",
     "Name": "barra_navegacao",
     "Rules": [
       {
@@ -1859,7 +1859,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638278318888399493",
+  "LastModifiedTimestamp": "638278368046038404",
   "Name": "29c757b23e744ecaaa0ea2784df6a60d",
   "OverridableProperties": {},
   "Version": "638266685314298999"

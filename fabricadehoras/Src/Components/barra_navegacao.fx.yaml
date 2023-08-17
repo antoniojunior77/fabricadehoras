@@ -39,7 +39,7 @@ barra_navegacao As CanvasComponent:
             PressedColor: =ColorFade(Self.Color, -20%)
             PressedFill: =
             Size: =25.3
-            Text: ="Tab 2"
+            Text: ="Gestor"
             Width: =224.89
             X: =333.12
             Y: =12
@@ -78,7 +78,7 @@ barra_navegacao As CanvasComponent:
             PressedColor: =ColorFade(Self.Color, -20%)
             PressedFill: =
             Size: =25.3
-            Text: ="Tab 1"
+            Text: ="Fornecedor"
             Width: =224.89
             X: =43.57
             Y: =12
@@ -117,7 +117,7 @@ barra_navegacao As CanvasComponent:
             PressedColor: =ColorFade(Self.Color, -20%)
             PressedFill: =
             Size: =25.3
-            Text: ="Tab 3"
+            Text: ="Lista"
             Width: =224.89
             X: =617.04
             Y: =12
