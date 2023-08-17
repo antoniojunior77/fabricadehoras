@@ -16,23 +16,23 @@ imagem_header As CanvasComponent:
         Width: =66
         ZIndex: =1
 
-    Label7 As label:
+    lbl_nome As label:
         Color: =RGBA(255, 0, 0, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =48
-        Size: =8
+        Size: =10
         Text: =User().FullName
         VerticalAlign: =VerticalAlign.Top
         Width: =223
         X: =66
         ZIndex: =2
 
-    Label7_1 As label:
+    lbl_email As label:
         Color: =RGBA(255, 0, 0, 1)
         Font: =Font.'Lato Black'
         Height: =30
-        Size: =8
+        Size: =10
         Text: =User().Email
         Width: =283
         X: =66

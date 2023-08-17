@@ -1741,7 +1741,9 @@ Fornecedor As screen:
         ZIndex: =118
 
     imagem_header_1 As imagem_header:
-        X: =1570
+        Height: =74
+        Width: =375
+        X: =1545
         Y: =12
         ZIndex: =124
 
