@@ -1,7 +1,7 @@
 Fornecedor As screen:
     BackgroundImage: ='MicrosoftTeams-image'
     LoadingSpinnerColor: =RGBA(56, 96, 178, 1.5)
-    OnVisible: =
+    OnVisible: =Set(vTabMenu,"Tab1")
 
     SideMenu_1 As SideMenu:
 
@@ -92,7 +92,8 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
-            Text: =ThisItem.valor_contratao
+            Text: |-
+                =Text(Value(ThisItem.valor_contratao),"$#,##0.00","pt-BR")
             Width: =276
             X: =1234
             ZIndex: =7
@@ -103,8 +104,9 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
-            Text: =ThisItem.valor_unitario
-            Width: =256
+            Text: |-
+                =Text(Value(ThisItem.valor_unitario),"$#,##0.00","pt-BR")
+            Width: =240
             X: =1510.98
             ZIndex: =8
 
@@ -227,7 +229,8 @@ Fornecedor As screen:
                 Italic: =true
                 OnSelect: =Select(Parent)
                 Size: =14
-                Text: =ThisItem.valor_contratao
+                Text: |-
+                    =Text(Value(ThisItem.valor_contratao),"$#,##0.00","pt-BR")
                 Width: =224
                 X: =1195
                 ZIndex: =8
@@ -238,7 +241,8 @@ Fornecedor As screen:
                 Italic: =true
                 OnSelect: =Select(Parent)
                 Size: =14
-                Text: =ThisItem.valor_unitario
+                Text: |-
+                    =Text(Value(ThisItem.valor_unitario),"$#,##0.00","pt-BR")
                 Width: =184
                 X: =1460
                 ZIndex: =9
@@ -282,6 +286,9 @@ Fornecedor As screen:
         ZIndex: =3
 
     barra_navegacao_1 As barra_navegacao:
+        acaoFornecedor: ='Fornecedor'
+        acaoGestor: ='Gestor'
+        acaoLista: ='Lista'
         Width: =899.56
         X: =112.45
         Y: =64
@@ -1944,6 +1951,12 @@ Fornecedor As screen:
             X: =867
             Y: =601
             ZIndex: =112
+
+    Label9 As label:
+        Text: =vTabMenu
+        X: =1207
+        Y: =66
+        ZIndex: =128
 
     btnEditar As group:
         Height: =5

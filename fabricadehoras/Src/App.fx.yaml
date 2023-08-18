@@ -51,7 +51,7 @@ App As appinfo:
                 mes_inicio: "JAN",
                 qtd_meses: 12,
                 total_baseline: "12.000",
-                valor_contratao: "1.000.000,00",
+                valor_contratao: "1000000,00",
                 valor_unitario: "83,33",
                 co_area:"A0005",
                 co_lider_area:"A00051",

@@ -116,7 +116,7 @@
         "Name": "btnTab1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 445,
+        "PublishOrderIndex": 448,
         "Rules": [
           {
             "Category": "Data",
@@ -192,7 +192,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "57",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -342,7 +342,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(vTabMenu,\"Tab1\");\r\nNavigate('barra_navegacao'.acaoFornecedor)",
+            "InvariantScript": "Set(varTabMenu,\"Tab1\");\r\nNavigate(barra_navegacao.acaoFornecedor)",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -475,7 +475,7 @@
         "Name": "btnTab2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 447,
+        "PublishOrderIndex": 450,
         "Rules": [
           {
             "Category": "Data",
@@ -557,7 +557,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "57",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -701,7 +701,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(vTabMenu,\"Tab1\");\r\nNavigate('barra_navegacao'.acaoFornecedor)",
+            "InvariantScript": "Set(varTabMenu,\"Tab2\");\r\nNavigate(barra_navegacao.acaoGestor)",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -834,7 +834,7 @@
         "Name": "btnTab2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 449,
+        "PublishOrderIndex": 452,
         "Rules": [
           {
             "Category": "Data",
@@ -916,7 +916,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "57",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1060,7 +1060,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(vTabMenu,\"Tab1\");\r\nNavigate('barra_navegacao'.acaoLista)",
+            "InvariantScript": "Set(varTabMenu,\"Tab3\");\r\nNavigate(barra_navegacao.acaoLista)",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -1129,7 +1129,7 @@
         "Name": "barraBottom1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 450,
+        "PublishOrderIndex": 453,
         "Rules": [
           {
             "Category": "Design",
@@ -1223,7 +1223,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(vTabMenu,\"Tab1\");\r\nNavigate('barra_navegacao'.acaoFornecedor)",
+            "InvariantScript": "",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -1292,7 +1292,7 @@
         "Name": "barraBottom2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 451,
+        "PublishOrderIndex": 454,
         "Rules": [
           {
             "Category": "Design",
@@ -1386,7 +1386,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(vTabMenu,\"Tab1\");\r\nNavigate('barra_navegacao'.acaoFornecedor)",
+            "InvariantScript": "",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -1455,7 +1455,7 @@
         "Name": "barraBottom2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 452,
+        "PublishOrderIndex": 455,
         "Rules": [
           {
             "Category": "Design",
@@ -1549,7 +1549,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(vTabMenu,\"Tab1\");\r\nNavigate('barra_navegacao'.acaoLista)",
+            "InvariantScript": "",
             "Property": "OnSelect",
             "RuleProviderType": "User"
           }
@@ -1597,7 +1597,7 @@
         "Name": "Botão 2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 446,
+        "PublishOrderIndex": 449,
         "Rules": [
           {
             "Category": "Design",
@@ -1673,7 +1673,7 @@
         "Name": "Botão 1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 444,
+        "PublishOrderIndex": 447,
         "Rules": [
           {
             "Category": "Design",
@@ -1749,7 +1749,7 @@
         "Name": "Botão 2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 448,
+        "PublishOrderIndex": 451,
         "Rules": [
           {
             "Category": "Design",
@@ -1824,7 +1824,7 @@
       "acaoGestor",
       "acaoLista"
     ],
-    "LastModifiedTimestamp": "638279152883776390",
+    "LastModifiedTimestamp": "638279166054622317",
     "Name": "barra_navegacao",
     "Rules": [
       {
@@ -1929,7 +1929,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638279152883776390",
+  "LastModifiedTimestamp": "638279166054622317",
   "Name": "29c757b23e744ecaaa0ea2784df6a60d",
   "OverridableProperties": {},
   "Version": "638266685314298999"
