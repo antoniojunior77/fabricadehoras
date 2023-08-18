@@ -1548,7 +1548,7 @@ Fornecedor As screen:
             Y: =488
             ZIndex: =98
 
-        TextInput2 As text:
+        txtJan As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1561,7 +1561,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =99
 
-        TextInput2_1 As text:
+        txtFev As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1574,7 +1574,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =100
 
-        TextInput2_2 As text:
+        txtMar As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1587,7 +1587,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =101
 
-        TextInput2_3 As text:
+        txtAbr As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1600,7 +1600,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =102
 
-        TextInput2_4 As text:
+        txtMai As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1613,7 +1613,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =103
 
-        TextInput2_5 As text:
+        txtJun As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1626,7 +1626,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =104
 
-        TextInput2_6 As text:
+        txtJul As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1639,7 +1639,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =105
 
-        TextInput2_7 As text:
+        txtAgo As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1652,7 +1652,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =106
 
-        TextInput2_8 As text:
+        txtSet As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1665,7 +1665,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =107
 
-        TextInput2_9 As text:
+        txtOut As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1678,7 +1678,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =108
 
-        TextInput2_10 As text:
+        txtNov As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1691,7 +1691,7 @@ Fornecedor As screen:
             Y: =545
             ZIndex: =109
 
-        TextInput2_11 As text:
+        txtDez As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
             Height: =35
@@ -1709,15 +1709,22 @@ Fornecedor As screen:
             HoverFill: |-
                 =ColorValue("#FF0000")
             OnSelect: |-
-                =UpdateContext({vShowMensalizacao:false})
+                =Clear(clc_mensalizacao);
+                ClearCollect(clc_mensalizacao,
+                {
+                    id:
+                }
+                );
+                
+                UpdateContext({vShowMensalizacao:false})
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
             Text: ="Salvar"
             Visible: =vShowMensalizacao
             Width: =224.89
-            X: =1263
-            Y: =630
+            X: =1305
+            Y: =622
             ZIndex: =111
 
         Button1_1 As button:
@@ -1736,8 +1743,8 @@ Fornecedor As screen:
             Text: ="Cancelar"
             Visible: =vShowMensalizacao
             Width: =224.89
-            X: =1513
-            Y: =630
+            X: =1555
+            Y: =622
             ZIndex: =112
 
     Group2 As group:
