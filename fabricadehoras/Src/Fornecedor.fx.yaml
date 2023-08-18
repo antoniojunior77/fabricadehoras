@@ -816,42 +816,7 @@ Fornecedor As screen:
         Width: =28.11
         X: =251.6
         Y: =346
-        ZIndex: =44
-
-    Group8 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =44
-
-        Label2_11 As label:
-            Align: =Align.Center
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =45
-            PaddingLeft: =0
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =14
-            Text: |-
-                ="Qtde
-                Horas"
-            Width: =153.21
-            X: =1051
-            Y: =335
-            ZIndex: =36
-
-        txt_qtd_horas As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =vAllitems.qtd_meses
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Width: =132.12
-            X: =1063
-            Y: =380
-            ZIndex: =37
+        ZIndex: =43
 
     btnAdd As button:
         Fill: =RGBA(255, 0, 0, 1)
@@ -923,12 +888,63 @@ Fornecedor As screen:
         Width: =52
         X: =1846
         Y: =378
-        ZIndex: =45
+        ZIndex: =44
+
+    Group8 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =44
+
+        Label2_11 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =45
+            PaddingLeft: =0
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =14
+            Text: |-
+                ="Qtde
+                Horas"
+            Width: =153.21
+            X: =1051
+            Y: =335
+            ZIndex: =36
+
+        txt_qtd_horas As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =vAllitems.qtd_meses
+            Format: =TextFormat.Number
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Width: =132.12
+            X: =1063
+            Y: =380
+            ZIndex: =37
 
     Rectangle1 As rectangle:
         Fill: =varCorVermelho
         Height: =47
         Width: =1749
+        X: =140
+        Y: =445
+        ZIndex: =45
+
+    Label2_8 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: ="ID Fábrica"
+        Width: =139
         X: =140
         Y: =445
         ZIndex: =46
@@ -958,6 +974,7 @@ Fornecedor As screen:
         txt_baseline As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =vAllitems.total_baseline
+            Format: =TextFormat.Number
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
@@ -965,21 +982,6 @@ Fornecedor As screen:
             X: =1202
             Y: =380
             ZIndex: =39
-
-    Label2_8 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =47
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =12
-        Text: ="ID Fábrica"
-        Width: =139
-        X: =140
-        Y: =445
-        ZIndex: =47
 
     Label2_15 As label:
         Align: =Align.Center
@@ -994,7 +996,7 @@ Fornecedor As screen:
         Width: =589
         X: =279
         Y: =445
-        ZIndex: =48
+        ZIndex: =47
 
     Label2_16 As label:
         Align: =Align.Center
@@ -1008,6 +1010,23 @@ Fornecedor As screen:
         Text: ="Ano Consumo"
         Width: =90
         X: =868
+        Y: =445
+        ZIndex: =48
+
+    Label2_17 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =12
+        Text: |-
+            ="Mês
+            Início"
+        Width: =90
+        X: =969
         Y: =445
         ZIndex: =49
 
@@ -1053,23 +1072,6 @@ Fornecedor As screen:
             Y: =334
             ZIndex: =41
 
-    Label2_17 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Font: =Font.Lato
-        FontWeight: =FontWeight.Semibold
-        Height: =47
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =12
-        Text: |-
-            ="Mês
-            Início"
-        Width: =90
-        X: =969
-        Y: =445
-        ZIndex: =50
-
     Label2_18 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -1085,41 +1087,7 @@ Fornecedor As screen:
         Width: =90
         X: =1061
         Y: =445
-        ZIndex: =51
-
-    Group8_2 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =51
-
-        Label2_14 As label:
-            Align: =Align.Center
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingLeft: =0
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =14
-            Text: ="Valor do Período"
-            Width: =276.9
-            X: =1554
-            Y: =337
-            ZIndex: =42
-
-        txt_valor_periodo As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =vAllitems.valor_contratao
-            Font: =Font.Lato
-            HintText: ="R$"
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Width: =264.25
-            X: =1567
-            Y: =380
-            ZIndex: =43
+        ZIndex: =50
 
     Label2_19 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -1133,7 +1101,7 @@ Fornecedor As screen:
         Width: =183
         X: =1177
         Y: =445
-        ZIndex: =52
+        ZIndex: =51
 
     Label2_20 As label:
         Align: =Align.Center
@@ -1148,7 +1116,7 @@ Fornecedor As screen:
         Width: =271
         X: =1360
         Y: =445
-        ZIndex: =53
+        ZIndex: =52
 
     Label2_21 As label:
         Align: =Align.Center
@@ -1163,7 +1131,7 @@ Fornecedor As screen:
         Width: =258
         X: =1631
         Y: =445
-        ZIndex: =54
+        ZIndex: =53
 
     gp_mensalização As group:
         Height: =5
@@ -1177,7 +1145,7 @@ Fornecedor As screen:
             Height: =768
             Visible: =vShowMensalizacao
             Width: =1920
-            ZIndex: =64
+            ZIndex: =63
 
         Rectangle5 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -1187,7 +1155,7 @@ Fornecedor As screen:
             Width: =1754.14
             X: =112.45
             Y: =102
-            ZIndex: =65
+            ZIndex: =64
 
         Label4 As label:
             Color: =RGBA(255, 0, 0, 1)
@@ -1202,7 +1170,7 @@ Fornecedor As screen:
             Width: =281.11
             X: =157.42
             Y: =121
-            ZIndex: =66
+            ZIndex: =65
 
         Label5 As label:
             Font: =Font.Lato
@@ -1217,7 +1185,7 @@ Fornecedor As screen:
             Width: =168.67
             X: =163.05
             Y: =176
-            ZIndex: =67
+            ZIndex: =66
 
         Label5_1 As label:
             Font: =Font.Lato
@@ -1231,7 +1199,7 @@ Fornecedor As screen:
             Width: =210.83
             X: =515.84
             Y: =176
-            ZIndex: =68
+            ZIndex: =67
 
         Label5_2 As label:
             Font: =Font.Lato
@@ -1246,7 +1214,7 @@ Fornecedor As screen:
             Width: =101.2
             X: =924.86
             Y: =176
-            ZIndex: =69
+            ZIndex: =68
 
         Label5_3 As label:
             Font: =Font.Lato
@@ -1259,7 +1227,7 @@ Fornecedor As screen:
             Width: =168.67
             X: =313.44
             Y: =176
-            ZIndex: =70
+            ZIndex: =69
 
         Label5_4 As label:
             Font: =Font.Lato
@@ -1272,7 +1240,7 @@ Fornecedor As screen:
             Width: =168.67
             X: =1009.19
             Y: =176
-            ZIndex: =71
+            ZIndex: =70
 
         Label5_5 As label:
             Font: =Font.Lato
@@ -1285,7 +1253,7 @@ Fornecedor As screen:
             Width: =168.67
             X: =719.65
             Y: =176
-            ZIndex: =72
+            ZIndex: =71
 
         Label5_6 As label:
             Font: =Font.Lato
@@ -1300,7 +1268,7 @@ Fornecedor As screen:
             Width: =188.35
             X: =163.05
             Y: =226
-            ZIndex: =73
+            ZIndex: =72
 
         Label5_7 As label:
             Font: =Font.Lato
@@ -1313,7 +1281,7 @@ Fornecedor As screen:
             Width: =754.79
             X: =357.01
             Y: =226
-            ZIndex: =74
+            ZIndex: =73
 
         Label6 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1328,7 +1296,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =229.11
             Y: =292
-            ZIndex: =75
+            ZIndex: =74
 
         Label6_1 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1343,7 +1311,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =340.15
             Y: =292
-            ZIndex: =76
+            ZIndex: =75
 
         Label6_2 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1358,7 +1326,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =475.08
             Y: =292
-            ZIndex: =77
+            ZIndex: =76
 
         Label6_3 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1373,7 +1341,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =605.8
             Y: =292
-            ZIndex: =78
+            ZIndex: =77
 
         Label6_4 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1388,7 +1356,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =714.03
             Y: =292
-            ZIndex: =79
+            ZIndex: =78
 
         Label6_5 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1403,7 +1371,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =839.12
             Y: =292
-            ZIndex: =80
+            ZIndex: =79
 
         Label6_6 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1418,7 +1386,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =972.65
             Y: =292
-            ZIndex: =81
+            ZIndex: =80
 
         Label6_7 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1433,7 +1401,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =1089.31
             Y: =292
-            ZIndex: =82
+            ZIndex: =81
 
         Label6_8 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1448,7 +1416,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =1203.16
             Y: =292
-            ZIndex: =83
+            ZIndex: =82
 
         Label6_9 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1463,7 +1431,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =1325.45
             Y: =292
-            ZIndex: =84
+            ZIndex: =83
 
         Label6_10 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1478,7 +1446,7 @@ Fornecedor As screen:
             Width: =158.83
             X: =1451.95
             Y: =292
-            ZIndex: =85
+            ZIndex: =84
 
         Label6_11 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -1493,7 +1461,7 @@ Fornecedor As screen:
             Width: =140.56
             X: =1581.26
             Y: =292
-            ZIndex: =86
+            ZIndex: =85
 
         TextInput2 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1506,7 +1474,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =237.54
             Y: =349
-            ZIndex: =87
+            ZIndex: =86
 
         TextInput2_1 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1519,7 +1487,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =355.61
             Y: =349
-            ZIndex: =88
+            ZIndex: =87
 
         TextInput2_2 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1532,7 +1500,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =475.08
             Y: =349
-            ZIndex: =89
+            ZIndex: =88
 
         TextInput2_3 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1545,7 +1513,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =593.15
             Y: =349
-            ZIndex: =90
+            ZIndex: =89
 
         TextInput2_4 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1558,7 +1526,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =712.62
             Y: =349
-            ZIndex: =91
+            ZIndex: =90
 
         TextInput2_5 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1571,7 +1539,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =839.12
             Y: =349
-            ZIndex: =92
+            ZIndex: =91
 
         TextInput2_6 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1584,7 +1552,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =958.59
             Y: =349
-            ZIndex: =93
+            ZIndex: =92
 
         TextInput2_7 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1597,7 +1565,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =1085.1
             Y: =349
-            ZIndex: =94
+            ZIndex: =93
 
         TextInput2_8 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1610,7 +1578,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =1211.6
             Y: =349
-            ZIndex: =95
+            ZIndex: =94
 
         TextInput2_9 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1623,7 +1591,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =1340.91
             Y: =349
-            ZIndex: =96
+            ZIndex: =95
 
         TextInput2_10 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1636,7 +1604,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =1460.38
             Y: =349
-            ZIndex: =97
+            ZIndex: =96
 
         TextInput2_11 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1649,7 +1617,7 @@ Fornecedor As screen:
             Width: =102.61
             X: =1598.13
             Y: =349
-            ZIndex: =98
+            ZIndex: =97
 
         Button1 As button:
             Fill: =RGBA(255, 0, 0, 1)
@@ -1665,7 +1633,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =1248.14
             Y: =434
-            ZIndex: =99
+            ZIndex: =98
 
         Button1_1 As button:
             BorderColor: |
@@ -1685,7 +1653,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =1498.33
             Y: =434
-            ZIndex: =100
+            ZIndex: =99
 
     btnAdd_5 As button:
         Fill: =RGBA(255, 0, 0, 1)
@@ -1746,20 +1714,75 @@ Fornecedor As screen:
         Width: =254
         X: =1631
         Y: =1010
-        ZIndex: =118
+        ZIndex: =109
 
     imagem_header_1 As imagem_header:
         Height: =74
         Width: =375
         X: =1545
         Y: =12
-        ZIndex: =124
+        ZIndex: =115
 
     Label7 As label:
         Text: =galeria_expandida.Selected.id
         X: =1126
         Y: =73
-        ZIndex: =127
+        ZIndex: =118
+
+    Label9 As label:
+        Text: =vTabMenu
+        X: =1124
+        Y: =66
+        ZIndex: =119
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =122
+
+        Label2_14 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingLeft: =0
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =14
+            Text: ="Valor do Período"
+            Width: =276.9
+            X: =1554
+            Y: =337
+            ZIndex: =42
+
+        lbl_txt_valor_periodo As label:
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.Lato
+            Height: =35
+            PaddingLeft: =12
+            Text: |-
+                =Text(Value(txt_valor_periodo.Text),"$#,##0.00","pt-BR")
+            Width: =263
+            X: =1567
+            Y: =382
+            ZIndex: =120
+
+        txt_valor_periodo As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Color: =RGBA(0, 0, 0, 0)
+            Default: =vAllitems.valor_contratao
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.Lato
+            Format: =TextFormat.Number
+            HintText: ="R$"
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =15
+            Width: =264.25
+            X: =1567
+            Y: =380
+            ZIndex: =121
 
     gp_conf_exclusao As group:
         Height: =5
@@ -1773,7 +1796,7 @@ Fornecedor As screen:
             Height: =1080
             Visible: =vShowConfExclusaoItem
             Width: =1920
-            ZIndex: =119
+            ZIndex: =110
 
         Rectangle5_9 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -1783,7 +1806,7 @@ Fornecedor As screen:
             Width: =1754.14
             X: =118
             Y: =271
-            ZIndex: =120
+            ZIndex: =111
 
         Label4_9 As label:
             Color: =RGBA(255, 0, 0, 1)
@@ -1798,7 +1821,7 @@ Fornecedor As screen:
             Width: =639.53
             X: =163
             Y: =290
-            ZIndex: =121
+            ZIndex: =112
 
         Label5_54 As label:
             Align: =Align.Center
@@ -1813,7 +1836,7 @@ Fornecedor As screen:
             Width: =1755
             X: =112
             Y: =429
-            ZIndex: =122
+            ZIndex: =113
 
         btn_canc_exc As button:
             Fill: =RGBA(255, 0, 0, 1)
@@ -1829,7 +1852,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =1021
             Y: =594
-            ZIndex: =123
+            ZIndex: =114
 
         btn_conf_exc As button:
             Color: =RGBA(166, 166, 166, 1)
@@ -1870,7 +1893,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =759
             Y: =593
-            ZIndex: =125
+            ZIndex: =116
 
         Icon4 As icon.More:
             Color: =RGBA(255, 255, 0, 1)
@@ -1880,7 +1903,7 @@ Fornecedor As screen:
             Width: =208
             X: =882
             Y: =309
-            ZIndex: =126
+            ZIndex: =117
 
     gp_validaçao As group:
         Height: =5
@@ -1894,7 +1917,7 @@ Fornecedor As screen:
             Height: =1080
             Visible: =vShowValidacao
             Width: =1920
-            ZIndex: =101
+            ZIndex: =100
 
         Rectangle5_1 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -1904,7 +1927,7 @@ Fornecedor As screen:
             Width: =1754.14
             X: =118
             Y: =271
-            ZIndex: =102
+            ZIndex: =101
 
         Label4_1 As label:
             Color: =RGBA(255, 0, 0, 1)
@@ -1919,7 +1942,7 @@ Fornecedor As screen:
             Width: =639.53
             X: =163
             Y: =290
-            ZIndex: =103
+            ZIndex: =102
 
         Label5_15 As label:
             Align: =Align.Center
@@ -1934,7 +1957,7 @@ Fornecedor As screen:
             Width: =1755
             X: =112
             Y: =429
-            ZIndex: =104
+            ZIndex: =103
 
         Button1_3 As button:
             Fill: =RGBA(255, 0, 0, 1)
@@ -1950,13 +1973,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =867
             Y: =601
-            ZIndex: =112
-
-    Label9 As label:
-        Text: =vTabMenu
-        X: =1207
-        Y: =66
-        ZIndex: =128
+            ZIndex: =104
 
     btnEditar As group:
         Height: =5
@@ -1996,7 +2013,7 @@ Fornecedor As screen:
             Width: =32
             X: =1840
             Y: =382
-            ZIndex: =114
+            ZIndex: =105
 
         Icon3 As icon.CheckBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -2025,7 +2042,7 @@ Fornecedor As screen:
             Width: =22
             X: =1845
             Y: =387
-            ZIndex: =115
+            ZIndex: =106
 
     BtnCancel As group:
         Height: =5
@@ -2055,7 +2072,7 @@ Fornecedor As screen:
             Width: =32
             X: =1881
             Y: =382
-            ZIndex: =116
+            ZIndex: =107
 
         Icon3_3 As icon.CheckBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -2074,7 +2091,7 @@ Fornecedor As screen:
             Width: =22
             X: =1886
             Y: =387
-            ZIndex: =117
+            ZIndex: =108
 
     "'gp_add-Fabrica' As group":
         Height: =5
@@ -2088,7 +2105,7 @@ Fornecedor As screen:
             Height: =1080
             Visible: =vShowAddFabrica
             Width: =1920
-            ZIndex: =55
+            ZIndex: =54
 
         Rectangle5_2 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -2098,7 +2115,7 @@ Fornecedor As screen:
             Width: =702
             X: =637
             Y: =176
-            ZIndex: =56
+            ZIndex: =55
 
         Label4_2 As label:
             Color: =RGBA(255, 0, 0, 1)
@@ -2113,7 +2130,7 @@ Fornecedor As screen:
             Width: =281.11
             X: =682
             Y: =195
-            ZIndex: =57
+            ZIndex: =56
 
         Label5_23 As label:
             Font: =Font.Lato
@@ -2128,7 +2145,7 @@ Fornecedor As screen:
             Width: =168.67
             X: =688
             Y: =250
-            ZIndex: =58
+            ZIndex: =57
 
         Label5_17 As label:
             Font: =Font.Lato
@@ -2143,7 +2160,7 @@ Fornecedor As screen:
             Width: =188.35
             X: =690
             Y: =310
-            ZIndex: =59
+            ZIndex: =58
 
         TextInput2_17 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -2155,7 +2172,7 @@ Fornecedor As screen:
             Width: =360
             X: =837
             Y: =258
-            ZIndex: =60
+            ZIndex: =59
 
         TextInput2_18 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -2168,7 +2185,7 @@ Fornecedor As screen:
             Width: =358
             X: =839
             Y: =318
-            ZIndex: =61
+            ZIndex: =60
 
         Button1_5 As button:
             Fill: =RGBA(255, 0, 0, 1)
@@ -2192,7 +2209,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =723
             Y: =475
-            ZIndex: =62
+            ZIndex: =61
 
         Button1_4 As button:
             BorderColor: |
@@ -2212,5 +2229,5 @@ Fornecedor As screen:
             Width: =224.89
             X: =973
             Y: =475
-            ZIndex: =63
+            ZIndex: =62
 
