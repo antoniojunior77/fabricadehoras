@@ -1600,7 +1600,7 @@ Fornecedor As screen:
             Size: =18.27
             Text: ="Setembro"
             Visible: =vShowMensalizacao
-            X: =1241
+            X: =1247
             Y: =488
             ZIndex: =95
 
@@ -1615,7 +1615,7 @@ Fornecedor As screen:
             Text: ="Outubro"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =1383
+            X: =1377
             Y: =488
             ZIndex: =96
 
@@ -1645,7 +1645,7 @@ Fornecedor As screen:
             Text: ="Dezembro"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =1639
+            X: =1633
             Y: =488
             ZIndex: =98
 
