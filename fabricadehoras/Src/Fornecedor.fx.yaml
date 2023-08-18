@@ -161,7 +161,7 @@ Fornecedor As screen:
                 Height: =15
                 Icon: =Icon.Trash
                 OnSelect: |-
-                    =UpdateContext({vShowConfExclusaoItem:true})
+                    =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
                 Width: =21.08
                 X: =13
                 Y: =13
@@ -1748,6 +1748,12 @@ Fornecedor As screen:
         Y: =12
         ZIndex: =124
 
+    Label7 As label:
+        Text: =galeria_expandida.Selected.id
+        X: =1126
+        Y: =73
+        ZIndex: =127
+
     gp_conf_exclusao As group:
         Height: =5
         Width: =5
@@ -1825,10 +1831,30 @@ Fornecedor As screen:
                 =ColorValue("#A6A6A6")
             OnSelect: |-
                 =RemoveIf(
-                    clc_tabela1,
-                    id = galeria_expandida.Selected.id
+                    clc_tabela1,id =Value(id_sel)
                 );
-                UpdateContext({vShowConfExclusaoItem: false})
+                
+                    Clear(clc_group_msl);
+                    ClearCollect(clc_group_msl,
+                        AddColumns(
+                                GroupBy(clc_tabela1, "id_fabrica","fabrica"),
+                                "id",First(fabrica).id,
+                                "descricao",First(fabrica).descricao,
+                                "ano_consumo",First(fabrica).ano_consumo,
+                                "mes_inicio",First(fabrica).mes_inicio,
+                                "qtd_meses",First(fabrica).qtd_meses,
+                                "total_baseline",First(fabrica).total_baseline,
+                                "valor_contratao",First(fabrica).valor_contratao,
+                                "valor_unitario",First(fabrica).valor_unitario,
+                                "co_area",First(fabrica).co_area,
+                                "co_lider_area",First(fabrica).co_lider_area,
+                                "no_area",First(fabrica).no_area,
+                                "co_lider_area_gestor",First(fabrica).co_lider_area_gestor,
+                                "id_sequencial",First(fabrica).id_sequencial,
+                                "id_fornecedor",First(fabrica).id_fornecedor
+                        )
+                    );
+                UpdateContext({vShowConfExclusaoItem: false,id_sel: Blank()})
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
