@@ -1,4 +1,7 @@
 barra_navegacao As CanvasComponent:
+    acaoFornecedor: =App.ActiveScreen
+    acaoGestor: =App.ActiveScreen
+    acaoLista: =App.ActiveScreen
     Fill: =RGBA(0, 0, 0, 0)
     Height: =100
     Width: =900
@@ -19,6 +22,9 @@ barra_navegacao As CanvasComponent:
             DisplayMode: =If(vTabMenu="Tab2", DisplayMode.Disabled, DisplayMode.Edit )
             Fill: =RGBA(255, 0, 0, 1)
             Height: =4
+            OnSelect: |-
+                =Set(vTabMenu,"Tab1");
+                Navigate('barra_navegacao'.acaoFornecedor)
             Width: =210.83
             X: =347.17
             Y: =65
@@ -33,7 +39,9 @@ barra_navegacao As CanvasComponent:
             Font: =Font.Lato
             HoverColor: =RGBA(255, 0, 0, 1)
             HoverFill: =
-            OnSelect: =Set(vTabMenu,"Tab2")
+            OnSelect: |-
+                =Set(vTabMenu,"Tab1");
+                Navigate('barra_navegacao'.acaoFornecedor)
             PaddingRight: =7.03
             PaddingTop: =7.03
             PressedColor: =ColorFade(Self.Color, -20%)
@@ -58,6 +66,9 @@ barra_navegacao As CanvasComponent:
             DisplayMode: =If(vTabMenu="Tab1", DisplayMode.Disabled, DisplayMode.Edit )
             Fill: =RGBA(255, 0, 0, 1)
             Height: =4
+            OnSelect: |-
+                =Set(vTabMenu,"Tab1");
+                Navigate('barra_navegacao'.acaoFornecedor)
             Width: =210.83
             X: =57.63
             Y: =65
@@ -72,7 +83,9 @@ barra_navegacao As CanvasComponent:
             Font: =Font.Lato
             HoverColor: =RGBA(255, 0, 0, 1)
             HoverFill: =
-            OnSelect: =Set(vTabMenu,"Tab1")
+            OnSelect: |-
+                =Set(vTabMenu,"Tab1");
+                Navigate('barra_navegacao'.acaoFornecedor)
             PaddingRight: =7.03
             PaddingTop: =7.03
             PressedColor: =ColorFade(Self.Color, -20%)
@@ -97,6 +110,9 @@ barra_navegacao As CanvasComponent:
             DisplayMode: =If(vTabMenu="Tab3", DisplayMode.Disabled, DisplayMode.Edit )
             Fill: =RGBA(255, 0, 0, 1)
             Height: =4
+            OnSelect: |-
+                =Set(vTabMenu,"Tab1");
+                Navigate('barra_navegacao'.acaoLista)
             Width: =210.83
             X: =631.1
             Y: =65
@@ -111,7 +127,9 @@ barra_navegacao As CanvasComponent:
             Font: =Font.Lato
             HoverColor: =RGBA(255, 0, 0, 1)
             HoverFill: =
-            OnSelect: =Set(vTabMenu,"Tab3")
+            OnSelect: |-
+                =Set(vTabMenu,"Tab1");
+                Navigate('barra_navegacao'.acaoLista)
             PaddingRight: =7.03
             PaddingTop: =7.03
             PressedColor: =ColorFade(Self.Color, -20%)
