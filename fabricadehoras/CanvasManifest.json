@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "Ajustes na base de dados",
+    "AppDescription": "Itens adicionados:\nInclusão de mensalização\nEdição de mensalizaçao\nExclusão de mensalização",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
