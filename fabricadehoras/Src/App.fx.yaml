@@ -24,6 +24,7 @@ App As appinfo:
         Set(varSizeText; 12);;
         */
         Clear(clc_tabela1);
+        //Clear(clc_tabela2);;
         Clear(clc_base_sequencial); 
         Clear(clc_base_sequencial2); 
         Clear(clc_base_forncecedor); 
@@ -41,78 +42,99 @@ App As appinfo:
         //----base sequencial
         ClearCollect(clc_base_sequencial2,{id:1,no_sequencial:"OP_100"},{id:2, no_sequencial:"OP_200"},{id:3,no_sequencial:"OP_300"},{id:4,no_sequencial:"OP_400"});
         //----criaçao tabela1
+        ClearCollect(clc_tabela1,  ForAll( tb_consumo_fornecedors As item,
+            {
+        
+                id: item.cr274_id,
+                id_fabrica:item.cr274_id_fabrica,
+                descricao: item.cr274_descricao,
+                ano_consumo: item.cr274_ano_consumo,
+                mes_inicio: item.cr274_mes_inicio,
+                qtd_meses: item.cr274_qtd_meses,
+                total_baseline: item.cr274_total_baseline,
+                valor_contratao:item.cr274_valor_contratao,
+                valor_unitario: item.cr274_valor_unitario,
+                co_area: item.cr274_co_area,
+                co_lider_area: item.cr274_co_lider_area,
+                no_area: item.cr274_no_area,
+                co_lider_area_gestor: item.cr274_co_lider_area_gestor,
+                id_sequencial: item.cr274_id_sequencial,
+                id_fornecedor: item.cr274_id_fornecedor
+            }
+         ));
+        /*
         ClearCollect(
-            clc_tabela1,
+            clc_tabela1;
         {
-                id: 1,
-                id_fabrica: "FO001",
-                descricao: "TESTE 1",
-                ano_consumo: "2023",
-                mes_inicio: "JAN",
-                qtd_meses: 12,
-                total_baseline: "12.000",
-                valor_contratao: "1000000,00",
-                valor_unitario: "83,33",
-                co_area:"A0005",
-                co_lider_area:"A00051",
-                no_area:"FORNECEDORES TI",
-                co_lider_area_gestor:"19374",
-                id_sequencial:"OP_200",
+                id: 1;
+                id_fabrica: "FO001";
+                descricao: "TESTE 1";
+                ano_consumo: "2023";
+                mes_inicio: "JAN";
+                qtd_meses: 12;
+                total_baseline: "12.000";
+                valor_contratao: "1000000,00";
+                valor_unitario: "83,33";
+                co_area:"A0005";
+                co_lider_area:"A00051";
+                no_area:"FORNECEDORES TI";
+                co_lider_area_gestor:"19374";
+                id_sequencial:"OP_200";
                 id_fornecedor:1
-            },
+            };
             {
-                id: 2,
-                id_fabrica: "FO002",
-                descricao: "TESTE 2",
-                ano_consumo: "2023",
-                mes_inicio: "JAN",
-                qtd_meses: 12,
-                total_baseline: "12.000",
-                valor_contratao: "1.000.000,00",
-                valor_unitario: "83,33",
-                co_area:"A0005",
-                co_lider_area:"A00051",
-                no_area:"FORNECEDORES TI",
-                co_lider_area_gestor:"19374",
-                id_sequencial:"OP_200",
+                id: 2;
+                id_fabrica: "FO002";
+                descricao: "TESTE 2";
+                ano_consumo: "2023";
+                mes_inicio: "JAN";
+                qtd_meses: 12;
+                total_baseline: "12.000";
+                valor_contratao: "1.000.000,00";
+                valor_unitario: "83,33";
+                co_area:"A0005";
+                co_lider_area:"A00051";
+                no_area:"FORNECEDORES TI";
+                co_lider_area_gestor:"19374";
+                id_sequencial:"OP_200";
                 id_fornecedor:1
-            },
+            };
             {
-                id: 3,
-                id_fabrica: "FO003",
-                descricao: "TESTE 3",
-                ano_consumo: "2023",
-                mes_inicio: "JAN",
-                qtd_meses: 12,
-                total_baseline: "12.000",
-                valor_contratao: "1.000.000,00",
-                valor_unitario: "83,33",
-                co_area:"A0005",
-                co_lider_area:"A00051",
-                no_area:"FORNECEDORES TI",
-                co_lider_area_gestor:"19374",
-                id_sequencial:"OP_200",
+                id: 3;
+                id_fabrica: "FO003";
+                descricao: "TESTE 3";
+                ano_consumo: "2023";
+                mes_inicio: "JAN";
+                qtd_meses: 12;
+                total_baseline: "12.000";
+                valor_contratao: "1.000.000,00";
+                valor_unitario: "83,33";
+                co_area:"A0005";
+                co_lider_area:"A00051";
+                no_area:"FORNECEDORES TI";
+                co_lider_area_gestor:"19374";
+                id_sequencial:"OP_200";
                 id_fornecedor:1
-            },
+            };
             {
-                id: 4,
-                id_fabrica: "FO004",
-                descricao: "TESTE 4",
-                ano_consumo: "2023",
-                mes_inicio: "JAN",
-                qtd_meses: 12,
-                total_baseline: "12.000",
-                valor_contratao: "1.000.000,00",
-                valor_unitario: "83,33",
-                co_area:"A0005",
-                co_lider_area:"A00051",
-                no_area:"FORNECEDORES TI",
-                co_lider_area_gestor:"19374",
-                id_sequencial:"OP_200",
+                id: 4;
+                id_fabrica: "FO004";
+                descricao: "TESTE 4";
+                ano_consumo: "2023";
+                mes_inicio: "JAN";
+                qtd_meses: 12;
+                total_baseline: "12.000";
+                valor_contratao: "1.000.000,00";
+                valor_unitario: "83,33";
+                co_area:"A0005";
+                co_lider_area:"A00051";
+                no_area:"FORNECEDORES TI";
+                co_lider_area_gestor:"19374";
+                id_sequencial:"OP_200";
                 id_fornecedor:1
             }
-        );
-        
+        );;
+        */
         //----agrupar tabela de mensalização
         
         
