@@ -1712,7 +1712,20 @@ Fornecedor As screen:
                 =Clear(clc_mensalizacao);
                 ClearCollect(clc_mensalizacao,
                 {
-                    id:
+                    id: Last( SortByColumns( clc_mensalizacao, "id", SortOrder.Ascending )).id + 1,
+                    id_linha: vLinhaSelecionada.id,
+                    vlrJan: Value(txtJan.Text),
+                    vlrFev:Value(txtFev.Text),
+                    vlrMar:Value(txtMar.Text),
+                    vlrAbr:Value(txtAbr.Text),
+                    vlrMai:Value(txtMai.Text),
+                    vlrJun:Value(txtJun.Text),
+                    vlrJul:Value(txtJul.Text),
+                    vlrAgo:Value(txtAgo.Text),
+                    vlrSet:Value(txtSet.Text),
+                    vlrOut:Value(txtOut.Text),
+                    vlrNov:Value(txtNov.Text),
+                    vlrDez:Value(txtDez.Text)
                 }
                 );
                 
