@@ -316,7 +316,7 @@ Fornecedor As screen:
             DisplayFields: =["NO_LIDER_AREA"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =Filter(clc_areas, CO_AREA= cmb_area.Selected.CO_AREA)
+            Items: =Filter(tb_areass, CO_AREA= cmb_area.Selected.CO_AREA)
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -362,15 +362,15 @@ Fornecedor As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["NO_AREA"]
+            DisplayFields: =["cr274_no_area"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
             IsSearchable: =false
-            Items: =clc_areas
+            Items: =tb_areass
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["NO_AREA"]
+            SearchFields: =["cr274_no_area"]
             SearchItems: =[]
             SelectMultiple: =false
             Size: =18.27
@@ -412,15 +412,15 @@ Fornecedor As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["NO_AREA"]
+            DisplayFields: =["cr274_nome"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =Filter(clc_tb_perfis, CO_AREA = cmb_head.Selected.CO_AREA)
+            Items: =Filter(tb_perfiss, CO_AREA = cmb_head.Selected.CO_AREA)
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["NO_AREA"]
-            SearchItems: =Search(Filter(clc_tb_perfis, CO_AREA = cmb_head.Selected.CO_AREA),cmb_no_area.SearchText,"NO_AREA")
+            SearchFields: =["cr274_nome"]
+            SearchItems: =Search(Filter(tb_perfiss, CO_AREA = cmb_head.Selected.CO_AREA),cmb_no_area.SearchText,"cr274_nome")
             SelectMultiple: =false
             Size: =18.27
             Width: =443
@@ -461,15 +461,15 @@ Fornecedor As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["NO_LIDER"]
+            DisplayFields: =["cr274_co_area"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =clc_tb_perfis
+            Items: =tb_perfiss
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["NO_LIDER"]
-            SearchItems: =Search(clc_tb_perfis,cmb_co_area_lider_gestor.SearchText,"NO_LIDER")
+            SearchFields: =["cr274_nome"]
+            SearchItems: =Search(tb_perfiss,cmb_co_area_lider_gestor.SearchText,"cr274_nome")
             SelectMultiple: =false
             Size: =18.27
             Width: =379.5
@@ -510,17 +510,17 @@ Fornecedor As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["no_sequencial"]
+            DisplayFields: =["cr274_no_sequencial"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
             IsSearchable: =false
             Items: |-
                 =//Distinct(clc_base_sequencial;sequencial_orcamento)
-                clc_base_sequencial2
+                tb_sequencials
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["no_sequencial"]
+            SearchFields: =["cr274_nome"]
             SearchItems: =[]
             SelectMultiple: =false
             Size: =18.27
@@ -642,15 +642,15 @@ Fornecedor As screen:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["no_fornecedor"]
+            DisplayFields: =["cr274_no_fornecedor"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =clc_base_forncecedor
+            Items: =tb_fornecedoress
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["no_fornecedor"]
-            SearchItems: =Search(clc_base_forncecedor,cmb_id_fornecedor.SearchText,"no_fornecedor")
+            SearchFields: =["cr274_nome"]
+            SearchItems: =Search(tb_fornecedoress,cmb_id_fornecedor.SearchText,"cr274_nome")
             SelectMultiple: =false
             Size: =18.27
             Width: =379.5
