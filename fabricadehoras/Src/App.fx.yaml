@@ -23,6 +23,7 @@ App As appinfo:
         Set(varSizeSubTitulo; 14);;
         Set(varSizeText; 12);;
         */
+        
         Clear(clc_tabela1);
         //Clear(clc_tabela2);;
         Clear(clc_base_sequencial); 
@@ -1654,6 +1655,7 @@ App As appinfo:
         
         Clear(clc_modelo_tarifacao);
         ClearCollect(clc_modelo_tarifacao,{id:1,no_modelo:"modelo 1"},{id:2,no_modelo:"modelo 2"},{id:3,no_modelo:"modelo 3"},{id:4,no_modelo:"modelo 4"},{id:5,no_modelo:"modelo 5"});
+        Clear(clc_mensalizacao);
     StartScreen: =
     Theme: =PowerAppsTheme
 

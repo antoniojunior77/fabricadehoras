@@ -147,20 +147,19 @@ Fornecedor As screen:
             Y: =223
             ZIndex: =20
 
-        galeria_expandida As gallery.galleryVertical:
+        galeria_expandida As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
-            Height: =162
+            Height: =75
             Items: =Filter(Sort(clc_tabela1,id,SortOrder.Descending), id_fabrica=ThisItem.id_fabrica)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =55
-            Visible: =Switch(varShowIdFab,"0",false,ThisItem.id_fabrica,true)
-            Width: =1668
-            X: =40
-            Y: =35
-            ZIndex: =21
+            TemplateSize: =70
+            Width: =1648
+            X: =56
+            Y: =39
+            ZIndex: =22
 
-            Label11 As label:
+            Label11_7 As label:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Height: =50
@@ -171,30 +170,31 @@ Fornecedor As screen:
                 Text: =ThisItem.descricao
                 VerticalAlign: =VerticalAlign.Top
                 Width: =570
-                X: =140
+                X: =133
+                Y: =12
                 ZIndex: =1
 
-            Icon3_5 As icon.Trash:
+            Icon3_6 As icon.Trash:
                 Height: =20
                 Icon: =Icon.Trash
                 OnSelect: |-
                     =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
                 Width: =25
-                X: =13
-                Y: =16
+                X: =6
+                Y: =28
                 ZIndex: =2
 
-            Image4_5 As image:
+            Image4_6 As image:
                 Height: =20
                 Image: =compose
                 OnSelect: |-
                     =UpdateContext({vShowEdicao:true})
                 Width: =25
-                X: =41
-                Y: =16
+                X: =34
+                Y: =28
                 ZIndex: =3
 
-            Label11_1 As label:
+            Label11_8 As label:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
@@ -202,10 +202,11 @@ Fornecedor As screen:
                 Size: =14
                 Text: =ThisItem.ano_consumo
                 Width: =76
-                X: =723
+                X: =716
+                Y: =12
                 ZIndex: =4
 
-            Label11_2 As label:
+            Label11_9 As label:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
@@ -213,10 +214,11 @@ Fornecedor As screen:
                 Size: =14
                 Text: =ThisItem.mes_inicio
                 Width: =63
-                X: =824
+                X: =817
+                Y: =12
                 ZIndex: =5
 
-            Label11_3 As label:
+            Label11_10 As label:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
@@ -224,10 +226,11 @@ Fornecedor As screen:
                 Size: =14
                 Text: =ThisItem.qtd_meses
                 Width: =64
-                X: =916
+                X: =909
+                Y: =12
                 ZIndex: =6
 
-            Label11_4 As label:
+            Label11_11 As label:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
@@ -235,10 +238,11 @@ Fornecedor As screen:
                 Size: =14
                 Text: =ThisItem.total_baseline
                 Width: =131
-                X: =1010
+                X: =1003
+                Y: =12
                 ZIndex: =7
 
-            Label11_5 As label:
+            Label11_12 As label:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
@@ -247,10 +251,11 @@ Fornecedor As screen:
                 Text: |-
                     =Text(Value(ThisItem.valor_contratao),"$#,##0.00","pt-BR")
                 Width: =224
-                X: =1195
+                X: =1188
+                Y: =12
                 ZIndex: =8
 
-            Label11_6 As label:
+            Label11_13 As label:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
                 Italic: =true
@@ -259,10 +264,11 @@ Fornecedor As screen:
                 Text: |-
                     =Text(Value(ThisItem.valor_unitario),"$#,##0.00","pt-BR")
                 Width: =184
-                X: =1460
+                X: =1453
+                Y: =12
                 ZIndex: =9
 
-            Button2 As button:
+            Button2_2 As button:
                 BorderThickness: =0
                 DisabledColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
@@ -282,20 +288,20 @@ Fornecedor As screen:
                 RadiusTopRight: =1
                 Text: =""
                 Width: =20
-                X: =45
-                Y: =16
+                X: =38
+                Y: =28
                 ZIndex: =10
 
-            Image2 As image:
+            Image2_1 As image:
                 Height: =25
                 Image: ='botao-adicionar'
                 OnSelect: =Select(Parent)
                 Width: =25
-                X: =70
-                Y: =13
+                X: =63
+                Y: =25
                 ZIndex: =11
 
-            Button2_1 As button:
+            Button2_3 As button:
                 BorderThickness: =0
                 DisabledColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
@@ -315,8 +321,8 @@ Fornecedor As screen:
                 RadiusTopRight: =1
                 Text: =""
                 Width: =20
-                X: =72
-                Y: =16
+                X: =65
+                Y: =28
                 ZIndex: =12
 
     Label1 As label:
@@ -1709,7 +1715,7 @@ Fornecedor As screen:
             HoverFill: |-
                 =ColorValue("#FF0000")
             OnSelect: |-
-                =Clear(clc_mensalizacao);
+                =
                 ClearCollect(clc_mensalizacao,
                 {
                     id: Last( SortByColumns( clc_mensalizacao, "id", SortOrder.Ascending )).id + 1,
