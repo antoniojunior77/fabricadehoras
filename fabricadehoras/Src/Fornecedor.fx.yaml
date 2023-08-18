@@ -326,6 +326,49 @@ Fornecedor As screen:
                 Y: =16
                 ZIndex: =12
 
+            HtmlText1 As htmlViewer:
+                Height: =76
+                HtmlText: |-
+                    ="<table WIDTH='100%' border='0' cellspacing='0'>
+                    <thead>
+                      <tr>
+                        <th bgcolor="& vTitFontColor &" ><font color='white'>Janeiro</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Fevereiro</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Março</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Abril</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Maio</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Junho</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Julho</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Agosto</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Setembro</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Outubro</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Novembro</font></th>
+                        <th bgcolor="& vTitFontColor &"><font color='white'>Dezembro</font></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrJan),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrFev),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrMar),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrAbr),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrMai),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrJun),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrJul),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrAgo),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrSet),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrOut),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrNov),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrDez),"$#,##0.00","pt-BR") &"</<td>
+                      </tr>
+                    </tbody>
+                    </table>"
+                OnSelect: =Select(Parent)
+                Width: =1631
+                X: =6
+                Y: =62
+                ZIndex: =13
+
     Label1 As label:
         Color: =ColorValue(vTitFontColor)  
         Font: =vTitFontFamily
