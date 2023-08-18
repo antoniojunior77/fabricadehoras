@@ -1101,528 +1101,6 @@ Fornecedor As screen:
         Y: =445
         ZIndex: =52
 
-    gp_mensalização As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =90
-
-        fundo_modal As rectangle:
-            Fill: =RGBA(245, 245, 245, 0.8)
-            Height: =768
-            Visible: =vShowMensalizacao
-            Width: =1920
-            ZIndex: =62
-
-        Rectangle5 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =390
-            Visible: =vShowMensalizacao
-            Width: =1754.14
-            X: =112.45
-            Y: =102
-            ZIndex: =63
-
-        Label4 As label:
-            Color: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =28.11
-            Text: ="Mensalização"
-            Visible: =vShowMensalizacao
-            Width: =281.11
-            X: =157.42
-            Y: =121
-            ZIndex: =64
-
-        Label5 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: |-
-                ="Id Fábrica:"
-            Visible: =vShowMensalizacao
-            Width: =168.67
-            X: =163.05
-            Y: =176
-            ZIndex: =65
-
-        Label5_1 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: |-
-                ="Total Baseline:"
-            Visible: =vShowMensalizacao
-            Width: =210.83
-            X: =515.84
-            Y: =176
-            ZIndex: =66
-
-        Label5_2 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            Height: =43
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: |-
-                ="Ano:"
-            Visible: =vShowMensalizacao
-            Width: =101.2
-            X: =924.86
-            Y: =176
-            ZIndex: =67
-
-        Label5_3 As label:
-            Font: =Font.Lato
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: ="FO0001"
-            Visible: =vShowMensalizacao
-            Width: =168.67
-            X: =313.44
-            Y: =176
-            ZIndex: =68
-
-        Label5_4 As label:
-            Font: =Font.Lato
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: ="2023"
-            Visible: =vShowMensalizacao
-            Width: =168.67
-            X: =1009.19
-            Y: =176
-            ZIndex: =69
-
-        Label5_5 As label:
-            Font: =Font.Lato
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: ="12.000"
-            Visible: =vShowMensalizacao
-            Width: =168.67
-            X: =719.65
-            Y: =176
-            ZIndex: =70
-
-        Label5_6 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: |-
-                ="Descrição TI:"
-            Visible: =vShowMensalizacao
-            Width: =188.35
-            X: =163.05
-            Y: =226
-            ZIndex: =71
-
-        Label5_7 As label:
-            Font: =Font.Lato
-            Height: =45
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: ="TESTE 01"
-            Visible: =vShowMensalizacao
-            Width: =754.79
-            X: =357.01
-            Y: =226
-            ZIndex: =72
-
-        Label6 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Janeiro"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =229.11
-            Y: =292
-            ZIndex: =73
-
-        Label6_1 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Fevereiro"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =340.15
-            Y: =292
-            ZIndex: =74
-
-        Label6_2 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Março"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =475.08
-            Y: =292
-            ZIndex: =75
-
-        Label6_3 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Abril"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =605.8
-            Y: =292
-            ZIndex: =76
-
-        Label6_4 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Maio"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =714.03
-            Y: =292
-            ZIndex: =77
-
-        Label6_5 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Junho"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =839.12
-            Y: =292
-            ZIndex: =78
-
-        Label6_6 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Julho"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =972.65
-            Y: =292
-            ZIndex: =79
-
-        Label6_7 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Agosto"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =1089.31
-            Y: =292
-            ZIndex: =80
-
-        Label6_8 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Setembro"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =1203.16
-            Y: =292
-            ZIndex: =81
-
-        Label6_9 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Outubro"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =1325.45
-            Y: =292
-            ZIndex: =82
-
-        Label6_10 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Novembro"
-            Visible: =vShowMensalizacao
-            Width: =158.83
-            X: =1451.95
-            Y: =292
-            ZIndex: =83
-
-        Label6_11 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Dezembro"
-            Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =1581.26
-            Y: =292
-            ZIndex: =84
-
-        TextInput2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =237.54
-            Y: =349
-            ZIndex: =85
-
-        TextInput2_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =355.61
-            Y: =349
-            ZIndex: =86
-
-        TextInput2_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =475.08
-            Y: =349
-            ZIndex: =87
-
-        TextInput2_3 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =593.15
-            Y: =349
-            ZIndex: =88
-
-        TextInput2_4 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =712.62
-            Y: =349
-            ZIndex: =89
-
-        TextInput2_5 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =839.12
-            Y: =349
-            ZIndex: =90
-
-        TextInput2_6 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =958.59
-            Y: =349
-            ZIndex: =91
-
-        TextInput2_7 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1085.1
-            Y: =349
-            ZIndex: =92
-
-        TextInput2_8 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1211.6
-            Y: =349
-            ZIndex: =93
-
-        TextInput2_9 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1340.91
-            Y: =349
-            ZIndex: =94
-
-        TextInput2_10 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1460.38
-            Y: =349
-            ZIndex: =95
-
-        TextInput2_11 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1598.13
-            Y: =349
-            ZIndex: =96
-
-        Button1 As button:
-            Fill: =RGBA(255, 0, 0, 1)
-            HoverFill: |-
-                =ColorValue("#FF0000")
-            OnSelect: |-
-                =UpdateContext({vShowMensalizacao:false})
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: ="Salvar"
-            Visible: =vShowMensalizacao
-            Width: =224.89
-            X: =1248.14
-            Y: =434
-            ZIndex: =97
-
-        Button1_1 As button:
-            BorderColor: |
-                =ColorValue("#FF0000")
-            BorderThickness: =1
-            Color: =RGBA(255, 0, 0, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            HoverColor: =RGBA(255, 0, 0, 1)
-            HoverFill: =
-            OnSelect: |-
-                =UpdateContext({vShowMensalizacao:false})
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: ="Cancelar"
-            Visible: =vShowMensalizacao
-            Width: =224.89
-            X: =1498.33
-            Y: =434
-            ZIndex: =98
-
     btnAdd_5 As button:
         Fill: =RGBA(255, 0, 0, 1)
         FontWeight: =FontWeight.Bold
@@ -1682,26 +1160,542 @@ Fornecedor As screen:
         Width: =254
         X: =1631
         Y: =1010
-        ZIndex: =108
+        ZIndex: =57
 
     imagem_header_1 As imagem_header:
         Height: =74
         Width: =375
         X: =1545
         Y: =12
-        ZIndex: =114
-
-    Label7 As label:
-        Text: =galeria_expandida.Selected.id
-        X: =1126
-        Y: =73
-        ZIndex: =117
+        ZIndex: =58
 
     Label9 As label:
         Text: =vTabMenu
         X: =1124
         Y: =66
-        ZIndex: =118
+        ZIndex: =59
+
+    gp_mensalização As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =90
+
+        fundo_modal As rectangle:
+            Fill: =RGBA(245, 245, 245, 0.8)
+            Height: =768
+            Visible: =vShowMensalizacao
+            Width: =1920
+            ZIndex: =76
+
+        Rectangle5 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =390
+            Visible: =vShowMensalizacao
+            Width: =1754.14
+            X: =112.45
+            Y: =102
+            ZIndex: =77
+
+        Label4 As label:
+            Color: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =28.11
+            Text: ="Mensalização"
+            Visible: =vShowMensalizacao
+            Width: =281.11
+            X: =157.42
+            Y: =121
+            ZIndex: =78
+
+        Label5 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: |-
+                ="Id Fábrica:"
+            Visible: =vShowMensalizacao
+            Width: =168.67
+            X: =163.05
+            Y: =176
+            ZIndex: =79
+
+        Label5_1 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: |-
+                ="Total Baseline:"
+            Visible: =vShowMensalizacao
+            Width: =210.83
+            X: =515.84
+            Y: =176
+            ZIndex: =80
+
+        Label5_2 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: |-
+                ="Ano:"
+            Visible: =vShowMensalizacao
+            Width: =101.2
+            X: =924.86
+            Y: =176
+            ZIndex: =81
+
+        Label5_3 As label:
+            Font: =Font.Lato
+            Height: =42
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="FO0001"
+            Visible: =vShowMensalizacao
+            Width: =168.67
+            X: =313.44
+            Y: =176
+            ZIndex: =82
+
+        Label5_4 As label:
+            Font: =Font.Lato
+            Height: =42
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="2023"
+            Visible: =vShowMensalizacao
+            Width: =168.67
+            X: =1009.19
+            Y: =176
+            ZIndex: =83
+
+        Label5_5 As label:
+            Font: =Font.Lato
+            Height: =42
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="12.000"
+            Visible: =vShowMensalizacao
+            Width: =168.67
+            X: =719.65
+            Y: =176
+            ZIndex: =84
+
+        Label5_6 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: |-
+                ="Descrição TI:"
+            Visible: =vShowMensalizacao
+            Width: =188.35
+            X: =163.05
+            Y: =226
+            ZIndex: =85
+
+        Label5_7 As label:
+            Font: =Font.Lato
+            Height: =45
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="TESTE 01"
+            Visible: =vShowMensalizacao
+            Width: =754.79
+            X: =357.01
+            Y: =226
+            ZIndex: =86
+
+        Label6 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Janeiro"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =229.11
+            Y: =292
+            ZIndex: =87
+
+        Label6_1 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Fevereiro"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =340.15
+            Y: =292
+            ZIndex: =88
+
+        Label6_2 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Março"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =475.08
+            Y: =292
+            ZIndex: =89
+
+        Label6_3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Abril"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =605.8
+            Y: =292
+            ZIndex: =90
+
+        Label6_4 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Maio"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =714.03
+            Y: =292
+            ZIndex: =91
+
+        Label6_5 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Junho"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =839.12
+            Y: =292
+            ZIndex: =92
+
+        Label6_6 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Julho"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =972.65
+            Y: =292
+            ZIndex: =93
+
+        Label6_7 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Agosto"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =1089.31
+            Y: =292
+            ZIndex: =94
+
+        Label6_8 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Setembro"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =1203.16
+            Y: =292
+            ZIndex: =95
+
+        Label6_9 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Outubro"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =1325.45
+            Y: =292
+            ZIndex: =96
+
+        Label6_10 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Novembro"
+            Visible: =vShowMensalizacao
+            Width: =158.83
+            X: =1451.95
+            Y: =292
+            ZIndex: =97
+
+        Label6_11 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Dezembro"
+            Visible: =vShowMensalizacao
+            Width: =140.56
+            X: =1581.26
+            Y: =292
+            ZIndex: =98
+
+        TextInput2 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =237.54
+            Y: =349
+            ZIndex: =99
+
+        TextInput2_1 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =355.61
+            Y: =349
+            ZIndex: =100
+
+        TextInput2_2 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =475.08
+            Y: =349
+            ZIndex: =101
+
+        TextInput2_3 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =593.15
+            Y: =349
+            ZIndex: =102
+
+        TextInput2_4 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =712.62
+            Y: =349
+            ZIndex: =103
+
+        TextInput2_5 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =839.12
+            Y: =349
+            ZIndex: =104
+
+        TextInput2_6 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =958.59
+            Y: =349
+            ZIndex: =105
+
+        TextInput2_7 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =1085.1
+            Y: =349
+            ZIndex: =106
+
+        TextInput2_8 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =1211.6
+            Y: =349
+            ZIndex: =107
+
+        TextInput2_9 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =1340.91
+            Y: =349
+            ZIndex: =108
+
+        TextInput2_10 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =1460.38
+            Y: =349
+            ZIndex: =109
+
+        TextInput2_11 As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            Default: =""
+            Height: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Visible: =vShowMensalizacao
+            Width: =102.61
+            X: =1598.13
+            Y: =349
+            ZIndex: =110
+
+        Button1 As button:
+            Fill: =RGBA(255, 0, 0, 1)
+            HoverFill: |-
+                =ColorValue("#FF0000")
+            OnSelect: |-
+                =UpdateContext({vShowMensalizacao:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Salvar"
+            Visible: =vShowMensalizacao
+            Width: =224.89
+            X: =1248.14
+            Y: =434
+            ZIndex: =111
+
+        Button1_1 As button:
+            BorderColor: |
+                =ColorValue("#FF0000")
+            BorderThickness: =1
+            Color: =RGBA(255, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            HoverColor: =RGBA(255, 0, 0, 1)
+            HoverFill: =
+            OnSelect: |-
+                =UpdateContext({vShowMensalizacao:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Cancelar"
+            Visible: =vShowMensalizacao
+            Width: =224.89
+            X: =1498.33
+            Y: =434
+            ZIndex: =112
 
     Group2 As group:
         Height: =5
@@ -1734,7 +1728,7 @@ Fornecedor As screen:
             Width: =263
             X: =1567
             Y: =382
-            ZIndex: =119
+            ZIndex: =60
 
         txt_valor_periodo As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1750,7 +1744,7 @@ Fornecedor As screen:
             Width: =264.25
             X: =1567
             Y: =380
-            ZIndex: =120
+            ZIndex: =61
 
     Group7 As group:
         Height: =5
@@ -1782,7 +1776,7 @@ Fornecedor As screen:
                 =Text(Value(txt_baseline.Text),"#,##0","pt-BR")
             X: =1202
             Y: =380
-            ZIndex: =121
+            ZIndex: =62
 
         txt_baseline As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -1797,7 +1791,7 @@ Fornecedor As screen:
             Width: =150
             X: =1202
             Y: =380
-            ZIndex: =122
+            ZIndex: =63
 
     gp_conf_exclusao As group:
         Height: =5
@@ -1811,7 +1805,7 @@ Fornecedor As screen:
             Height: =1080
             Visible: =vShowConfExclusaoItem
             Width: =1920
-            ZIndex: =109
+            ZIndex: =64
 
         Rectangle5_9 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -1821,7 +1815,7 @@ Fornecedor As screen:
             Width: =1754.14
             X: =118
             Y: =271
-            ZIndex: =110
+            ZIndex: =65
 
         Label4_9 As label:
             Color: =RGBA(255, 0, 0, 1)
@@ -1836,7 +1830,7 @@ Fornecedor As screen:
             Width: =639.53
             X: =163
             Y: =290
-            ZIndex: =111
+            ZIndex: =66
 
         Label5_54 As label:
             Align: =Align.Center
@@ -1851,7 +1845,7 @@ Fornecedor As screen:
             Width: =1755
             X: =112
             Y: =429
-            ZIndex: =112
+            ZIndex: =67
 
         btn_canc_exc As button:
             Fill: =RGBA(255, 0, 0, 1)
@@ -1867,7 +1861,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =1021
             Y: =594
-            ZIndex: =113
+            ZIndex: =68
 
         btn_conf_exc As button:
             Color: =RGBA(166, 166, 166, 1)
@@ -1908,7 +1902,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =759
             Y: =593
-            ZIndex: =115
+            ZIndex: =69
 
         Icon4 As icon.More:
             Color: =RGBA(255, 255, 0, 1)
@@ -1918,7 +1912,7 @@ Fornecedor As screen:
             Width: =208
             X: =882
             Y: =309
-            ZIndex: =116
+            ZIndex: =70
 
     gp_validaçao As group:
         Height: =5
@@ -1932,7 +1926,7 @@ Fornecedor As screen:
             Height: =1080
             Visible: =vShowValidacao
             Width: =1920
-            ZIndex: =99
+            ZIndex: =71
 
         Rectangle5_1 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -1942,7 +1936,7 @@ Fornecedor As screen:
             Width: =1754.14
             X: =118
             Y: =271
-            ZIndex: =100
+            ZIndex: =72
 
         Label4_1 As label:
             Color: =RGBA(255, 0, 0, 1)
@@ -1957,7 +1951,7 @@ Fornecedor As screen:
             Width: =639.53
             X: =163
             Y: =290
-            ZIndex: =101
+            ZIndex: =73
 
         Label5_15 As label:
             Align: =Align.Center
@@ -1972,7 +1966,7 @@ Fornecedor As screen:
             Width: =1755
             X: =112
             Y: =429
-            ZIndex: =102
+            ZIndex: =74
 
         Button1_3 As button:
             Fill: =RGBA(255, 0, 0, 1)
@@ -1988,7 +1982,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =867
             Y: =601
-            ZIndex: =103
+            ZIndex: =75
 
     btnEditar As group:
         Height: =5
@@ -2028,7 +2022,7 @@ Fornecedor As screen:
             Width: =32
             X: =1840
             Y: =382
-            ZIndex: =104
+            ZIndex: =53
 
         Icon3 As icon.CheckBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -2057,7 +2051,7 @@ Fornecedor As screen:
             Width: =22
             X: =1845
             Y: =387
-            ZIndex: =105
+            ZIndex: =54
 
     BtnCancel As group:
         Height: =5
@@ -2087,7 +2081,7 @@ Fornecedor As screen:
             Width: =32
             X: =1881
             Y: =382
-            ZIndex: =106
+            ZIndex: =55
 
         Icon3_3 As icon.CheckBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -2106,7 +2100,7 @@ Fornecedor As screen:
             Width: =22
             X: =1886
             Y: =387
-            ZIndex: =107
+            ZIndex: =56
 
     "'gp_add-Fabrica' As group":
         Height: =5
@@ -2120,7 +2114,7 @@ Fornecedor As screen:
             Height: =1080
             Visible: =vShowAddFabrica
             Width: =1920
-            ZIndex: =53
+            ZIndex: =113
 
         Rectangle5_2 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -2130,7 +2124,7 @@ Fornecedor As screen:
             Width: =702
             X: =637
             Y: =176
-            ZIndex: =54
+            ZIndex: =114
 
         Label4_2 As label:
             Color: =RGBA(255, 0, 0, 1)
@@ -2145,7 +2139,7 @@ Fornecedor As screen:
             Width: =281.11
             X: =682
             Y: =195
-            ZIndex: =55
+            ZIndex: =115
 
         Label5_23 As label:
             Font: =Font.Lato
@@ -2160,7 +2154,7 @@ Fornecedor As screen:
             Width: =168.67
             X: =688
             Y: =250
-            ZIndex: =56
+            ZIndex: =116
 
         Label5_17 As label:
             Font: =Font.Lato
@@ -2175,7 +2169,7 @@ Fornecedor As screen:
             Width: =188.35
             X: =690
             Y: =310
-            ZIndex: =57
+            ZIndex: =117
 
         TextInput2_17 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -2187,7 +2181,7 @@ Fornecedor As screen:
             Width: =360
             X: =837
             Y: =258
-            ZIndex: =58
+            ZIndex: =118
 
         TextInput2_18 As text:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -2200,7 +2194,7 @@ Fornecedor As screen:
             Width: =358
             X: =839
             Y: =318
-            ZIndex: =59
+            ZIndex: =119
 
         Button1_5 As button:
             Fill: =RGBA(255, 0, 0, 1)
@@ -2224,7 +2218,7 @@ Fornecedor As screen:
             Width: =224.89
             X: =723
             Y: =475
-            ZIndex: =60
+            ZIndex: =120
 
         Button1_4 As button:
             BorderColor: |
@@ -2244,5 +2238,5 @@ Fornecedor As screen:
             Width: =224.89
             X: =973
             Y: =475
-            ZIndex: =61
+            ZIndex: =121
 
