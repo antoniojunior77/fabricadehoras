@@ -139,7 +139,6 @@ App As appinfo:
         
         //----agrupar tabela de mensalização
         
-        
         Clear(clc_group_msl);
         ClearCollect(clc_group_msl,
             AddColumns(
