@@ -129,7 +129,7 @@ Fornecedor As screen:
             OnSelect: |-
                 =If(varShowIdFab = ThisItem.id_fabrica, 
                     UpdateContext({varShowIdFab:"0"}),
-                    UpdateContext({varShowIdFab:ThisItem.id_fabrica, vAllitems:Blank()})
+                    UpdateContext({varShowIdFab:ThisItem.id_fabrica, vAllitems:Blank(),vEdicaoItem:false})
                     //Set(varShowIdFab;ThisItem.id_fabrica)
                 );
             Width: =21.08
