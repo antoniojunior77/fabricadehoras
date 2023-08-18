@@ -1,0 +1,51 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_activitypointer_forms",
+      "Namespace": "Atividades (Formulários)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr274_tb_areas_forms",
+      "Namespace": "tb_areass (Formulários)",
+      "Values": {
+        "Informações": "9003138b-fb47-4d90-a024-cf7fd33686d4"
+      }
+    },
+    {
+      "Kind": "default.cds_cr274_tb_consumo_fornecedor_forms",
+      "Namespace": "tb_consumo_fornecedors (Formulários)",
+      "Values": {
+        "Informações": "4be04e62-4411-4d49-8f84-d42f0da51172"
+      }
+    },
+    {
+      "Kind": "default.cds_cr274_tb_fornecedores_forms",
+      "Namespace": "tb_fornecedoress (Formulários)",
+      "Values": {
+        "Informações": "8ba85d96-fc13-4d5a-bb00-d61ee4b3cb17"
+      }
+    },
+    {
+      "Kind": "default.cds_cr274_tb_modelo_tarifacao_forms",
+      "Namespace": "tb_modelo_tarifacaos (Formulários)",
+      "Values": {
+        "Informações": "7495308b-fa91-4165-87dc-f3bf450683bb"
+      }
+    },
+    {
+      "Kind": "default.cds_cr274_tb_perfis_forms",
+      "Namespace": "tb_perfiss (Formulários)",
+      "Values": {
+        "Informações": "3be25acc-0987-427e-ba27-70f8c308e708"
+      }
+    },
+    {
+      "Kind": "default.cds_cr274_tb_sequencial_forms",
+      "Namespace": "tb_sequencials (Formulários)",
+      "Values": {
+        "Informações": "8703c152-5e65-4e5c-8588-ea06fec41ef1"
+      }
+    }
+  ]
+}

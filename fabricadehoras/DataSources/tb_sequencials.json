@@ -1,0 +1,96 @@
+[
+  {
+    "DisplayName": "tb_sequencials (Modos de exibição)",
+    "Name": "_cr274_tb_sequencial_views",
+    "RelatedEntityName": "tb_sequencials",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "6667dadc-f223-433a-9bec-fecc4c71f772": "Exibição de Consulta de tb_sequencial",
+      "6cdc8a83-c9b2-40dd-abf4-0d47368aa4ba": "tb_sequencials Inativos(as)",
+      "914b9fca-644c-4e56-98e6-63b81fbbfc43": "tb_sequencials Ativos(as)",
+      "b8c865fc-ccd0-4db1-a9ad-9ac1a48ee9b7": "Exibição Associada de tb_sequencial",
+      "d9063402-4ae1-494f-bc3e-198bb96f6e02": "Exibição de Localização Avançada de tb_sequencial"
+    }
+  },
+  {
+    "DisplayName": "Status (tb_sequencials)",
+    "Name": "cr274_tb_sequencial_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativo(a)",
+      "1": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "tb_sequencials"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "tb_sequencials",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (tb_sequencials)",
+    "Name": "cr274_tb_sequencial_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativo(a)",
+      "2": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "tb_sequencials"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "tb_sequencials",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr274_tb_sequencials",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr274_tb_sequencial",
+    "Name": "tb_sequencials",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "cr274_id": "id",
+      "cr274_no_sequencial": "no_sequencial",
+      "cr274_nome": "Nome",
+      "cr274_tb_sequencial_AsyncOperations": "Trabalhos do Sistema",
+      "cr274_tb_sequencial_BulkDeleteFailures": "Falhas da Exclusão em Massa",
+      "cr274_tb_sequencial_MailboxTrackingFolders": "Pastas de Acompanhamento Automático da Caixa de Correio",
+      "cr274_tb_sequencial_PrincipalObjectAttributeAccesses": "Compartilhamento de Campo",
+      "cr274_tb_sequencial_ProcessSession": "Sessões de Processo",
+      "cr274_tb_sequencial_SyncErrors": "Erros de Sincronização",
+      "cr274_tb_sequencialid": "tb_sequencial",
+      "createdby": "Criada Por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "modifiedby": "Modificado Por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "Número de Versão da Regra de Fuso Horário",
+      "utcconversiontimezonecode": "Código de Fuso Horário de Conversão de UTC",
+      "versionnumber": "Número da Versão"
+    },
+    "PreferredName": "tb_sequencials",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

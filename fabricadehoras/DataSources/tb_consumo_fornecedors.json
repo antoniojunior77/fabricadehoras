@@ -1,0 +1,109 @@
+[
+  {
+    "DisplayName": "tb_consumo_fornecedors (Modos de exibição)",
+    "Name": "_cr274_tb_consumo_fornecedor_views",
+    "RelatedEntityName": "tb_consumo_fornecedors",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "721a479f-0491-4673-8171-503cd02bac4b": "tb_consumo_fornecedors Ativos(as)",
+      "8c28704a-c9a2-4dbb-928e-a7879c6df5e7": "Exibição de Localização Avançada de tb_consumo_fornecedor",
+      "9ce62874-f2c7-4351-9feb-3753770d511e": "tb_consumo_fornecedors Inativos(as)",
+      "cce7b1c5-0181-49da-be40-5ffb09e6bbdc": "Exibição de Consulta de tb_consumo_fornecedor",
+      "d9c44d4f-a2a7-417b-a7a2-84d8c92538be": "Exibição Associada de tb_consumo_fornecedor"
+    }
+  },
+  {
+    "DisplayName": "Status (tb_consumo_fornecedors)",
+    "Name": "cr274_tb_consumo_fornecedor_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativo(a)",
+      "1": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "tb_consumo_fornecedors"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "tb_consumo_fornecedors",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (tb_consumo_fornecedors)",
+    "Name": "cr274_tb_consumo_fornecedor_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativo(a)",
+      "2": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "tb_consumo_fornecedors"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "tb_consumo_fornecedors",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr274_tb_consumo_fornecedors",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr274_tb_consumo_fornecedor",
+    "Name": "tb_consumo_fornecedors",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "cr274_ano_consumo": "ano_consumo",
+      "cr274_co_area": "co_area",
+      "cr274_co_lider_area": "co_lider_area",
+      "cr274_co_lider_area_gestor": "co_lider_area_gestor",
+      "cr274_descricao": "descricao",
+      "cr274_id": "id",
+      "cr274_id_fabrica": "id_fabrica",
+      "cr274_id_fornecedor": "id_fornecedor",
+      "cr274_id_sequencial": "id_sequencial",
+      "cr274_mes_inicio": "mes_inicio",
+      "cr274_no_area": "no_area",
+      "cr274_nome": "Nome",
+      "cr274_qtd_meses": "qtd_meses",
+      "cr274_tb_consumo_fornecedor_AsyncOperations": "Trabalhos do Sistema",
+      "cr274_tb_consumo_fornecedor_BulkDeleteFailures": "Falhas da Exclusão em Massa",
+      "cr274_tb_consumo_fornecedor_MailboxTrackingFolders": "Pastas de Acompanhamento Automático da Caixa de Correio",
+      "cr274_tb_consumo_fornecedor_PrincipalObjectAttributeAccesses": "Compartilhamento de Campo",
+      "cr274_tb_consumo_fornecedor_ProcessSession": "Sessões de Processo",
+      "cr274_tb_consumo_fornecedor_SyncErrors": "Erros de Sincronização",
+      "cr274_tb_consumo_fornecedorid": "tb_consumo_fornecedor",
+      "cr274_total_baseline": "total_baseline",
+      "cr274_valor_contratao": "valor_contratao",
+      "cr274_valor_unitario": "valor_unitario",
+      "createdby": "Criada Por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "modifiedby": "Modificado Por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "Número de Versão da Regra de Fuso Horário",
+      "utcconversiontimezonecode": "Código de Fuso Horário de Conversão de UTC",
+      "versionnumber": "Número da Versão"
+    },
+    "PreferredName": "tb_consumo_fornecedors",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

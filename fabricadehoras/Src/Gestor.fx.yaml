@@ -5,7 +5,7 @@ Gestor As screen:
 
     barra_navegacao_2 As barra_navegacao:
         acaoFornecedor: =Fornecedor
-        acaoGestor: ='Gestor'
+        acaoGestor: =Gestor
         acaoLista: =Lista
         Width: =899.56
         X: =112.45

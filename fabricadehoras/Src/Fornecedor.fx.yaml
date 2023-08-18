@@ -286,9 +286,9 @@ Fornecedor As screen:
         ZIndex: =3
 
     barra_navegacao_1 As barra_navegacao:
-        acaoFornecedor: ='Fornecedor'
-        acaoGestor: ='Gestor'
-        acaoLista: ='Lista'
+        acaoFornecedor: =Fornecedor
+        acaoGestor: =Gestor
+        acaoLista: =Lista
         Width: =899.56
         X: =112.45
         Y: =64

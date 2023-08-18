@@ -1,0 +1,102 @@
+[
+  {
+    "DisplayName": "tb_areass (Modos de exibição)",
+    "Name": "_cr274_tb_areas_views",
+    "RelatedEntityName": "tb_areass",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0cfa16b6-d2e3-459e-8d23-913968929f42": "tb_areass Inativos(as)",
+      "45675ba3-7b09-4c0d-96a8-f7c14457d5f0": "Exibição de Consulta de tb_areas",
+      "6fe9aaf3-ced9-44df-948b-6e8de478402e": "Exibição de Localização Avançada de tb_areas",
+      "72b900d1-188b-447d-84f0-3e4ba3f7a031": "Exibição Associada de tb_areas",
+      "75c7c5b9-4862-4786-910b-a643e03609b1": "tb_areass Ativos(as)"
+    }
+  },
+  {
+    "DisplayName": "Status (tb_areass)",
+    "Name": "cr274_tb_areas_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativo(a)",
+      "1": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "tb_areass"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "tb_areass",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (tb_areass)",
+    "Name": "cr274_tb_areas_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativo(a)",
+      "2": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "tb_areass"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "tb_areass",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr274_tb_areases",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr274_tb_areas",
+    "Name": "tb_areass",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "cr274_co_area": "CO_AREA",
+      "cr274_co_lider_area": "CO_LIDER_AREA",
+      "cr274_co_pfocal": "CO_PFOCAL",
+      "cr274_nivel_h": "NIVEL_H",
+      "cr274_no_area": "NO_AREA",
+      "cr274_no_area_resp": "NO_AREA_RESP",
+      "cr274_no_lider_area": "NO_LIDER_AREA",
+      "cr274_no_pfocal": "NO_PFOCAL",
+      "cr274_nome": "Nome",
+      "cr274_tb_areas_AsyncOperations": "Trabalhos do Sistema",
+      "cr274_tb_areas_BulkDeleteFailures": "Falhas da Exclusão em Massa",
+      "cr274_tb_areas_MailboxTrackingFolders": "Pastas de Acompanhamento Automático da Caixa de Correio",
+      "cr274_tb_areas_PrincipalObjectAttributeAccesses": "Compartilhamento de Campo",
+      "cr274_tb_areas_ProcessSession": "Sessões de Processo",
+      "cr274_tb_areas_SyncErrors": "Erros de Sincronização",
+      "cr274_tb_areasid": "tb_areas",
+      "createdby": "Criada Por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "modifiedby": "Modificado Por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "Número de Versão da Regra de Fuso Horário",
+      "utcconversiontimezonecode": "Código de Fuso Horário de Conversão de UTC",
+      "versionnumber": "Número da Versão"
+    },
+    "PreferredName": "tb_areass",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

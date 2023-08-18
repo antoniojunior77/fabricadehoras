@@ -1,0 +1,96 @@
+[
+  {
+    "DisplayName": "tb_modelo_tarifacaos (Modos de exibição)",
+    "Name": "_cr274_tb_modelo_tarifacao_views",
+    "RelatedEntityName": "tb_modelo_tarifacaos",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "07ca4dea-9c69-4f45-821d-128bcf4d4a20": "Exibição de Localização Avançada de tb_modelo_tarifacao",
+      "09f61abf-ad60-46b2-a4fe-cf98059c4d9c": "Exibição Associada de tb_modelo_tarifacao",
+      "5b8d7d33-12f2-4fb8-8427-7f5b2c5bfe71": "Exibição de Consulta de tb_modelo_tarifacao",
+      "7519767a-ffff-409b-9b9c-e8fd2c5e41d3": "tb_modelo_tarifacaos Ativos(as)",
+      "e95cb5fd-4ed8-49f5-a553-761033a5743f": "tb_modelo_tarifacaos Inativos(as)"
+    }
+  },
+  {
+    "DisplayName": "Status (tb_modelo_tarifacaos)",
+    "Name": "cr274_tb_modelo_tarifacao_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativo(a)",
+      "1": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "tb_modelo_tarifacaos"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "tb_modelo_tarifacaos",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (tb_modelo_tarifacaos)",
+    "Name": "cr274_tb_modelo_tarifacao_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativo(a)",
+      "2": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "tb_modelo_tarifacaos"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "tb_modelo_tarifacaos",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr274_tb_modelo_tarifacaos",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr274_tb_modelo_tarifacao",
+    "Name": "tb_modelo_tarifacaos",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "cr274_id": "id",
+      "cr274_no_modelo": "no_modelo",
+      "cr274_nome": "Nome",
+      "cr274_tb_modelo_tarifacao_AsyncOperations": "Trabalhos do Sistema",
+      "cr274_tb_modelo_tarifacao_BulkDeleteFailures": "Falhas da Exclusão em Massa",
+      "cr274_tb_modelo_tarifacao_MailboxTrackingFolders": "Pastas de Acompanhamento Automático da Caixa de Correio",
+      "cr274_tb_modelo_tarifacao_PrincipalObjectAttributeAccesses": "Compartilhamento de Campo",
+      "cr274_tb_modelo_tarifacao_ProcessSession": "Sessões de Processo",
+      "cr274_tb_modelo_tarifacao_SyncErrors": "Erros de Sincronização",
+      "cr274_tb_modelo_tarifacaoid": "tb_modelo_tarifacao",
+      "createdby": "Criada Por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "modifiedby": "Modificado Por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "Número de Versão da Regra de Fuso Horário",
+      "utcconversiontimezonecode": "Código de Fuso Horário de Conversão de UTC",
+      "versionnumber": "Número da Versão"
+    },
+    "PreferredName": "tb_modelo_tarifacaos",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]
