@@ -1706,29 +1706,6 @@ Fornecedor As screen:
             Y: =434
             ZIndex: =112
 
-    Button1_18 As button:
-        Fill: =RGBA(255, 0, 0, 1)
-        HoverFill: |-
-            =ColorValue("#FF0000")
-        OnSelect: |-
-            =Patch(clc_fabrica,
-                Defaults(clc_fabrica),
-                {
-                    id: Last( SortByColumns( clc_fabrica, "id", SortOrder.Descending )).id,
-                    id_fabrica: TextInput2_17.Text
-                }
-            );
-            //Refresh(clc_fabrica);;
-            UpdateContext({vShowAddFabrica:false})
-        PaddingRight: =7.03
-        PaddingTop: =7.03
-        Size: =21.08
-        Text: ="Salvar"
-        Width: =224.89
-        X: =1662
-        Y: =997
-        ZIndex: =122
-
     Group2 As group:
         Height: =5
         Width: =5
