@@ -21,6 +21,7 @@ Fornecedor As screen:
         ZIndex: =2
 
         Label3 As label:
+            Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             PaddingRight: =7.03
@@ -32,17 +33,22 @@ Fornecedor As screen:
             ZIndex: =1
 
         Label3_1 As label:
+            Font: =Font.Lato
             FontWeight: =FontWeight.Bold
+            Height: =50
             OnSelect: =Select(Parent)
+            Overflow: =Overflow.Scroll
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =15
             Text: =ThisItem.descricao
+            VerticalAlign: =VerticalAlign.Top
             Width: =570.66
             X: =182.72
             ZIndex: =2
 
         Label3_2 As label:
+            Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             PaddingRight: =7.03
@@ -54,6 +60,7 @@ Fornecedor As screen:
             ZIndex: =3
 
         Label3_3 As label:
+            Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             PaddingRight: =7.03
@@ -65,6 +72,7 @@ Fornecedor As screen:
             ZIndex: =4
 
         Label3_4 As label:
+            Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             PaddingRight: =7.03
@@ -76,6 +84,7 @@ Fornecedor As screen:
             ZIndex: =5
 
         Label3_5 As label:
+            Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             PaddingRight: =7.03
@@ -87,6 +96,7 @@ Fornecedor As screen:
             ZIndex: =6
 
         Label3_6 As label:
+            Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             PaddingRight: =7.03
@@ -99,6 +109,7 @@ Fornecedor As screen:
             ZIndex: =7
 
         Label3_7 As label:
+            Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             PaddingRight: =7.03
@@ -118,7 +129,7 @@ Fornecedor As screen:
             OnSelect: |-
                 =If(varShowIdFab = ThisItem.id_fabrica, 
                     UpdateContext({varShowIdFab:"0"}),
-                    UpdateContext({varShowIdFab:ThisItem.id_fabrica})
+                    UpdateContext({varShowIdFab:ThisItem.id_fabrica, vAllitems:Blank()})
                     //Set(varShowIdFab;ThisItem.id_fabrica)
                 );
             Width: =21.08
@@ -152,10 +163,14 @@ Fornecedor As screen:
             Label11 As label:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
+                Height: =50
                 Italic: =true
                 OnSelect: =Select(Parent)
+                Overflow: =Overflow.Scroll
                 Size: =14
                 Text: =ThisItem.descricao
+                VerticalAlign: =VerticalAlign.Top
+                Width: =570
                 X: =140
                 ZIndex: =1
 
@@ -1690,6 +1705,29 @@ Fornecedor As screen:
             X: =1498.33
             Y: =434
             ZIndex: =112
+
+    Button1_18 As button:
+        Fill: =RGBA(255, 0, 0, 1)
+        HoverFill: |-
+            =ColorValue("#FF0000")
+        OnSelect: |-
+            =Patch(clc_fabrica,
+                Defaults(clc_fabrica),
+                {
+                    id: Last( SortByColumns( clc_fabrica, "id", SortOrder.Descending )).id,
+                    id_fabrica: TextInput2_17.Text
+                }
+            );
+            //Refresh(clc_fabrica);;
+            UpdateContext({vShowAddFabrica:false})
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =21.08
+        Text: ="Salvar"
+        Width: =224.89
+        X: =1662
+        Y: =997
+        ZIndex: =122
 
     Group2 As group:
         Height: =5
