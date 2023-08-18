@@ -1652,10 +1652,11 @@ Fornecedor As screen:
         txtJan As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =215
@@ -1665,10 +1666,11 @@ Fornecedor As screen:
         txtFev As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =343
@@ -1678,10 +1680,11 @@ Fornecedor As screen:
         txtMar As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =473
@@ -1691,10 +1694,11 @@ Fornecedor As screen:
         txtAbr As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =601
@@ -1704,10 +1708,11 @@ Fornecedor As screen:
         txtMai As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =730
@@ -1717,10 +1722,11 @@ Fornecedor As screen:
         txtJun As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =857
@@ -1730,10 +1736,11 @@ Fornecedor As screen:
         txtJul As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =986
@@ -1743,10 +1750,11 @@ Fornecedor As screen:
         txtAgo As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =1113
@@ -1756,10 +1764,11 @@ Fornecedor As screen:
         txtSet As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =1249
@@ -1769,10 +1778,11 @@ Fornecedor As screen:
         txtOut As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =1378
@@ -1782,10 +1792,11 @@ Fornecedor As screen:
         txtNov As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =1508
@@ -1795,10 +1806,11 @@ Fornecedor As screen:
         txtDez As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =""
+            Font: =Font.Lato
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =18.27
+            Size: =12
             Visible: =vShowMensalizacao
             Width: =120
             X: =1636
