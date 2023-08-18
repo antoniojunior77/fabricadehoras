@@ -149,12 +149,13 @@ Fornecedor As screen:
 
         galeria_expandida As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
-            Height: =75
+            Height: =157
             Items: =Filter(Sort(clc_tabela1,id,SortOrder.Descending), id_fabrica=ThisItem.id_fabrica)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =70
-            Width: =1648
+            TemplateSize: =152
+            Visible: =Switch(varShowIdFab,"0",false,ThisItem.id_fabrica,true)
+            Width: =1654
             X: =56
             Y: =39
             ZIndex: =22
@@ -181,18 +182,8 @@ Fornecedor As screen:
                     =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
                 Width: =25
                 X: =6
-                Y: =28
+                Y: =16
                 ZIndex: =2
-
-            Image4_6 As image:
-                Height: =20
-                Image: =compose
-                OnSelect: |-
-                    =UpdateContext({vShowEdicao:true})
-                Width: =25
-                X: =34
-                Y: =28
-                ZIndex: =3
 
             Label11_8 As label:
                 Font: =Font.Lato
@@ -204,7 +195,7 @@ Fornecedor As screen:
                 Width: =76
                 X: =716
                 Y: =12
-                ZIndex: =4
+                ZIndex: =3
 
             Label11_9 As label:
                 Font: =Font.Lato
@@ -216,7 +207,7 @@ Fornecedor As screen:
                 Width: =63
                 X: =817
                 Y: =12
-                ZIndex: =5
+                ZIndex: =4
 
             Label11_10 As label:
                 Font: =Font.Lato
@@ -228,7 +219,7 @@ Fornecedor As screen:
                 Width: =64
                 X: =909
                 Y: =12
-                ZIndex: =6
+                ZIndex: =5
 
             Label11_11 As label:
                 Font: =Font.Lato
@@ -240,7 +231,7 @@ Fornecedor As screen:
                 Width: =131
                 X: =1003
                 Y: =12
-                ZIndex: =7
+                ZIndex: =6
 
             Label11_12 As label:
                 Font: =Font.Lato
@@ -253,7 +244,7 @@ Fornecedor As screen:
                 Width: =224
                 X: =1188
                 Y: =12
-                ZIndex: =8
+                ZIndex: =7
 
             Label11_13 As label:
                 Font: =Font.Lato
@@ -266,6 +257,16 @@ Fornecedor As screen:
                 Width: =184
                 X: =1453
                 Y: =12
+                ZIndex: =8
+
+            Image4_6 As image:
+                Height: =20
+                Image: =compose
+                OnSelect: |-
+                    =UpdateContext({vShowEdicao:true})
+                Width: =25
+                X: =34
+                Y: =16
                 ZIndex: =9
 
             Button2_2 As button:
@@ -289,7 +290,7 @@ Fornecedor As screen:
                 Text: =""
                 Width: =20
                 X: =38
-                Y: =28
+                Y: =16
                 ZIndex: =10
 
             Image2_1 As image:
@@ -298,7 +299,7 @@ Fornecedor As screen:
                 OnSelect: =Select(Parent)
                 Width: =25
                 X: =63
-                Y: =25
+                Y: =13
                 ZIndex: =11
 
             Button2_3 As button:
@@ -322,7 +323,7 @@ Fornecedor As screen:
                 Text: =""
                 Width: =20
                 X: =65
-                Y: =28
+                Y: =16
                 ZIndex: =12
 
     Label1 As label:
