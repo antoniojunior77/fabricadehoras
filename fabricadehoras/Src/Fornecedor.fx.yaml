@@ -175,23 +175,23 @@ Fornecedor As screen:
                 ZIndex: =1
 
             Icon3_5 As icon.Trash:
-                Height: =15
+                Height: =20
                 Icon: =Icon.Trash
                 OnSelect: |-
                     =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
-                Width: =21.08
+                Width: =25
                 X: =13
-                Y: =13
+                Y: =16
                 ZIndex: =2
 
             Image4_5 As image:
-                Height: =15
+                Height: =20
                 Image: =compose
                 OnSelect: |-
                     =UpdateContext({vShowEdicao:true})
-                Width: =21.08
+                Width: =25
                 X: =41
-                Y: =13
+                Y: =16
                 ZIndex: =3
 
             Label11_1 As label:
@@ -267,7 +267,7 @@ Fornecedor As screen:
                 DisabledColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =15
+                Height: =20
                 HoverColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(56, 96, 178, 0)
                 OnSelect: |-
@@ -281,10 +281,43 @@ Fornecedor As screen:
                 RadiusTopLeft: =1
                 RadiusTopRight: =1
                 Text: =""
-                Width: =17
+                Width: =20
                 X: =45
-                Y: =13
+                Y: =16
                 ZIndex: =10
+
+            Image2 As image:
+                Height: =25
+                Image: ='botao-adicionar'
+                OnSelect: =Select(Parent)
+                Width: =25
+                X: =70
+                Y: =13
+                ZIndex: =11
+
+            Button2_1 As button:
+                BorderThickness: =0
+                DisabledColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =20
+                HoverColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(56, 96, 178, 0)
+                OnSelect: |-
+                    =UpdateContext({
+                    vLinhaSelecionada: ThisItem,
+                    vShowMensalizacao:true
+                    })
+                PressedFill: =
+                RadiusBottomLeft: =1
+                RadiusBottomRight: =1
+                RadiusTopLeft: =1
+                RadiusTopRight: =1
+                Text: =""
+                Width: =20
+                X: =72
+                Y: =16
+                ZIndex: =12
 
     Label1 As label:
         Color: =ColorValue(vTitFontColor)  
@@ -1193,7 +1226,7 @@ Fornecedor As screen:
 
         fundo_modal As rectangle:
             Fill: =RGBA(245, 245, 245, 0.8)
-            Height: =768
+            Height: =1080
             Visible: =vShowMensalizacao
             Width: =1920
             ZIndex: =76
@@ -1204,8 +1237,8 @@ Fornecedor As screen:
             Height: =390
             Visible: =vShowMensalizacao
             Width: =1754.14
-            X: =112.45
-            Y: =102
+            X: =127
+            Y: =298
             ZIndex: =77
 
         Label4 As label:
@@ -1219,8 +1252,8 @@ Fornecedor As screen:
             Text: ="Mensalização"
             Visible: =vShowMensalizacao
             Width: =281.11
-            X: =157.42
-            Y: =121
+            X: =172
+            Y: =317
             ZIndex: =78
 
         Label5 As label:
@@ -1234,8 +1267,8 @@ Fornecedor As screen:
                 ="Id Fábrica:"
             Visible: =vShowMensalizacao
             Width: =168.67
-            X: =163.05
-            Y: =176
+            X: =178
+            Y: =372
             ZIndex: =79
 
         Label5_1 As label:
@@ -1248,8 +1281,8 @@ Fornecedor As screen:
                 ="Total Baseline:"
             Visible: =vShowMensalizacao
             Width: =210.83
-            X: =515.84
-            Y: =176
+            X: =530
+            Y: =372
             ZIndex: =80
 
         Label5_2 As label:
@@ -1263,8 +1296,8 @@ Fornecedor As screen:
                 ="Ano:"
             Visible: =vShowMensalizacao
             Width: =101.2
-            X: =924.86
-            Y: =176
+            X: =939
+            Y: =372
             ZIndex: =81
 
         Label5_3 As label:
@@ -1273,11 +1306,11 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
-            Text: ="FO0001"
+            Text: =gal_valores.Selected.id_fabrica
             Visible: =vShowMensalizacao
             Width: =168.67
-            X: =313.44
-            Y: =176
+            X: =328
+            Y: =372
             ZIndex: =82
 
         Label5_4 As label:
@@ -1286,11 +1319,11 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
-            Text: ="2023"
+            Text: =vLinhaSelecionada.ano_consumo
             Visible: =vShowMensalizacao
             Width: =168.67
-            X: =1009.19
-            Y: =176
+            X: =1024
+            Y: =372
             ZIndex: =83
 
         Label5_5 As label:
@@ -1299,11 +1332,11 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
-            Text: ="12.000"
+            Text: =vLinhaSelecionada.total_baseline
             Visible: =vShowMensalizacao
             Width: =168.67
-            X: =719.65
-            Y: =176
+            X: =734
+            Y: =372
             ZIndex: =84
 
         Label5_6 As label:
@@ -1317,8 +1350,8 @@ Fornecedor As screen:
                 ="Descrição TI:"
             Visible: =vShowMensalizacao
             Width: =188.35
-            X: =163.05
-            Y: =226
+            X: =178
+            Y: =422
             ZIndex: =85
 
         Label5_7 As label:
@@ -1327,11 +1360,11 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
-            Text: ="TESTE 01"
+            Text: =vLinhaSelecionada.descricao
             Visible: =vShowMensalizacao
-            Width: =754.79
-            X: =357.01
-            Y: =226
+            Width: =1468
+            X: =372
+            Y: =422
             ZIndex: =86
 
         Label6 As label:
@@ -1339,14 +1372,15 @@ Fornecedor As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingLeft: =25
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
             Text: ="Janeiro"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =229.11
-            Y: =292
+            X: =197
+            Y: =488
             ZIndex: =87
 
         Label6_1 As label:
@@ -1354,14 +1388,15 @@ Fornecedor As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingLeft: =15
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
             Text: ="Fevereiro"
             Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =340.15
-            Y: =292
+            Width: =145
+            X: =338
+            Y: =488
             ZIndex: =88
 
         Label6_2 As label:
@@ -1369,14 +1404,15 @@ Fornecedor As screen:
             Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
+            PaddingLeft: =15
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =18.27
             Text: ="Março"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =475.08
-            Y: =292
+            X: =483
+            Y: =488
             ZIndex: =89
 
         Label6_3 As label:
@@ -1390,8 +1426,8 @@ Fornecedor As screen:
             Text: ="Abril"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =605.8
-            Y: =292
+            X: =623
+            Y: =488
             ZIndex: =90
 
         Label6_4 As label:
@@ -1405,8 +1441,8 @@ Fornecedor As screen:
             Text: ="Maio"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =714.03
-            Y: =292
+            X: =752
+            Y: =488
             ZIndex: =91
 
         Label6_5 As label:
@@ -1420,8 +1456,8 @@ Fornecedor As screen:
             Text: ="Junho"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =839.12
-            Y: =292
+            X: =877
+            Y: =488
             ZIndex: =92
 
         Label6_6 As label:
@@ -1435,8 +1471,8 @@ Fornecedor As screen:
             Text: ="Julho"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =972.65
-            Y: =292
+            X: =1010
+            Y: =488
             ZIndex: =93
 
         Label6_7 As label:
@@ -1449,9 +1485,8 @@ Fornecedor As screen:
             Size: =18.27
             Text: ="Agosto"
             Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =1089.31
-            Y: =292
+            X: =1117
+            Y: =488
             ZIndex: =94
 
         Label6_8 As label:
@@ -1464,9 +1499,8 @@ Fornecedor As screen:
             Size: =18.27
             Text: ="Setembro"
             Visible: =vShowMensalizacao
-            Width: =140.56
-            X: =1203.16
-            Y: =292
+            X: =1241
+            Y: =488
             ZIndex: =95
 
         Label6_9 As label:
@@ -1480,8 +1514,8 @@ Fornecedor As screen:
             Text: ="Outubro"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =1325.45
-            Y: =292
+            X: =1383
+            Y: =488
             ZIndex: =96
 
         Label6_10 As label:
@@ -1495,8 +1529,8 @@ Fornecedor As screen:
             Text: ="Novembro"
             Visible: =vShowMensalizacao
             Width: =158.83
-            X: =1451.95
-            Y: =292
+            X: =1499
+            Y: =488
             ZIndex: =97
 
         Label6_11 As label:
@@ -1510,8 +1544,8 @@ Fornecedor As screen:
             Text: ="Dezembro"
             Visible: =vShowMensalizacao
             Width: =140.56
-            X: =1581.26
-            Y: =292
+            X: =1639
+            Y: =488
             ZIndex: =98
 
         TextInput2 As text:
@@ -1522,9 +1556,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =237.54
-            Y: =349
+            Width: =120
+            X: =215
+            Y: =545
             ZIndex: =99
 
         TextInput2_1 As text:
@@ -1535,9 +1569,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =355.61
-            Y: =349
+            Width: =120
+            X: =343
+            Y: =545
             ZIndex: =100
 
         TextInput2_2 As text:
@@ -1548,9 +1582,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =475.08
-            Y: =349
+            Width: =120
+            X: =473
+            Y: =545
             ZIndex: =101
 
         TextInput2_3 As text:
@@ -1561,9 +1595,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =593.15
-            Y: =349
+            Width: =120
+            X: =601
+            Y: =545
             ZIndex: =102
 
         TextInput2_4 As text:
@@ -1574,9 +1608,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =712.62
-            Y: =349
+            Width: =120
+            X: =730
+            Y: =545
             ZIndex: =103
 
         TextInput2_5 As text:
@@ -1587,9 +1621,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =839.12
-            Y: =349
+            Width: =120
+            X: =857
+            Y: =545
             ZIndex: =104
 
         TextInput2_6 As text:
@@ -1600,9 +1634,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =958.59
-            Y: =349
+            Width: =120
+            X: =986
+            Y: =545
             ZIndex: =105
 
         TextInput2_7 As text:
@@ -1613,9 +1647,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1085.1
-            Y: =349
+            Width: =120
+            X: =1113
+            Y: =545
             ZIndex: =106
 
         TextInput2_8 As text:
@@ -1626,9 +1660,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1211.6
-            Y: =349
+            Width: =120
+            X: =1249
+            Y: =545
             ZIndex: =107
 
         TextInput2_9 As text:
@@ -1639,9 +1673,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1340.91
-            Y: =349
+            Width: =120
+            X: =1378
+            Y: =545
             ZIndex: =108
 
         TextInput2_10 As text:
@@ -1652,9 +1686,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1460.38
-            Y: =349
+            Width: =120
+            X: =1508
+            Y: =545
             ZIndex: =109
 
         TextInput2_11 As text:
@@ -1665,9 +1699,9 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =18.27
             Visible: =vShowMensalizacao
-            Width: =102.61
-            X: =1598.13
-            Y: =349
+            Width: =120
+            X: =1636
+            Y: =545
             ZIndex: =110
 
         Button1 As button:
@@ -1682,8 +1716,8 @@ Fornecedor As screen:
             Text: ="Salvar"
             Visible: =vShowMensalizacao
             Width: =224.89
-            X: =1248.14
-            Y: =434
+            X: =1263
+            Y: =630
             ZIndex: =111
 
         Button1_1 As button:
@@ -1702,8 +1736,8 @@ Fornecedor As screen:
             Text: ="Cancelar"
             Visible: =vShowMensalizacao
             Width: =224.89
-            X: =1498.33
-            Y: =434
+            X: =1513
+            Y: =630
             ZIndex: =112
 
     Group2 As group:
