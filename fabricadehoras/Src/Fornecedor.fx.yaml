@@ -1306,7 +1306,7 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
-            Text: =gal_valores.Selected.id_fabrica
+            Text: =vLinhaSelecionada.id_fabrica
             Visible: =vShowMensalizacao
             Width: =168.67
             X: =328
