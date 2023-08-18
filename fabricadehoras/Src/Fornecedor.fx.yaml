@@ -175,16 +175,6 @@ Fornecedor As screen:
                 Y: =12
                 ZIndex: =1
 
-            Icon3_6 As icon.Trash:
-                Height: =20
-                Icon: =Icon.Trash
-                OnSelect: |-
-                    =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
-                Width: =25
-                X: =6
-                Y: =16
-                ZIndex: =2
-
             Label11_8 As label:
                 Font: =Font.Lato
                 FontWeight: =FontWeight.Semibold
@@ -195,7 +185,7 @@ Fornecedor As screen:
                 Width: =76
                 X: =716
                 Y: =12
-                ZIndex: =3
+                ZIndex: =2
 
             Label11_9 As label:
                 Font: =Font.Lato
@@ -207,7 +197,7 @@ Fornecedor As screen:
                 Width: =63
                 X: =817
                 Y: =12
-                ZIndex: =4
+                ZIndex: =3
 
             Label11_10 As label:
                 Font: =Font.Lato
@@ -219,7 +209,7 @@ Fornecedor As screen:
                 Width: =64
                 X: =909
                 Y: =12
-                ZIndex: =5
+                ZIndex: =4
 
             Label11_11 As label:
                 Font: =Font.Lato
@@ -231,7 +221,7 @@ Fornecedor As screen:
                 Width: =131
                 X: =1003
                 Y: =12
-                ZIndex: =6
+                ZIndex: =5
 
             Label11_12 As label:
                 Font: =Font.Lato
@@ -244,7 +234,7 @@ Fornecedor As screen:
                 Width: =224
                 X: =1188
                 Y: =12
-                ZIndex: =7
+                ZIndex: =6
 
             Label11_13 As label:
                 Font: =Font.Lato
@@ -257,7 +247,7 @@ Fornecedor As screen:
                 Width: =184
                 X: =1453
                 Y: =12
-                ZIndex: =8
+                ZIndex: =7
 
             Image4_6 As image:
                 Height: =20
@@ -267,7 +257,7 @@ Fornecedor As screen:
                 Width: =25
                 X: =34
                 Y: =16
-                ZIndex: =9
+                ZIndex: =8
 
             Button2_2 As button:
                 BorderThickness: =0
@@ -290,6 +280,16 @@ Fornecedor As screen:
                 Text: =""
                 Width: =20
                 X: =38
+                Y: =16
+                ZIndex: =9
+
+            Icon3_6 As icon.Trash:
+                Height: =20
+                Icon: =Icon.Trash
+                OnSelect: |-
+                    =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
+                Width: =25
+                X: =6
                 Y: =16
                 ZIndex: =10
 
@@ -364,10 +364,61 @@ Fornecedor As screen:
                     </tbody>
                     </table>"
                 OnSelect: =Select(Parent)
-                Width: =1631
-                X: =6
+                Width: =1552
+                X: =85
                 Y: =62
                 ZIndex: =13
+
+            editMens As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =17
+
+                Image4_7 As image:
+                    Height: =20
+                    Image: =compose
+                    OnSelect: |-
+                        =UpdateContext({vShowEdicao:true})
+                    Width: =25
+                    X: =59
+                    Y: =90
+                    ZIndex: =14
+
+                Button2_4 As button:
+                    BorderThickness: =0
+                    DisabledColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =20
+                    HoverColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(56, 96, 178, 0)
+                    OnSelect: |-
+                        =UpdateContext({
+                        vLinhaSelecionada: ThisItem,
+                        vShowMensalizacao:true
+                        })
+                    PressedFill: =
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Text: =""
+                    Width: =20
+                    X: =63
+                    Y: =90
+                    ZIndex: =15
+
+                Icon3_7 As icon.Trash:
+                    Height: =20
+                    Icon: =Icon.Trash
+                    OnSelect: |-
+                        =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
+                    Width: =25
+                    X: =31
+                    Y: =90
+                    ZIndex: =16
 
     Label1 As label:
         Color: =ColorValue(vTitFontColor)  

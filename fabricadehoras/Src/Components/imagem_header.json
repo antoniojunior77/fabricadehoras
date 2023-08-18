@@ -93,7 +93,7 @@
         "Name": "Image1",
         "Parent": "imagem_header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 463,
+        "PublishOrderIndex": 467,
         "Rules": [
           {
             "Category": "Data",
@@ -385,7 +385,7 @@
         "Name": "lbl_nome",
         "Parent": "imagem_header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 464,
+        "PublishOrderIndex": 468,
         "Rules": [
           {
             "Category": "Data",
@@ -730,7 +730,7 @@
         "Name": "lbl_email",
         "Parent": "imagem_header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 465,
+        "PublishOrderIndex": 469,
         "Rules": [
           {
             "Category": "Data",
