@@ -60,6 +60,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr274_tb_sequencial",
+    "MaxGetRowsCount": 500,
     "Name": "tb_sequencials",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Proprietário",

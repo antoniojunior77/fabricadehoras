@@ -348,18 +348,18 @@ Fornecedor As screen:
                     </thead>
                     <tbody>
                       <tr>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrJan),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrFev),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrMar),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrAbr),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrMai),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrJun),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrJul),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrAgo),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrSet),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrOut),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrNov),"$#,##0.00","pt-BR") &"</<td>
-                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id=ThisItem.id).vlrDez),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrJan),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrFev),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrMar),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrAbr),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrMai),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrJun),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrJul),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrAgo),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrSet),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrOut),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrNov),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(LookUp(clc_mensalizacao, id_linha=ThisItem.id).vlrDez),"$#,##0.00","pt-BR") &"</<td>
                       </tr>
                     </tbody>
                     </table>"

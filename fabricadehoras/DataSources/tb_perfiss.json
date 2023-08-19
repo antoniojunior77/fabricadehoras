@@ -60,6 +60,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr274_tb_perfis",
+    "MaxGetRowsCount": 500,
     "Name": "tb_perfiss",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Proprietário",

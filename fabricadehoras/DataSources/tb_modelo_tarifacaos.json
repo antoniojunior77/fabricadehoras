@@ -60,6 +60,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr274_tb_modelo_tarifacao",
+    "MaxGetRowsCount": 500,
     "Name": "tb_modelo_tarifacaos",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Proprietário",

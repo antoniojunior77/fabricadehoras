@@ -60,6 +60,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr274_tb_fornecedores",
+    "MaxGetRowsCount": 500,
     "Name": "tb_fornecedoress",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Proprietário",

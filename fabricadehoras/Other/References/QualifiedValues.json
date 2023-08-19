@@ -1,11 +1,6 @@
 {
   "QualifiedValues": [
     {
-      "Kind": "default.cds_activitypointer_forms",
-      "Namespace": "Atividades (Formulários)",
-      "Values": {}
-    },
-    {
       "Kind": "default.cds_cr274_tb_areas_forms",
       "Namespace": "tb_areass (Formulários)",
       "Values": {
@@ -46,6 +41,11 @@
       "Values": {
         "Informações": "8703c152-5e65-4e5c-8588-ea06fec41ef1"
       }
+    },
+    {
+      "Kind": "default.cds_activitypointer_forms",
+      "Namespace": "Atividades (Formulários)",
+      "Values": {}
     }
   ]
 }
