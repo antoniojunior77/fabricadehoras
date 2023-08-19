@@ -382,6 +382,7 @@ Fornecedor As screen:
                     Image: =compose
                     OnSelect: |-
                         =UpdateContext({vShowEdicao:true})
+                    Visible: =If( CountRows(Filter(clc_mensalizacao, id_linha=ThisItem.id))>0,true,false)
                     Width: =25
                     X: =59
                     Y: =90
@@ -406,6 +407,7 @@ Fornecedor As screen:
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Text: =""
+                    Visible: =If( CountRows(Filter(clc_mensalizacao, id_linha=ThisItem.id))>0,true,false)
                     Width: =20
                     X: =63
                     Y: =90
@@ -416,6 +418,7 @@ Fornecedor As screen:
                     Icon: =Icon.Trash
                     OnSelect: |-
                         =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
+                    Visible: =If( CountRows(Filter(clc_mensalizacao, id_linha=ThisItem.id))>0,true,false)
                     Width: =25
                     X: =31
                     Y: =90
