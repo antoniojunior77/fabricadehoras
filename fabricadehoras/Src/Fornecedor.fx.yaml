@@ -364,6 +364,7 @@ Fornecedor As screen:
                     </tbody>
                     </table>"
                 OnSelect: =Select(Parent)
+                Visible: =If( CountRows(Filter(clc_mensalizacao, id_linha=ThisItem.id))>0,true,false)
                 Width: =1552
                 X: =85
                 Y: =62
