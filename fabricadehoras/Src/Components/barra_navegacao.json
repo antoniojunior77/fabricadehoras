@@ -116,7 +116,7 @@
         "Name": "btnTab1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 453,
+        "PublishOrderIndex": 506,
         "Rules": [
           {
             "Category": "Data",
@@ -475,7 +475,7 @@
         "Name": "btnTab2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 454,
+        "PublishOrderIndex": 507,
         "Rules": [
           {
             "Category": "Data",
@@ -834,7 +834,7 @@
         "Name": "btnTab2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 455,
+        "PublishOrderIndex": 508,
         "Rules": [
           {
             "Category": "Data",
@@ -1129,7 +1129,7 @@
         "Name": "barraBottom1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 459,
+        "PublishOrderIndex": 512,
         "Rules": [
           {
             "Category": "Design",
@@ -1292,7 +1292,7 @@
         "Name": "barraBottom2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 460,
+        "PublishOrderIndex": 513,
         "Rules": [
           {
             "Category": "Design",
@@ -1455,7 +1455,7 @@
         "Name": "barraBottom2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 461,
+        "PublishOrderIndex": 514,
         "Rules": [
           {
             "Category": "Design",
@@ -1597,7 +1597,7 @@
         "Name": "Botão 2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 458,
+        "PublishOrderIndex": 511,
         "Rules": [
           {
             "Category": "Design",
@@ -1673,7 +1673,7 @@
         "Name": "Botão 1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 456,
+        "PublishOrderIndex": 509,
         "Rules": [
           {
             "Category": "Design",
@@ -1749,7 +1749,7 @@
         "Name": "Botão 2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 457,
+        "PublishOrderIndex": 510,
         "Rules": [
           {
             "Category": "Design",
