@@ -2165,612 +2165,6 @@ Fornecedor As screen:
             Y: =601
             ZIndex: =74
 
-    gp_mensalizaçãoEdit As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =137
-
-        fundo_modal_10 As rectangle:
-            Fill: =RGBA(245, 245, 245, 0.8)
-            Height: =1080
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =1920
-            ZIndex: =121
-
-        Rectangle5_10 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =390
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =1754.14
-            X: =127
-            Y: =298
-            ZIndex: =122
-
-        Label4_10 As label:
-            Color: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =28.11
-            Text: ="Mensalização"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =281.11
-            X: =172
-            Y: =317
-            ZIndex: =123
-
-        Label5_55 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: |-
-                ="Id Fábrica:"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =168.67
-            X: =178
-            Y: =372
-            ZIndex: =124
-
-        Label5_14 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: |-
-                ="Total Baseline:"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =210.83
-            X: =530
-            Y: =372
-            ZIndex: =125
-
-        Label5_13 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            Height: =43
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: |-
-                ="Ano:"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =101.2
-            X: =939
-            Y: =372
-            ZIndex: =126
-
-        Label5_12 As label:
-            Font: =Font.Lato
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: =vLinhaSelecionada.id_fabrica
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =168.67
-            X: =328
-            Y: =372
-            ZIndex: =127
-
-        Label5_11 As label:
-            Font: =Font.Lato
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: =vLinhaSelecionada.ano_consumo
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =168.67
-            X: =1024
-            Y: =372
-            ZIndex: =128
-
-        Label5_10 As label:
-            Font: =Font.Lato
-            Height: =42
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: =vLinhaSelecionada.total_baseline
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =168.67
-            X: =734
-            Y: =372
-            ZIndex: =129
-
-        Label5_9 As label:
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: |-
-                ="Descrição TI:"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =188.35
-            X: =178
-            Y: =422
-            ZIndex: =130
-
-        Label5_8 As label:
-            Font: =Font.Lato
-            Height: =45
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: =vLinhaSelecionada.descricao
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =1468
-            X: =372
-            Y: =422
-            ZIndex: =131
-
-        Label6_47 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingLeft: =25
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Janeiro"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =140.56
-            X: =197
-            Y: =488
-            ZIndex: =132
-
-        Label6_46 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingLeft: =15
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Fevereiro"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =145
-            X: =338
-            Y: =488
-            ZIndex: =133
-
-        Label6_45 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingLeft: =15
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Março"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =140.56
-            X: =483
-            Y: =488
-            ZIndex: =134
-
-        Label6_44 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Abril"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =140.56
-            X: =623
-            Y: =488
-            ZIndex: =135
-
-        Label6_43 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Maio"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =140.56
-            X: =752
-            Y: =488
-            ZIndex: =136
-
-        Label6_42 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Junho"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =140.56
-            X: =877
-            Y: =488
-            ZIndex: =137
-
-        Label6_41 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Julho"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =140.56
-            X: =1010
-            Y: =488
-            ZIndex: =138
-
-        Label6_40 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Agosto"
-            Visible: |
-                =vShowMensalizacaoEdit
-            X: =1117
-            Y: =488
-            ZIndex: =139
-
-        Label6_39 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Setembro"
-            Visible: |
-                =vShowMensalizacaoEdit
-            X: =1247
-            Y: =488
-            ZIndex: =140
-
-        Label6_38 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Outubro"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =140.56
-            X: =1377
-            Y: =488
-            ZIndex: =141
-
-        Label6_37 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Novembro"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =158.83
-            X: =1499
-            Y: =488
-            ZIndex: =142
-
-        Label6_36 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 0, 0, 1)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =18.27
-            Text: ="Dezembro"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =140.56
-            X: =1633
-            Y: =488
-            ZIndex: =143
-
-        txtJan_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =215
-            Y: =545
-            ZIndex: =144
-
-        txtFev_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =343
-            Y: =545
-            ZIndex: =145
-
-        txtMar_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =473
-            Y: =545
-            ZIndex: =146
-
-        txtAbr_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =601
-            Y: =545
-            ZIndex: =147
-
-        txtMai_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =730
-            Y: =545
-            ZIndex: =148
-
-        txtJun_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =857
-            Y: =545
-            ZIndex: =149
-
-        txtJul_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =986
-            Y: =545
-            ZIndex: =150
-
-        txtAgo_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =1113
-            Y: =545
-            ZIndex: =151
-
-        txtSet_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =1249
-            Y: =545
-            ZIndex: =152
-
-        txtOut_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =1378
-            Y: =545
-            ZIndex: =153
-
-        txtNov_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =1508
-            Y: =545
-            ZIndex: =154
-
-        txtDez_1 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =""
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =120
-            X: =1636
-            Y: =545
-            ZIndex: =155
-
-        Button1_18 As button:
-            Fill: =RGBA(255, 0, 0, 1)
-            HoverFill: |-
-                =ColorValue("#FF0000")
-            OnSelect: |-
-                =Collect(clc_mensalizacao,
-                {
-                    id: Last( SortByColumns( clc_mensalizacao, "id", SortOrder.Ascending )).id + 1,
-                    id_linha: vLinhaSelecionada.id,
-                    vlrJan: Value(txtJan.Text),
-                    vlrFev:Value(txtFev.Text),
-                    vlrMar:Value(txtMar.Text),
-                    vlrAbr:Value(txtAbr.Text),
-                    vlrMai:Value(txtMai.Text),
-                    vlrJun:Value(txtJun.Text),
-                    vlrJul:Value(txtJul.Text),
-                    vlrAgo:Value(txtAgo.Text),
-                    vlrSet:Value(txtSet.Text),
-                    vlrOut:Value(txtOut.Text),
-                    vlrNov:Value(txtNov.Text),
-                    vlrDez:Value(txtDez.Text),
-                    linha_html: "<tr>
-                    <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtFev.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtMar.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtAbr.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtMai.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtJun.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtJul.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtAgo.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtSet.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtOut.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtNov.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtDez.Text),"$#,##0.00","pt-BR") &"</<td>
-                  </tr>"
-                }
-                );
-                
-                UpdateContext({vShowMensalizacao:false})
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: ="Salvar"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =224.89
-            X: =1305
-            Y: =622
-            ZIndex: =156
-
-        Button1_2 As button:
-            BorderColor: |
-                =ColorValue("#FF0000")
-            BorderThickness: =1
-            Color: =RGBA(255, 0, 0, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            HoverColor: =RGBA(255, 0, 0, 1)
-            HoverFill: =
-            OnSelect: |-
-                =UpdateContext({vShowMensalizacaoEdit:false})
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =21.08
-            Text: ="Cancelar"
-            Visible: |
-                =vShowMensalizacaoEdit
-            Width: =224.89
-            X: =1555
-            Y: =622
-            ZIndex: =157
-
     btnEditar As group:
         Height: =5
         Width: =5
@@ -2889,186 +2283,613 @@ Fornecedor As screen:
             Y: =387
             ZIndex: =56
 
-    gal_menslz_edit As gallery.variableTemplateHeightGallery:
-        DelayItemLoading: =true
-        Height: =449
-        Items: =Filter(clc_mensalizacao, id_linha=vLinhaSelecionadaEdit.id)
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =4
-        TemplateSize: =52
-        Width: =1652
-        X: =178
-        Y: =96
-        ZIndex: =158
+    gp_mensalizaçãoEdit As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =159
 
-        txtJan_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrJan
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
+        fundo_modal_10 As rectangle:
+            Fill: =RGBA(245, 245, 245, 0.8)
+            Height: =1080
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =40
-            ZIndex: =1
+            Width: =1920
+            ZIndex: =121
 
-        txtFev_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrFev
-            Font: =Font.Lato
-            Height: =35
-            PaddingRight: =7.03
-            PaddingTop: =7.03
-            Size: =12
+        Rectangle5_10 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =770
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =168
-            ZIndex: =2
+            Width: =1754.14
+            X: =127
+            Y: =86
+            ZIndex: =122
 
-        txtMar_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrMar
+        Label4_10 As label:
+            Color: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
-            Height: =35
+            FontWeight: =FontWeight.Bold
+            Height: =47
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =28.11
+            Text: ="[Editar Mensalização]"
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =298
-            ZIndex: =3
+            Width: =896
+            X: =163
+            Y: =108
+            ZIndex: =123
 
-        txtAbr_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrAbr
+        Label5_55 As label:
             Font: =Font.Lato
-            Height: =35
+            FontWeight: =FontWeight.Bold
+            Height: =42
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =21.08
+            Text: |-
+                ="Id Fábrica:"
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =426
-            ZIndex: =4
+            Width: =168.67
+            X: =169
+            Y: =163
+            ZIndex: =124
 
-        txtMai_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrMai
+        Label5_14 As label:
             Font: =Font.Lato
-            Height: =35
+            FontWeight: =FontWeight.Bold
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =21.08
+            Text: |-
+                ="Total Baseline:"
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =555
-            ZIndex: =5
+            Width: =210.83
+            X: =521
+            Y: =163
+            ZIndex: =125
 
-        txtJun_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrJun
+        Label5_13 As label:
             Font: =Font.Lato
-            Height: =35
+            FontWeight: =FontWeight.Bold
+            Height: =43
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =21.08
+            Text: |-
+                ="Ano:"
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =682
-            ZIndex: =6
+            Width: =101.2
+            X: =930
+            Y: =163
+            ZIndex: =126
 
-        txtJul_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrJul
+        Label5_12 As label:
             Font: =Font.Lato
-            Height: =35
+            Height: =42
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =21.08
+            Text: =vLinhaSelecionada.id_fabrica
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =811
-            ZIndex: =7
+            Width: =168.67
+            X: =319
+            Y: =163
+            ZIndex: =127
 
-        txtAgo_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrAgo
+        Label5_11 As label:
             Font: =Font.Lato
-            Height: =35
+            Height: =42
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =21.08
+            Text: =vLinhaSelecionada.ano_consumo
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =938
-            ZIndex: =8
+            Width: =168.67
+            X: =1015
+            Y: =163
+            ZIndex: =128
 
-        txtSet_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrSet
+        Label5_10 As label:
             Font: =Font.Lato
-            Height: =35
+            Height: =42
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =21.08
+            Text: =vLinhaSelecionada.total_baseline
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =1074
-            ZIndex: =9
+            Width: =168.67
+            X: =725
+            Y: =163
+            ZIndex: =129
 
-        txtOut_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrOut
+        Label5_9 As label:
             Font: =Font.Lato
-            Height: =35
+            FontWeight: =FontWeight.Bold
+            Height: =45
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =21.08
+            Text: |-
+                ="Descrição TI:"
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =1203
-            ZIndex: =10
+            Width: =188.35
+            X: =169
+            Y: =213
+            ZIndex: =130
 
-        txtNov_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrNov
+        Label5_8 As label:
             Font: =Font.Lato
-            Height: =35
+            Height: =45
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =21.08
+            Text: =vLinhaSelecionada.descricao
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =1333
-            ZIndex: =11
+            Width: =1468
+            X: =363
+            Y: =213
+            ZIndex: =131
 
-        txtDez_2 As text:
-            BorderColor: =RGBA(128, 128, 128, 1)
-            Default: =ThisItem.vlrDez
+        Label6_47 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
-            Height: =35
+            FontWeight: =FontWeight.Semibold
+            PaddingLeft: =25
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =12
+            Size: =18.27
+            Text: ="Janeiro"
             Visible: |
                 =vShowMensalizacaoEdit
-            Width: =120
-            X: =1461
-            ZIndex: =12
+            Width: =140.56
+            X: =191
+            Y: =288
+            ZIndex: =132
+
+        Label6_46 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingLeft: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Fevereiro"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =145
+            X: =332
+            Y: =288
+            ZIndex: =133
+
+        Label6_45 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingLeft: =15
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Março"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =140.56
+            X: =477
+            Y: =288
+            ZIndex: =134
+
+        Label6_44 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Abril"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =140.56
+            X: =617
+            Y: =288
+            ZIndex: =135
+
+        Label6_43 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Maio"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =140.56
+            X: =746
+            Y: =288
+            ZIndex: =136
+
+        Label6_42 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Junho"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =140.56
+            X: =871
+            Y: =288
+            ZIndex: =137
+
+        Label6_41 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Julho"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =140.56
+            X: =1004
+            Y: =288
+            ZIndex: =138
+
+        Label6_40 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Agosto"
+            Visible: |
+                =vShowMensalizacaoEdit
+            X: =1111
+            Y: =288
+            ZIndex: =139
+
+        Label6_39 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Setembro"
+            Visible: |
+                =vShowMensalizacaoEdit
+            X: =1241
+            Y: =288
+            ZIndex: =140
+
+        Label6_38 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Outubro"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =140.56
+            X: =1371
+            Y: =288
+            ZIndex: =141
+
+        Label6_37 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Novembro"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =158.83
+            X: =1493
+            Y: =288
+            ZIndex: =142
+
+        Label6_36 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =18.27
+            Text: ="Dezembro"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =140.56
+            X: =1627
+            Y: =288
+            ZIndex: =143
+
+        Button1_18 As button:
+            Fill: =RGBA(255, 0, 0, 1)
+            HoverFill: |-
+                =ColorValue("#FF0000")
+            OnSelect: |-
+                =Collect(clc_mensalizacao,
+                {
+                    id: Last( SortByColumns( clc_mensalizacao, "id", SortOrder.Ascending )).id + 1,
+                    id_linha: vLinhaSelecionada.id,
+                    vlrJan: Value(txtJan.Text),
+                    vlrFev:Value(txtFev.Text),
+                    vlrMar:Value(txtMar.Text),
+                    vlrAbr:Value(txtAbr.Text),
+                    vlrMai:Value(txtMai.Text),
+                    vlrJun:Value(txtJun.Text),
+                    vlrJul:Value(txtJul.Text),
+                    vlrAgo:Value(txtAgo.Text),
+                    vlrSet:Value(txtSet.Text),
+                    vlrOut:Value(txtOut.Text),
+                    vlrNov:Value(txtNov.Text),
+                    vlrDez:Value(txtDez.Text),
+                    linha_html: "<tr>
+                    <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtFev.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtMar.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtAbr.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtMai.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtJun.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtJul.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtAgo.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtSet.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtOut.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtNov.Text),"$#,##0.00","pt-BR") &"</<td>
+                    <td align='center'>"& Text(Value(txtDez.Text),"$#,##0.00","pt-BR") &"</<td>
+                  </tr>"
+                }
+                );
+                
+                UpdateContext({vShowMensalizacao:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Salvar"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =224.89
+            X: =1301
+            Y: =775
+            ZIndex: =156
+
+        Button1_2 As button:
+            BorderColor: |
+                =ColorValue("#FF0000")
+            BorderThickness: =1
+            Color: =RGBA(255, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            HoverColor: =RGBA(255, 0, 0, 1)
+            HoverFill: =
+            OnSelect: |-
+                =UpdateContext({vShowMensalizacaoEdit:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Cancelar"
+            Visible: |
+                =vShowMensalizacaoEdit
+            Width: =224.89
+            X: =1551
+            Y: =775
+            ZIndex: =157
+
+        gal_menslz_edit As gallery.variableTemplateHeightGallery:
+            DelayItemLoading: =true
+            Height: =389
+            Items: =Filter(clc_mensalizacao, id_linha=vLinhaSelecionadaEdit.id)
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =4
+            TemplateSize: =53
+            Visible: =vShowMensalizacaoEdit
+            Width: =1652
+            X: =162
+            Y: =336
+            ZIndex: =158
+
+            txtJan_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrJan
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =40
+                ZIndex: =1
+
+            txtFev_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrFev
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =168
+                ZIndex: =2
+
+            txtMar_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrMar
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =298
+                ZIndex: =3
+
+            txtAbr_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrAbr
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =426
+                ZIndex: =4
+
+            txtMai_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrMai
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =555
+                ZIndex: =5
+
+            txtJun_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrJun
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =682
+                ZIndex: =6
+
+            txtJul_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrJul
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =811
+                ZIndex: =7
+
+            txtAgo_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrAgo
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =938
+                ZIndex: =8
+
+            txtSet_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrSet
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =1074
+                ZIndex: =9
+
+            txtOut_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrOut
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =1203
+                ZIndex: =10
+
+            txtNov_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrNov
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =1333
+                ZIndex: =11
+
+            txtDez_2 As text:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                Default: =ThisItem.vlrDez
+                Font: =Font.Lato
+                Height: =35
+                PaddingRight: =7.03
+                PaddingTop: =7.03
+                Size: =12
+                Visible: |
+                    =vShowMensalizacaoEdit
+                Width: =120
+                X: =1461
+                ZIndex: =12
 
     "'gp_add-Fabrica' As group":
         Height: =5
