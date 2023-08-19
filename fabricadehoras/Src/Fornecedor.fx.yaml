@@ -1812,8 +1812,7 @@ Fornecedor As screen:
             HoverFill: |-
                 =ColorValue("#FF0000")
             OnSelect: |-
-                =
-                ClearCollect(clc_mensalizacao,
+                =Collect(clc_mensalizacao,
                 {
                     id: Last( SortByColumns( clc_mensalizacao, "id", SortOrder.Ascending )).id + 1,
                     id_linha: vLinhaSelecionada.id,
