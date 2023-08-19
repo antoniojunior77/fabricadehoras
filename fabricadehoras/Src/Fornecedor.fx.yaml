@@ -331,6 +331,7 @@ Fornecedor As screen:
                     ="<table WIDTH='100%' border='0' cellspacing='0'>
                     <thead>
                       <tr>
+                    
                         <th bgcolor="& vTitFontColor &" ><font color='white'>Janeiro</font></th>
                         <th bgcolor="& vTitFontColor &"><font color='white'>Fevereiro</font></th>
                         <th bgcolor="& vTitFontColor &"><font color='white'>Março</font></th>
@@ -345,11 +346,8 @@ Fornecedor As screen:
                         <th bgcolor="& vTitFontColor &"><font color='white'>Dezembro</font></th>
                       </tr>
                     </thead>
-                    <tbody>"& 
-                    //LookUp(clc_mensalizacao; id_linha=ThisItem.id).linha_html
-                    //vlinhaSelecionadaHtml
-                     Concat(Filter(clc_mensalizacao, id_linha=ThisItem.id), linha_html) 
-                    &"
+                    <tbody>
+                    "& Concat(Filter(clc_mensalizacao, id_linha=ThisItem.id), linha_html) &"
                     </tbody>
                     </table>"
                 OnSelect: =Select(Parent)
@@ -1832,6 +1830,7 @@ Fornecedor As screen:
                     vlrNov:Value(txtNov.Text),
                     vlrDez:Value(txtDez.Text),
                     linha_html: "<tr>
+                    <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
                     <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
                     <td align='center'>"& Text(Value(txtFev.Text),"$#,##0.00","pt-BR") &"</<td>
                     <td align='center'>"& Text(Value(txtMar.Text),"$#,##0.00","pt-BR") &"</<td>
