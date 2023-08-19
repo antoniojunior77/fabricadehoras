@@ -14,7 +14,7 @@ Fornecedor As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
-        TemplateSize: =206
+        TemplateSize: =466
         Width: =1758
         X: =136
         Y: =492
@@ -148,11 +148,11 @@ Fornecedor As screen:
 
         galeria_expandida As gallery.variableTemplateHeightGallery:
             DelayItemLoading: =true
-            Height: =157
+            Height: =378
             Items: =Filter(Sort(clc_tabela1,id,SortOrder.Descending), id_fabrica=ThisItem.id_fabrica)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =152
+            TemplateSize: =373
             Visible: =Switch(varShowIdFab,"0",false,ThisItem.id_fabrica,true)
             Width: =1654
             X: =56
@@ -324,38 +324,6 @@ Fornecedor As screen:
                 X: =65
                 Y: =16
                 ZIndex: =12
-
-            linhaHTML As htmlViewer:
-                Height: =76
-                HtmlText: |-
-                    ="<table WIDTH='100%' border='0' cellspacing='0'>
-                    <thead>
-                      <tr>
-                    
-                        <th bgcolor="& vTitFontColor &" ><font color='white'>Janeiro</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Fevereiro</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Março</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Abril</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Maio</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Junho</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Julho</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Agosto</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Setembro</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Outubro</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Novembro</font></th>
-                        <th bgcolor="& vTitFontColor &"><font color='white'>Dezembro</font></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    "& Concat(Filter(clc_mensalizacao, id_linha=ThisItem.id), linha_html) &"
-                    </tbody>
-                    </table>"
-                OnSelect: =Select(Parent)
-                Visible: =If( CountRows(Filter(clc_mensalizacao, id_linha=ThisItem.id))>0,true,false)
-                Width: =1552
-                X: =85
-                Y: =62
-                ZIndex: =13
 
             editMens As group:
                 Height: =5
