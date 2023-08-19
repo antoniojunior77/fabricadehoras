@@ -130,7 +130,6 @@ Fornecedor As screen:
                 =If(varShowIdFab = ThisItem.id_fabrica, 
                     UpdateContext({varShowIdFab:"0"}),
                     UpdateContext({varShowIdFab:ThisItem.id_fabrica, vAllitems:Blank(),vEdicaoItem:false})
-                    //Set(varShowIdFab;ThisItem.id_fabrica)
                 );
             Width: =21.08
             X: =9
@@ -346,7 +345,11 @@ Fornecedor As screen:
                         <th bgcolor="& vTitFontColor &"><font color='white'>Dezembro</font></th>
                       </tr>
                     </thead>
-                    <tbody>"& LookUp(clc_mensalizacao, id_linha=ThisItem.id).linha_html&"
+                    <tbody>"& 
+                    //LookUp(clc_mensalizacao; id_linha=ThisItem.id).linha_html
+                    //vlinhaSelecionadaHtml
+                     Concat(Filter(clc_mensalizacao, id_linha=ThisItem.id), linha_html) 
+                    &"
                     </tbody>
                     </table>"
                 OnSelect: =Select(Parent)
