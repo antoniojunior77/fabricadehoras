@@ -2641,45 +2641,11 @@ Fornecedor As screen:
             HoverFill: |-
                 =ColorValue("#FF0000")
             OnSelect: |-
-                =Collect(clc_mensalizacao,
-                {
-                    id: Last( SortByColumns( clc_mensalizacao, "id", SortOrder.Ascending )).id + 1,
-                    id_linha: vLinhaSelecionada.id,
-                    vlrJan: Value(txtJan.Text),
-                    vlrFev:Value(txtFev.Text),
-                    vlrMar:Value(txtMar.Text),
-                    vlrAbr:Value(txtAbr.Text),
-                    vlrMai:Value(txtMai.Text),
-                    vlrJun:Value(txtJun.Text),
-                    vlrJul:Value(txtJul.Text),
-                    vlrAgo:Value(txtAgo.Text),
-                    vlrSet:Value(txtSet.Text),
-                    vlrOut:Value(txtOut.Text),
-                    vlrNov:Value(txtNov.Text),
-                    vlrDez:Value(txtDez.Text),
-                    linha_html: "<tr>
-                    <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtFev.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtMar.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtAbr.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtMai.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtJun.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtJul.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtAgo.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtSet.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtOut.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtNov.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtDez.Text),"$#,##0.00","pt-BR") &"</<td>
-                  </tr>"
-                }
-                );
-                
-                UpdateContext({vShowMensalizacao:false})
+                =UpdateContext({vShowMensalizacaoEdit: false})
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
-            Text: ="Salvar"
+            Text: ="Aplicar"
             Visible: |
                 =vShowMensalizacaoEdit
             Width: =224.89
@@ -2894,7 +2860,9 @@ Fornecedor As screen:
                 Height: =22
                 Icon: =Icon.Trash
                 OnSelect: |-
-                    =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
+                    =RemoveIf(clc_mensalizacao, id=ThisItem.id)
+                    
+                    //UpdateContext({vShowConfExclusaoItem:true; id_sel: ThisItem.id})
                 Width: =25
                 X: =1615
                 Y: =10
@@ -2918,23 +2886,53 @@ Fornecedor As screen:
                 DisabledColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =20
+                Height: =22
                 HoverColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(56, 96, 178, 0)
                 OnSelect: |-
-                    =UpdateContext({
-                    vLinhaSelecionada: ThisItem,
+                    =UpdateIf(clc_mensalizacao, id= ThisItem.id,{
+                        vlrJan: Value(txtJan_2.Text),
+                        vlrFev:Value(txtFev_2.Text),
+                        vlrMar:Value(txtMar_2.Text),
+                        vlrAbr:Value(txtAbr_2.Text),
+                        vlrMai:Value(txtMai_2.Text),
+                        vlrJun:Value(txtJun_2.Text),
+                        vlrJul:Value(txtJul_2.Text),
+                        vlrAgo:Value(txtAgo_2.Text),
+                        vlrSet:Value(txtSet_2.Text),
+                        vlrOut:Value(txtOut_2.Text),
+                        vlrNov:Value(txtNov_2.Text),
+                        vlrDez:Value(txtDez_2.Text),
+                        linha_html: "<tr>
+                        <td align='center'>"& Text(Value(txtJan_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtFev_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtMar_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtAbr_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtMai_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtJun_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtJul_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtAgo_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtSet_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtOut_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtNov_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                        <td align='center'>"& Text(Value(txtDez_2.Text),"$#,##0.00","pt-BR") &"</<td>
+                      </tr>"
+                    })
+                    /*
+                    UpdateContext({
+                    vLinhaSelecionada: ThisItem;
                     vShowMensalizacao:true
                     })
+                    */
                 PressedFill: =
                 RadiusBottomLeft: =1
                 RadiusBottomRight: =1
                 RadiusTopLeft: =1
                 RadiusTopRight: =1
                 Text: =""
-                Width: =20
-                X: =1594
-                Y: =13
+                Width: =22
+                X: =1592
+                Y: =10
                 ZIndex: =15
 
     "'gp_add-Fabrica' As group":
