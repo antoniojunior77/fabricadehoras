@@ -2585,13 +2585,13 @@ Fornecedor As screen:
             Color: =RGBA(255, 0, 0, 1)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
-            Height: =42
+            Height: =49
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =28.11
-            Text: ="Mensalização"
+            Text: ="[Incluir Mensalização]"
             Visible: =vShowMensalizacao
-            Width: =281.11
+            Width: =485
             X: =172
             Y: =317
             ZIndex: =119
