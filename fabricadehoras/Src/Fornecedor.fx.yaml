@@ -404,7 +404,7 @@ Fornecedor As screen:
                     Height: =20
                     Icon: =Icon.Trash
                     OnSelect: |-
-                        =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
+                        =UpdateContext({vShowConfExclusaoItemMensal:true, vItemSel: ThisItem})
                     Visible: =If( CountRows(Filter(clc_mensalizacao, id_linha=ThisItem.id))>0,true,false)
                     Width: =25
                     X: =22
@@ -2934,6 +2934,107 @@ Fornecedor As screen:
                 X: =1592
                 Y: =10
                 ZIndex: =15
+
+    gp_conf_exclusao_mensalizacao As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =166
+
+        fundo_modal_11 As rectangle:
+            Fill: =RGBA(245, 245, 245, 0.8)
+            Height: =1080
+            Visible: =vShowConfExclusaoItemMensal
+            Width: =1920
+            ZIndex: =159
+
+        Rectangle5_11 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =390
+            Visible: =vShowConfExclusaoItemMensal
+            Width: =1754.14
+            X: =118
+            Y: =271
+            ZIndex: =160
+
+        Label4_11 As label:
+            Color: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =28.11
+            Text: ="Atenção"
+            Visible: =vShowConfExclusaoItemMensal
+            Width: =639.53
+            X: =163
+            Y: =290
+            ZIndex: =161
+
+        Label5_56 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =63
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Tem certeza de que deseja excluir todos os valores de mensalização selecionado para "& vItemSel.id_fabrica &"  ?"
+            Visible: =vShowConfExclusaoItemMensal
+            Width: =1755
+            X: =112
+            Y: =429
+            ZIndex: =162
+
+        btn_canc_exc_1 As button:
+            Fill: =RGBA(255, 0, 0, 1)
+            HoverFill: |-
+                =ColorValue("#FF0000")
+            OnSelect: |-
+                =UpdateContext({vShowConfExclusaoItemMensal:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Cancelar"
+            Visible: =vShowConfExclusaoItemMensal
+            Width: =224.89
+            X: =1021
+            Y: =594
+            ZIndex: =163
+
+        btn_conf_exc_1 As button:
+            Color: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorValue("#A6A6A6")
+            OnSelect: |-
+                =RemoveIf(
+                    clc_mensalizacao,id =Value(vItemSel.id)
+                );
+                
+                UpdateContext({vShowConfExclusaoItem: false,id_sel: Blank()})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Confirmar"
+            Visible: =vShowConfExclusaoItemMensal
+            Width: =224.89
+            X: =759
+            Y: =593
+            ZIndex: =164
+
+        Icon4_1 As icon.More:
+            Color: =RGBA(255, 255, 0, 1)
+            Height: =130
+            Icon: =Icon.Warning
+            Visible: =vShowConfExclusaoItemMensal
+            Width: =208
+            X: =882
+            Y: =309
+            ZIndex: =165
 
     "'gp_add-Fabrica' As group":
         Height: =5
