@@ -387,7 +387,8 @@ Fornecedor As screen:
                     OnSelect: |-
                         =UpdateContext({
                         vLinhaSelecionadaEdit: ThisItem,
-                        vShowMensalizacaoEdit:true
+                        vShowMensalizacaoEdit:true,
+                        id_mes: LookUp(clc_mes_consumo, mes= ThisItem.mes_inicio).id
                         })
                     PressedFill: =
                     RadiusBottomLeft: =1
@@ -2347,6 +2348,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrJan
+                DisplayMode: =If(id_mes <= 1, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2365,6 +2367,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrFev
+                DisplayMode: =If(id_mes <= 2, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2383,6 +2386,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrMar
+                DisplayMode: =If(id_mes <= 3, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2401,6 +2405,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrAbr
+                DisplayMode: =If(id_mes <= 4, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2419,6 +2424,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrMai
+                DisplayMode: =If(id_mes <= 5, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2437,6 +2443,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrJun
+                DisplayMode: =If(id_mes <=6, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2455,6 +2462,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrJul
+                DisplayMode: =If(id_mes <= 7, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2473,6 +2481,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrAgo
+                DisplayMode: =If(id_mes <= 8, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2491,6 +2500,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrSet
+                DisplayMode: =If(id_mes <= 9, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2509,6 +2519,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrOut
+                DisplayMode: =If(id_mes <= 10, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2527,6 +2538,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrNov
+                DisplayMode: =If(id_mes <= 11, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2545,6 +2557,7 @@ Fornecedor As screen:
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 0)
                 Default: =ThisItem.vlrDez
+                DisplayMode: =If(id_mes <= 12, DisplayMode.Edit, DisplayMode.Disabled)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
                 Format: =TextFormat.Number
@@ -2557,14 +2570,6 @@ Fornecedor As screen:
                 Width: =120
                 X: =1461
                 ZIndex: =27
-
-    Label7 As label:
-        Height: =41
-        Text: =id_mes
-        Width: =58
-        X: =1266
-        Y: =335
-        ZIndex: =166
 
     gp_mensalizacaoNew As group:
         Height: =5
