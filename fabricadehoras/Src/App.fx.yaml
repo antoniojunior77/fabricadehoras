@@ -459,10 +459,10 @@ App As appinfo:
         );
         
         Clear(clc_ano_consumo);
-        ClearCollect(clc_ano_consumo,{ano:"2023"},{ano:"2024"},{ano:"2025"},{ano:"2026"});
+        ClearCollect(clc_ano_consumo,{id:1,ano:"2023"},{id:2,ano:"2024"},{id:3,ano:"2025"},{id:4,ano:"2026"});
         
         Clear(clc_mes_consumo);
-        ClearCollect(clc_mes_consumo,{mes:"JAN"},{mes:"FEV"},{mes:"MAR"},{mes:"ABR"},{mes:"MAI"},{mes:"JUN"},{mes:"JUL"},{mes:"AGO"},{mes:"SET"},{mes:"OUT"},{mes:"NOV"},{mes:"DEZ"});
+        ClearCollect(clc_mes_consumo,{id:1,mes:"JAN"},{id:2,mes:"FEV"},{id:3,mes:"MAR"},{id:4,mes:"ABR"},{id:5,mes:"MAI"},{id:6,mes:"JUN"},{id:7,mes:"JUL"},{id:8,mes:"AGO"},{id:9,mes:"SET"},{id:10,mes:"OUT"},{id:11,mes:"NOV"},{id:12,mes:"DEZ"});
         
         Clear(clc_tb_perfis);
         ClearCollect(

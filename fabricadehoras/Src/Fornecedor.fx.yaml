@@ -142,8 +142,8 @@ Fornecedor As screen:
             OnSelect: =
             Visible: =Switch(varShowIdFab,"0",false,ThisItem.id_fabrica,true)
             Width: =1676
-            X: =47
-            Y: =223
+            X: =34
+            Y: =454
             ZIndex: =20
 
         galeria_expandida As gallery.variableTemplateHeightGallery:
@@ -3311,7 +3311,7 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
-            Text: ="Salvar"
+            Text: ="Aplicar"
             Visible: =vShowMensalizacao
             Width: =224.89
             X: =1305
