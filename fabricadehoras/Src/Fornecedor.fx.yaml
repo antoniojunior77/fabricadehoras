@@ -14,7 +14,7 @@ Fornecedor As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
-        TemplateSize: =466
+        TemplateSize: =170
         Width: =1758
         X: =136
         Y: =492
@@ -312,7 +312,8 @@ Fornecedor As screen:
                 OnSelect: |-
                     =UpdateContext({
                     vLinhaSelecionada: ThisItem,
-                    vShowMensalizacao:true
+                    vShowMensalizacao:true,
+                    id_mes: LookUp(clc_mes_consumo, mes= ThisItem.mes_inicio).id
                     })
                 PressedFill: =
                 RadiusBottomLeft: =1
@@ -967,8 +968,8 @@ Fornecedor As screen:
             
             If(IsBlank(cmb_id_fabrica.Selected.id_fabrica),UpdateContext({vValidacao:false}));
             If(IsBlank(txt_descricao.Text),UpdateContext({vValidacao:false}));
-            If(IsBlank(cmb_ano_consumo.Selected.ano),UpdateContext({vValidacao:false}));
-            If(IsBlank(cmb_mes_consumo.Selected.mes),UpdateContext({vValidacao:false}));
+            //If(IsBlank(cmb_ano_consumo.Selected.ano);UpdateContext({vValidacao:false}));;
+            //If(IsBlank(cmb_mes_consumo.Selected.mes);UpdateContext({vValidacao:false}));;
             If(IsBlank(txt_qtd_horas.Text),UpdateContext({vValidacao:false}));
             If(IsBlank(cmb_modelo_tarifacao.Selected.no_modelo),UpdateContext({vValidacao:false}));
             If(IsBlank(txt_valor_periodo.Text),UpdateContext({vValidacao:false}));
@@ -2557,6 +2558,14 @@ Fornecedor As screen:
                 X: =1461
                 ZIndex: =27
 
+    Label7 As label:
+        Height: =41
+        Text: =id_mes
+        Width: =58
+        X: =1266
+        Y: =335
+        ZIndex: =166
+
     gp_mensalizacaoNew As group:
         Height: =5
         Width: =5
@@ -2906,6 +2915,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 1, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -2937,6 +2947,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 2, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -2968,6 +2979,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 3, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -2999,6 +3011,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 4, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -3030,6 +3043,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 5, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -3061,6 +3075,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 6, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -3091,6 +3106,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 7, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -3122,6 +3138,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 8, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -3153,6 +3170,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 9, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -3183,6 +3201,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 10, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -3213,6 +3232,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 11, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -3243,6 +3263,7 @@ Fornecedor As screen:
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            DisplayMode: =If(id_mes <= 12, DisplayMode.Edit, DisplayMode.Disabled)
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
             Format: =TextFormat.Number
@@ -3307,7 +3328,7 @@ Fornecedor As screen:
                     Reset(txtNov);
                     Reset(txtDez);
                 
-                UpdateContext({vShowMensalizacao:false})
+                UpdateContext({vShowMensalizacao:false,id_mes:Blank()})
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
@@ -3327,7 +3348,7 @@ Fornecedor As screen:
             HoverColor: =RGBA(255, 0, 0, 1)
             HoverFill: =
             OnSelect: |-
-                =UpdateContext({vShowMensalizacao:false})
+                =UpdateContext({vShowMensalizacao:false, id_mes:Blank()})
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
