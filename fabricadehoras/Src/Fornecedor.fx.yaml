@@ -2052,7 +2052,9 @@ Fornecedor As screen:
                 =RemoveIf(
                     clc_tabela1,id =Value(id_sel)
                 );
-                
+                RemoveIf(
+                    clc_mensalizacao,id_linha =Value(id_sel)
+                );
                     Clear(clc_group_msl);
                     ClearCollect(clc_group_msl,
                         AddColumns(
@@ -3012,10 +3014,10 @@ Fornecedor As screen:
                 =ColorValue("#A6A6A6")
             OnSelect: |-
                 =RemoveIf(
-                    clc_mensalizacao,id =Value(vItemSel.id)
+                    clc_mensalizacao,id_linha =Value(vItemSel.id)
                 );
                 
-                UpdateContext({vShowConfExclusaoItem: false,id_sel: Blank()})
+                UpdateContext({vShowConfExclusaoItemMensal: false,vItemSel: Blank()})
             PaddingRight: =7.03
             PaddingTop: =7.03
             Size: =21.08
