@@ -2890,6 +2890,53 @@ Fornecedor As screen:
                 X: =1461
                 ZIndex: =12
 
+            Icon3_8 As icon.Trash:
+                Height: =22
+                Icon: =Icon.Trash
+                OnSelect: |-
+                    =UpdateContext({vShowConfExclusaoItem:true, id_sel: ThisItem.id})
+                Width: =25
+                X: =1615
+                Y: =10
+                ZIndex: =13
+
+            Image2_2 As image:
+                Height: =22
+                Image: =check_save
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =22
+                X: =1592
+                Y: =10
+                ZIndex: =14
+
+            Button2_5 As button:
+                BorderThickness: =0
+                DisabledColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =20
+                HoverColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(56, 96, 178, 0)
+                OnSelect: |-
+                    =UpdateContext({
+                    vLinhaSelecionada: ThisItem,
+                    vShowMensalizacao:true
+                    })
+                PressedFill: =
+                RadiusBottomLeft: =1
+                RadiusBottomRight: =1
+                RadiusTopLeft: =1
+                RadiusTopRight: =1
+                Text: =""
+                Width: =20
+                X: =1594
+                Y: =13
+                ZIndex: =15
+
     "'gp_add-Fabrica' As group":
         Height: =5
         Width: =5
