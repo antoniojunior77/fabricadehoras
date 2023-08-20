@@ -1831,7 +1831,6 @@ Fornecedor As screen:
                     vlrDez:Value(txtDez.Text),
                     linha_html: "<tr>
                     <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
-                    <td align='center'>"& Text(Value(txtJan.Text),"$#,##0.00","pt-BR") &"</<td>
                     <td align='center'>"& Text(Value(txtFev.Text),"$#,##0.00","pt-BR") &"</<td>
                     <td align='center'>"& Text(Value(txtMar.Text),"$#,##0.00","pt-BR") &"</<td>
                     <td align='center'>"& Text(Value(txtAbr.Text),"$#,##0.00","pt-BR") &"</<td>
