@@ -2571,6 +2571,15 @@ Fornecedor As screen:
                 X: =1461
                 ZIndex: =27
 
+    icon_limpar As icon.Erase:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =20
+        Icon: =Icon.Erase
+        Width: =20
+        X: =92
+        Y: =386
+        ZIndex: =166
+
     gp_mensalizacaoNew As group:
         Height: =5
         Width: =5
