@@ -2348,6 +2348,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrJan
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2365,6 +2366,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrFev
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2382,6 +2384,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrMar
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2399,6 +2402,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrAbr
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2416,6 +2420,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrMai
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2433,6 +2438,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrJun
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2450,6 +2456,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrJul
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2467,6 +2474,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrAgo
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2484,6 +2492,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrSet
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2501,6 +2510,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrOut
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2518,6 +2528,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrNov
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
@@ -2535,6 +2546,7 @@ Fornecedor As screen:
                 Default: =ThisItem.vlrDez
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.Lato
+                Format: =TextFormat.Number
                 Height: =35
                 PaddingRight: =7.03
                 PaddingTop: =7.03
