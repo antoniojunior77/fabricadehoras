@@ -2701,6 +2701,7 @@ Fornecedor As screen:
             ZIndex: =139
 
         lblJanMens As label:
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.Lato
             Height: =35
             Size: =12
@@ -2709,15 +2710,17 @@ Fornecedor As screen:
             Visible: =vShowMensalizacao
             Width: =120
             X: =215
-            Y: =547
+            Y: =545
             ZIndex: =140
 
         txtJan As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
             Color: =RGBA(0, 0, 0, 0)
             Default: =""
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2729,21 +2732,26 @@ Fornecedor As screen:
             ZIndex: =141
 
         lblFevMens As label:
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.Lato
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtFev.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
-            X: =342
-            Y: =543
+            X: =343
+            Y: =545
             ZIndex: =142
 
         txtFev As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2755,21 +2763,26 @@ Fornecedor As screen:
             ZIndex: =143
 
         lblMarMens As label:
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.Lato
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtMar.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
-            X: =470
-            Y: =540
+            X: =473
+            Y: =545
             ZIndex: =144
 
         txtMar As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2781,21 +2794,26 @@ Fornecedor As screen:
             ZIndex: =145
 
         lblAbrMens As label:
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.Lato
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtAbr.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
-            X: =606
-            Y: =543
+            X: =601
+            Y: =545
             ZIndex: =146
 
         txtAbr As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2807,21 +2825,26 @@ Fornecedor As screen:
             ZIndex: =147
 
         lblMaiMens As label:
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.Lato
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtMai.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
             X: =730
-            Y: =540
+            Y: =545
             ZIndex: =148
 
         txtMai As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2833,21 +2856,26 @@ Fornecedor As screen:
             ZIndex: =149
 
         lblJunMens As label:
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.Lato
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtJun.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
-            X: =852
-            Y: =547
+            X: =857
+            Y: =545
             ZIndex: =150
 
         txtJun As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2863,17 +2891,21 @@ Fornecedor As screen:
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtJul.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
             X: =986
-            Y: =543
+            Y: =545
             ZIndex: =152
 
         txtJul As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2885,21 +2917,26 @@ Fornecedor As screen:
             ZIndex: =153
 
         lblAgoMens As label:
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.Lato
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtAgo.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
-            X: =1115
-            Y: =543
+            X: =1113
+            Y: =545
             ZIndex: =154
 
         txtAgo As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2911,21 +2948,26 @@ Fornecedor As screen:
             ZIndex: =155
 
         lblSetMens As label:
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.Lato
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtSet.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
-            X: =1250
-            Y: =540
+            X: =1249
+            Y: =545
             ZIndex: =156
 
         txtSet As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2941,17 +2983,21 @@ Fornecedor As screen:
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtOut.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
-            X: =1380
-            Y: =547
+            X: =1378
+            Y: =545
             ZIndex: =158
 
         txtOut As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2967,17 +3013,21 @@ Fornecedor As screen:
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtNov.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
-            X: =1509
-            Y: =543
+            X: =1508
+            Y: =545
             ZIndex: =160
 
         txtNov As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -2993,17 +3043,21 @@ Fornecedor As screen:
             Height: =35
             Size: =12
             Text: |-
-                =Text(Value(txtJan.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txtDez.Text),"$#,##0.00","pt-BR")
             Visible: =vShowMensalizacao
             Width: =120
             X: =1636
-            Y: =543
+            Y: =545
             ZIndex: =162
 
         txtDez As text:
             BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 0)
             Default: =""
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.Lato
+            Format: =TextFormat.Number
             Height: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -3051,6 +3105,19 @@ Fornecedor As screen:
                   </tr>"
                 }
                 );
+                
+                    Reset(txtJan);
+                    Reset(txtFev);
+                    Reset(txtMar);
+                    Reset(txtAbr);
+                    Reset(txtMai);
+                    Reset(txtJun);
+                    Reset(txtJul);
+                    Reset(txtAgo);
+                    Reset(txtSet);
+                    Reset(txtOut);
+                    Reset(txtNov);
+                    Reset(txtDez);
                 
                 UpdateContext({vShowMensalizacao:false})
             PaddingRight: =7.03
