@@ -1035,9 +1035,9 @@ Fornecedor As screen:
 
     Rectangle1 As rectangle:
         Fill: =varCorVermelho
-        Height: =47
-        Width: =1749
-        X: =140
+        Height: =45
+        Width: =1762
+        X: =127
         Y: =445
         ZIndex: =44
 
@@ -1083,13 +1083,13 @@ Fornecedor As screen:
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =47
+        Height: =45
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
         Text: ="ID Fábrica"
-        Width: =139
-        X: =140
+        Width: =152
+        X: =127
         Y: =445
         ZIndex: =45
 
@@ -1203,7 +1203,7 @@ Fornecedor As screen:
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =47
+        Height: =45
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
@@ -1218,7 +1218,7 @@ Fornecedor As screen:
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =47
+        Height: =45
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
@@ -1229,11 +1229,11 @@ Fornecedor As screen:
         ZIndex: =51
 
     Label2_21 As label:
-        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
-        Height: =47
+        Height: =45
+        PaddingLeft: =20
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =12
