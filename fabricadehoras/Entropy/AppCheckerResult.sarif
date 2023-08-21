@@ -8928,19 +8928,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_5.AccessibleLabel"
+                  "fullyQualifiedName": "Fornecedor.cmb_tag.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Fornecedor.ComboBox1_5.AccessibleLabel",
+                  "fullyQualifiedName": "Fornecedor.cmb_tag.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Fornecedor",
-                "type": "Fornecedor.ComboBox1_5"
+                "type": "Fornecedor.cmb_tag"
               }
             }
           ],

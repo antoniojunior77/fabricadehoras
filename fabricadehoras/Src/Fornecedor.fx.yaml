@@ -3,7 +3,20 @@ Fornecedor As screen:
     LoadingSpinnerColor: =RGBA(56, 96, 178, 1.5)
     OnVisible: |-
         =Set(vTabMenu,"Tab1");
-        Distinct(clc_tb_perfis, NO_PFOCAL)
+        Reset(cmb_area);
+        Reset(cmb_head);
+        Reset(cmb_no_area);
+        Reset(cmb_id_sequencial);
+        Reset(cmb_tag);
+        Reset(cmb_id_fornecedor);
+        Reset(cmb_id_fabrica);
+        Reset(txt_descricao);
+        Reset(cmb_ano_consumo);
+        Reset(cmb_mes_consumo);
+        Reset(txt_qtd_horas);
+        Reset(txt_baseline);
+        Reset(cmb_modelo_tarifacao);
+        Reset(txt_valor_periodo);
 
     SideMenu_1 As SideMenu:
 
@@ -713,7 +726,7 @@ Fornecedor As screen:
         Y: =20
         ZIndex: =29
 
-        ComboBox1_5 As combobox:
+        cmb_tag As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -725,7 +738,7 @@ Fornecedor As screen:
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["Value"]
-            SearchItems: =Search(Distinct(clc_base_sequencial, nome_tag),ComboBox1_5.SearchText,"Value")
+            SearchItems: =Search(Distinct(clc_base_sequencial, nome_tag),cmb_tag.SearchText,"Value")
             SelectMultiple: =false
             Size: =18.27
             Width: =896.75
