@@ -1,0 +1,70 @@
+Home As screen:
+    BackgroundImage: ='MicrosoftTeams-image'
+    LoadingSpinnerColor: =RGBA(56, 96, 178, 1.5)
+    OnVisible: |-
+        =Set(vTabMenu,"Tab1");
+        Distinct(clc_tb_perfis, NO_PFOCAL)
+
+    Rectangle4_3 As rectangle:
+        Fill: =RGBA(248, 248, 248, 0.3)
+        Height: =701
+        Width: =1877
+        X: =42
+        Y: =189
+        ZIndex: =1
+
+    SideMenu_4 As SideMenu:
+        ZIndex: =2
+
+    Label1_3 As label:
+        Color: =ColorValue(vTitFontColor)  
+        Font: =vTitFontFamily
+        FontWeight: =vTitFontWeightB
+        Height: =66
+        PaddingLeft: =15
+        PaddingRight: =7.03
+        PaddingTop: =7.03
+        Size: =42.17
+        Text: ="[Fábrica de Horas] Cadastro Consumo"
+        Width: =1807.55
+        X: =112.45
+        ZIndex: =3
+
+    barra_navegacao_4 As barra_navegacao:
+        acaoFornecedor: =Home
+        acaoGestor: =Gestor
+        acaoLista: =Lista
+        Width: =1155
+        X: =112.45
+        Y: =64
+        ZIndex: =4
+
+    imagem_header_2 As imagem_header:
+        Height: =74
+        Width: =375
+        X: =1545
+        Y: =12
+        ZIndex: =5
+
+    Label8 As label:
+        Align: =Align.Justify
+        Font: =Font.Lato
+        Height: =416
+        Size: =25
+        Text: ="Este sistema foi projetado para facilitar o registro, monitoramento e análise das horas trabalhadas . Através dele, o Gerente de TI ou PF de TI poderá inserir e consultar dados como sequência do orçamento, fornecedor, período de planejamento, baseline de horas, valor contratado, entre outros. Além disso, o sistema conta com regras sistêmicas que garantem a integridade e a precisão dos dados inseridos, como a verificação de que a soma do baseline não ultrapasse o estabelecido para a sequência. A interface é intuitiva e organizada, permitindo uma visão clara das informações e facilitando a tomada de decisões."
+        Width: =1391
+        X: =273
+        Y: =402
+        ZIndex: =6
+
+    Label9 As label:
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =71
+        Size: =30
+        Text: ="Bem-vindo ao Sistema de Cadastro de Horas de Fábrica"
+        Width: =1040
+        X: =273
+        Y: =375
+        ZIndex: =7
+

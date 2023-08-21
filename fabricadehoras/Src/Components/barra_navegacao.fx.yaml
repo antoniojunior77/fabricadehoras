@@ -1,6 +1,7 @@
 barra_navegacao As CanvasComponent:
     acaoFornecedor: =App.ActiveScreen
     acaoGestor: =App.ActiveScreen
+    acaoHome: =App.ActiveScreen
     acaoLista: =App.ActiveScreen
     Fill: =RGBA(0, 0, 0, 0)
     Height: =100
@@ -168,8 +169,8 @@ barra_navegacao As CanvasComponent:
             HoverColor: =RGBA(255, 0, 0, 1)
             HoverFill: =
             OnSelect: |-
-                =Set(varTabMenu,"Tab1");
-                Navigate(barra_navegacao.acaoFornecedor)
+                =Set(varTabMenu,"Tab0");
+                Navigate(barra_navegacao.acaoHome)
             PaddingRight: =7.03
             PaddingTop: =7.03
             PressedColor: =ColorFade(Self.Color, -20%)

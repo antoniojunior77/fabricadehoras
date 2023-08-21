@@ -95,7 +95,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 23,
+    "BindingErrorCount": 24,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -128,6 +128,7 @@
     "UserLocale": "pt-BR"
   },
   "ScreenOrder": [
+    "Home",
     "Fornecedor",
     "Gestor",
     "Lista"
