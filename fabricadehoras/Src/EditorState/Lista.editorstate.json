@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "barra_navegacao_3": {
+    "barra_navegacao_7": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -35,8 +35,8 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "barra_navegacao_3",
-      "ParentIndex": 5,
+      "Name": "barra_navegacao_7",
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57,7 +57,7 @@
         {
           "Category": "Data",
           "PropertyName": "acaoHome",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -4379,7 +4379,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "fundo_modal_6",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4496,7 +4496,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "fundo_modal_7",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4613,7 +4613,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "fundo_modal_8",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6979,7 +6979,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_2",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29682,7 +29682,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "SideMenu_3",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

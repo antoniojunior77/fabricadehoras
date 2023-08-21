@@ -429,15 +429,6 @@ Fornecedor As screen:
         X: =112.45
         ZIndex: =3
 
-    barra_navegacao_1 As barra_navegacao:
-        acaoFornecedor: =Fornecedor
-        acaoGestor: =Gestor
-        acaoLista: =Lista
-        Width: =1155
-        X: =112.45
-        Y: =64
-        ZIndex: =4
-
     Rectangle4 As rectangle:
         Fill: =RGBA(248, 248, 248, 1)
         Height: =170
@@ -3480,6 +3471,16 @@ Fornecedor As screen:
             X: =882
             Y: =309
             ZIndex: =116
+
+    barra_navegacao_5 As barra_navegacao:
+        acaoFornecedor: =Fornecedor
+        acaoGestor: =Gestor
+        acaoHome: ='Home'
+        acaoLista: =Lista
+        Width: =1155
+        X: =112.45
+        Y: =64
+        ZIndex: =167
 
     "'gp_add-Fabrica' As group":
         Height: =5

@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "barra_navegacao_1": {
+    "barra_navegacao_5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -35,7 +35,7 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "barra_navegacao_1",
+      "Name": "barra_navegacao_5",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -57,7 +57,7 @@
         {
           "Category": "Data",
           "PropertyName": "acaoHome",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

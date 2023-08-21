@@ -25,14 +25,15 @@ Home As screen:
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =42.17
-        Text: ="[Fábrica de Horas] Cadastro Consumo"
+        Text: ="[Fábrica de Horas] "
         Width: =1807.55
         X: =112.45
         ZIndex: =3
 
     barra_navegacao_4 As barra_navegacao:
-        acaoFornecedor: =Home
+        acaoFornecedor: =Fornecedor
         acaoGestor: =Gestor
+        acaoHome: ='Home'
         acaoLista: =Lista
         Width: =1155
         X: =112.45
