@@ -890,11 +890,12 @@ Fornecedor As screen:
             Font: =Font.Lato
             Height: =39
             InputTextPlaceholder: ="2023"
+            IsSearchable: =false
             Items: =clc_ano_consumo
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["ano"]
-            SearchItems: =Search(clc_ano_consumo,cmb_ano_consumo.SearchText,"ano")
+            SearchItems: =[]
             SelectMultiple: =false
             Size: =14
             Width: =88
@@ -933,11 +934,12 @@ Fornecedor As screen:
             DisplayFields: =["mes"]
             Font: =Font.Lato
             InputTextPlaceholder: ="JAN"
+            IsSearchable: =false
             Items: =clc_mes_consumo
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["mes"]
-            SearchItems: =Search(clc_mes_consumo,cmb_mes_consumo.SearchText,"mes")
+            SearchItems: =[]
             SelectMultiple: =false
             Size: =14
             Width: =80
