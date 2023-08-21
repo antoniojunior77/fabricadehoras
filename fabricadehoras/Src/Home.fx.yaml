@@ -51,7 +51,7 @@ Home As screen:
         Font: =Font.Lato
         Height: =416
         Size: =25
-        Text: ="Este sistema foi projetado para facilitar o registro, monitoramento e análise das horas trabalhadas . Através dele, o Gerente de TI ou PF de TI poderá inserir e consultar dados como sequência do orçamento, fornecedor, período de planejamento, baseline de horas, valor contratado, entre outros. Além disso, o sistema conta com regras sistêmicas que garantem a integridade e a precisão dos dados inseridos, como a verificação de que a soma do baseline não ultrapasse o estabelecido para a sequência. A interface é intuitiva e organizada, permitindo uma visão clara das informações e facilitando a tomada de decisões."
+        Text: ="Este sistema foi projetado para facilitar o registro, monitoramento e análise das horas trabalhadas . Através dele, o Gestor de TI ou Ponto Focal de TI poderá inserir e consultar dados como sequência do orçamento, fornecedor, período de planejamento, baseline de horas, valor contratado, entre outros. Além disso, o sistema conta com regras sistêmicas que garantem a integridade e a precisão dos dados inseridos, como a verificação de que a soma do baseline não ultrapasse o estabelecido para a sequência. A interface é intuitiva e organizada, permitindo uma visão clara das informações e facilitando a tomada de decisões."
         Width: =1391
         X: =273
         Y: =402
