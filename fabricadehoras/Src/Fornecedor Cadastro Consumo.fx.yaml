@@ -3,16 +3,16 @@
     LoadingSpinnerColor: =RGBA(56, 96, 178, 1.5)
     OnVisible: |-
         =Set(vTabMenu,"Tab1");
-        Reset(cmb_area_1);
+        Reset(cmb_situacao_demanda);
         Reset(cmb_id_fabrica_1);
-        Reset(txt_descricao_1);
-        Reset(cmb_ano_consumo_1);
-        Reset(cmb_mes_consumo_1);
-        Reset(txt_qtd_horas_1);
-        Reset(txt_baseline_1);
-        Reset(cmb_modelo_tarifacao_1);
-        Reset(cmb_co_area_lider_gestor_1);
-        Reset(txt_valor_periodo_1);
+        Reset(txt_descricao_fornecedor);
+        Reset(cmb_ano_realizado);
+        Reset(cmb_mes_realizado);
+        Reset(txt_numero_demanda);
+        Reset(txt_sistema_principal);
+        Reset(cmb_tipo_demanda);
+        Reset(cmb_resp_ems_protocolo);
+        Reset(txt_valor);
 
     SideMenu_5 As SideMenu:
         ZIndex: =2
@@ -62,7 +62,7 @@
         Y: =40
         ZIndex: =23
 
-        cmb_area_1 As combobox:
+        cmb_situacao_demanda As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -109,16 +109,44 @@
         Fill: =RGBA(255, 0, 0, 1)
         FontWeight: =FontWeight.Bold
         Height: =46
-        OnSelect: |-
-            =UpdateContext({vShowConfInclusao:true});
+        OnSelect: |
+            =Collect({
+            
+                    id: Last( SortByColumns( clc_tabela1, "id", SortOrder.Ascending )).id + 1,
+                    area: LookUp(clc_tabela1, id_fabrica=cmb_id_fabrica_1.Selected.id_fabrica ).no_area,
+                    diretor: LookUp(clc_tabela1, id_fabrica=cmb_id_fabrica_1.Selected.id_fabrica ).co_lider_area,
+                    gestor: LookUp(clc_tabela1, id_fabrica=cmb_id_fabrica_1.Selected.id_fabrica ).co_lider_area_gestor,
+                    fornecedor: LookUp(clc_tabela1, id_fabrica=cmb_id_fabrica_1.Selected.id_fabrica ).id_fornecedor,
+                    tipo_financeiro:"CAPEX",
+                    ponto_focal:  LookUp(clc_tabela1, id_fabrica=cmb_id_fabrica_1.Selected.id_fabrica ).co_lider_area_gestor,
+                    solicitante: "",
+                    aprovacao_esforco: "aprovado",
+                    aprovador_protocolo: "",
+                    identificador_interno:"" ,
+                    tipo_demanda: "MELHORIA",
+                    sistema_principal: "N/A",
+                    descrica:"Ura",	
+                    esforco_hr: "364",	
+                    valor:"45555,83",
+                    ractional:"",
+                    comentario:"31/03/23 [Fabiana]: Qde de hrs realizadas e valor total alterados conforme email da Debora Calca. hrs alteradas de 519,58 para 364hrs.",
+                    data_inicio: "",
+                    data_fim: "",
+                    complexidade:"",
+                    criticidade:""
+            
+            })
+            
+            
+            //UpdateContext({vShowConfInclusao:true});;
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =21.08
         Text: ="Salvar"
         Visible: =!vEdicaoItem
         Width: =254
-        X: =1622
-        Y: =624
+        X: =1640
+        Y: =678
         ZIndex: =33
 
     imagem_header_4 As imagem_header:
@@ -135,7 +163,7 @@
         Y: =20
         ZIndex: =37
 
-        cmb_ano_consumo_1 As combobox:
+        cmb_ano_realizado As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -154,7 +182,7 @@
             Size: =14
             Width: =88
             X: =578
-            Y: =380
+            Y: =398
             ZIndex: =13
 
         Label2_34 As label:
@@ -170,7 +198,7 @@
                 Realizado"
             Width: =118.07
             X: =559
-            Y: =332
+            Y: =350
             ZIndex: =14
 
     Group3_23 As group:
@@ -180,7 +208,7 @@
         Y: =20
         ZIndex: =40
 
-        cmb_mes_consumo_1 As combobox:
+        cmb_mes_realizado As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -198,7 +226,7 @@
             Size: =14
             Width: =80
             X: =482
-            Y: =379
+            Y: =397
             ZIndex: =15
 
         Label2_63 As label:
@@ -214,7 +242,7 @@
                 Realizado"
             Width: =126.5
             X: =458
-            Y: =332
+            Y: =350
             ZIndex: =16
 
     Group8_1 As group:
@@ -239,7 +267,7 @@
             Y: =244
             ZIndex: =159
 
-        txt_qtd_horas_1 As text:
+        txt_numero_demanda As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =vAllitems.qtd_meses
             Font: =Font.Lato
@@ -259,7 +287,7 @@
         Y: =20
         ZIndex: =49
 
-        cmb_modelo_tarifacao_1 As combobox:
+        cmb_tipo_demanda As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -272,7 +300,7 @@
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["no_tipo"]
-            SearchItems: =Search(clc_tipo_demanda,cmb_modelo_tarifacao_1.SearchText,"no_tipo")
+            SearchItems: =Search(clc_tipo_demanda,cmb_tipo_demanda.SearchText,"no_tipo")
             SelectMultiple: =false
             Size: =18.27
             Width: =195
@@ -313,7 +341,7 @@
             Text: ="Valor"
             Width: =276.9
             X: =1205
-            Y: =334
+            Y: =352
             ZIndex: =17
 
         lbl_txt_valor_periodo_1 As label:
@@ -322,13 +350,13 @@
             Height: =35
             PaddingLeft: =12
             Text: |-
-                =Text(Value(txt_valor_periodo_1.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txt_valor.Text),"$#,##0.00","pt-BR")
             Width: =263
             X: =1218
-            Y: =372
+            Y: =390
             ZIndex: =35
 
-        txt_valor_periodo_1 As text:
+        txt_valor As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Color: =RGBA(0, 0, 0, 0)
             Default: =vAllitems.valor_contratao
@@ -341,7 +369,7 @@
             Size: =15
             Width: =264.25
             X: =1218
-            Y: =376
+            Y: =394
             ZIndex: =36
 
     Group7_1 As group:
@@ -371,13 +399,13 @@
             Font: =Font.Lato
             Size: =15
             Text: |-
-                =Text(Value(txt_baseline_1.Text),"#,##0","pt-BR")
+                =Text(Value(txt_sistema_principal.Text),"#,##0","pt-BR")
             Width: =227
             X: =1015
             Y: =286
             ZIndex: =162
 
-        txt_baseline_1 As text:
+        txt_sistema_principal As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Color: =RGBA(0, 0, 0, 0)
             Default: =vAllitems.total_baseline
@@ -2485,7 +2513,7 @@
             Size: =18.27
             Width: =195
             X: =274
-            Y: =379
+            Y: =397
             ZIndex: =164
 
         Label2_24 As label:
@@ -2499,7 +2527,7 @@
             Text: ="Modelo Tarifação"
             Width: =164.45
             X: =275
-            Y: =334
+            Y: =352
             ZIndex: =165
 
     Group3_27 As group:
@@ -2509,7 +2537,7 @@
         Y: =20
         ZIndex: =169
 
-        cmb_mes_consumo_3 As combobox:
+        cmb_mes_report As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -2527,7 +2555,7 @@
             Size: =14
             Width: =80
             X: =681
-            Y: =379
+            Y: =397
             ZIndex: =166
 
         Label2_80 As label:
@@ -2543,7 +2571,7 @@
                 Report"
             Width: =126.5
             X: =657
-            Y: =332
+            Y: =350
             ZIndex: =167
 
     Group6_1 As group:
@@ -2553,7 +2581,7 @@
         Y: =40
         ZIndex: =172
 
-        cmb_co_area_lider_gestor_1 As combobox:
+        cmb_resp_ems_protocolo As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -2574,7 +2602,7 @@
             Size: =18.27
             Width: =434
             X: =772
-            Y: =376
+            Y: =394
             ZIndex: =168
 
         Icon1_9 As icon.Search:
@@ -2583,7 +2611,7 @@
             Icon: =Icon.Search
             Width: =29
             X: =784
-            Y: =386
+            Y: =404
             ZIndex: =169
 
         Label2_29 As label:
@@ -2596,7 +2624,7 @@
             Text: ="Responsável Emissão Protocolo"
             Width: =435
             X: =771
-            Y: =334
+            Y: =352
             ZIndex: =170
 
     "'gp_add-Fabrica_3' As group":
@@ -2815,21 +2843,21 @@
             OnSelect: |-
                 =UpdateIf(clc_tabela1, !IsBlank(id),{st_situacao:true});
                 
-                Reset(cmb_area_1);
+                Reset(cmb_situacao_demanda);
                 Reset(cmb_head_1);
                 Reset(cmb_no_area_1);
                 Reset(cmb_id_sequencial_1);
                 Reset(cmb_tag_1);
                 Reset(cmb_id_fornecedor_1);
                 Reset(cmb_id_fabrica_1);
-                Reset(txt_descricao_1);
-                Reset(cmb_ano_consumo_1);
-                Reset(cmb_mes_consumo_1);
-                Reset(txt_qtd_horas_1);
-                Reset(txt_baseline_1);
-                Reset(cmb_modelo_tarifacao_1);
-                Reset(txt_valor_periodo_1);
-                Reset(cmb_co_area_lider_gestor_1);
+                Reset(txt_descricao_fornecedor);
+                Reset(cmb_ano_realizado);
+                Reset(cmb_mes_realizado);
+                Reset(txt_numero_demanda);
+                Reset(txt_sistema_principal);
+                Reset(cmb_tipo_demanda);
+                Reset(txt_valor);
+                Reset(cmb_resp_ems_protocolo);
                 
                 UpdateContext({vShowConfInclusao: false,vItemSel: Blank()})
             PaddingRight: =7.03
@@ -2871,7 +2899,7 @@
             Text: ="Racional do valor"
             Width: =276.9
             X: =1476
-            Y: =331
+            Y: =349
             ZIndex: =171
 
         lbl_txt_valor_periodo_2 As label:
@@ -2880,13 +2908,13 @@
             Height: =35
             PaddingLeft: =12
             Text: |-
-                =Text(Value(txt_valor_periodo_3.Text),"$#,##0.00","pt-BR")
+                =Text(Value(txt_racional.Text),"$#,##0.00","pt-BR")
             Width: =263
             X: =1489
-            Y: =369
+            Y: =387
             ZIndex: =172
 
-        txt_valor_periodo_3 As text:
+        txt_racional As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Color: =RGBA(0, 0, 0, 0)
             Default: =vAllitems.valor_contratao
@@ -2899,10 +2927,10 @@
             Size: =15
             Width: =264.25
             X: =1489
-            Y: =373
+            Y: =391
             ZIndex: =173
 
-    txt_descricao_2 As text:
+    txt_comentarios As text:
         BorderColor: =RGBA(128, 128, 128, 1)
         Default: =vAllitems.descricao
         Font: =Font.Lato
@@ -2914,7 +2942,7 @@
         Size: =15
         Width: =845
         X: =1051
-        Y: =435
+        Y: =471
         ZIndex: =176
 
     Group8_2 As group:
@@ -2936,10 +2964,10 @@
             Text: ="Esforço"
             Width: =153.21
             X: =119
-            Y: =334
+            Y: =352
             ZIndex: =148
 
-        txt_qtd_horas_3 As text:
+        txt_esforco As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =vAllitems.qtd_meses
             Font: =Font.Lato
@@ -2949,10 +2977,10 @@
             Size: =15
             Width: =132.12
             X: =131
-            Y: =379
+            Y: =397
             ZIndex: =149
 
-    txt_descricao_1 As text:
+    txt_descricao_fornecedor As text:
         BorderColor: =RGBA(128, 128, 128, 1)
         Default: =vAllitems.descricao
         Font: =Font.Lato
@@ -2964,7 +2992,7 @@
         Size: =15
         Width: =845
         X: =128
-        Y: =435
+        Y: =471
         ZIndex: =177
 
     Group8_3 As group:
@@ -2986,10 +3014,10 @@
             Text: ="Número PO"
             Width: =153.21
             X: =1752
-            Y: =327
+            Y: =345
             ZIndex: =174
 
-        txt_qtd_horas_4 As text:
+        txt_nr_po As text:
             BorderColor: =RGBA(128, 128, 128, 1)
             Default: =vAllitems.qtd_meses
             Font: =Font.Lato
@@ -2999,7 +3027,7 @@
             Size: =15
             Width: =132.12
             X: =1764
-            Y: =372
+            Y: =390
             ZIndex: =175
 
     Group9 As group:
@@ -3580,7 +3608,7 @@
         Y: =20
         ZIndex: =178
 
-        cmb_modelo_tarifacao_3 As combobox:
+        cmb_complexidade As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -3593,7 +3621,7 @@
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["no_tipo"]
-            SearchItems: =Search(clc_complexidade_demanda,cmb_modelo_tarifacao_3.SearchText,"no_tipo")
+            SearchItems: =Search(clc_complexidade_demanda,cmb_complexidade.SearchText,"no_tipo")
             SelectMultiple: =false
             Size: =18.27
             Width: =195
@@ -3622,7 +3650,7 @@
         Y: =20
         ZIndex: =180
 
-        cmb_modelo_tarifacao_4 As combobox:
+        cmb_criticidade As combobox:
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
@@ -3635,7 +3663,7 @@
             PaddingRight: =7.03
             PaddingTop: =7.03
             SearchFields: =["no_tipo"]
-            SearchItems: =Search(clc_criticidade_demanda,cmb_modelo_tarifacao_4.SearchText,"no_tipo")
+            SearchItems: =Search(clc_criticidade_demanda,cmb_criticidade.SearchText,"no_tipo")
             SelectMultiple: =false
             Size: =18.27
             Width: =195
