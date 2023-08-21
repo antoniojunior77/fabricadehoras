@@ -433,7 +433,7 @@ Fornecedor As screen:
         acaoFornecedor: =Fornecedor
         acaoGestor: =Gestor
         acaoLista: =Lista
-        Width: =899.56
+        Width: =1155
         X: =112.45
         Y: =64
         ZIndex: =4
