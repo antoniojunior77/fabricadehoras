@@ -16,9 +16,20 @@ Fornecedor As screen:
         Reset(txt_qtd_horas);
         Reset(txt_baseline);
         Reset(cmb_modelo_tarifacao);
+        Reset(cmb_co_area_lider_gestor);
         Reset(txt_valor_periodo);
 
+    barra_navegacao_5 As barra_navegacao:
+        acaoFornecedor: =Fornecedor
+        acaoGestor: =Gestor
+        acaoHome: ='Home'
+        acaoLista: =Lista
+        Width: =1155
+        X: =112.45
+        Y: =64
+
     SideMenu_1 As SideMenu:
+        ZIndex: =2
 
     gal_valores As gallery.variableTemplateHeightGallery:
         DelayItemLoading: =true
@@ -33,7 +44,7 @@ Fornecedor As screen:
         Width: =1758
         X: =136
         Y: =492
-        ZIndex: =2
+        ZIndex: =3
 
         Label3 As label:
             Font: =Font.Lato
@@ -277,6 +288,7 @@ Fornecedor As screen:
                 BorderThickness: =0
                 DisabledColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
+                DisplayMode: =If(LookUp(clc_tabela1, id=ThisItem.id And st_situacao=true).st_situacao=true, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =20
                 HoverColor: =RGBA(0, 0, 0, 0)
@@ -298,6 +310,7 @@ Fornecedor As screen:
                 ZIndex: =9
 
             Icon3_6 As icon.Trash:
+                DisplayMode: =If(LookUp(clc_tabela1, id=ThisItem.id And st_situacao=true).st_situacao=true, DisplayMode.Disabled, DisplayMode.Edit)
                 Height: =20
                 Icon: =Icon.Trash
                 OnSelect: |-
@@ -320,6 +333,7 @@ Fornecedor As screen:
                 BorderThickness: =0
                 DisabledColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
+                DisplayMode: =If(LookUp(clc_tabela1, id=ThisItem.id And st_situacao=true).st_situacao=true, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =20
                 HoverColor: =RGBA(0, 0, 0, 0)
@@ -395,6 +409,7 @@ Fornecedor As screen:
                     BorderThickness: =0
                     DisabledColor: =RGBA(0, 0, 0, 0)
                     DisabledFill: =RGBA(0, 0, 0, 0)
+                    DisplayMode: =If(LookUp(clc_tabela1, id=ThisItem.id And st_situacao=true).st_situacao=true, DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =20
                     HoverColor: =RGBA(0, 0, 0, 0)
@@ -418,6 +433,7 @@ Fornecedor As screen:
                     ZIndex: =15
 
                 Icon3_7 As icon.Trash:
+                    DisplayMode: =If(LookUp(clc_tabela1, id=ThisItem.id And st_situacao=true).st_situacao=true, DisplayMode.Disabled, DisplayMode.Edit)
                     Height: =20
                     Icon: =Icon.Trash
                     OnSelect: |-
@@ -440,7 +456,7 @@ Fornecedor As screen:
         Text: ="[Fábrica de Horas] Cadastro Consumo"
         Width: =1807.55
         X: =112.45
-        ZIndex: =3
+        ZIndex: =4
 
     Rectangle4 As rectangle:
         Fill: =RGBA(248, 248, 248, 1)
@@ -1264,52 +1280,7 @@ Fornecedor As screen:
         FontWeight: =FontWeight.Bold
         Height: =46
         OnSelect: |-
-            =UpdateContext({vValidacao:true});
-            
-            If(IsBlank(cmb_id_fabrica.Selected.id_fabrica),UpdateContext({vValidacao:false}));
-            If(IsBlank(txt_descricao.Text),UpdateContext({vValidacao:false}));
-            If(IsBlank(cmb_ano_consumo.Selected.ano),UpdateContext({vValidacao:false}));
-            If(IsBlank(cmb_mes_consumo.Selected.mes),UpdateContext({vValidacao:false}));
-            If(IsBlank(txt_qtd_horas.Text),UpdateContext({vValidacao:false}));
-            If(IsBlank(cmb_modelo_tarifacao.Selected.no_modelo),UpdateContext({vValidacao:false}));
-            If(IsBlank(txt_valor_periodo.Text),UpdateContext({vValidacao:false}));
-            
-            If(vValidacao=true,
-            
-                Patch(clc_tabela1,
-                    Defaults(clc_tabela1),
-                    {
-                        id: Last( SortByColumns( clc_tabela1, "id", SortOrder.Ascending )).id + 1,
-                        id_fabrica: cmb_id_fabrica.Selected.id_fabrica,
-                        descricao: txt_descricao.Text,
-                        ano_consumo: cmb_ano_consumo.Selected.ano,
-                        mes_inicio: cmb_mes_consumo.Selected.mes,
-                        qtd_meses: Value(txt_qtd_horas.Text),
-                        total_baseline: txt_baseline.Text,
-                        valor_contratao: txt_valor_periodo.Text,
-                        valor_unitario: Value(txt_valor_periodo.Text) / Value(txt_qtd_horas.Text)
-                    }
-                );
-            
-                Clear(clc_group_msl);
-                ClearCollect(clc_group_msl,
-                    AddColumns(
-                            GroupBy(clc_tabela1, "id_fabrica","fabrica"),
-                            "id",First(fabrica).id,
-                            "descricao",First(fabrica).descricao,
-                            "ano_consumo",First(fabrica).ano_consumo,
-                            "mes_inicio",First(fabrica).mes_inicio,
-                            "qtd_meses",First(fabrica).qtd_meses,
-                            "total_baseline",First(fabrica).total_baseline,
-                            "valor_contratao",First(fabrica).valor_contratao,
-                            "valor_unitario",First(fabrica).valor_unitario
-                    )
-                )
-            ,
-                UpdateContext({vShowValidacao:true})
-            );
-            
-            //UpdateContext({vShowMensalizacao:true})
+            =UpdateContext({vShowConfInclusao:true});
         PaddingRight: =7.03
         PaddingTop: =7.03
         Size: =21.08
@@ -3491,16 +3462,6 @@ Fornecedor As screen:
             Y: =309
             ZIndex: =116
 
-    barra_navegacao_5 As barra_navegacao:
-        acaoFornecedor: =Fornecedor
-        acaoGestor: =Gestor
-        acaoHome: ='Home'
-        acaoLista: =Lista
-        Width: =1155
-        X: =112.45
-        Y: =64
-        ZIndex: =167
-
     "'gp_add-Fabrica' As group":
         Height: =5
         Width: =5
@@ -3638,4 +3599,119 @@ Fornecedor As screen:
             X: =973
             Y: =475
             ZIndex: =83
+
+    gp_conf_inclusao As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =175
+
+        fundo_modal_12 As rectangle:
+            Fill: =RGBA(245, 245, 245, 0.8)
+            Height: =1080
+            Visible: =vShowConfInclusao
+            Width: =1920
+            ZIndex: =167
+
+        Rectangle5_12 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =390
+            Visible: =vShowConfInclusao
+            Width: =1754.14
+            X: =118
+            Y: =271
+            ZIndex: =168
+
+        Label4_12 As label:
+            Color: =RGBA(255, 0, 0, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =28.11
+            Text: ="Atenção"
+            Visible: =vShowConfInclusao
+            Width: =639.53
+            X: =163
+            Y: =290
+            ZIndex: =169
+
+        Label5_57 As label:
+            Align: =Align.Center
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =63
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Tem certeza de que deseja incluir todos os valores de mensalização ?"
+            Visible: =vShowConfInclusao
+            Width: =1755
+            X: =112
+            Y: =429
+            ZIndex: =170
+
+        btn_canc_exc_2 As button:
+            Fill: =RGBA(255, 0, 0, 1)
+            HoverFill: |-
+                =ColorValue("#FF0000")
+            OnSelect: |-
+                =UpdateContext({vShowConfInclusao:false})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Cancelar"
+            Visible: =vShowConfInclusao
+            Width: =224.89
+            X: =1021
+            Y: =594
+            ZIndex: =171
+
+        btn_conf_exc_2 As button:
+            Color: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            HoverFill: |-
+                =ColorValue("#A6A6A6")
+            OnSelect: |-
+                =UpdateIf(clc_tabela1, !IsBlank(id),{st_situacao:true});
+                
+                Reset(cmb_area);
+                Reset(cmb_head);
+                Reset(cmb_no_area);
+                Reset(cmb_id_sequencial);
+                Reset(cmb_tag);
+                Reset(cmb_id_fornecedor);
+                Reset(cmb_id_fabrica);
+                Reset(txt_descricao);
+                Reset(cmb_ano_consumo);
+                Reset(cmb_mes_consumo);
+                Reset(txt_qtd_horas);
+                Reset(txt_baseline);
+                Reset(cmb_modelo_tarifacao);
+                Reset(txt_valor_periodo);
+                Reset(cmb_co_area_lider_gestor);
+                
+                UpdateContext({vShowConfInclusao: false,vItemSel: Blank()})
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =21.08
+            Text: ="Confirmar"
+            Visible: =vShowConfInclusao
+            Width: =224.89
+            X: =759
+            Y: =593
+            ZIndex: =172
+
+        Icon4_2 As icon.More:
+            Color: =RGBA(255, 255, 0, 1)
+            Height: =130
+            Icon: =Icon.Warning
+            Visible: =vShowConfInclusao
+            Width: =208
+            X: =882
+            Y: =309
+            ZIndex: =173
 
