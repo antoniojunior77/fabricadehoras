@@ -11016,17 +11016,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.vTitFonSize"
+                  "fullyQualifiedName": "App.vTitFontWeightS"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.vTitFonSize",
+                  "fullyQualifiedName": "App.vTitFontWeightS",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "vTitFonSize",
+                "member": "vTitFontWeightS",
                 "module": "App",
                 "type": "App"
               }
@@ -11076,17 +11076,47 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.vTitFontWeightS"
+                  "fullyQualifiedName": "App.vTitFonSize"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.vTitFontWeightS",
+                  "fullyQualifiedName": "App.vTitFonSize",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "vTitFontWeightS",
+                "member": "vTitFonSize",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.vPerfil"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.vPerfil",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "vPerfil",
                 "module": "App",
                 "type": "App"
               }

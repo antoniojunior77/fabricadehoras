@@ -1,7 +1,12 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =Set(vTitFontFamily,"Lato");
+        =Set(vPerfil,1);
+        
+        //1:Gestor
+        //2:Fornecedor
+        
+        Set(vTitFontFamily,"Lato");
         Set(vTitFontColor, "#D51920");
         Set(vTitFonSize,"30");
         Set(vTitFontWeightB,"Bold");
