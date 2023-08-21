@@ -83,7 +83,9 @@ App As appinfo:
                 no_area:"FORNECEDORES TI",
                 co_lider_area_gestor:"19374",
                 id_sequencial:"OP_200",
-                id_fornecedor:1
+                id_fornecedor:1,
+                st_status: "",
+                st_situacao: false
             },
             {
                 id: 2,
@@ -100,7 +102,9 @@ App As appinfo:
                 no_area:"FORNECEDORES TI",
                 co_lider_area_gestor:"19374",
                 id_sequencial:"OP_200",
-                id_fornecedor:1
+                id_fornecedor:1,
+                st_status: "",
+                st_situacao: false
             },
             {
                 id: 3,
@@ -117,7 +121,9 @@ App As appinfo:
                 no_area:"FORNECEDORES TI",
                 co_lider_area_gestor:"19374",
                 id_sequencial:"OP_200",
-                id_fornecedor:1
+                id_fornecedor:1,
+                st_status: "",
+                st_situacao: false
             },
             {
                 id: 4,
@@ -134,7 +140,9 @@ App As appinfo:
                 no_area:"FORNECEDORES TI",
                 co_lider_area_gestor:"19374",
                 id_sequencial:"OP_200",
-                id_fornecedor:1
+                id_fornecedor:1,
+                st_status: "",
+                st_situacao: false
             }
         );
         
@@ -157,7 +165,9 @@ App As appinfo:
                     "no_area",First(fabrica).no_area,
                     "co_lider_area_gestor",First(fabrica).co_lider_area_gestor,
                     "id_sequencial",First(fabrica).id_sequencial,
-                    "id_fornecedor",First(fabrica).id_fornecedor
+                    "id_fornecedor",First(fabrica).id_fornecedor,
+                    "st_status", "",
+                    "st_situacao", false
             )
         );
         

@@ -1004,7 +1004,9 @@ Fornecedor As screen:
                         no_area: cmb_no_area.Selected.NO_AREA,
                         co_lider_area_gestor: cmb_co_area_lider_gestor.Selected.CO_LIDER_AREA,
                         id_sequencial: cmb_id_sequencial.Selected.id,
-                        id_fornecedor: cmb_id_fornecedor.Selected.id
+                        id_fornecedor: cmb_id_fornecedor.Selected.id,
+                        st_status: "",
+                        st_situacao: false
                     }
                 );
             
@@ -1025,7 +1027,9 @@ Fornecedor As screen:
                             "no_area",First(fabrica).no_area,
                             "co_lider_area_gestor",First(fabrica).co_lider_area_gestor,
                             "id_sequencial",First(fabrica).id_sequencial,
-                            "id_fornecedor",First(fabrica).id_fornecedor
+                            "id_fornecedor",First(fabrica).id_fornecedor,
+                            "st_status", "",
+                            "st_situacao", false
                     )
                 )
             ,
