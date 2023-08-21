@@ -4,11 +4,6 @@
     OnVisible: |-
         =Set(vTabMenu,"Tab1");
         Reset(cmb_area_1);
-        Reset(cmb_head_1);
-        Reset(cmb_no_area_1);
-        Reset(cmb_id_sequencial_1);
-        Reset(cmb_tag_1);
-        Reset(cmb_id_fornecedor_1);
         Reset(cmb_id_fabrica_1);
         Reset(txt_descricao_1);
         Reset(cmb_ano_consumo_1);
@@ -18,15 +13,6 @@
         Reset(cmb_modelo_tarifacao_1);
         Reset(cmb_co_area_lider_gestor_1);
         Reset(txt_valor_periodo_1);
-
-    barra_navegacao_8 As barra_navegacao:
-        acaoFornecedor: ='Fornecedor Cadastro Consumo'
-        acaoGestor: =Gestor
-        acaoHome: =Home
-        acaoLista: =Lista
-        Width: =1155
-        X: =112.45
-        Y: =64
 
     SideMenu_5 As SideMenu:
         ZIndex: =2
@@ -58,7 +44,7 @@
         Height: =2
         Width: =1807.55
         X: =112.45
-        Y: =332
+        Y: =395
         ZIndex: =9
 
     fundo_1 As rectangle:
@@ -66,7 +52,7 @@
         Height: =98
         Width: =1807.55
         X: =112.45
-        Y: =336
+        Y: =372
         ZIndex: =10
 
     Group3_13 As group:
@@ -80,21 +66,21 @@
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["cr274_no_lider_area"]
+            DisplayFields: =["no_situacao"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
             IsSearchable: =false
-            Items: =tb_areass
+            Items: =clc_situacao_demanda
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["cr274_no_lider_area"]
+            SearchFields: =["no_situacao"]
             SearchItems: =[]
             SelectMultiple: =false
             Size: =18.27
             Width: =379.5
-            X: =130.72
-            Y: =190
+            X: =130
+            Y: =289
             ZIndex: =156
 
         Icon1_7 As icon.Search:
@@ -102,8 +88,8 @@
             Height: =22
             Icon: =Icon.Search
             Width: =25.3
-            X: =140.56
-            Y: =201
+            X: =140
+            Y: =300
             ZIndex: =157
 
         Label2_25 As label:
@@ -112,11 +98,11 @@
             Height: =45
             PaddingRight: =7.03
             PaddingTop: =7.03
-            Size: =16.87
+            Size: =14
             Text: ="Situaçao da demanda"
             Width: =379.5
-            X: =130.72
-            Y: =145
+            X: =139
+            Y: =244
             ZIndex: =158
 
     btnAdd_8 As button:
@@ -131,8 +117,8 @@
         Text: ="Salvar"
         Visible: =!vEdicaoItem
         Width: =254
-        X: =1631
-        Y: =1010
+        X: =1622
+        Y: =624
         ZIndex: =33
 
     imagem_header_4 As imagem_header:
@@ -168,7 +154,7 @@
             Size: =14
             Width: =88
             X: =578
-            Y: =281
+            Y: =380
             ZIndex: =13
 
         Label2_34 As label:
@@ -184,7 +170,7 @@
                 Realizado"
             Width: =118.07
             X: =559
-            Y: =233
+            Y: =332
             ZIndex: =14
 
     Group3_23 As group:
@@ -212,7 +198,7 @@
             Size: =14
             Width: =80
             X: =482
-            Y: =280
+            Y: =379
             ZIndex: =15
 
         Label2_63 As label:
@@ -228,7 +214,7 @@
                 Realizado"
             Width: =126.5
             X: =458
-            Y: =233
+            Y: =332
             ZIndex: =16
 
     Group8_1 As group:
@@ -250,7 +236,7 @@
             Text: ="Número Demanda"
             Width: =260
             X: =526
-            Y: =145
+            Y: =244
             ZIndex: =159
 
         txt_qtd_horas_1 As text:
@@ -263,7 +249,7 @@
             Size: =15
             Width: =224
             X: =546
-            Y: =190
+            Y: =289
             ZIndex: =160
 
     Group3_24 As group:
@@ -278,20 +264,20 @@
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
             DefaultSelectedItems: =[vAllitems.id]
-            DisplayFields: =["no_modelo"]
+            DisplayFields: =["no_tipo"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =clc_modelo_tarifacao
+            Items: =clc_tipo_demanda
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["no_modelo"]
-            SearchItems: =Search(clc_modelo_tarifacao,cmb_modelo_tarifacao_1.SearchText,"no_modelo")
+            SearchFields: =["no_tipo"]
+            SearchItems: =Search(clc_tipo_demanda,cmb_modelo_tarifacao_1.SearchText,"no_tipo")
             SelectMultiple: =false
             Size: =18.27
             Width: =195
             X: =803
-            Y: =190
+            Y: =289
             ZIndex: =154
 
         Label2_65 As label:
@@ -305,7 +291,7 @@
             Text: ="Tipo"
             Width: =164.45
             X: =804
-            Y: =145
+            Y: =244
             ZIndex: =155
 
     Group2_1 As group:
@@ -327,7 +313,7 @@
             Text: ="Valor"
             Width: =276.9
             X: =1205
-            Y: =235
+            Y: =334
             ZIndex: =17
 
         lbl_txt_valor_periodo_1 As label:
@@ -339,7 +325,7 @@
                 =Text(Value(txt_valor_periodo_1.Text),"$#,##0.00","pt-BR")
             Width: =263
             X: =1218
-            Y: =273
+            Y: =372
             ZIndex: =35
 
         txt_valor_periodo_1 As text:
@@ -355,7 +341,7 @@
             Size: =15
             Width: =264.25
             X: =1218
-            Y: =277
+            Y: =376
             ZIndex: =36
 
     Group7_1 As group:
@@ -377,7 +363,7 @@
             Text: ="Sistema Principal"
             Width: =232
             X: =1015
-            Y: =145
+            Y: =244
             ZIndex: =161
 
         lblBaseline_1 As label:
@@ -388,7 +374,7 @@
                 =Text(Value(txt_baseline_1.Text),"#,##0","pt-BR")
             Width: =227
             X: =1015
-            Y: =187
+            Y: =286
             ZIndex: =162
 
         txt_baseline_1 As text:
@@ -403,7 +389,7 @@
             Size: =15
             Width: =227
             X: =1015
-            Y: =190
+            Y: =289
             ZIndex: =163
 
     gp_conf_exclusao_1 As group:
@@ -2499,7 +2485,7 @@
             Size: =18.27
             Width: =195
             X: =274
-            Y: =280
+            Y: =379
             ZIndex: =164
 
         Label2_24 As label:
@@ -2513,7 +2499,7 @@
             Text: ="Modelo Tarifação"
             Width: =164.45
             X: =275
-            Y: =235
+            Y: =334
             ZIndex: =165
 
     Group3_27 As group:
@@ -2541,7 +2527,7 @@
             Size: =14
             Width: =80
             X: =681
-            Y: =280
+            Y: =379
             ZIndex: =166
 
         Label2_80 As label:
@@ -2557,7 +2543,7 @@
                 Report"
             Width: =126.5
             X: =657
-            Y: =233
+            Y: =332
             ZIndex: =167
 
     Group6_1 As group:
@@ -2588,7 +2574,7 @@
             Size: =18.27
             Width: =434
             X: =772
-            Y: =277
+            Y: =376
             ZIndex: =168
 
         Icon1_9 As icon.Search:
@@ -2597,7 +2583,7 @@
             Icon: =Icon.Search
             Width: =29
             X: =784
-            Y: =287
+            Y: =386
             ZIndex: =169
 
         Label2_29 As label:
@@ -2610,7 +2596,7 @@
             Text: ="Responsável Emissão Protocolo"
             Width: =435
             X: =771
-            Y: =235
+            Y: =334
             ZIndex: =170
 
     "'gp_add-Fabrica_3' As group":
@@ -2885,7 +2871,7 @@
             Text: ="Racional do valor"
             Width: =276.9
             X: =1476
-            Y: =232
+            Y: =331
             ZIndex: =171
 
         lbl_txt_valor_periodo_2 As label:
@@ -2897,7 +2883,7 @@
                 =Text(Value(txt_valor_periodo_3.Text),"$#,##0.00","pt-BR")
             Width: =263
             X: =1489
-            Y: =270
+            Y: =369
             ZIndex: =172
 
         txt_valor_periodo_3 As text:
@@ -2913,7 +2899,7 @@
             Size: =15
             Width: =264.25
             X: =1489
-            Y: =274
+            Y: =373
             ZIndex: =173
 
     txt_descricao_2 As text:
@@ -2927,8 +2913,8 @@
         PaddingTop: =7.03
         Size: =15
         Width: =845
-        X: =1015
-        Y: =354
+        X: =1051
+        Y: =435
         ZIndex: =176
 
     Group8_2 As group:
@@ -2950,7 +2936,7 @@
             Text: ="Esforço"
             Width: =153.21
             X: =119
-            Y: =235
+            Y: =334
             ZIndex: =148
 
         txt_qtd_horas_3 As text:
@@ -2963,7 +2949,7 @@
             Size: =15
             Width: =132.12
             X: =131
-            Y: =280
+            Y: =379
             ZIndex: =149
 
     txt_descricao_1 As text:
@@ -2978,7 +2964,7 @@
         Size: =15
         Width: =845
         X: =128
-        Y: =354
+        Y: =435
         ZIndex: =177
 
     Group8_3 As group:
@@ -3000,7 +2986,7 @@
             Text: ="Número PO"
             Width: =153.21
             X: =1752
-            Y: =228
+            Y: =327
             ZIndex: =174
 
         txt_qtd_horas_4 As text:
@@ -3013,7 +2999,7 @@
             Size: =15
             Width: =132.12
             X: =1764
-            Y: =273
+            Y: =372
             ZIndex: =175
 
     Group9 As group:
@@ -3032,10 +3018,11 @@
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =4
-            TemplateSize: =358
+            TemplateSize: =208
+            Visible: =false
             Width: =1758
-            X: =118
-            Y: =660
+            X: =114
+            Y: =726
             ZIndex: =3
 
             Label3_8 As label:
@@ -3439,9 +3426,10 @@
         Rectangle1_3 As rectangle:
             Fill: =varCorVermelho
             Height: =45
+            Visible: =false
             Width: =1762
-            X: =118
-            Y: =622
+            X: =114
+            Y: =688
             ZIndex: =20
 
         Label2_69 As label:
@@ -3454,9 +3442,10 @@
             PaddingTop: =7.03
             Size: =12
             Text: ="ID Fábrica"
+            Visible: =false
             Width: =152
-            X: =118
-            Y: =622
+            X: =114
+            Y: =688
             ZIndex: =21
 
         Label2_70 As label:
@@ -3469,9 +3458,10 @@
             PaddingTop: =7.03
             Size: =12
             Text: ="Descrição TI "
+            Visible: =false
             Width: =589
-            X: =270
-            Y: =622
+            X: =266
+            Y: =688
             ZIndex: =22
 
         Label2_71 As label:
@@ -3484,9 +3474,10 @@
             PaddingTop: =7.03
             Size: =12
             Text: ="Ano Consumo"
+            Visible: =false
             Width: =90
-            X: =859
-            Y: =622
+            X: =855
+            Y: =688
             ZIndex: =23
 
         Label2_72 As label:
@@ -3501,9 +3492,10 @@
             Text: |-
                 ="Mês
                 Início"
+            Visible: =false
             Width: =90
-            X: =960
-            Y: =622
+            X: =956
+            Y: =688
             ZIndex: =24
 
         Label2_73 As label:
@@ -3518,9 +3510,10 @@
             Text: |-
                 ="Qtde
                 Meses"
+            Visible: =false
             Width: =90
-            X: =1052
-            Y: =622
+            X: =1048
+            Y: =688
             ZIndex: =25
 
         Label2_74 As label:
@@ -3532,9 +3525,10 @@
             PaddingTop: =7.03
             Size: =12
             Text: ="Total Baseline"
+            Visible: =false
             Width: =183
-            X: =1168
-            Y: =622
+            X: =1164
+            Y: =688
             ZIndex: =26
 
         Label2_75 As label:
@@ -3547,9 +3541,10 @@
             PaddingTop: =7.03
             Size: =12
             Text: ="Valor Contratado"
+            Visible: =false
             Width: =271
-            X: =1351
-            Y: =622
+            X: =1347
+            Y: =688
             ZIndex: =27
 
         Label2_76 As label:
@@ -3562,10 +3557,21 @@
             PaddingTop: =7.03
             Size: =12
             Text: ="Valor Unitário"
+            Visible: =false
             Width: =258
-            X: =1622
-            Y: =622
+            X: =1618
+            Y: =688
             ZIndex: =28
+
+    barra_navegacao_8 As barra_navegacao:
+        acaoFornecedor: ='Fornecedor Cadastro Consumo'
+        acaoGestor: ='Gestor Cadastro'
+        acaoHome: =Home
+        acaoLista: =Lista
+        Width: =1155
+        X: =112.45
+        Y: =64
+        ZIndex: =178
 
     Group3_25 As group:
         Height: =5
@@ -3579,20 +3585,20 @@
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
             DefaultSelectedItems: =[vAllitems.id]
-            DisplayFields: =["no_modelo"]
+            DisplayFields: =["no_tipo"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =clc_modelo_tarifacao
+            Items: =clc_complexidade_demanda
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["no_modelo"]
-            SearchItems: =Search(clc_modelo_tarifacao,cmb_modelo_tarifacao_3.SearchText,"no_modelo")
+            SearchFields: =["no_tipo"]
+            SearchItems: =Search(clc_complexidade_demanda,cmb_modelo_tarifacao_3.SearchText,"no_tipo")
             SelectMultiple: =false
             Size: =18.27
             Width: =195
             X: =1264
-            Y: =190
+            Y: =298
             ZIndex: =150
 
         Label2_78 As label:
@@ -3606,7 +3612,7 @@
             Text: ="Complexidade"
             Width: =164.45
             X: =1265
-            Y: =145
+            Y: =253
             ZIndex: =151
 
     Group3_26 As group:
@@ -3621,20 +3627,20 @@
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
             DefaultSelectedItems: =[vAllitems.id]
-            DisplayFields: =["no_modelo"]
+            DisplayFields: =["no_tipo"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
-            Items: =clc_modelo_tarifacao
+            Items: =clc_criticidade_demanda
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["no_modelo"]
-            SearchItems: =Search(clc_modelo_tarifacao,cmb_modelo_tarifacao_4.SearchText,"no_modelo")
+            SearchFields: =["no_tipo"]
+            SearchItems: =Search(clc_criticidade_demanda,cmb_modelo_tarifacao_4.SearchText,"no_tipo")
             SelectMultiple: =false
             Size: =18.27
             Width: =195
             X: =1479
-            Y: =190
+            Y: =298
             ZIndex: =152
 
         Label2_79 As label:
@@ -3648,6 +3654,90 @@
             Text: ="Criticidade"
             Width: =164.45
             X: =1480
-            Y: =145
+            Y: =253
             ZIndex: =153
+
+    Group3_15 As group:
+        Height: =5
+        Width: =5
+        X: =19.090000000000003
+        Y: =20
+        ZIndex: =181
+
+        cmb_id_fabrica_1 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            DefaultSelectedItems: =[vAllitems.id_fabrica]
+            DisplayFields: =["id_fabrica"]
+            Font: =Font.Lato
+            Height: =39
+            InputTextPlaceholder: =""
+            Items: =clc_fabrica
+            PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            SearchFields: =["id_fabrica"]
+            SearchItems: =Search(clc_fabrica,cmb_id_fabrica_1.SearchText,"id_fabrica")
+            SelectMultiple: =false
+            Size: =18.27
+            Width: =206.62
+            X: =130
+            Y: =193
+            ZIndex: =179
+
+        Label2_30 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =14
+            Text: ="ID Fábrica"
+            Width: =206.62
+            X: =130
+            Y: =155
+            ZIndex: =180
+
+    Group3_20 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =183
+
+        cmb_id_fabrica_2 As combobox:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(39, 113, 194, 1)
+            DefaultSelectedItems: =[vAllitems.id_fabrica]
+            DisplayFields: =["descricao"]
+            Font: =Font.Lato
+            Height: =39
+            InputTextPlaceholder: =""
+            Items: =Filter(clc_tabela1, id_fabrica=cmb_id_fabrica_1.Selected.id_fabrica)
+            PaddingLeft: =35
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            SearchFields: =["descricao"]
+            SearchItems: =Search(Filter(clc_tabela1, id_fabrica=cmb_id_fabrica_1.Selected.id_fabrica),cmb_id_fabrica_2.SearchText,"descricao")
+            SelectMultiple: =false
+            Size: =18.27
+            Width: =1513
+            X: =383
+            Y: =198
+            ZIndex: =181
+
+        Label2_31 As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            PaddingRight: =7.03
+            PaddingTop: =7.03
+            Size: =14
+            Text: ="Demanda"
+            Width: =1513
+            X: =383
+            Y: =160
+            ZIndex: =182
 

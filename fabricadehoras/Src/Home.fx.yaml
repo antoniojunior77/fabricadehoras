@@ -31,8 +31,8 @@ Home As screen:
         ZIndex: =3
 
     barra_navegacao_4 As barra_navegacao:
-        acaoFornecedor: =Fornecedor
-        acaoGestor: =Gestor
+        acaoFornecedor: ='Fornecedor Cadastro Consumo'
+        acaoGestor: ='Gestor Cadastro'
         acaoHome: =Home
         acaoLista: =Lista
         Width: =1155

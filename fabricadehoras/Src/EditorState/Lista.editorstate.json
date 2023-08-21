@@ -42,7 +42,7 @@
         {
           "Category": "Data",
           "PropertyName": "acaoFornecedor",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

@@ -116,7 +116,7 @@
         "Name": "btnTab1_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 767,
+        "PublishOrderIndex": 765,
         "Rules": [
           {
             "Category": "Data",
@@ -475,7 +475,7 @@
         "Name": "btnTab1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 768,
+        "PublishOrderIndex": 767,
         "Rules": [
           {
             "Category": "Data",
@@ -1178,7 +1178,15 @@
           "Strikethrough",
           "OnSelect",
           "PaddingTop",
-          "PaddingRight"
+          "PaddingRight",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Visible",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          }
         ],
         "ControlUniqueId": "20",
         "HasDynamicProperties": false,
@@ -1193,7 +1201,7 @@
         "Name": "btnTab2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 770,
+        "PublishOrderIndex": 771,
         "Rules": [
           {
             "Category": "Data",
@@ -1418,6 +1426,12 @@
             "RuleProviderType": "Unknown"
           },
           {
+            "Category": "Design",
+            "InvariantScript": "false",
+            "Property": "Visible",
+            "RuleProviderType": "Unknown"
+          },
+          {
             "Category": "Behavior",
             "InvariantScript": "Set(varTabMenu,\"Tab3\");\nNavigate(barra_navegacao.acaoLista)",
             "Property": "OnSelect",
@@ -1488,7 +1502,7 @@
         "Name": "barraBottom1_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 775,
+        "PublishOrderIndex": 773,
         "Rules": [
           {
             "Category": "Design",
@@ -1651,7 +1665,7 @@
         "Name": "barraBottom1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 776,
+        "PublishOrderIndex": 774,
         "Rules": [
           {
             "Category": "Design",
@@ -1814,7 +1828,7 @@
         "Name": "barraBottom2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 777,
+        "PublishOrderIndex": 775,
         "Rules": [
           {
             "Category": "Design",
@@ -1962,7 +1976,15 @@
           "ZIndex",
           "BorderThickness",
           "FocusedBorderThickness",
-          "OnSelect"
+          "OnSelect",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Visible",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          }
         ],
         "ControlUniqueId": "24",
         "HasDynamicProperties": false,
@@ -1977,7 +1999,7 @@
         "Name": "barraBottom2_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 778,
+        "PublishOrderIndex": 776,
         "Rules": [
           {
             "Category": "Design",
@@ -2070,6 +2092,12 @@
             "RuleProviderType": "Unknown"
           },
           {
+            "Category": "Design",
+            "InvariantScript": "false",
+            "Property": "Visible",
+            "RuleProviderType": "Unknown"
+          },
+          {
             "Category": "Behavior",
             "InvariantScript": "",
             "Property": "OnSelect",
@@ -2119,7 +2147,7 @@
         "Name": "Botão 2_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 774,
+        "PublishOrderIndex": 770,
         "Rules": [
           {
             "Category": "Design",
@@ -2195,7 +2223,7 @@
         "Name": "Botão 1_1",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 771,
+        "PublishOrderIndex": 768,
         "Rules": [
           {
             "Category": "Design",
@@ -2347,7 +2375,7 @@
         "Name": "Botão 1_2",
         "Parent": "barra_navegacao",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 773,
+        "PublishOrderIndex": 766,
         "Rules": [
           {
             "Category": "Design",
@@ -2423,7 +2451,7 @@
       "acaoLista",
       "acaoHome"
     ],
-    "LastModifiedTimestamp": "638282097518284271",
+    "LastModifiedTimestamp": "638282174602511118",
     "Name": "barra_navegacao",
     "Rules": [
       {
@@ -2543,7 +2571,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638282097518284271",
+  "LastModifiedTimestamp": "638282174602511118",
   "Name": "29c757b23e744ecaaa0ea2784df6a60d",
   "OverridableProperties": {},
   "Version": "638266685314298999"

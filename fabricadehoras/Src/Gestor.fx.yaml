@@ -624,16 +624,6 @@ Gestor As screen:
         Y: =678
         ZIndex: =102
 
-    barra_navegacao_6 As barra_navegacao:
-        acaoFornecedor: =Fornecedor
-        acaoGestor: =Gestor
-        acaoHome: =Home
-        acaoLista: =Lista
-        Width: =1155
-        X: =112.45
-        Y: =64
-        ZIndex: =104
-
     imagem_header_3 As imagem_header:
         Height: =74
         Width: =375
@@ -657,6 +647,16 @@ Gestor As screen:
         X: =872
         Y: =309
         ZIndex: =106
+
+    barra_navegacao_6 As barra_navegacao:
+        acaoFornecedor: ='Fornecedor Cadastro Consumo'
+        acaoGestor: ='Gestor Cadastro'
+        acaoHome: =Home
+        acaoLista: =Lista
+        Width: =1155
+        X: =112.45
+        Y: =64
+        ZIndex: =110
 
     Group3_9 As group:
         Height: =5

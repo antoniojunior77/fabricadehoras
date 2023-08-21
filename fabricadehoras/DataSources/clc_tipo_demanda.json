@@ -1,0 +1,9 @@
+[
+  {
+    "IsComponentScoped": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "clc_tipo_demanda",
+    "Type": "CollectionDataSourceInfo"
+  }
+]

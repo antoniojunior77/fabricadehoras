@@ -1670,6 +1670,14 @@ App As appinfo:
         
         Clear(clc_modelo_tarifacao);
         ClearCollect(clc_modelo_tarifacao,{id:1,no_modelo:"modelo 1"},{id:2,no_modelo:"modelo 2"},{id:3,no_modelo:"modelo 3"},{id:4,no_modelo:"modelo 4"},{id:5,no_modelo:"modelo 5"});
+        Clear(clc_situacao_demanda);
+        ClearCollect(clc_situacao_demanda,{id:1,no_situacao:"Backlog"},{id:2,no_situacao:"Em andamento"},{id:3,no_situacao:"Feito"});
+        Clear(clc_tipo_demanda);
+        ClearCollect(clc_tipo_demanda,{id:1,no_tipo:"Melhoria"},{id:2,no_tipo:"Correção"},{id:3,no_tipo:"Nova"});
+        Clear(clc_complexidade_demanda);
+        ClearCollect(clc_complexidade_demanda,{id:1,no_tipo:"Alta"},{id:2,no_tipo:"Baixa"},{id:3,no_tipo:"Média"});
+        Clear(clc_criticidade_demanda);
+        ClearCollect(clc_criticidade_demanda,{id:1,no_tipo:"Alta"},{id:2,no_tipo:"Baixa"},{id:3,no_tipo:"Média"});
         Clear(clc_mensalizacao);
     StartScreen: =
     Theme: =PowerAppsTheme

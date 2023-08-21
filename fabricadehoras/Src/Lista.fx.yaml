@@ -918,7 +918,7 @@ Lista As screen:
         ZIndex: =103
 
     barra_navegacao_7 As barra_navegacao:
-        acaoFornecedor: =Fornecedor
+        acaoFornecedor: ='Gestor Cadastro'
         acaoGestor: =Gestor
         acaoHome: =Home
         acaoLista: =Lista
