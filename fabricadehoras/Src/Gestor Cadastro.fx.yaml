@@ -517,7 +517,7 @@
             BorderColor: =RGBA(128, 128, 128, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(39, 113, 194, 1)
-            DisplayFields: =["cr274_no_lider_area"]
+            DisplayFields: =["cr274_no_area"]
             Font: =Font.Lato
             InputTextPlaceholder: =""
             IsSearchable: =false
@@ -525,7 +525,7 @@
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
-            SearchFields: =["cr274_no_lider_area"]
+            SearchFields: =["cr274_no_area"]
             SearchItems: =[]
             SelectMultiple: =false
             Size: =18.27
