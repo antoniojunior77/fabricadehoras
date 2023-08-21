@@ -22,7 +22,7 @@ Fornecedor As screen:
     barra_navegacao_5 As barra_navegacao:
         acaoFornecedor: =Fornecedor
         acaoGestor: =Gestor
-        acaoHome: ='Home'
+        acaoHome: =Home
         acaoLista: =Lista
         Width: =1155
         X: =112.45
@@ -489,7 +489,7 @@ Fornecedor As screen:
             SelectMultiple: =false
             Size: =18.27
             Width: =423.07
-            X: =563.63
+            X: =536
             Y: =192
             ZIndex: =8
 
@@ -498,7 +498,7 @@ Fornecedor As screen:
             Height: =22
             Icon: =Icon.Search
             Width: =25.3
-            X: =573.47
+            X: =546
             Y: =201
             ZIndex: =9
 
@@ -511,7 +511,7 @@ Fornecedor As screen:
             Size: =16.87
             Text: ="Head"
             Width: =380.91
-            X: =562.23
+            X: =535
             Y: =161
             ZIndex: =15
 
@@ -588,7 +588,7 @@ Fornecedor As screen:
             SelectMultiple: =false
             Size: =18.27
             Width: =443
-            X: =1019
+            X: =983
             Y: =191
             ZIndex: =10
 
@@ -597,7 +597,7 @@ Fornecedor As screen:
             Height: =22
             Icon: =Icon.Search
             Width: =25.3
-            X: =1028
+            X: =992
             Y: =201
             ZIndex: =11
 
@@ -610,7 +610,7 @@ Fornecedor As screen:
             Size: =16.87
             Text: ="Gerência"
             Width: =380.91
-            X: =1017
+            X: =981
             Y: =160
             ZIndex: =16
 
@@ -640,8 +640,8 @@ Fornecedor As screen:
             SearchItems: =[]
             SelectMultiple: =false
             Size: =18.27
-            Width: =379.5
-            X: =1510.98
+            Width: =434
+            X: =1455
             Y: =191
             ZIndex: =12
 
@@ -649,8 +649,8 @@ Fornecedor As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
-            Width: =25.3
-            X: =1520.82
+            Width: =29
+            X: =1467
             Y: =201
             ZIndex: =13
 
@@ -662,8 +662,8 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =16.87
             Text: ="Gestor"
-            Width: =380.91
-            X: =1509.58
+            Width: =435
+            X: =1454
             Y: =164
             ZIndex: =17
 
@@ -758,7 +758,7 @@ Fornecedor As screen:
             SelectMultiple: =false
             Size: =18.27
             Width: =896.75
-            X: =562.23
+            X: =535
             Y: =272
             ZIndex: =21
 
@@ -767,7 +767,7 @@ Fornecedor As screen:
             Height: =22
             Icon: =Icon.Search
             Width: =25.3
-            X: =572.06
+            X: =545
             Y: =281
             ZIndex: =22
 
@@ -780,7 +780,7 @@ Fornecedor As screen:
             Size: =16.87
             Text: ="Descrição (Projeto Consolidado / Tag)"
             Width: =798.36
-            X: =562.23
+            X: =535
             Y: =241
             ZIndex: =23
 
@@ -821,8 +821,8 @@ Fornecedor As screen:
             SearchItems: =Search(tb_fornecedoress,cmb_id_fornecedor.SearchText,"cr274_nome")
             SelectMultiple: =false
             Size: =18.27
-            Width: =379.5
-            X: =1510.98
+            Width: =434
+            X: =1455
             Y: =275
             ZIndex: =24
 
@@ -830,8 +830,8 @@ Fornecedor As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =22
             Icon: =Icon.Search
-            Width: =25.3
-            X: =1520.82
+            Width: =29
+            X: =1466
             Y: =284
             ZIndex: =25
 
@@ -843,8 +843,8 @@ Fornecedor As screen:
             PaddingTop: =7.03
             Size: =16.87
             Text: ="Fornecedor"
-            Width: =379.5
-            X: =1510.98
+            Width: =434
+            X: =1455
             Y: =244
             ZIndex: =26
 

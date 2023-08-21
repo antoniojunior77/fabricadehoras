@@ -33,7 +33,7 @@ Home As screen:
     barra_navegacao_4 As barra_navegacao:
         acaoFornecedor: =Fornecedor
         acaoGestor: =Gestor
-        acaoHome: ='Home'
+        acaoHome: =Home
         acaoLista: =Lista
         Width: =1155
         X: =112.45
