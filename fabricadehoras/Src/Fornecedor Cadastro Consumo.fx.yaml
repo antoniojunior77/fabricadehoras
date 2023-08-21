@@ -263,7 +263,7 @@
             Size: =14
             Text: ="Número Demanda"
             Width: =260
-            X: =526
+            X: =517
             Y: =244
             ZIndex: =159
 
@@ -276,7 +276,7 @@
             PaddingTop: =7.03
             Size: =15
             Width: =224
-            X: =546
+            X: =537
             Y: =289
             ZIndex: =160
 
@@ -304,7 +304,7 @@
             SelectMultiple: =false
             Size: =18.27
             Width: =195
-            X: =803
+            X: =785
             Y: =289
             ZIndex: =154
 
@@ -318,7 +318,7 @@
             Size: =14
             Text: ="Tipo"
             Width: =164.45
-            X: =804
+            X: =786
             Y: =244
             ZIndex: =155
 
@@ -390,7 +390,7 @@
             Size: =14
             Text: ="Sistema Principal"
             Width: =232
-            X: =1015
+            X: =1006
             Y: =244
             ZIndex: =161
 
@@ -401,7 +401,7 @@
             Text: |-
                 =Text(Value(txt_sistema_principal.Text),"#,##0","pt-BR")
             Width: =227
-            X: =1015
+            X: =1006
             Y: =286
             ZIndex: =162
 
@@ -416,7 +416,7 @@
             PaddingTop: =7.03
             Size: =15
             Width: =227
-            X: =1015
+            X: =1006
             Y: =289
             ZIndex: =163
 
@@ -2589,10 +2589,7 @@
             Font: =Font.Lato
             InputTextPlaceholder: =""
             IsSearchable: =false
-            Items: |-
-                =//tb_perfiss
-                //Distinct( Filter(tb_perfiss; CO_AREA=cmb_area.Selected.CO_AREA);NO_PFOCAL)
-                 Filter(tb_perfiss, CO_AREA=cmb_area.Selected.CO_AREA)
+            Items: =tb_perfiss
             PaddingLeft: =35
             PaddingRight: =7.03
             PaddingTop: =7.03
@@ -3626,7 +3623,7 @@
             Size: =18.27
             Width: =195
             X: =1264
-            Y: =298
+            Y: =289
             ZIndex: =150
 
         Label2_78 As label:
@@ -3640,7 +3637,7 @@
             Text: ="Complexidade"
             Width: =164.45
             X: =1265
-            Y: =253
+            Y: =244
             ZIndex: =151
 
     Group3_26 As group:
@@ -3668,7 +3665,7 @@
             Size: =18.27
             Width: =195
             X: =1479
-            Y: =298
+            Y: =289
             ZIndex: =152
 
         Label2_79 As label:
@@ -3682,7 +3679,7 @@
             Text: ="Criticidade"
             Width: =164.45
             X: =1480
-            Y: =253
+            Y: =244
             ZIndex: =153
 
     Group3_15 As group:
@@ -3699,7 +3696,6 @@
             DefaultSelectedItems: =[vAllitems.id_fabrica]
             DisplayFields: =["id_fabrica"]
             Font: =Font.Lato
-            Height: =39
             InputTextPlaceholder: =""
             Items: =clc_fabrica
             PaddingLeft: =35
@@ -3741,7 +3737,6 @@
             DefaultSelectedItems: =[vAllitems.id_fabrica]
             DisplayFields: =["descricao"]
             Font: =Font.Lato
-            Height: =39
             InputTextPlaceholder: =""
             Items: =Filter(clc_tabela1, id_fabrica=cmb_id_fabrica_1.Selected.id_fabrica)
             PaddingLeft: =35
@@ -3753,7 +3748,7 @@
             Size: =18.27
             Width: =1513
             X: =383
-            Y: =198
+            Y: =193
             ZIndex: =181
 
         Label2_31 As label:
